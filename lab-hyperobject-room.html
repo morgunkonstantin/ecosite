@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Глоссарий — ЭкоСознание</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --ink: #1c2b1e; --ink-light: #3d5240;
+  --moss: #4a7c59; --fern: #6ea87e; --sage: #a8c5a0; --mist: #d4e6d0;
+  --cream: #f3ede3; --warm: #ece5d6; --paper: #faf6ef;
+  --gold: #b8924a; --clay: #c4956a; --rust: #7a4f2e;
+}
+html { scroll-behavior: smooth; }
+body { background: var(--paper); color: var(--ink); font-family: 'Jost', sans-serif; font-weight: 300; }
+
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.2rem 4rem;
+  background: rgba(250,246,239,0.92); backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(74,124,89,0.12);
+}
+.logo { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--ink); text-decoration: none; }
+.logo span { color: var(--moss); }
+.breadcrumb { font-size: 0.74rem; letter-spacing: 0.1em; color: var(--ink-light); }
+.breadcrumb a { color: var(--moss); text-decoration: none; }
+
+/* HERO */
+.glossary-hero {
+  padding: 9rem 4rem 4rem;
+  max-width: 1200px; margin: 0 auto;
+}
+.glossary-tag {
+  display: inline-flex; align-items: center; gap: 0.6rem;
+  font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--moss); margin-bottom: 2rem;
+}
+.glossary-tag::before { content: ''; display: block; width: 24px; height: 1px; background: var(--fern); }
+.glossary-hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.6rem, 5vw, 4rem);
+  font-weight: 300; line-height: 1.05; color: var(--ink);
+  margin-bottom: 1.5rem;
+}
+.glossary-hero h1 em { font-style: italic; color: var(--moss); }
+.glossary-lead {
+  font-size: 1rem; line-height: 1.8; color: var(--ink-light);
+  max-width: 720px; margin-bottom: 2.5rem;
+}
+
+/* SEARCH + FILTER */
+.controls {
+  display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(74,124,89,0.18);
+  border-bottom: 1px solid rgba(74,124,89,0.18);
+}
+.search-wrap { flex: 1; min-width: 240px; position: relative; }
+.search-input {
+  width: 100%; padding: 0.7rem 1rem 0.7rem 2.4rem;
+  border: 1px solid rgba(74,124,89,0.25);
+  background: var(--paper);
+  font-family: 'Jost', sans-serif; font-size: 0.92rem;
+  color: var(--ink); outline: none;
+  transition: border-color 0.2s;
+}
+.search-input:focus { border-color: var(--moss); }
+.search-input::placeholder { color: var(--sage); }
+.search-icon {
+  position: absolute; left: 0.9rem; top: 50%; transform: translateY(-50%);
+  color: var(--sage); font-size: 0.95rem;
+}
+
+.filters { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+.filter-btn {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--ink-light); background: transparent;
+  border: 1px solid rgba(74,124,89,0.25);
+  padding: 0.5rem 0.9rem; cursor: pointer;
+  transition: all 0.2s;
+}
+.filter-btn:hover { color: var(--moss); border-color: var(--moss); }
+.filter-btn.active {
+  background: var(--ink); color: var(--cream);
+  border-color: var(--ink);
+}
+
+.results-count {
+  font-size: 0.75rem; color: var(--sage);
+  letter-spacing: 0.08em;
+}
+
+/* GLOSSARY GRID */
+.glossary-list {
+  max-width: 1200px; margin: 0 auto;
+  padding: 3rem 4rem 5rem;
+}
+.glossary-section {
+  margin-bottom: 3rem;
+}
+.glossary-letter {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 2rem;
+  align-items: baseline;
+  padding-bottom: 0.8rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(74,124,89,0.18);
+}
+.glossary-letter-mark {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.4rem; font-weight: 300;
+  color: var(--moss); line-height: 1;
+}
+.glossary-letter-count {
+  font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--sage);
+}
+
+.terms-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: rgba(74,124,89,0.1);
+}
+.term-card {
+  background: var(--paper);
+  padding: 1.8rem 1.6rem;
+  display: flex; flex-direction: column; gap: 0.6rem;
+  transition: background 0.25s;
+}
+.term-card.hidden { display: none; }
+.term-card:hover { background: var(--warm); }
+
+.term-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem; font-weight: 400;
+  color: var(--ink); line-height: 1.2;
+}
+.term-name em { font-style: italic; color: var(--moss); }
+
+.term-meta {
+  display: flex; gap: 0.5rem; flex-wrap: wrap;
+  align-items: center;
+}
+.term-tag {
+  font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--moss);
+  border: 1px solid rgba(74,124,89,0.22);
+  padding: 0.2rem 0.55rem;
+}
+.term-tag.tag-philosophy { color: var(--moss); border-color: rgba(74,124,89,0.25); }
+.term-tag.tag-psychology { color: var(--clay); border-color: rgba(196,149,106,0.4); }
+.term-tag.tag-technology { color: var(--gold); border-color: rgba(184,146,74,0.4); }
+.term-tag.tag-ecology { color: var(--fern); border-color: rgba(110,168,126,0.4); }
+
+.term-origin {
+  font-size: 0.7rem; color: var(--sage);
+  letter-spacing: 0.06em;
+}
+
+.term-def {
+  font-size: 0.87rem; line-height: 1.7;
+  color: var(--ink-light);
+  margin-top: 0.3rem;
+}
+
+.term-links {
+  margin-top: 0.5rem;
+  display: flex; gap: 0.6rem; flex-wrap: wrap;
+}
+.term-link {
+  font-size: 0.7rem; letter-spacing: 0.06em;
+  color: var(--moss); text-decoration: none;
+  border-bottom: 1px dashed rgba(74,124,89,0.3);
+  padding-bottom: 1px;
+  transition: border-color 0.2s;
+}
+.term-link:hover { border-color: var(--moss); }
+
+/* EMPTY STATE */
+.empty-state {
+  text-align: center; padding: 5rem 2rem;
+  color: var(--sage);
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic; font-size: 1.1rem;
+}
+
+/* FOOTER */
+footer { background: var(--ink); padding: 2.5rem 4rem; display: flex; justify-content: space-between; align-items: center; }
+.footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; color: var(--cream); }
+.footer-logo span { color: var(--fern); }
+.footer-nav { display: flex; gap: 1.2rem; }
+.footer-nav a { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--sage); text-decoration: none; }
+
+@media (max-width: 720px) {
+  nav, .glossary-hero, .glossary-list, footer { padding-left: 1.5rem; padding-right: 1.5rem; }
+  .terms-grid { grid-template-columns: 1fr; }
+  .glossary-letter { grid-template-columns: 60px 1fr; gap: 1rem; }
+}
+/* ── GLOBAL NAV + FOOTER v2 ── */
+.g-nav-wrap{position:fixed;top:0;left:0;right:0;z-index:300;background:rgba(250,246,239,0.95);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(74,124,89,0.13);font-family:'Jost',sans-serif;}
+.g-nav{display:flex;align-items:center;height:62px;padding:0 3rem;gap:0;}
+.g-logo{display:flex;align-items:center;gap:0.55rem;text-decoration:none;flex-shrink:0;margin-right:auto;}
+.g-logo .logo-svg{width:24px;height:24px;color:var(--ink);}
+.g-logo-text{font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--ink);white-space:nowrap;}
+.g-logo-text em{font-style:italic;color:var(--moss);}
+.g-links{display:flex;align-items:center;gap:0;list-style:none;}
+.g-links>li{position:relative;}
+.g-links>li>a,.g-links>li>button{display:flex;align-items:center;gap:0.3rem;font-size:0.75rem;font-weight:400;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-light);text-decoration:none;padding:0.45rem 0.9rem;border-radius:3px;background:none;border:none;cursor:pointer;font-family:'Jost',sans-serif;transition:color 0.2s,background 0.2s;}
+.g-links>li>a:hover,.g-links>li>button:hover{color:var(--moss);}
+.g-links>li>a.g-active{color:var(--moss);}
+.g-chevron{width:10px;height:10px;display:block;transition:transform 0.25s;}
+.g-drop-open>.g-drop-btn .g-chevron{transform:rotate(180deg);}
+.g-dropdown{position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);background:var(--ink);border:1px solid rgba(255,255,255,0.08);border-radius:6px;box-shadow:0 16px 40px rgba(0,0,0,0.35);padding:1.2rem;min-width:580px;display:none;grid-template-columns:repeat(3,1fr);gap:0.1rem;z-index:400;}
+.g-drop-open .g-dropdown{display:grid;}
+.g-dd-link{display:flex;align-items:center;gap:0.5rem;text-decoration:none;padding:0.5rem 0.6rem;border-radius:4px;transition:background 0.18s;}
+.g-dd-link:hover{background:rgba(255,255,255,0.08);}
+.g-dd-icon{width:18px;height:18px;flex-shrink:0;color:rgba(110,168,126,0.55);}
+.g-dd-icon svg{width:100%;height:100%;}
+.g-dd-link:hover .g-dd-icon{color:var(--fern);}
+.g-dd-name{font-family:'Cormorant Garamond',serif;font-size:1rem;color:rgba(243,237,227,0.85);}
+.g-dd-num{font-size:0.6rem;letter-spacing:0.12em;color:rgba(168,197,160,0.4);margin-left:auto;}
+.g-dd-link.wip{opacity:0.35;pointer-events:none;}
+.g-burger{display:none;flex-direction:column;justify-content:center;gap:5px;width:32px;height:32px;background:none;border:none;cursor:pointer;padding:3px;margin-left:1rem;}
+.g-burger span{display:block;height:1.5px;background:var(--ink);transition:transform 0.28s,opacity 0.28s,width 0.28s;transform-origin:center;}
+.g-burger span:nth-child(1){width:100%;}
+.g-burger span:nth-child(2){width:70%;}
+.g-burger span:nth-child(3){width:45%;}
+.g-burger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);width:100%;}
+.g-burger.open span:nth-child(2){opacity:0;}
+.g-burger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);width:100%;}
+.g-overlay{display:none;position:fixed;inset:62px 0 0 0;z-index:290;background:rgba(28,43,30,0.98);backdrop-filter:blur(20px);overflow-y:auto;padding:2rem 2rem 3rem;}
+.g-overlay.open{display:block;}
+.g-ov-section{margin-bottom:2rem;}
+.g-ov-label{font-size:0.64rem;letter-spacing:0.22em;text-transform:uppercase;color:rgba(168,197,160,0.45);margin-bottom:0.8rem;font-family:'Jost',sans-serif;}
+.g-ov-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.15rem;}
+.g-ov-link{display:flex;align-items:center;gap:0.5rem;text-decoration:none;padding:0.6rem 0.5rem;border-radius:4px;transition:background 0.18s;}
+.g-ov-link:hover{background:rgba(255,255,255,0.07);}
+.g-ov-icon{width:18px;height:18px;color:rgba(110,168,126,0.55);flex-shrink:0;}
+.g-ov-icon svg{width:100%;height:100%;}
+.g-ov-name{font-family:'Cormorant Garamond',serif;font-size:1rem;color:rgba(243,237,227,0.85);}
+.g-ov-link.wip{opacity:0.35;pointer-events:none;}
+.g-ov-simple-links{display:flex;flex-direction:column;gap:0.15rem;}
+.g-ov-simple-link{font-family:'Cormorant Garamond',serif;font-size:1rem;color:rgba(243,237,227,0.8);text-decoration:none;padding:0.55rem 0.5rem;border-radius:4px;transition:background 0.18s;}
+.g-ov-simple-link:hover{background:rgba(255,255,255,0.07);color:#f3ede3;}
+
+/* FOOTER */
+.g-footer-logo .logo-svg{width:22px;height:22px;}
+.g-footer-logo-text em{font-style:italic;color:var(--fern);}
+.g-footer-sec-link.wip{opacity:0.25;pointer-events:none;}
+.g-footer-sec-icon svg{width:100%;height:100%;}
+.g-footer-bottom-links a{font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(168,197,160,0.35);text-decoration:none;transition:color 0.18s;}
+.g-footer-bottom-links a:hover{color:var(--fern);}
+
+body{padding-top:62px!important;}
+
+@media(max-width:860px){
+  .g-links{display:none;}
+  .g-burger{display:flex;}
+  .g-nav{padding:0 1.5rem;}
+      }
+@media(max-width:540px){
+      }
+
+</style>
+</head>
+<body>
+<div class="g-nav-wrap" id="gNavWrap">
+  <div class="g-nav">
+    <a href="ecolife-landing.html" class="g-logo">
+      <svg viewBox="0 0 100 100" fill="none" class="logo-svg"><circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#4a7c59"/></svg>
+      <span class="g-logo-text">Эко<em>Сознание</em></span>
+    </a>
+    <ul class="g-links">
+      <li>
+        <button class="g-drop-btn" aria-expanded="false">
+          Разделы
+          <svg class="g-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg>
+        </button>
+        <div class="g-dropdown">
+          <a href="section-philosophy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Философия</span><span class="g-dd-num">01</span></a>
+          <a href="section-psychology.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Психология</span><span class="g-dd-num">02</span></a>
+          <a href="section-lifestyle.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Стиль жизни</span><span class="g-dd-num">03</span></a>
+          <a href="section-technologies.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-dd-name">Технологии</span><span class="g-dd-num">04</span></a>
+          <a href="section-food.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Питание</span><span class="g-dd-num">05</span></a>
+          <a href="section-architecture.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-dd-name">Архитектура</span><span class="g-dd-num">06</span></a>
+          <a href="section-economy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="g-dd-name">Экономика</span><span class="g-dd-num">07</span></a>
+          <a href="#" class="g-dd-link wip"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="4" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="14"/><circle cx="50" cy="50" r="26" stroke-dasharray="3 5"/></svg></span><span class="g-dd-name">Искусство</span><span class="g-dd-num">08</span></a>
+          <a href="section-education.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Образование</span><span class="g-dd-num">09</span></a>
+          <a href="section-community.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Сообщество</span><span class="g-dd-num">10</span></a>
+          <a href="section-travel.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-dd-name">Путешествия</span><span class="g-dd-num">11</span></a>
+          <a href="section-health.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="g-dd-name">Здоровье</span><span class="g-dd-num">12</span></a>
+        </div>
+      </li>
+      <li><a href="ecolife-landing.html#latest">Эссе</a></li>
+      <li><a href="glossary.html">Глоссарий</a></li>
+      <li><a href="about.html">О проекте</a></li>
+    </ul>
+    <button class="g-burger" id="gBurger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+<div class="g-overlay" id="gOverlay">
+  <div class="g-ov-section">
+    <div class="g-ov-label">Разделы</div>
+    <div class="g-ov-grid">
+      <a href="section-philosophy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Философия</span></a>
+      <a href="section-psychology.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="g-ov-name">Психология</span></a>
+      <a href="section-lifestyle.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="g-ov-name">Стиль жизни</span></a>
+      <a href="section-technologies.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-ov-name">Технологии</span></a>
+      <a href="section-food.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="g-ov-name">Питание</span></a>
+      <a href="section-architecture.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-ov-name">Архитектура</span></a>
+      <a href="section-economy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="g-ov-name">Экономика</span></a>
+      <a href="#" class="g-ov-link wip"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="4" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="14"/><circle cx="50" cy="50" r="26" stroke-dasharray="3 5"/></svg></span><span class="g-ov-name">Искусство</span></a>
+      <a href="section-education.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Образование</span></a>
+      <a href="section-community.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Сообщество</span></a>
+      <a href="section-travel.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-ov-name">Путешествия</span></a>
+      <a href="section-health.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="g-ov-name">Здоровье</span></a>
+    </div>
+  </div>
+  <div class="g-ov-section">
+    <div class="g-ov-label">Навигация</div>
+    <div class="g-ov-simple-links">
+      <a href="ecolife-landing.html" class="g-ov-simple-link">Главная</a>
+      <a href="ecolife-landing.html#latest" class="g-ov-simple-link">Эссе и лаборатории</a>
+      <a href="glossary.html" class="g-ov-simple-link">Глоссарий</a>
+      <a href="about.html" class="g-ov-simple-link">О проекте</a>
+    </div>
+  </div>
+</div>
+<!-- HEADER -->
+<section class="glossary-hero">
+  <div class="glossary-tag">Глоссарий</div>
+  <h1>Словарь<br><em>экологического мышления</em></h1>
+  <p class="glossary-lead">
+    Термины из разных разделов ресурса, собранные в одном месте. Каждое понятие — это инструмент. Каждый инструмент — точка входа в более глубокий материал. Используйте поиск и фильтры, или просто пролистайте — иногда полезно увидеть, какие слова мы используем для работы с реальностью.
+  </p>
+
+  <div class="controls">
+    <div class="search-wrap">
+      <span class="search-icon">⌕</span>
+      <input type="text" class="search-input" id="searchInput" placeholder="Поиск: алетейя, гиперобъект, биофилия..." autocomplete="off">
+    </div>
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">Все</button>
+      <button class="filter-btn" data-filter="philosophy">Философия</button>
+      <button class="filter-btn" data-filter="psychology">Психология</button>
+      <button class="filter-btn" data-filter="technology">Технологии</button>
+      <button class="filter-btn" data-filter="ecology">Экология</button>
+    </div>
+    <div class="results-count" id="resultsCount">28 терминов</div>
+  </div>
+</section>
+
+<section class="glossary-list" id="glossaryList">
+
+  <!-- А -->
+  <div class="glossary-section" data-letter="А">
+    <div class="glossary-letter">
+      <div class="glossary-letter-mark">А</div>
+      <div class="glossary-letter-count"></div>
+    </div>
+    <div class="terms-grid">
+
+      <div class="term-card" data-cat="philosophy" data-term="алетейя">
+        <div class="term-name"><em>Алетейя</em></div>
+        <div class="term-meta">
+          <span class="term-tag tag-philosophy">Философия</span>
+          <span class="term-origin">Древняя Греция · Хайдеггер</span>
+        </div>
+        <div class="term-def">Древнегреческое слово «не-сокрытое» (ἀλήθεια). Хайдеггер вернул его в философию двадцатого века как понимание истины не как соответствия суждения вещи, а как события, в котором что-то выходит из сокрытости в открытость.</div>
+        <div class="term-links">
+          <a href="section-philosophy.html#xx" class="term-link">В разделе</a>
+          <a href="lab-heidegger-plastic.html" class="term-link">Лаборатория №01</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Б -->
+  <div class="glossary-section" data-letter="Б">
+    <div class="glossary-letter">
+      <div class="glossary-letter-mark">Б</div>
+      <div class="glossary-letter-count"></div>
+    </div>
+    <div class="terms-grid">
+
+      <div class="term-card" data-cat="psychology" data-term="биофилия">
+        <div class="term-name">Биофилия</div>
+        <div class="term-meta">
+          <span class="term-tag tag-psychology">Психология</span>
+          <span class="term-origin">Э. О. Уилсон · 1984</span>
+        </div>
+        <div class="term-def">Гипотеза: человек эволюционно запрограммирован на связь с живыми системами. 99% истории нашего вида прошло в тесном контакте с природой — за два-три поколения это не стирается. Влечение к живому миру встроено в нас биологически.</div>
+        <div class="term-links">
+          <a href="section-psychology.html#theories" class="term-link">В разделе</a>
+        </div>
+      </div>
+
+      <div class="term-card" data-cat="technology" data-term="биомимикрия">
+        <div class="term-name">Биомимикрия</div>
+        <div class="term-meta">
+          <span class="term-tag tag-technology">Технологии</span>
+          <span class="term-origin">Дженин Бенюс · 1997</span>
+        </div>
+        <div class="term-def">Дисциплина, изучающая природные решения инженерных задач и воспроизводящая их принципы в технологиях. 3,8 миллиарда лет эволюции — крупнейшая исследовательская программа в истории Земли.</div>
+        <div class="term-links">
+          <a href="section-technologies.html#biomimicry" class="term-link">В разделе</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- В -->
+  <div class="glossary-section" data-letter="В">
+    <div class="glossary-letter">
+      <div class="glossary-letter-mark">В</div>
+      <div class="glossary-letter-count"></div>
+    </div>
+    <div class="terms-grid">
+
+      <div class="term-card" data-cat="technology" data-term="воплощённая энергия">
+        <div class="term-name">Воплощённая энергия</div>
+        <div class="term-meta">
+          <span class="term-tag tag-technology">Технологии</span>
+          <span class="term-origin">LCA-методология</span>
+        </div>
+        <div class="term-def">Совокупность всей энергии, потраченной на добычу, производство и транспортировку материала. Дом из материалов с низкой воплощённой энергией может требовать больше энергии в эксплуатации — это разрушает простые нарративы о «зелёных» материалах.</div>
+        <div class="term-links">
+          <a href="section-technologies.html#materials" class="term-link">В разделе</a>
+        </div>
+      </div>
+
+      <div class="term-card" data-cat="philosophy" data-term="вещь-сама-по-себе">
+        <div class="term-name"><em>Вещь-сама-по-себе</em></div>
+        <div class="term-meta">
+          <span class="term-tag tag-philosophy">Философия</span>
+          <span class="term-origin">Иммануил Кант · XVIII век</span>
+        </div>
+        <div class="term-def">Реальность, отделённая от нас, образующая матрицу, на которую мы накладываем логическую систему науки. Истина производится путём полагания — без доопытных логических форм перед нами был бы хаос или нечто не человекоразмерное.</div>
+        <div class="term-links">
+          <a href="section-philosophy.html#modern" class="term-link">В разделе</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Г -->
+  <div class="glossary-section" data-letter="Г">
+    <div class="glossary-letter">
+      <div class="glossary-letter-mark">Г</div>
+      <div class="glossary-letter-count"></div>
+    </div>
+    <div class="terms-grid">
+
+      <div class="term-card" data-cat="philosophy" data-term="гиперобъект">
+        <div class="term-name">Гиперобъект</div>
+        <div class="term-meta">
+          <span class="term-tag tag-philosophy">Философия</span>
+          <span class="term-tag tag-ecology">Экология</span>
+          <span class="term-origin">Тимоти Мортон · 2013</span>
+        </div>
+        <div class="term-def">Феномен, столь широко распределённый во времени и пространстве, столь вязкий и липкий, что прилипает ко всему, чего касается, но никогда не даётся целиком. Климат, радиация, пластиковое загрязнение — гиперобъекты. Сопротивляются классическим методам познания.</div>
+        <div class="term-links">
+          <a href="section-philosophy.html#hyperobject" class="term-link">В разделе</a>
+          <a href="lab-hyperobject-room.html" class="term-link">Лаборатория №02</a>
+          <a href="essay-truth-and-climate.html" class="term-link">Манифест</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Д -->
+  <div class="glossary-section" data-letter="Д">
+    <div class="glossary-letter">
+      <div class="glossary-letter-mark">Д</div>
+      <div class="glossary-letter-count"></div>
+    </div>
+    <div class="terms-grid">
+
+      <div class="term-card" data-cat="philosophy" data-term="демархия">
+        <div class="term-name">Демархия / Lottocracy</div>
+        <div class="term-meta">
+          <span class="term-tag tag-philosophy">Философия</span>
+          <span class="term-origin">Древняя Греция → XXI век</span>
+        </div>
+        <div class="term-def">Форма правления, при которой решения принимаются случайно выбранными гражданами, а не избранными политиками. В Древних Афинах множество должностей назначалось по жребию. Современное возрождение идеи как ответ на климатический кризис: национальные «дни обсуждений», случайные группы.</div>
+        <div class="term-links">
+          <a href="section-philosophy.html#collective" class="term-link">В разделе</a>
+          <a href="essay-truth-and-climate.html" class="term-link">Манифест</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Ж -->
+  <div class="glossary-section" data-letter="Ж">
+    <div class="glossary-letter">
+      <div class="glossary-letter-mark">Ж</div>
+      <div class="glossary-letter-count"></div>
+    </div>
+    <div class="terms-grid">
+
+      <div class="term-card" data-cat="philosophy" data-term="жизненный мир">
+        <div class="term-name">Жизненный мир</div>
+        <div class="term-meta">
+          <span class="term-tag tag-philosophy">Философия</span>
+          <span class="term-origin">Эдмунд Гуссерль</span>
+        </div>
+        <div class="term-def">Сфера непосредственного человеческого опыта, которая, по Гуссерлю, является истиной — вопреки тому, как наука эвакуирует её в психологию. «Атмосфера и стратосфера — не небо. Небо — то, что даёт нам настроение приподнятости».</div>
+        <div class="term-links">
+          <a href="section-philosophy.html#xx" class="term-link">В разделе</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- К -->
+  <div class="glossary-section" data-letter="К">
+    <div class="glossary-letter">
+      <div class="glossary-letter-mark">К</div>
+      <div class="glossary-letter-count"></div>
+    </div>
+    <div class="terms-grid">
+
+      <div class="term-card" data-cat="psychology" data-term="климатическая тревога">
+        <div class="term-name">Климатическая тревога</div>
+        <div class="term-meta">
+          <span class="term-tag tag-psychology">Психология</span>
+          <span class="term-origin">CCAS · HEAS · 2020–2021</span>
+        </div>
+        <div class="term-def">Хроническое ощущение страха и беспомощности перед масштабом климатических изменений. Сегодня измеряется валидированными шкалами CCAS (Climate Change Anxiety Scale) и HEAS (Hogg Eco-Anxiety Scale). Имеет четыре измерения: когнитивно-эмоциональное, функциональное, поведенческое, личного опыта.</div>
+        <div class="term-links">
+          <a href="section-psychology.html#vocabulary" class="term-link">В разделе</a>
+        </div>
+      </div>
+
+      <div class="term-card" data-cat="philosophy" data-term="корреспондентная теория">
+        <div class="term-name">Корреспондентная теория истины</div>
+        <div class="term-meta">
+          <span class="term-tag tag-philosophy">Философия</span>
+          <span class="term-origin">Аристотель → Фома Аквинский</span>
+        </div>
+        <div class="term-def">Истина — это соответствие ума и вещи. Самое старое классическое определение: суждение истинно, если связка подлежащего и сказуемого соответствует связи вещи и её качества. Преобладало 17 веков, остаётся фоном современной науки.</div>
+        <div class="term-links">
+          <a href="section-philosophy.html#ancient" class="term-link">В разделе</a>
+        </div>
+      </div>
+
+      <div class="term-card" data-cat="philosophy" data-term="коллективный разум">
+        <div class="term-name">Коллективный разум</div>
+        <div class="term-meta">
+          <span class="term-tag tag-philosophy">Философия</span>
+          <span class="term-origin">Мерсье · Спербер · 2017</span>
+        </div>
+        <div class="term-def">Социальная теория мышления: разум развивался не для индивидуального поиска истины, а для коллективного обсуждения. Когнитивные искажения — не баг, а фича. Истина — продукт группы, а не одиночки. Объясняет, почему наука и демократия используют похожие процедуры.</div>
+        <div class="term-links">
+          <a href="section-philosophy.html#collective" class="term-link">В разделе</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- М -->
+  <div class="glossary-section" data-letter="М">
+    <div class="glossary-letter">
+      <div class="glossary-letter-mark">М</div>
+      <div class="glossary-letter-count"></div>
+    </div>
+    <div class="terms-grid">
+
+      <div class="term-card" data-cat="psychology" data-term="моральное ранение">
+        <div class="term-name">Моральное ранение</div>
+        <div class="term-meta">
+          <span class="term-tag tag-psychology">Психология</span>
+          <span class="term-origin">Hickman et al. · 2021</span>
+        </div>
+        <div class="term-def">Чувство, что тебя предали те, кто должен был защищать. Первоначально — термин военной психологии, теперь применяется к молодёжи: исследование 10 000 молодых людей в десяти странах показало, что чувство предательства правительствами — ключевой компонент климатического дистресса.</div>
+        <div class="term-links">
+          <a href="section-psychology.html#vocabulary" class="term-link">В разделе</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Н -->
+  <div class="glossary-section" data-letter="Н">
+    <div class="glossary-letter">
+      <div class="glossary-letter-mark">Н</div>
+      <div class="glossary-letter-count"></div>
+    </div>
+    <div class="terms-grid">
+
+      <div class="term-card" data-cat="psychology" data-term="nature deficit disorder">
+        <div class="term-name">Nature deficit disorder</div>
+        <div class="term-meta">
+          <span class="term-tag tag-psychology">Психология</span>
+          <span class="term-origin">Ричард Лоув · 2005</span>
+        </div>
+        <div class="term-def">Не диагноз, а метафора: совокупность психологических и поведенческих последствий разрыва с природой у детей — повышенная тревожность, снижение внимания, сложности с эмпатией. Концепция, ставшая отправной точкой для целого движения.</div>
+        <div class="term-links">
+          <a href="section-psychology.html#vocabulary" class="term-link">В разделе</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- П -->
+  <div class="glossary-section" data-letter="П">
+    <div class="glossary-letter">
+      <div class="glossary-letter-mark">П</div>
+      <div class="glossary-letter-count"></div>
+    </div>
+    <div class="terms-grid">
+
+      <div class="term-card" data-cat="technology" data-term="пассивный дом">
+        <div class="term-name">Пассивный дом</div>
+        <div class="term-meta">
+          <span class="term-tag tag-technology">Технологии</span>
+          <span class="term-origin">Passivhaus · 1988</span>
+        </div>
+        <div class="term-def">Технологическая позиция: вместо того чтобы бороться с климатом при помощи оборудования, дом использует климат как ресурс. Правильная ориентация, тепловая масса, утепление, затенение, остекление — всё это работает без единого кВт дополнительной энергии.</div>
+        <div class="term-links">
+          <a href="section-technologies.html#passive" class="term-link">В разделе</a>
+        </div>
+      </div>
+
+      <div class="term-card" data-cat="philosophy" data-term="полная речь">
+        <div class="term-name">Полная речь</div>
+        <div class="term-meta">
+          <span class="term-tag tag-philosophy">Философия</span>
+          <span class="term-origin">Жак Лакан</span>
+        </div>
+        <div class="term-def">Не протокольное предложение, а формульное высказывание, срабатывающее в конкретный момент. Для Лакана — истина-действие, противоположная знанию. Знание — то, что мы пассивно устанавливаем о внешнем мире. Истина — то, что мы понимаем о себе.</div>
+        <div class="term-links">
+          <a href="section-philosophy.html#xx" class="term-link">В разделе</a>
+        </div>
+      </div>
+
+      <div class="term-card" data-cat="psychology" data-term="постправда">
+        <div class="term-name">Постправда</div>
+        <div class="term-meta">
+          <span class="term-tag tag-philosophy">Философия</span>
+          <span class="term-origin">XXI век</span>
+        </div>
+        <div class="term-def">Кризис общей реальности: когда СМИ становятся идеологическими машинами, политики отказываются от процедур объективности, а авторитеты учёных вытесняются авторитетами поп-звёзд — даже факты подвисают в отсутствие договорённости.</div>
+        <div class="term-links">
+          <a href="section-philosophy.html#main-question" class="term-link">В разделе</a>
+          <a href="essay-truth-and-climate.html" class="term-link">Манифест</a>
+        </div>
+      </div>
+
+      <div class="term-card" data-cat="technology" data-term="парадокс джевонса">
+        <div class="term-name">Парадокс Джевонса</div>
+        <div class="term-meta">
+          <span class="term-tag tag-technology">Технологии</span>
+          <span class="term-origin">У. С. Джевонс · 1865</span>
+        </div>
+        <div class="term-def">Эффективность потребляет больше. Более эффективная технология снижает стоимость единицы блага — и люди потребляют больше. Преследует зелёные технологии до сих пор: экономичный автомобиль стимулирует больше ездить.</div>
+        <div class="term-links">
+          <a href="section-technologies.html#paradox" class="term-link">В разделе</a>
+        </div>
+      </div>
+
+      <div class="term-card" data-cat="philosophy" data-term="подручность">
+        <div class="term-name">Подручность</div>
+        <div class="term-meta">
+          <span class="term-tag tag-philosophy">Философия</span>
+          <span class="term-origin">Мартин Хайдеггер</span>
+        </div>
+        <div class="term-def">Способ бытия предметов, которыми мы пользуемся: в момент использования они отступают в незаметность. Молоток виден столяру только тогда, когда сломан. Объясняет, почему пластик — самая распространённая субстанция современности — для нас невидим.</div>
+        <div class="term-links">
+          <a href="lab-heidegger-plastic.html" class="term-link">Лаборатория №01</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Р -->
+  <div class="glossary-section" data-letter="Р">
+    <div class="glossary-letter">
+      <div class="glossary-letter-mark">Р</div>
+      <div class="glossary-letter-count"></div>
+    </div>
+    <div class="terms-grid">
+
+      <div class="term-card" data-cat="psychology" data-term="расширенный разум">
+        <div class="term-name">Расширенный разум</div>
+        <div class="term-meta">
+          <span class="term-tag tag-psychology">Психология</span>
+          <span class="term-tag tag-philosophy">Философия</span>
+          <span class="term-origin">Грегори Бейтсон · 1972</span>
+        </div>
+        <div class="term-def">Мысль не находится «в голове». Она распределена между мозгом, телом, инструментами и средой. Когда слепой идёт с тростью, граница его «я» проходит на конце трости. Разрушение природы — это разрушение части того, чем мы мыслим.</div>
+        <div class="term-links">
+          <a href="section-psychology.html#why-psychology" class="term-link">В разделе</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- С -->
+  <div class="glossary-section" data-letter="С">
+    <div class="glossary-letter">
+      <div class="glossary-letter-mark">С</div>
+      <div class="glossary-letter-count"></div>
+    </div>
+    <div class="terms-grid">
+
+      <div class="term-card" data-cat="psychology" data-term="соластальгия">
+        <div class="term-name">Соластальгия</div>
+        <div class="term-meta">
+          <span class="term-tag tag-psychology">Психология</span>
+          <span class="term-origin">Гленн Альбрехт · 2003</span>
+        </div>
+        <div class="term-def">Тоска по месту, которое изменилось при тебе — не потому что ты уехал, а потому что оно стало другим. Горе по утраченному ландшафту детства, по лесу, ставшему стройплощадкой, по реке, которая обмелела.</div>
+        <div class="term-links">
+          <a href="section-psychology.html#vocabulary" class="term-link">В разделе</a>
+        </div>
+      </div>
+
+      <div class="term-card" data-cat="psychology" data-term="синрин-йоку">
+        <div class="term-name"><em>Синрин-йоку</em></div>
+        <div class="term-meta">
+          <span class="term-tag tag-psychology">Психология</span>
+          <span class="term-origin">Япония · 1982</span>
+        </div>
+        <div class="term-def">Буквально «принятие лесных ванн». Практика осознанного пребывания в лесу, разработанная в Японии. Не прогулка с задачей, не спорт — просто присутствие всеми органами чувств. Снижает кортизол на 12,4%, восстанавливает иммунитет.</div>
+        <div class="term-links">
+          <a href="section-psychology.html#restoration" class="term-link">В разделе</a>
+        </div>
+      </div>
+
+      <div class="term-card" data-cat="philosophy" data-term="скептицизм">
+        <div class="term-name">Скептицизм</div>
+        <div class="term-meta">
+          <span class="term-tag tag-philosophy">Философия</span>
+          <span class="term-origin">Античность → современность</span>
+        </div>
+        <div class="term-def">Древняя философская школа. Пирронисты: мы вообще не можем отличить правду от лжи, лучшее — описывать феномены, «подвешивая» (эпохэ) суждения о их истинности. Современный либерализм вырос из этой традиции. Постправда — её крайнее проявление.</div>
+        <div class="term-links">
+          <a href="section-philosophy.html#main-question" class="term-link">В разделе</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Т -->
+  <div class="glossary-section" data-letter="Т">
+    <div class="glossary-letter">
+      <div class="glossary-letter-mark">Т</div>
+      <div class="glossary-letter-count"></div>
+    </div>
+    <div class="terms-grid">
+
+      <div class="term-card" data-cat="psychology" data-term="топофилия">
+        <div class="term-name">Топофилия</div>
+        <div class="term-meta">
+          <span class="term-tag tag-psychology">Психология</span>
+          <span class="term-origin">Ии-Фу Туан · 1974</span>
+        </div>
+        <div class="term-def">Любовь к месту — эмоциональная привязанность человека к конкретному ландшафту, территории, природной среде. Антоним соластальгии: то, что возникает до утраты.</div>
+        <div class="term-links">
+          <a href="section-psychology.html#vocabulary" class="term-link">В разделе</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Э -->
+  <div class="glossary-section" data-letter="Э">
+    <div class="glossary-letter">
+      <div class="glossary-letter-mark">Э</div>
+      <div class="glossary-letter-count"></div>
+    </div>
+    <div class="terms-grid">
+
+      <div class="term-card" data-cat="psychology" data-term="эко-дистресс">
+        <div class="term-name">Эко-дистресс</div>
+        <div class="term-meta">
+          <span class="term-tag tag-psychology">Психология</span>
+          <span class="term-origin">Pihkala · 2022</span>
+        </div>
+        <div class="term-def">Современный зонтичный термин, охватывающий весь спектр негативных эмоций в ответ на экологический кризис: тревогу, гнев, печаль, вину, бессилие. Заменяет «экотревогу» в новых исследованиях, потому что точнее отражает сложность переживания.</div>
+        <div class="term-links">
+          <a href="section-psychology.html#vocabulary" class="term-link">В разделе</a>
+        </div>
+      </div>
+
+      <div class="term-card" data-cat="psychology" data-term="экологическое горе">
+        <div class="term-name">Экологическое горе</div>
+        <div class="term-meta">
+          <span class="term-tag tag-psychology">Психология</span>
+          <span class="term-origin">Ashlee Cunsolo · 2012</span>
+        </div>
+        <div class="term-def">Скорбь по утраченным видам, экосистемам, сезонам. Психологи начали работать с этим чувством относительно недавно — оно долго считалось «неуместным» или «преувеличенным».</div>
+        <div class="term-links">
+          <a href="section-psychology.html#vocabulary" class="term-link">В разделе</a>
+        </div>
+      </div>
+
+      <div class="term-card" data-cat="psychology" data-term="экопаралич">
+        <div class="term-name">Экопаралич</div>
+        <div class="term-meta">
+          <span class="term-tag tag-psychology">Психология</span>
+          <span class="term-origin">Современная клиническая практика</span>
+        </div>
+        <div class="term-def">Состояние, когда осознание масштаба проблем вызывает не действие, а полную остановку. Человек знает — и поэтому не может двигаться. Одна из форм защитного оцепенения.</div>
+        <div class="term-links">
+          <a href="section-psychology.html#vocabulary" class="term-link">В разделе</a>
+        </div>
+      </div>
+
+      <div class="term-card" data-cat="philosophy" data-term="эпохэ">
+        <div class="term-name"><em>Эпохэ</em></div>
+        <div class="term-meta">
+          <span class="term-tag tag-philosophy">Философия</span>
+          <span class="term-origin">Скептицизм → Гуссерль</span>
+        </div>
+        <div class="term-def">Древнегреческое «воздержание». У скептиков — отказ от суждения, истинно ли то, что мы видим. У Гуссерля — методический отказ от вопроса о существовании вещей, чтобы прояснить сами впечатления как объективную форму.</div>
+        <div class="term-links">
+          <a href="section-philosophy.html#xx" class="term-link">В разделе</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- EMPTY STATE -->
+<div class="empty-state" id="emptyState" style="display:none;">
+  Ничего не найдено. Попробуйте другой поиск или сбросьте фильтр.
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const filterBtns = document.querySelectorAll('.filter-btn');
+const termCards = document.querySelectorAll('.term-card');
+const sections = document.querySelectorAll('.glossary-section');
+const resultsCount = document.getElementById('resultsCount');
+const emptyState = document.getElementById('emptyState');
+
+let currentFilter = 'all';
+let currentSearch = '';
+
+function applyFilter() {
+  let visibleCount = 0;
+
+  termCards.forEach(card => {
+    const cat = card.dataset.cat;
+    const term = card.dataset.term.toLowerCase();
+    const defText = card.querySelector('.term-def').textContent.toLowerCase();
+
+    const matchesFilter = currentFilter === 'all' || cat === currentFilter;
+    const matchesSearch = !currentSearch ||
+      term.includes(currentSearch) ||
+      defText.includes(currentSearch);
+
+    if (matchesFilter && matchesSearch) {
+      card.classList.remove('hidden');
+      visibleCount++;
+    } else {
+      card.classList.add('hidden');
+    }
+  });
+
+  // Hide letter sections with no visible cards
+  sections.forEach(section => {
+    const visibleInSection = section.querySelectorAll('.term-card:not(.hidden)').length;
+    section.style.display = visibleInSection > 0 ? '' : 'none';
+    if (visibleInSection > 0) {
+      const countEl = section.querySelector('.glossary-letter-count');
+      countEl.textContent = visibleInSection + (visibleInSection === 1 ? ' термин' : (visibleInSection < 5 ? ' термина' : ' терминов'));
+    }
+  });
+
+  // Update count + empty state
+  resultsCount.textContent = visibleCount + (visibleCount === 1 ? ' термин' : (visibleCount < 5 ? ' термина' : ' терминов'));
+  emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
+}
+
+searchInput.addEventListener('input', e => {
+  currentSearch = e.target.value.toLowerCase().trim();
+  applyFilter();
+});
+
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentFilter = btn.dataset.filter;
+    applyFilter();
+  });
+});
+
+// Initial count
+applyFilter();
+</script>
+<!-- FOOTER -->
+<script>
+(function(){
+  // Dropdown toggle
+  document.querySelectorAll('.g-drop-btn').forEach(btn=>{
+    btn.addEventListener('click',e=>{
+      e.stopPropagation();
+      const li=btn.closest('li');
+      const open=li.classList.toggle('g-drop-open');
+      btn.setAttribute('aria-expanded',open);
+      document.querySelectorAll('.g-drop-open').forEach(el=>{if(el!==li)el.classList.remove('g-drop-open');});
+    });
+  });
+  document.addEventListener('click',()=>document.querySelectorAll('.g-drop-open').forEach(el=>el.classList.remove('g-drop-open')));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.g-drop-open').forEach(el=>el.classList.remove('g-drop-open'));});
+
+  // Burger / overlay
+  const burger=document.getElementById('gBurger');
+  const overlay=document.getElementById('gOverlay');
+  if(burger&&overlay){
+    burger.addEventListener('click',()=>{
+      const open=overlay.classList.toggle('open');
+      burger.classList.toggle('open',open);
+      document.body.style.overflow=open?'hidden':'';
+    });
+    overlay.querySelectorAll('a[href]').forEach(a=>a.addEventListener('click',()=>{
+      overlay.classList.remove('open');burger.classList.remove('open');document.body.style.overflow='';
+    }));
+    document.addEventListener('keydown',e=>{
+      if(e.key==='Escape'&&overlay.classList.contains('open')){
+        overlay.classList.remove('open');burger.classList.remove('open');document.body.style.overflow='';
+      }
+    });
+  }
+
+  // Highlight active page
+  const pg=location.pathname.split('/').pop()||'ecolife-landing.html';
+  document.querySelectorAll('a.g-dd-link,a.g-ov-link,a.g-footer-sec-link,a.g-links-direct').forEach(a=>{
+    if(a.getAttribute('href')===pg)a.classList.add('g-active');
+  });
+})();</script>
+<footer style="background:var(--ink);padding:2rem 3rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+  <a href="ecolife-landing.html" class="g-logo" style="text-decoration:none;">
+    <svg viewBox="0 0 100 100" fill="none" class="logo-svg" style="width:24px;height:24px;color:#f3ede3;"><circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#6ea87e"/></svg>
+    <span class="g-logo-text" style="color:#f3ede3;">Эко<em style="color:#6ea87e;">Сознание</em></span>
+  </a>
+  <span style="font-size:0.68rem;letter-spacing:0.08em;color:rgba(168,197,160,0.35);font-family:'Jost',sans-serif;">© 2025 ЭкоСознание</span>
+</footer>
+</body>
+</html>
