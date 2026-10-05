@@ -3,18 +3,18 @@
 <head>
 <script>document.documentElement.classList.replace('no-js','js');</script>
 <meta charset="UTF-8">
-  <meta name="description" content="Трассировка цепочки поставок: 7 стран, 12 этапов до вешалки. Синтетика и её настоящая цена.">
+  <meta name="description" content="Спор о том, можно ли изобразить гиперобъект диаграммой. Раворт признаёт, что точность обменена на возможность решения; Мортона спрашивают, что писать во второй строке.">
   <meta name="robots" content="index, follow">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Биография одной куртки — Лаборатория №03">
-  <meta property="og:description" content="Трассировка цепочки поставок: 7 стран, 12 этапов до вешалки. Синтетика и её настоящая цена.">
+  <meta property="og:title" content="Кольцо, которого нет: Мортон против Раворт">
+  <meta property="og:description" content="Спор о том, можно ли изобразить гиперобъект диаграммой. Раворт признаёт, что точность обменена на возможность решения; Мортона спрашивают, что писать во второй строке.">
   <meta property="og:image" content="https://ecosoznanie.ru/og-image.jpg">
   <meta property="og:locale" content="ru_RU">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Биография одной куртки — Лаборатория №03">
-  <meta name="twitter:description" content="Трассировка цепочки поставок: 7 стран, 12 этапов до вешалки. Синтетика и её настоящая цена.">
+  <meta name="twitter:title" content="Кольцо, которого нет: Мортон против Раворт">
+  <meta name="twitter:description" content="Спор о том, можно ли изобразить гиперобъект диаграммой. Раворт признаёт, что точность обменена на возможность решения; Мортона спрашивают, что писать во второй строке.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Биография одной куртки — Лаборатория №03 — ЭкоСознание</title>
+<title>Кольцо, которого нет: Мортон против Раворт — ЭкоСознание</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
@@ -41,15 +41,14 @@
 .lab-section h3 em{font-style:italic;color:var(--moss);}
 .lab-section p{font-family:'Jost',sans-serif!important;font-size:0.9rem!important;line-height:1.85!important;color:var(--ink-light)!important;margin-bottom:0.7rem!important;}
 .lab-section p:last-child{margin-bottom:0!important;}
-.chain{margin:2.5rem 0;position:relative;}
-.chain-title{font-family:'Cormorant Garamond',serif;font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--sage);margin-bottom:1.2rem;}
-.chain-steps{display:flex;flex-direction:column;gap:0;}
-.chain-step{display:grid;grid-template-columns:140px 1fr;gap:1.5rem;align-items:start;padding:1.2rem 0;border-bottom:1px solid rgba(74,124,89,0.1);}
-.chain-step:last-child{border-bottom:none;}
-.chain-where{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.95rem;color:var(--clay);line-height:1.4;}
-.chain-what{font-size:0.88rem;line-height:1.75;color:var(--ink-light);}
-.chain-what strong{font-weight:400;color:var(--ink);}
-.chain-what .co2{display:inline-block;font-size:0.78rem;color:var(--rust);background:rgba(122,79,46,0.08);padding:0.1rem 0.4rem;border-radius:2px;margin-left:0.4rem;}
+.dialogue{margin:3rem 0;display:flex;flex-direction:column;gap:0;}
+.dial-line{padding:1.2rem 0;border-bottom:1px solid rgba(74,124,89,0.1);}
+.dial-line:last-child{border-bottom:none;}
+.dial-who{font-family:'Jost',sans-serif;font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:0.5rem;}
+.dial-who.bateson{color:var(--moss);}
+.dial-who.gpt{color:var(--clay);}
+.dial-text{font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.7;color:var(--ink);}
+.dial-text em{font-style:italic;color:var(--moss);}
 .dark-block{background:var(--ink);margin:4rem -4rem;padding:3.5rem 4rem;}
 .dark-block-inner{max-width:840px;margin:0 auto;}
 .dark-block small{font-family:'Jost',sans-serif;font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--sage);display:block;margin-bottom:0.8rem;}
@@ -64,11 +63,43 @@
 .lab-sig-author{font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--ink-light);font-style:italic;}
 .lab-sig-meta{font-size:0.72rem;letter-spacing:0.1em;color:var(--sage);text-transform:uppercase;}
 .reading-bar{position:fixed;top:0;left:0;height:2px;background:var(--moss);z-index:400;width:0%;transition:width 0.1s linear;}
-@media(max-width:720px){ .lab-hero,.lab-body{padding-left:1.5rem;padding-right:1.5rem;} .dark-block{margin-left:-1.5rem;margin-right:-1.5rem;padding-left:1.5rem;padding-right:1.5rem;} .chain-step{grid-template-columns:1fr;gap:0.4rem;} .lab-meta-row{flex-direction:column;gap:1rem;} }
+@media(max-width:720px){ .lab-hero,.lab-body{padding-left:1.5rem;padding-right:1.5rem;} .dark-block{margin-left:-1.5rem;margin-right:-1.5rem;padding-left:1.5rem;padding-right:1.5rem;} .lab-meta-row{flex-direction:column;gap:1rem;} }
+</style>
+
+<style>
+.dial-who.benyus{color:var(--moss);}
+.dial-who.engineer{color:var(--rust);}
+.dial-who.narrator{color:var(--sage);}
+.dial-who.illich{color:var(--moss);}
+.dial-who.artem{color:var(--rust);}
+.aside-note{background:var(--warm);padding:1.5rem 1.8rem;margin:2rem 0;border-left:3px solid var(--gold);font-family:'Jost',sans-serif;font-size:.86rem;line-height:1.75;color:var(--ink-light);}
+.aside-note strong{display:block;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem;font-weight:400;}
+</style>
+
+<style>
+.dial-who.raworth,.dial-who.benyus,.dial-who.degrowth{color:var(--moss);}
+.dial-who.morton,.dial-who.illich,.dial-who.ecomodern{color:var(--rust);}
+.dial-who.iris,.dial-who.hanna,.dial-who.daniel{color:var(--clay-text);}
+.dial-who.narrator{color:var(--sage-text);}
+</style>
+
+<style>
+/* ECO:MANAGED — схемы */
+.fig{margin:3.5rem 0;}
+.fig svg{width:100%;height:auto;display:block;}
+.fig figcaption{margin-top:1rem;font-size:.78rem;line-height:1.7;color:var(--ink-light);
+  padding-left:1rem;border-left:2px solid rgba(74,124,89,.3);}
+.fig figcaption b{color:var(--ink);font-weight:400;}
+.fig-t{font-family:'Jost',sans-serif;font-size:12px;fill:var(--ink-light);}
+.fig-s{font-family:'Jost',sans-serif;font-size:10px;letter-spacing:1.4px;
+  text-transform:uppercase;fill:var(--moss);}
+.fig-n{font-family:'Cormorant Garamond',serif;font-size:22px;fill:var(--ink);}
+.fig-l{stroke:var(--moss);fill:none;}
+.fig-d{stroke:rgba(74,124,89,.3);fill:none;stroke-dasharray:3 4;}
 </style>
 <!-- ECO:MANAGED:head -->
-  <link rel="canonical" href="https://morgunkonstantin.github.io/ecology/lab-jacket-biography.html">
-  <meta property="og:url" content="https://morgunkonstantin.github.io/ecology/lab-jacket-biography.html">
+  <link rel="canonical" href="https://morgunkonstantin.github.io/ecology/lab-morton-raworth.html">
+  <meta property="og:url" content="https://morgunkonstantin.github.io/ecology/lab-morton-raworth.html">
   <meta property="og:site_name" content="ЭкоСознание">
   <meta property="og:image" content="https://morgunkonstantin.github.io/ecology/assets/og-image.png">
   <meta property="og:image:width" content="1200">
@@ -82,8 +113,8 @@
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="alternate" type="application/rss+xml" title="ЭкоСознание — RSS" href="feed.xml">
   <link rel="stylesheet" href="assets/site.css">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","name":"Биография одной куртки — Лаборатория №03","headline":"Биография одной куртки — Лаборатория №03","description":"Трассировка цепочки поставок: 7 стран, 12 этапов до вешалки. Синтетика и её настоящая цена.","inLanguage":"ru-RU","url":"https://morgunkonstantin.github.io/ecology/lab-jacket-biography.html","isPartOf":{"@type":"WebSite","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecology/"},"publisher":{"@type":"Organization","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecology/"},"datePublished":"2025-05-01","author":{"@type":"Organization","name":"ЭкоСознание"},"articleSection":"Стиль жизни"}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://morgunkonstantin.github.io/ecology/"},{"@type":"ListItem","position":2,"name":"Биография одной куртки — Лаборатория №03","item":"https://morgunkonstantin.github.io/ecology/lab-jacket-biography.html"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","name":"Кольцо, которого нет: Мортон против Раворт","headline":"Кольцо, которого нет: Мортон против Раворт","description":"Спор о том, можно ли изобразить гиперобъект диаграммой. Раворт признаёт, что точность обменена на возможность решения; Мортона спрашивают, что писать во второй строке.","inLanguage":"ru-RU","url":"https://morgunkonstantin.github.io/ecology/lab-morton-raworth.html","isPartOf":{"@type":"WebSite","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecology/"},"publisher":{"@type":"Organization","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecology/"},"datePublished":"2026-07-31","author":{"@type":"Organization","name":"ЭкоСознание"},"articleSection":"Экономика"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://morgunkonstantin.github.io/ecology/"},{"@type":"ListItem","position":2,"name":"Кольцо, которого нет: Мортон против Раворт","item":"https://morgunkonstantin.github.io/ecology/lab-morton-raworth.html"}]}</script>
 <!-- /ECO:MANAGED:head -->
 </head>
 <body>
@@ -185,142 +216,202 @@
 <!-- /ECO:MANAGED:nav -->
 <main id="content" tabindex="-1">
 
-<div class="reading-bar" id="readingBar"></div>
-
 <section class="lab-hero">
-  <div class="lab-tag">Лаборатория №03 · Стиль жизни</div>
-  <h1>Биография<br>одной <em>куртки</em></h1>
+  <div class="lab-tag">Лаборатория №10 · Экономика</div>
+  <h1>Кольцо,<br><em>которого нет</em></h1>
   <div class="lab-meta-row">
-    <div class="lab-meta-item"><strong>Метод</strong>Трассировка цепочки поставок</div>
-    <div class="lab-meta-item"><strong>Объект</strong>Синтетическая куртка, ~2500 руб.</div>
-    <div class="lab-meta-item"><strong>Вопрос</strong>Где на самом деле была эта вещь до вас?</div>
-    <div class="lab-meta-item"><strong>Время чтения</strong>≈ 11 мин</div>
-    <!-- ECO:MANAGED:date --><div class="essay-meta-item"><strong>Опубликовано (дата уточняется)</strong><time datetime="2025-05-01">1 мая 2025</time></div><!-- /ECO:MANAGED:date -->
+    <div class="lab-meta-item"><strong>Метод</strong>Спор двух своих: оба внутри экологии, оба правы наполовину</div>
+    <div class="lab-meta-item"><strong>Вопрос</strong>Что произошло бы, если бы Кейт Раворт и Тимоти Мортона пригласили консультировать один и тот же город по одной и той же стратегии?</div>
+    <div class="lab-meta-item"><strong>Понятия</strong>Пончик · <a class="term" href="glossary.html#giperobekt">Гиперобъект</a> · <a class="term" href="glossary.html#planetarnye-granicy">Планетарные границы</a> · Измеримость</div>
+    <div class="lab-meta-item"><strong>Время чтения</strong>≈ 8 мин</div>
+    <div class="lab-meta-item"><strong>Жанр</strong>Вымышленный диалог. Позиции взяты из опубликованных работ, реплики сконструированы</div>
+    <!-- ECO:MANAGED:date --><div class="essay-meta-item"><strong>Опубликовано</strong><time datetime="2026-07-31">31 июля 2026</time></div><!-- /ECO:MANAGED:date -->
   </div>
 </section>
 
 <div class="lab-body">
 
-  <p>На вешалке висит куртка. Синтетическая, лёгкая, с флисом внутри. Куплена в магазине одежды, стоила около 2500 рублей. Выглядит как обычная вещь — но у неё есть биография, которую никто не рассказывает в момент покупки. Семь стран, двенадцать этапов, четыре вида химических соединений, несколько сотен человек — и только в самом конце я.</p>
+  <p>Все предыдущие лаборатории этого сайта устроены одинаково: мыслитель встречается с практиком, и меняется практик. Формат честный, но у него есть предел. Он предполагает, что мыслитель прав, а разговор нужен только для того, чтобы это дошло до того, кто принимает решения.</p>
 
-  <p>Этот метод называется <em class="t">трассировка цепочки поставок</em>. Он позволяет пройти от магазинного ценника обратно — до нефтяной скважины, хлопкового поля или химического завода. Результат почти всегда оказывается неожиданным: не потому что там что-то сенсационно плохое, а потому что масштаб невидимого оказывается огромным.</p>
+  <p>Здесь предел снимается. В комнате два человека, оба внутри экологического мышления, оба много сделали, и они не согласны друг с другом в вещи, от которой зависит практика.</p>
+
+  <p>Кейт Раворт построила диаграмму — два кольца, между ними безопасное и справедливое пространство. Конструкция разошлась по миру и была принята десятками городов как рамка планирования. Она держится на измеримости: девять планетарных границ и двенадцать социальных оснований, каждое со своим показателем.</p>
+
+  <p>Тимоти Мортон утверждает, что важнейшие экологические сущности нашего времени принципиально не даны нам как целое. Гиперобъект нельзя увидеть, нельзя обойти и нельзя покинуть; наблюдаются только следы, которые им не являются. Из этой позиции диаграмма с кольцом выглядит не просто упрощением, а изображением чего-то, чего нет: границы, снаружи которой можно было бы оказаться.</p>
+
+  <p>Поводом для встречи служит городская администрация, которой нужно решение, а не философия.</p>
 
   <div class="sb"><span>❦</span></div>
+
+  <div class="dialogue">
+    <div class="dial-line">
+      <div class="dial-who narrator">Ситуация</div>
+      <div class="dial-text">Небольшой европейский город, около четырёхсот тысяч жителей. Отдел устойчивого развития готовит стратегию на пятнадцать лет и решил делать её по методу городского портрета. Ирис, младший аналитик отдела, отвечает за подготовку и по собственной инициативе пригласила второго консультанта. Совещание в переговорной с плохой вентиляцией.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who iris">Ирис</div>
+      <div class="dial-text">Я объясню, зачем позвала обоих. Мы взяли метод четырёх окон: что хорошо для наших людей, что хорошо для нашей природы, как мы влияем на людей в мире и как — на биосферу. Первые три окна мы заполнили. Четвёртое не заполняется. Я подумала, что это не техническая проблема.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who raworth">Раворт</div>
+      <div class="dial-text">Оно не заполняется, потому что данных по цепочкам поставок города не существует в готовом виде. Это решаемо: есть межотраслевые балансы, есть оценки по потреблению. Хуже, но считается.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who morton">Мортон</div>
+      <div class="dial-text">Оно не заполняется по другой причине. Первые три окна показывают то, что находится внутри города, — то есть внутри границы, которую вы провели. Четвёртое просит показать то, у чего границы нет. Вы просите изобразить нелокальное в форме, придуманной для локального.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who raworth">Раворт</div>
+      <div class="dial-text">Я знаю. Диаграмма — не карта территории, а согласованная рамка обсуждения. Её задача не описать мир, а дать людям в этой комнате возможность говорить об одном и том же.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who morton">Мортон</div>
+      <div class="dial-text">Тогда я задам вопрос, который вам, вероятно, задают редко. Вы рисуете внешнее кольцо — экологический потолок. Кольцо подразумевает, что есть внутри и есть снаружи. Но что означает «выйти за пределы» климата? Мы не выходим за его пределы. Мы находимся внутри и всегда находились. Ваше кольцо изображает выход из того, из чего выхода нет.</div>
+    </div>
+  </div>
 
   <div class="lab-section">
-    <div class="lab-section-label">Реагент</div>
-    <h3>Объект исследования: <em>куртка-ветровка</em></h3>
-    <p>Куртка из полиэстера с флисовой подкладкой. Ярлык: «100% polyester». Бренд российского масс-маркета. Страна производства по ярлыку — Китай. Цена — 2 490 рублей. Масса — около 450 граммов.</p>
-    <p>Что значит «100% полиэстер»? Полиэстер — это полиэтилентерефталат (ПЭТ), синтетическое волокно из нефтехимического сырья. То самое соединение, из которого делают пластиковые бутылки. Только вытянутое в тонкие нити и сотканное в ткань.</p>
-    <p>Флис внутри — тоже полиэстер, только с другой структурой поверхности. Иногда его делают из переработанных ПЭТ-бутылок, но в масс-маркете чаще — из первичного полиэстера.</p>
+    <div class="lab-section-label">Сдвиг первый · Раворт признаёт то, что обычно не проговаривает</div>
   </div>
 
-  <div class="sb"><span>❦</span></div>
-
-  <div class="chain">
-    <div class="chain-title">Полная цепочка · от скважины до вешалки</div>
-    <div class="chain-steps">
-
-      <div class="chain-step">
-        <div class="chain-where">Шаг 01<br>Ближний Восток / Россия</div>
-        <div class="chain-what"><strong>Добыча нефти.</strong> Сырьё для полиэстера — нафта, побочный продукт нефтепереработки. Скважина в Саудовской Аравии, ОАЭ или России. На производство 1 кг полиэстерного волокна уходит около 2 литров нефти. <span class="co2">≈3,8 кг CO₂/кг ткани</span></div>
-      </div>
-
-      <div class="chain-step">
-        <div class="chain-where">Шаг 02<br>Южная Корея / Тайвань</div>
-        <div class="chain-what"><strong>Нефтехимический завод.</strong> Нафта превращается в параксилол, потом в терефталевую кислоту, потом в ПЭТ-гранулят. Сложный многоступенчатый химический процесс с высоким потреблением энергии и воды. Часть химикатов в отходах.</div>
-      </div>
-
-      <div class="chain-step">
-        <div class="chain-where">Шаг 03<br>Китай (провинция Чжэцзян)</div>
-        <div class="chain-what"><strong>Производство волокна.</strong> ПЭТ-гранулят плавится и выдавливается через тончайшие отверстия (фильеры) в нити толщиной 10–50 микрон. Нити вытягиваются, скручиваются, наматываются на бобины. Китай производит около 80% мирового полиэстерного волокна.</div>
-      </div>
-
-      <div class="chain-step">
-        <div class="chain-where">Шаг 04<br>Китай / Бангладеш</div>
-        <div class="chain-what"><strong>Ткачество и трикотаж.</strong> Нити превращаются в ткань на ткацких станках. Флис — это трикотажное плетение, которое потом «расчёсывается» специальными иглами для создания мягкой поверхности. Фабрики работают 24/7, рабочие — по 10–12 часов.</div>
-      </div>
-
-      <div class="chain-step">
-        <div class="chain-where">Шаг 05<br>Китай</div>
-        <div class="chain-what"><strong>Крашение и отделка.</strong> Синтетические красители, фиксаторы, смягчители, водоотталкивающие пропитки (DWR). Традиционные DWR-пропитки содержат перфторуглероды (<a href="glossary.html#PFAS" class="gterm" title="PFAS">PFAS</a>) — «вечные химикаты», которые накапливаются в организме и не разлагаются в природе. Сточные воды красильных производств — одна из главных причин загрязнения рек в Юго-Восточной Азии. <span class="co2"><a class="term" href="glossary.html#pfas">PFAS</a> в ткани</span></div>
-      </div>
-
-      <div class="chain-step">
-        <div class="chain-where">Шаг 06<br>Китай (Гуандун)</div>
-        <div class="chain-what"><strong>Пошив.</strong> Ткань разрезается по лекалам, швеи собирают куртку на конвейере. Швейная фабрика может быть напрямую связана с брендом или работать через посредника-субподрядчика. Средняя зарплата швеи в Китае — около $350–500 в месяц при 60-часовой рабочей неделе.</div>
-      </div>
-
-      <div class="chain-step">
-        <div class="chain-where">Шаг 07<br>Шанхай / Гуанчжоу</div>
-        <div class="chain-what"><strong>Упаковка и складирование.</strong> Куртки фасуются в полиэтиленовые пакеты, укладываются в картонные коробки, грузятся в контейнеры. Полиэтиленовый пакет — ещё один слой пластика, который большинство покупателей выбросит сразу после открытия. <span class="co2">+0,1 кг CO₂</span></div>
-      </div>
-
-      <div class="chain-step">
-        <div class="chain-where">Шаг 08<br>Океан (25 дней)</div>
-        <div class="chain-what"><strong>Морская перевозка.</strong> Контейнеровоз из Шанхая в Санкт-Петербург или Новороссийск. Морской транспорт — самый эффективный по CO₂ на тонно-километр, но работает на мазуте и выбрасывает оксиды серы, которые осаждаются в Арктике. <span class="co2">≈0,4 кг CO₂ за куртку</span></div>
-      </div>
-
-      <div class="chain-step">
-        <div class="chain-where">Шаг 09<br>Россия</div>
-        <div class="chain-what"><strong>Таможня и распределительный склад.</strong> Контейнер приходит в порт, проходит таможню, едет на склад. Потом — развозка по магазинам. Грузовики, топливо, ещё CO₂.</div>
-      </div>
-
-      <div class="chain-step">
-        <div class="chain-where">Шаг 10<br>Магазин</div>
-        <div class="chain-what"><strong>Розничная продажа.</strong> Магазин с климат-контролем, освещением, кассой. Куртка висит на вешалке несколько недель. Возможно — участвует в акции, снижается в цене, создаёт ощущение срочности.</div>
-      </div>
-
-      <div class="chain-step">
-        <div class="chain-where">Шаг 11<br>Я</div>
-        <div class="chain-what"><strong>Покупка и использование.</strong> Куртка служит 2–5 лет в среднем по масс-маркет сегменту. При каждой стирке отделяются микроволокна полиэстера — до 700 000 частиц за одну стирку, которые попадают в сточные воды и затем в океан. <span class="co2">микропластик в воде</span></div>
-      </div>
-
-      <div class="chain-step">
-        <div class="chain-where">Шаг 12<br>После меня</div>
-        <div class="chain-what"><strong>Конец жизни.</strong> Менее 1% синтетической одежды в мире перерабатывается обратно в волокно. Большинство — на свалку или сжигается. Полиэстер в земле не разлагается — оценочно от 20 до 200 лет.</div>
-      </div>
-
+  <div class="dialogue">
+    <div class="dial-line">
+      <div class="dial-who raworth">Раворт</div>
+      <div class="dial-text">Хорошо. Скажу вещь, которую я не пишу в книгах. Девять границ на моей диаграмме нарисованы одинаково твёрдыми. Они не одинаковы. Климатическая обсчитана подробно, потоки азота и фосфора — прилично, целостность биосферы и новые вещества — плохо, и с числами там спорят сами авторы.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who morton">Мортон</div>
+      <div class="dial-text">И вы рисуете их одинаково.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who raworth">Раворт</div>
+      <div class="dial-text">Да. Потому что диаграмма с доверительными интервалами не принимается ни одним городским советом. Я пробовала. Инфографика, честно показывающая неопределённость, читается как «учёные сами не знают» и используется против нас в тот же день.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who morton">Мортон</div>
+      <div class="dial-text">То есть вы приняли решение о представлении, зная его цену.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who raworth">Раворт</div>
+      <div class="dial-text">Я приняла решение о том, чтобы вообще состоялся разговор. Цена мне известна: часть точности обменена на возможность принять решение. Я не считаю этот обмен постыдным. Я считаю его обменом, и предпочитаю, чтобы о нём знали.</div>
     </div>
   </div>
 
-  <div class="dark-block">
-    <div class="dark-block-inner">
-      <small>Итог трассировки</small>
-      <h3>Куртка за 2 490 рублей прошла через 7 стран, 12 этапов трансформации и оставила след, который переживёт её в несколько раз</h3>
-      <p>Углеродный след производства одной синтетической куртки — от 15 до 25 кг CO₂-эквивалента. Это примерно столько же, сколько выбрасывает легковой автомобиль при езде на 100–150 км. За год мировое производство одежды даёт 1,2 млрд тонн CO₂ — больше, чем авиация и судоходство вместе взятые.</p>
-      <p>При этом 40% купленной одежды никогда не надевается. И менее 15% сдаётся на переработку.</p>
+  <div class="aside-note">
+    <strong>Комментарий на полях.</strong> Здесь произошло нечто более редкое, чем кажется. Раворт не защитила диаграмму — она признала, что диаграмма выполняет политическую функцию за счёт научной точности, и назвала обмен обменом. Большинство споров об экологической коммуникации не доходит до этой точки, потому что обе стороны делают вид, что упрощение либо безобидно, либо преступно.
+  </div>
+
+  <div class="lab-section">
+    <div class="lab-section-label">Сдвиг второй · Мортона спрашивают, что делать во вторник</div>
+  </div>
+
+  <div class="dialogue">
+    <div class="dial-line">
+      <div class="dial-who iris">Ирис</div>
+      <div class="dial-text">Профессор Мортон, у меня практический вопрос. Стратегия должна уйти в совет через шесть недель. Если кольца нет — что мне писать вместо него?</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who morton">Мортон</div>
+      <div class="dial-text">Я бы начал с признания, что вы находитесь внутри. Что город — не наблюдатель, оценивающий своё воздействие, а часть того, что оценивает.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who iris">Ирис</div>
+      <div class="dial-text">Это первая строка преамбулы. Что во второй?</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who morton">Мортон</div>
+      <div class="dial-text">…</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who raworth">Раворт</div>
+      <div class="dial-text">Я не злорадствую. Я двадцать лет работала в организациях, где после красивого анализа кто-то должен написать пункт в бюджете. Разница между нами не в глубине понимания. Она в том, что мой инструмент обязан пережить встречу с финансовым департаментом, а ваш — нет.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who morton">Мортон</div>
+      <div class="dial-text">Принимается. Моя позиция не даёт процедуры, и я это знаю. Но у неё есть одно применение, и оно не декоративное: она сообщает, какие ошибки вы совершите, пользуясь своим инструментом. Вы будете считать себя снаружи. Вы будете думать, что достигли цели, когда придёте к границе на бумаге. И вы будете считать четвёртое окно необязательным, потому что оно единственное не сводится к вашей территории.</div>
     </div>
   </div>
 
-  <div class="sb"><span>❦</span></div>
+  
 
-  <p>Что делать с этим знанием? Не впадать в паралич. Биография вещи — не обвинение, а инструмент видения. Несколько выводов, которые из неё следуют.</p>
+<!-- ECO:MANAGED:fig -->
+<figure class="fig"><svg viewBox="0 0 640 400" role="img" aria-labelledby="wnt wnd"><title id="wnt">Четыре окна городского портрета</title><desc id="wnd">Матрица два на два: локальное и глобальное по горизонтали, социальное и экологическое по вертикали. Четвёртое окно, глобально-экологическое, внедряется хуже остальных.</desc><rect x="60" y="70" width="250" height="130" fill="var(--paper)" stroke="rgba(74,124,89,.35)"/><text x="80" y="102" class="fig-s">Локально · социально</text><text x="80" y="132" class="fig-n" font-size="17">Как живут наши жители</text><text x="80" y="166" class="fig-t" fill="var(--moss)">рассчитано</text><rect x="330" y="70" width="250" height="130" fill="var(--paper)" stroke="rgba(74,124,89,.35)"/><text x="350" y="102" class="fig-s">Глобально · социально</text><text x="350" y="132" class="fig-n" font-size="17">На кого мы влияем в мире</text><text x="350" y="166" class="fig-t" fill="var(--moss)">частично</text><rect x="60" y="225" width="250" height="130" fill="var(--paper)" stroke="rgba(74,124,89,.35)"/><text x="80" y="257" class="fig-s">Локально · экологически</text><text x="80" y="287" class="fig-n" font-size="17">Что с природой здесь</text><text x="80" y="321" class="fig-t" fill="var(--moss)">рассчитано</text><rect x="330" y="225" width="250" height="130" fill="rgba(122,79,46,.09)" stroke="rgba(74,124,89,.35)"/><text x="350" y="257" class="fig-s">Глобально · экологически</text><text x="350" y="287" class="fig-n" font-size="17">След наших цепочек поставок</text><text x="350" y="321" class="fig-t" fill="var(--rust)">не финансируется</text><text x="320" y="382" text-anchor="middle" class="fig-t">Четвёртое окно — единственное, где рамка признаёт нелокальность</text></svg><figcaption>Метод амстердамского городского портрета. Первые три окна показывают город; четвёртое показывает, что <b>города как отдельной вещи не существует</b>. Оно же единственное, за которое город никто не похвалит, — и потому внедряется хуже всех.</figcaption></figure>
+<!-- /ECO:MANAGED:fig -->
+<div class="lab-section">
+    <div class="lab-section-label">Сдвиг третий · Оба обнаруживают, что спорили не о том</div>
+  </div>
 
-  <p><em class="t">Синтетика против натуральных волокон — не очевидный выбор.</em> Хлопок тоже имеет тяжёлую биографию: он потребляет огромное количество воды и пестицидов. Шерсть связана с метановыми выбросами животноводства. Нет «хорошего» волокна — есть разные компромиссы.</p>
+  <div class="dialogue">
+    <div class="dial-line">
+      <div class="dial-who raworth">Раворт</div>
+      <div class="dial-text">Подождите. Вы сейчас сказали, что четвёртое окно — единственное, где рамка признаёт нелокальность.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who morton">Мортон</div>
+      <div class="dial-text">Да. Три первых окна показывают город. Четвёртое показывает, что города как отдельной вещи не существует. Это самая честная часть вашей схемы, и она попала туда, насколько я понимаю, не из философии, а из практики.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who raworth">Раворт</div>
+      <div class="dial-text">Из практики. И это часть, которую внедряют хуже всего. У меня нет ни одного города, где четвёртое окно повлияло бы на бюджет. Оно всегда остаётся разделом в приложении.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who morton">Мортон</div>
+      <div class="dial-text">Потому что оно единственное, за что вас никто не похвалит. Первые три окна дают показатели, по которым город отчитывается и выигрывает премии. Четвёртое даёт только обязательства без наград.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who iris">Ирис</div>
+      <div class="dial-text">То есть вы оба говорите, что моя проблема не в методе, а в том, что у четвёртого окна нет ни данных, ни стимула, ни адресата.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who raworth">Раворт</div>
+      <div class="dial-text">Да. И из этого, между прочим, следует единственное действие, которое здесь вообще возможно: найти хотя бы одну процедуру, где четвёртое окно обязательно к заполнению. Не стратегию — процедуру.</div>
+    </div>
+  </div>
 
-  <p><em class="t">Главный рычаг — количество.</em> Производство одной куртки из натуральных органических материалов создаёт меньше проблем, чем пять синтетических кураток из масс-маркета. Самый экологичный гардероб — маленький, хорошо используемый и долго служащий.</p>
+  <div class="aside-note">
+    <strong>Комментарий на полях.</strong> Обратите внимание, где они сошлись. Не на метафизике и не на том, существует ли кольцо. Они сошлись на конкретном месте, где конструкция даёт сбой, — и обнаружили, что сбой у обоих один и тот же. Спор о представлении оказался спором о том, что бюрократия способна удержать в голове, а этот вопрос решается не аргументами, а регламентом.
+  </div>
 
-  <p><em class="t">Стирка имеет значение.</em> Мешок для стирки синтетики (Guppyfriend) задерживает до 86% микроволокон. Это не решение системной проблемы — но способ уменьшить личный вклад в загрязнение воды.</p>
+  <div class="lab-section">
+    <div class="lab-section-label">Эпилог · Два года спустя</div>
+  </div>
 
-  <p><em class="t">Ремонт и перепродажа.</em> Каждый год жизни вещи амортизирует её углеродный след. Куртка, которая служит 10 лет вместо 3, имеет в три раза меньший след на год использования. Это лучший возврат на инвестицию — и экологический, и финансовый.</p>
+  <p>Стратегия принята. Городской портрет вошёл в неё целиком, диаграмма с двумя кольцами напечатана на обложке. Раздел о глобальном воздействии занимает четыре страницы в приложении, бюджетной строки не имеет.</p>
 
-  <blockquote>
-    <p>«Самая дешёвая куртка — та, которую ты уже купил и которая ещё служит»</p>
-  </blockquote>
+  <p>Фраза Мортона о том, что город является частью того, что оценивает, попала в преамбулу — второй абзац, третье предложение. Её, по всей вероятности, не прочитал никто.</p>
 
-  <div class="sb"><span>❦</span></div>
+  <p>За исключением одного человека. Ирис через полтора года перешла в отдел закупок и, готовя обновление регламента, добавила в форму оценки поставщика пункт: указать страну происхождения сырья первого передела и подтвердить отсутствие в цепочке предприятий из списка высокого риска. Пункт обязателен к заполнению; при пустом поле заявка не подаётся.</p>
 
-  <p>На вешалке снова висит куртка. Она не изменилась. Но теперь я вижу её биографию — семь стран, двенадцать этапов, несколько сотен людей. Не для того, чтобы чувствовать вину. А для того, чтобы принять осознанное решение в следующий раз, когда буду стоять в магазине с такой же курткой в руках.</p>
+  <p>За первый год по этому пункту были отклонены две заявки и переоформлены семь. Ни в одном отчёте города это не отражено, потому что показателя для такого не предусмотрено.</p>
 
-  <p class="conclusion">Вещь — это не объект. Это точка пересечения множества отношений.</p>
+  <p>Мортон об этом не знает. Раворт, вероятно, тоже. Кольцо на обложке осталось нарисованным одинаково твёрдым по всем девяти границам.</p>
 
   <div class="lab-sig">
-    <div class="lab-sig-author">— редакция «ЭкоСознания», Лаборатория №03</div>
-    <div class="lab-sig-meta">Трассировка цепочки поставок · Май 2025</div>
+    <div class="lab-sig-author">ЭкоСознание</div>
+    <div class="lab-sig-meta">Лаборатория №10 · Июль 2026</div>
   </div>
 
 </div>
+
+<section class="rel">
+  <div class="rel-in">
+    <div class="rel-label">Читать дальше</div>
+    <div class="rel-grid">
+      <a href="essay-doughnut.html" class="rel-card">
+        <div class="rel-kind">Эссе</div>
+        <div class="rel-name">ВВП меряет скорость</div>
+      </a>
+      <a href="term-hyperobject.html" class="rel-card">
+        <div class="rel-kind">Понятие</div>
+        <div class="rel-name">Гиперобъект</div>
+      </a>
+      <a href="lab-illich-benyus.html" class="rel-card">
+        <div class="rel-kind">Лаборатория №11</div>
+        <div class="rel-name">Иллич и Бенюс: кто может это вырастить</div>
+      </a>
+    </div>
+  </div>
+</section>
 
 </main>
 
