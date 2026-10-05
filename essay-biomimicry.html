@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+<script>document.documentElement.classList.replace('no-js','js');</script>
+<meta charset="UTF-8">
+<meta name="description" content="Три уровня подражания по Дженин Бенюс, ревизия канонических примеров — что подтвердилось, а что нет, — и структурное возражение Джулиана Винсента.">
+<meta property="og:title" content="Биомимикрия: как природа решает задачи, которые мы только поставили">
+<meta property="og:description" content="Три уровня подражания по Дженин Бенюс, ревизия канонических примеров — что подтвердилось, а что нет, — и структурное возражение Джулиана Винсента.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Биомимикрия: как природа решает задачи, которые мы только поставили — ЭкоСознание</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/base.css">
+<style>
+.essay-tag{display:inline-flex;align-items:center;gap:.6rem;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);margin-bottom:2rem;}
+.essay-meta{display:flex;gap:3rem;padding:1.4rem 0;border-top:1px solid rgba(74,124,89,.18);border-bottom:1px solid rgba(74,124,89,.18);flex-wrap:wrap;}
+.essay-meta-item{font-size:.78rem;color:var(--ink-light);}
+.essay-meta-item strong{display:block;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);margin-bottom:.3rem;}
+.essay>p{font-family:'Cormorant Garamond',serif;font-size:1.18rem;line-height:1.75;color:var(--ink);margin-bottom:1.8rem;}
+.essay>p:first-of-type::first-letter{font-size:4.6rem;font-weight:400;line-height:.85;float:left;margin:.25rem .6rem 0 0;color:var(--moss);font-family:'Cormorant Garamond',serif;}
+.essay h2 small{display:block;font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--clay);font-weight:400;margin-bottom:.7rem;}
+.essay blockquote p{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-style:italic;color:var(--ink-light);line-height:1.5;margin-bottom:.6rem!important;}
+.essay blockquote cite{font-family:'Jost',sans-serif;font-style:normal;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--moss);}
+.sb::before,.sb::after{content:'';flex:1;max-width:100px;height:1px;background:rgba(74,124,89,.25);}
+.idea{margin:3rem 0;padding:2.2rem 2.5rem 2.2rem 3rem;background:var(--cream);border-left:3px solid var(--moss);position:relative;}
+.idea::before{content:'Идея';position:absolute;top:-.7rem;left:2.2rem;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);background:var(--paper);padding:0 .6rem;}
+.idea p{font-family:'Cormorant Garamond',serif!important;font-size:1.15rem!important;font-style:italic;color:var(--ink)!important;line-height:1.55!important;margin:0!important;}
+.interlude small{font-family:'Jost',sans-serif;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--sage);display:block;margin-bottom:1rem;}
+.interlude p{font-family:'Cormorant Garamond',serif;font-size:1.1rem;line-height:1.7;color:rgba(211,230,208,.78);margin-bottom:1.3rem;}
+.numbers-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(74,124,89,.15);margin:2rem 0;}
+.num-card{background:var(--cream);padding:1.4rem 1.1rem;text-align:center;}
+.num-card .n-big{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--moss);line-height:1;margin-bottom:.4rem;}
+.num-card .n-lbl{font-size:.74rem;line-height:1.5;color:var(--ink-light);}
+.principles-list{margin:2.5rem 0;border-left:2px solid var(--fern);padding-left:2rem;}
+.pl-item{margin-bottom:1.6rem;position:relative;}
+.pl-item:last-child{margin-bottom:0;}
+.pl-item::before{content:'';position:absolute;left:-2.15rem;top:.5rem;width:9px;height:9px;border-radius:50%;background:var(--moss);}
+.pl-num{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin-bottom:.3rem;}
+.pl-name{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--ink);margin-bottom:.4rem;}
+.pl-name em{font-style:italic;color:var(--moss);}
+.pl-desc{font-size:.92rem;line-height:1.75;color:var(--ink-light);}
+.sig{margin-top:5rem;padding-top:3rem;border-top:1px solid rgba(74,124,89,.18);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem;}
+.sig-a{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink-light);font-style:italic;}
+.sig-m{font-size:.74rem;letter-spacing:.1em;color:var(--sage);text-transform:uppercase;}
+.rel{background:var(--cream);padding:4rem;border-top:1px solid rgba(74,124,89,.15);}
+.rel-in{max-width:1100px;margin:0 auto;}
+.rel-label{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--moss);margin-bottom:1.5rem;}
+.rel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,.15);}
+.rel-card{background:var(--cream);padding:1.6rem;text-decoration:none;transition:background .25s;}
+.rel-kind{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin-bottom:.5rem;}
+.reading-bar{position:fixed;top:0;left:0;height:2px;background:var(--moss);z-index:400;width:0%;transition:width .1s linear;}
+@media(max-width:720px){ .essay-hero,.essay,.rel{padding-left:1.5rem;padding-right:1.5rem;} .interlude{margin-left:-1.5rem;margin-right:-1.5rem;padding-left:1.5rem;padding-right:1.5rem;} .rel-grid{grid-template-columns:1fr;} .essay-meta{flex-direction:column;gap:1rem;} .numbers-row{grid-template-columns:1fr 1fr;} }
+</style>
+
+<style>
+.sources{margin:5rem 0 0;padding-top:2.5rem;border-top:1px solid rgba(74,124,89,.2);}
+.src-title{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;margin-bottom:1.6rem;}
+.src-title small{display:block;font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.22em; text-transform:uppercase;color:var(--clay-text);font-weight:400;margin-bottom:.6rem;}
+.src-list{list-style:none;counter-reset:src;padding:0;margin:0;}
+.src-list li{position:relative;padding-left:2.4rem;margin-bottom:1.1rem;font-size:.86rem; line-height:1.7;color:var(--ink-light);}
+.src-list li::before{counter-increment:src;content:counter(src,decimal-leading-zero); position:absolute;left:0;top:.15rem;font-family:'Jost',sans-serif;font-size:.66rem; letter-spacing:.1em;color:var(--sage-text);}
+.src-a{color:var(--ink);}
+a.term{color:inherit;text-decoration:none;border-bottom:1px dotted var(--fern-text);}
+a.term:hover{border-bottom-style:solid;color:var(--moss);}
+</style>
+
+<style>
+/* ECO:MANAGED — схемы */
+.fig{margin:3.5rem 0;}
+.fig svg{width:100%;height:auto;display:block;}
+.fig figcaption{margin-top:1rem;font-size:.78rem;line-height:1.7;color:var(--ink-light);
+  padding-left:1rem;border-left:2px solid rgba(74,124,89,.3);}
+.fig figcaption b{color:var(--ink);font-weight:400;}
+.fig-t{font-family:'Jost',sans-serif;font-size:12px;fill:var(--ink-light);}
+.fig-s{font-family:'Jost',sans-serif;font-size:10px;letter-spacing:1.4px;
+  text-transform:uppercase;fill:var(--moss);}
+.fig-n{font-family:'Cormorant Garamond',serif;font-size:22px;fill:var(--ink);}
+.fig-l{stroke:var(--moss);fill:none;}
+.fig-d{stroke:rgba(74,124,89,.3);fill:none;stroke-dasharray:3 4;}
+</style>
+<!-- ECO:MANAGED:head -->
+  <link rel="canonical" href="https://morgunkonstantin.github.io/ecology/essay-biomimicry.html">
+  <meta property="og:url" content="https://morgunkonstantin.github.io/ecology/essay-biomimicry.html">
+  <meta property="og:site_name" content="ЭкоСознание">
+  <meta property="og:image" content="https://morgunkonstantin.github.io/ecology/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ЭкоСознание — экология как способ смотреть на реальность">
+  <meta name="twitter:image" content="https://morgunkonstantin.github.io/ecology/assets/og-image.png">
+  <meta name="theme-color" content="#faf6ef">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="alternate" type="application/rss+xml" title="ЭкоСознание — RSS" href="feed.xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","name":"Биомимикрия: как природа решает задачи, которые мы только поставили","headline":"Биомимикрия: как природа решает задачи, которые мы только поставили","description":"Три уровня подражания по Дженин Бенюс, ревизия канонических примеров — что подтвердилось, а что нет, — и структурное возражение Джулиана Винсента.","inLanguage":"ru-RU","url":"https://morgunkonstantin.github.io/ecology/essay-biomimicry.html","isPartOf":{"@type":"WebSite","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecology/"},"publisher":{"@type":"Organization","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecology/"},"datePublished":"2026-07-26","author":{"@type":"Organization","name":"ЭкоСознание"},"articleSection":"Технологии"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://morgunkonstantin.github.io/ecology/"},{"@type":"ListItem","position":2,"name":"Биомимикрия: как природа решает задачи, которые мы только поставили","item":"https://morgunkonstantin.github.io/ecology/essay-biomimicry.html"}]}</script>
+<!-- /ECO:MANAGED:head -->
+</head>
+<body>
+<a class="skip-link" href="#content">Перейти к содержанию</a>
+
+<div class="g-nav-wrap" id="gNavWrap">
+  <div class="g-nav">
+    <a href="index.html" class="g-logo">
+      <svg viewBox="0 0 100 100" fill="none" class="logo-svg"><circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#4a7c59"/></svg>
+      <span class="g-logo-text">Эко<em>Сознание</em></span>
+    </a>
+    <ul class="g-links">
+      <li>
+        <button class="g-drop-btn" aria-expanded="false">
+          Разделы
+          <svg class="g-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg>
+        </button>
+        <div class="g-dropdown">
+          <a href="section-philosophy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Философия</span><span class="g-dd-num">01</span></a>
+          <a href="section-psychology.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Психология</span><span class="g-dd-num">02</span></a>
+          <a href="section-lifestyle.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Стиль жизни</span><span class="g-dd-num">03</span></a>
+          <a href="section-compost.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-dd-name">Компост</span><span class="g-dd-num">03b</span></a>
+          <a href="section-technologies.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-dd-name">Технологии</span><span class="g-dd-num">04</span></a>
+          <a href="section-food.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Питание</span><span class="g-dd-num">05</span></a>
+          <a href="section-architecture.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-dd-name">Архитектура</span><span class="g-dd-num">06</span></a>
+          <a href="section-construction.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/><line x1="36" y1="53" x2="64" y2="53" stroke-linecap="round" stroke-dasharray="3 3"/></svg></span><span class="g-dd-name">Строительство</span><span class="g-dd-num">06b</span></a>
+          <a href="section-economy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="g-dd-name">Экономика</span><span class="g-dd-num">07</span></a>
+          <a href="section-education.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Образование</span><span class="g-dd-num">08</span></a>
+          <a href="section-community.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Сообщество</span><span class="g-dd-num">09</span></a>
+          <a href="section-travel.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-dd-name">Путешествия</span><span class="g-dd-num">10</span></a>
+          <a href="section-health.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="g-dd-name">Здоровье</span><span class="g-dd-num">11</span></a>
+          <a href="section-science.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Наука</span><span class="g-dd-num">12</span></a>
+        </div>
+      </li>
+      <li><a href="index.html#latest">Эссе</a></li>
+      <li><a href="glossary.html">Глоссарий</a></li>
+      <li><a href="about.html">О проекте</a></li>
+    </ul>
+    <button class="g-burger" id="gBurger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+
+<div class="g-overlay" id="gOverlay">
+  <div class="g-ov-section">
+    <div class="g-ov-label">Разделы</div>
+    <div class="g-ov-grid">
+      <a href="section-philosophy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Философия</span></a>
+      <a href="section-psychology.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="g-ov-name">Психология</span></a>
+      <a href="section-lifestyle.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/></svg></span><span class="g-ov-name">Стиль жизни</span></a>
+      <a href="section-compost.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-ov-name">Компост</span></a>
+      <a href="section-technologies.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-ov-name">Технологии</span></a>
+      <a href="section-food.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="g-ov-name">Питание</span></a>
+      <a href="section-architecture.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-ov-name">Архитектура</span></a>
+      <a href="section-construction.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/></svg></span><span class="g-ov-name">Строительство</span></a>
+      <a href="section-economy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="g-ov-name">Экономика</span></a>
+      <a href="section-education.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Образование</span></a>
+      <a href="section-community.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Сообщество</span></a>
+      <a href="section-travel.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-ov-name">Путешествия</span></a>
+      <a href="section-health.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="g-ov-name">Здоровье</span></a>
+      <a href="section-science.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Наука</span></a>
+    </div>
+  </div>
+  <div class="g-ov-section">
+    <div class="g-ov-label">Навигация</div>
+    <div class="g-ov-simple-links">
+      <a href="index.html" class="g-ov-simple-link">Главная</a>
+      <a href="index.html#latest" class="g-ov-simple-link">Эссе и лаборатории</a>
+      <a href="glossary.html" class="g-ov-simple-link">Глоссарий</a>
+      <a href="map.html" class="g-ov-simple-link">Карта связей</a>
+      <a href="contents.html" class="g-ov-simple-link">Все материалы</a>
+      <a href="revisions.html" class="g-ov-simple-link">Что не подтвердилось</a>
+      <a href="search.html" class="g-ov-simple-link">Поиск</a>
+      <a href="paths.html" class="g-ov-simple-link">Тропы чтения</a>
+      <a href="tree.html" class="g-ov-simple-link">Дерево материалов</a>
+      <a href="thinkers.html" class="g-ov-simple-link">Указатель имён</a>
+      <a href="about.html" class="g-ov-simple-link">О проекте</a>
+    </div>
+  </div>
+</div>
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<main id="content" tabindex="-1">
+
+<div class="reading-bar" id="rb"></div>
+
+<section class="essay-hero">
+  <div class="essay-tag">Эссе · Технологии</div>
+  <h1>Биомимикрия:<br>как природа решает задачи,<br>которые мы <em>только поставили</em></h1>
+  <div class="essay-meta">
+    <div class="essay-meta-item"><strong>Раздел</strong>Технологии</div>
+    <div class="essay-meta-item"><strong>Тип</strong>Программное эссе</div>
+    <div class="essay-meta-item"><strong>Темы</strong>Дженин Бенюс · Лотос-эффект · Джулиан Винсент · Что не подтвердилось</div>
+    <div class="essay-meta-item"><strong>Время</strong>≈ 12 мин</div>
+    <!-- ECO:MANAGED:date --><div class="essay-meta-item"><strong>Опубликовано</strong><time datetime="2026-07-26">26 июля 2026</time></div><!-- /ECO:MANAGED:date -->
+  </div>
+</section>
+
+<article class="essay">
+
+  <p>В 1941 году швейцарский инженер Жорж де Местраль вернулся с охоты в Альпах и стал, как обычно, счищать с собаки и с брюк репейник. В отличие от всех остальных людей, проделывавших это тысячи лет, он положил колючку под микроскоп и увидел крючки. Через четырнадцать лет он запатентовал липучку.</p>
+
+  <p>Эта история рассказывается в каждой книге о биомимикрии, и рассказывается правильно: она документирована, и де Местраль сам её изложил. Но обратите внимание на две детали, которые обычно опускают. Первая — четырнадцать лет: от наблюдения до работающего продукта прошла почти половина инженерной карьеры, потраченная на то, чтобы научиться делать нейлоновые крючки нужной жёсткости. Вторая — репейник цепляется к шерсти не для того, чтобы что-то скреплять; он распространяет семена. Функция была переизобретена целиком.</p>
+
+  <p>Обе детали задают рамку этого текста. <a class="term" href="glossary.html#biomimikriya">Биомимикрия</a> — сильная идея с плохой репутацией среди инженеров, и репутация эта заслужена не самой идеей, а тем, как о ней рассказывают.</p>
+
+  <div class="sb">
+    <h2><small>Программа</small>Три уровня подражания <em>по Дженин Бенюс</em></h2>
+  </div>
+
+  <p>Слово существовало и раньше, но программой его сделала американская натуралистка Дженин Бенюс книгой 1997 года. Её тезис в популярном изложении звучит как рекламный: за плечами живой природы три с лишним миллиарда лет исследований и разработок, всё нежизнеспособное отсеяно, каталог открыт. В самой книге, однако, есть различение, без которого программа рассыпается.</p>
+
+  <p>Бенюс выделяет три уровня подражания. Подражание <em class="t">форме</em>: скопировать структуру — крючок, шип, ребро. Подражание <em class="t">процессу</em>: воспроизвести способ, которым природа эту структуру производит, — например, вырастить материал при обычной температуре из доступных на месте веществ, вместо того чтобы плавить его при полутора тысячах градусов. Подражание <em class="t">экосистеме</em>: устроить производство так, чтобы отход одного звена был сырьём для другого.</p>
+
+  <p>Практически вся публичная слава биомимикрии построена на первом уровне, а весь её реальный потенциал — на втором и третьем. Это несоответствие и есть источник разочарования: людям показывают клюв зимородка, а обещают промышленную революцию.</p>
+
+  <p>Третий уровень, кстати, почти дословно совпадает с тем, что Михаэль Браунгарт и Уильям Макдонах в 2002 году сформулировали как «отход равен пище» — принцип, из которого выросла циркулярная экономика. Две традиции пришли к одному месту с разных сторон.</p>
+
+  
+
+<!-- ECO:MANAGED:fig -->
+<figure class="fig"><svg viewBox="0 0 640 340" role="img" aria-labelledby="bmt bmd"><title id="bmt">Три уровня подражания живому</title><desc id="bmd">Форма, процесс, экосистема. Публичная известность сосредоточена на первом уровне, практический потенциал — на втором и третьем.</desc><text x="330" y="34" class="fig-s">известность</text><text x="500" y="34" class="fig-s">потенциал</text><text x="30" y="70" class="fig-n" font-size="19">Форма</text><text x="30" y="92" class="fig-t">скопировать структуру: крючок, ребро, рельеф</text><rect x="330" y="56" width="115.50000000000001" height="14" fill="rgba(122,79,46,.45)"/><rect x="500" y="56" width="30.250000000000004" height="14" fill="rgba(74,124,89,.5)"/><text x="30" y="170" class="fig-n" font-size="19">Процесс</text><text x="30" y="192" class="fig-t">воспроизвести способ производства: вырастить, а не выплавить</text><rect x="330" y="156" width="44.0" height="14" fill="rgba(122,79,46,.45)"/><rect x="500" y="156" width="104.50000000000001" height="14" fill="rgba(74,124,89,.5)"/><text x="30" y="270" class="fig-n" font-size="19">Экосистема</text><text x="30" y="292" class="fig-t">отход одного звена — сырьё другого</text><rect x="330" y="256" width="24.750000000000004" height="14" fill="rgba(122,79,46,.45)"/><rect x="500" y="256" width="129.25" height="14" fill="rgba(74,124,89,.5)"/><text x="320" y="325" text-anchor="middle" class="fig-t">Несоответствие между этими столбцами и есть источник разочарования</text></svg><figcaption>Разделение по Дженин Бенюс. Клюв зимородка и липучка — первый уровень, и на нём построена вся публичная слава. Мицелиальные материалы и замкнутые циклы — второй и третий, и <b>на них построено всё, что действительно работает</b>. Длина столбиков — оценка, а не измерение.</figcaption></figure>
+<!-- /ECO:MANAGED:fig -->
+<div class="sb">
+    <h2><small>Ревизия</small>Каталог примеров, <em>в котором не всё правда</em></h2>
+  </div>
+
+  <p>Полезнее любого восхищённого перечисления — разбор того же перечисления с пометками о том, что подтвердилось, а что нет. Возьмём канонические случаи.</p>
+
+  <div class="principles-list">
+    <div class="pl-item">
+      <div class="pl-num">01</div>
+      <div class="pl-name">Лотос-эффект — подтвердился</div>
+      <div class="pl-desc">Вильгельм Бартлотт с семидесятых годов изучал, почему лист лотоса остаётся чистым: дело в иерархическом микро- и нанорельефе с восковым покрытием, на котором капля скатывается, унося грязь. Статья 1997 года вызвала у промышленности и физиков скепсис; с 1999-го по этому принципу выпускается фасадная краска. Работает и воспроизведено — при том что полной физической картины удаления загрязнений нет до сих пор.</div>
+    </div>
+    <div class="pl-item">
+      <div class="pl-num">02</div>
+      <div class="pl-name">Кожа акулы в плавании — не подтвердилась</div>
+      <div class="pl-desc">Костюмы, которые продавались как повторяющие рифлёную акулью кожу, действительно улучшали результаты — но, как показали последующие исследования, не за счёт рифления, а за счёт компрессии тела и плавучести. В 2010 году международная федерация плавания запретила такие костюмы. Название осталось в учебниках как пример биомимикрии.</div>
+    </div>
+    <div class="pl-item">
+      <div class="pl-num">03</div>
+      <div class="pl-name">Термитник и здание Истгейт — сложный случай</div>
+      <div class="pl-desc">Здание Мика Пирса в Хараре, 1996 год, охлаждается пассивно и расходует существенно меньше энергии, чем сопоставимые офисы, — это измерено. А вот исходная аналогия оказалась неточной: работы Скотта Тёрнера показали, что термитники не работают как простые вытяжные трубы. Здание хорошее, объяснение было неверным.</div>
+    </div>
+    <div class="pl-item">
+      <div class="pl-num">04</div>
+      <div class="pl-name">Клюв зимородка и «Синкансэн» — правда с оговоркой</div>
+      <div class="pl-desc">Эйдзи Накацу, инженер и орнитолог-любитель, действительно использовал наблюдения за птицами при проектировании поезда серии 500: форма головного вагона против звукового удара в тоннелях, оперение совы против шума токоприёмника. Это задокументировано им самим. Пересказы, однако, обычно превращают одно из многих проектных соображений в единственную причину.</div>
+    </div>
+    <div class="pl-item">
+      <div class="pl-num">05</div>
+      <div class="pl-name">Паучий шёлк — тридцать лет обещаний</div>
+      <div class="pl-desc">Свойства нити действительно исключительны. Промышленное воспроизведение упирается не в химию белка, а в процесс прядения, который паук выполняет своим телом. Компании выпускают образцы и отдельные изделия; масштабной замены синтетике не случилось, а сроки переносились многократно.</div>
+    </div>
+    <div class="pl-item">
+      <div class="pl-num">06</div>
+      <div class="pl-name">Мицелий как материал — работает сейчас</div>
+      <div class="pl-desc">Грибница, выращенная на сельскохозяйственных отходах, даёт упаковку и панели. Здесь подражание не форме, а процессу: материал не изготавливается, а выращивается при комнатной температуре и компостируется после использования. Наименее эффектный и наиболее состоявшийся пример.</div>
+    </div>
+  </div>
+
+  <p>Пропорция в этом списке показательна и, кажется, довольно точно отражает поле в целом: часть случаев подтверждена, часть держится на красивом рассказе, часть работает, но по другой причине, чем принято думать. Для дисциплины, претендующей на инженерный статус, такой каталог — проблема, и решать её нужно не защитой, а ревизией.</p>
+
+  <div class="interlude">
+    <div class="interlude-in">
+      <small>Разбор одного провала</small>
+      <h3>Костюм из акульей кожи: как маркетинговая метафора двадцать лет ходила в научном примере</h3>
+      <p>Идея выглядела безупречно. Кожа акулы покрыта плакоидными чешуйками с продольными рёбрами; гидродинамика знает эффект рифления, при котором правильно устроенные бороздки уменьшают турбулентное трение. Значит, если сделать плавательный костюм с таким рельефом, пловец поплывёт быстрее.</p>
+      <p>Костюмы вышли, рекорды посыпались, история пошла в учебники. Затем начались проверки. Выяснилось, что эффект рифления требует определённого соотношения между размером бороздок и толщиной пограничного слоя, а у пловца — в отличие от акулы — это соотношение другое. Более того, акула движется иначе, и её чешуйки подвижны. Прирост скорости объяснялся тем, что костюм сжимал тело, придавал ему более обтекаемую форму и добавлял плавучести — то есть работал как корсет, а не как акула.</p>
+      <p>В 2010 году федерация плавания запретила полноразмерные полиуретановые костюмы, признав, что они дают преимущество, не связанное с мастерством. Рекорды того периода стоят в таблицах отдельной строкой.</p>
+      <p>Мораль здесь не «биомимикрия не работает». Мораль в том, что аналогия — это гипотеза, а не результат. Она обязана пройти проверку, при которой её пытаются опровергнуть, и рекордные секунды такой проверкой не являются: они совместимы с несколькими объяснениями сразу. Дисциплина взрослеет ровно в тот момент, когда начинает публиковать свои опровергнутые случаи наравне с удачными.</p>
+    </div>
+  </div>
+
+  <div class="sb">
+    <h2><small>Возражение</small>Почему природа <em>не является оптимумом</em></h2>
+  </div>
+
+  <p>Есть возражение фундаментальнее, чем недобросовестные примеры, и оно исходит из самой биологии.</p>
+
+  <p>Эволюция не оптимизирует. Она отбирает достаточно хорошее из того, что оказалось под рукой, и тащит за собой всю историю предыдущих решений. Сетчатка позвоночных вывернута наизнанку: светочувствительные клетки обращены от света, а нервные волокна проходят перед ними и выходят через отверстие, дающее слепое пятно. У головоногих — сетчатка правильная. Это не значит, что кальмар совершеннее; это значит, что две линии пошли разными путями и назад не возвращаются. Возвратный гортанный нерв у жирафа делает крюк в несколько метров, потому что у рыбьего предка этот путь был коротким.</p>
+
+  <p>Копировать природу — значит копировать не оптимум, а результат, зависящий от того, что было доступно предку. Инженер, в отличие от эволюции, имеет право начать с чистого листа, и иногда это его преимущество, а не недостаток.</p>
+
+  <p>Второе, более точное возражение сформулировал британский исследователь Джулиан Винсент. Разобрав вместе с соавторами большой массив биологических и инженерных решений через методику ТРИЗ, он показал: биология и техника решают задачи принципиально разными средствами. Техника чаще применяет энергию и материал — нагреть, сжать, добавить прочности. Биология чаще применяет структуру и информацию — устроить иерархию уровней, изменить геометрию, вырастить нужное там, где нагрузка; причём эти два ресурса, как пишут авторы, техника по большей части игнорирует. Совпадение принципов между двумя областями составило двенадцать процентов.</p>
+
+  <p>Это объясняет и силу, и предел биомимикрии одновременно. Сила в том, что живое умеет получать удивительные свойства при обычных температуре и давлении из скудного набора элементов — там, где мы жжём и плавим. Предел в том, что перенос почти никогда не бывает прямым: подражать надо не изделию, а стратегии, а стратегию сначала нужно понять.</p>
+
+  <blockquote>
+    <p>Природа не каталог готовых решений. Она архив стратегий, доступ к которому требует умения читать — и половина неудач биомимикрии происходит от попытки скопировать иллюстрацию, не прочитав текст.</p>
+  </blockquote>
+
+  <div class="sb">
+    <h2><small>Ещё одно</small>Приставка «био-» как <em>средство отмывания</em></h2>
+  </div>
+
+  <p>Отдельно стоит сказать о риторическом использовании. «Вдохновлённый природой» стало маркетинговой приставкой, которая работает как индульгенция: она сообщает потребителю, что продукт хороший, не сообщая о нём ничего проверяемого. Пластиковая бутылка формы, напоминающей каплю, называется биоинспирированной. Здание с зелёным фасадом получает сертификат, не меняя ни расхода энергии, ни объёма бетона.</p>
+
+  <p>Механизм тот же, что и в любом гринвошинге, но с дополнительным свойством: биомимикрия апеллирует к научности и потому лучше защищена от вопросов. Возразить против «мы взяли принцип у природы» труднее, чем против «мы посадили деревья», потому что первое звучит как техническое утверждение, а по факту им не является.</p>
+
+  <p>Простая проверка, которую стоит применять: спросите, какую именно функцию заимствовали, каким измерением подтвердили, и что было бы, если бы аналогия оказалась ложной. Если ответ на третий вопрос — «ничего», значит, аналогия декоративна.</p>
+
+  <div class="sb">
+    <h2><small>Что остаётся</small>Сузить претензию, <em>чтобы она стала верной</em></h2>
+  </div>
+
+  <p>Если убрать из биомимикрии рекламу, остаётся не так много — но остаётся то, что действительно ценно.</p>
+
+  <p>Прежде всего — условия производства. Раковина моллюска прочнее своего минерала на порядки за счёт слоистой структуры, и получена она в морской воде при её температуре. Паутина, шёлк, зубная эмаль, древесина сделаны при обычных условиях без высокотемпературных печей и почти без токсичных промежуточных продуктов. Это и есть настоящий предмет зависти: не свойства материала — они у стали часто лучше, — а то, во что обошлось его изготовление.</p>
+
+  <p>Далее — структурная окраска. Крыло бабочки-морфо синее не оттого, что в нём есть синий пигмент, а оттого, что микроструктура гасит одни длины волн и усиливает другие. Цвет без красителя означает производство без химии красителей — направление, где уже есть работающие текстильные решения.</p>
+
+  <p>И третье — упомянутый выше системный уровень: устройство производства как замкнутого цикла. Это самая скучная часть программы, о ней не снимают роликов, и именно она способна дать наибольший эффект.</p>
+
+  <p>Получается, что честная формулировка звучит куда скромнее исходной, но зато её можно защищать. Природа не решила наши задачи заранее — у неё их не было. Она три миллиарда лет решала свои, в жёстких ограничениях по температуре, давлению и доступным элементам, и накопила библиотеку стратегий выживания при этих ограничениях. Ценность её для нас ровно в том, что мы, кажется, впервые оказались в положении, когда те же ограничения становятся и нашими тоже.</p>
+
+  <section class="sources">
+    <h2 class="src-title"><small>Проверить</small>Источники</h2>
+    <ol class="src-list">
+      <li><span class="src-a">Benyus J.</span> Biomimicry: Innovation Inspired by Nature. William Morrow, 1997. База примеров: AskNature, Biomimicry Institute.</li>
+      <li><span class="src-a">Barthlott W., Neinhuis C.</span> Purity of the sacred lotus, or escape from contamination in biological surfaces. Planta, 202(1), 1997, с. 1–8. Проверено: наблюдения ведутся с 1970-х, фасадная краска Lotusan выпускается компанией Sto с 1999 года. При этом, по обзору 2026 года в той же Planta, полной картины механизма удаления частиц до сих пор нет.</li>
+      <li><span class="src-a">Vincent J. F. V., Bogatyreva O. A., Bogatyrev N. R., Bowyer A., Pahl A.-K.</span> Biomimetics: its practice and theory. Journal of the Royal Society Interface, 3(9), 2006, с. 471–482. Проверено: совпадение принципов между биологией и техникой — 12%; техника решает задачи преимущественно через энергию, биология — через информацию и структуру. Термин «биомиметика» введён Отто Шмиттом в 1950-е.</li>
+      <li><span class="src-a">Turner J. S., Soar R.</span> Beyond biomimicry: What termites can tell us about realizing the living building, 2008 — пересмотр аналогии термитника.</li>
+      <li><span class="src-a">Oeffner J., Lauder G. V.</span> The hydrodynamic function of shark skin and two biomimetic applications. Journal of Experimental Biology, 2012 — проверка гипотезы об акульей коже.</li>
+      <li><span class="src-a">Nakatsu E.</span> Biologically inspired engineering: the Shinkansen series 500 — изложение проектных решений автором.</li>
+      <li><span class="src-a">Braungart M., McDonough W.</span> Cradle to Cradle: Remaking the Way We Make Things. North Point Press, 2002.</li>
+      <li><span class="src-a">Pearce M.</span> Eastgate Centre, Хараре, 1996 — измерения энергопотребления публиковались проектировщиками и независимо.</li>
+      <li><span class="src-a">Vukusic P., Sambles J. R.</span> Photonic structures in biology. Nature, 2003 — структурная окраска.</li>
+      <li><span class="src-a">FINA</span>, решение о запрете полноразмерных костюмов, вступило в силу с 2010 года.</li>
+    </ol>
+  </section>
+
+</article>
+
+<section class="rel">
+  <div class="rel-in">
+    <div class="rel-label">Читать дальше</div>
+    <div class="rel-grid">
+      <a href="lab-benyus-engineer.html" class="rel-card">
+        <div class="rel-kind">Лаборатория №08</div>
+        <div class="rel-name">Бенюс и нефтяной инженер</div>
+      </a>
+      <a href="essay-tech-history.html" class="rel-card">
+        <div class="rel-kind">Эссе</div>
+        <div class="rel-name">Технология — наша вторая природа. И первая беда</div>
+      </a>
+      <a href="section-technologies.html" class="rel-card">
+        <div class="rel-kind">Раздел</div>
+        <div class="rel-name">Технологии</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="gf">
+  <div class="gf-top">
+    <div class="gf-brand">
+      <a href="index.html" class="gf-logo">
+        <svg viewBox="0 0 100 100" fill="none" class="logo-svg" style="width:24px;height:24px;flex-shrink:0;"><circle cx="50" cy="50" r="40" stroke="#f3ede3" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#6ea87e"/></svg>
+        <span class="gf-logo-text">Эко<em>Сознание</em></span>
+      </a>
+      <p class="gf-tagline">Экологический взгляд как линза для любой сферы жизни</p>
+    </div>
+    <div class="gf-cols">
+      <div>
+        <div class="gf-col-title">Разделы</div>
+        <div class="gf-sections">
+          <a href="section-philosophy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Философия</span></a>
+          <a href="section-psychology.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Психология</span></a>
+          <a href="section-lifestyle.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Стиль жизни</span></a>
+          <a href="section-compost.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Компост</span></a>
+          <a href="section-technologies.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Технологии</span></a>
+          <a href="section-food.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Питание</span></a>
+          <a href="section-architecture.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Архитектура</span></a>
+          <a href="section-construction.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/><line x1="36" y1="53" x2="64" y2="53" stroke-linecap="round" stroke-dasharray="3 3"/></svg></span><span class="gf-sec-name">Строительство</span></a>
+          <a href="section-economy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="gf-sec-name">Экономика</span></a>
+          <a href="section-education.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Образование</span></a>
+          <a href="section-community.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Сообщество</span></a>
+          <a href="section-travel.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="gf-sec-name">Путешествия</span></a>
+          <a href="section-health.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Здоровье</span></a>
+          <a href="section-science.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Наука</span></a>
+        </div>
+      </div>
+      <div>
+        <div class="gf-col-title">Материалы</div>
+        <nav class="gf-nav-links">
+          <a href="essay-truth-and-climate.html" class="gf-nav-link">Истина и климат</a>
+          <a href="essay-passive-design.html" class="gf-nav-link">Пассивный дизайн</a>
+          <a href="essay-solastalgia.html" class="gf-nav-link">Соластальгия</a>
+          <a href="essay-community-survives.html" class="gf-nav-link">Что нужно общине</a>
+          <a href="essay-bread.html" class="gf-nav-link">Хлеб</a>
+          <a href="essay-morning-light.html" class="gf-nav-link">Утренний свет</a>
+          <a href="essay-moneyless-year.html" class="gf-nav-link">Год без денег</a>
+          <a href="lab-heidegger-plastic.html" class="gf-nav-link">Лаб №01 · Пластик</a>
+          <a href="lab-hyperobject-room.html" class="gf-nav-link">Лаб №02 · Комната</a>
+          <a href="lab-jacket-biography.html" class="gf-nav-link">Лаб №03 · Куртка</a>
+          <a href="lab-15min-city.html" class="gf-nav-link">Лаб №04 · Город</a>
+          <a href="lab-bateson-gpt.html" class="gf-nav-link">Лаб №05 · Бейтсон</a>
+          <a href="lab-raworth-chinovnik.html" class="gf-nav-link">Лаб №06 · Раворт</a>
+          <a href="lab-heidegger-builder.html" class="gf-nav-link">Лаб №07 · Хайдеггер</a>
+          <a href="lab-benyus-engineer.html" class="gf-nav-link">Лаб №08 · Бенюс</a>
+          <a href="lab-illich-social.html" class="gf-nav-link">Лаб №09 · Иллич</a>
+          <a href="lab-morton-raworth.html" class="gf-nav-link">Лаб №10 · Мортон / Раворт</a>
+          <a href="lab-illich-benyus.html" class="gf-nav-link">Лаб №11 · Иллич / Бенюс</a>
+          <a href="lab-degrowth-ecomodern.html" class="gf-nav-link">Лаб №12 · Спор о росте</a>
+        </nav>
+      </div>
+      <div>
+        <div class="gf-col-title">Навигация</div>
+        <nav class="gf-nav-links">
+          <a href="index.html" class="gf-nav-link">Главная</a>
+          <a href="map.html" class="gf-nav-link">Карта связей</a>
+          <a href="paths.html" class="gf-nav-link">Тропы чтения</a>
+          <a href="contents.html" class="gf-nav-link">Все материалы</a>
+          <a href="tree.html" class="gf-nav-link">Дерево материалов</a>
+          <a href="revisions.html" class="gf-nav-link">Что не подтвердилось</a>
+          <a href="thinkers.html" class="gf-nav-link">Указатель имён</a>
+          <a href="search.html" class="gf-nav-link">Поиск</a>
+          <a href="method.html" class="gf-nav-link">Как устроены материалы</a>
+          <a href="corrections.html" class="gf-nav-link">Исправления</a>
+            <a href="about.html" class="gf-nav-link">О проекте</a>
+          <a href="glossary.html" class="gf-nav-link">Глоссарий</a>
+          <a href="section-icons-library.html" class="gf-nav-link">Знаки разделов</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="gf-bottom">
+    <span class="gf-copy">© 2025 ЭкоСознание</span>
+    <div class="gf-bottom-links">
+      <a href="about.html">О проекте</a>
+      <a href="glossary.html">Глоссарий</a>
+    </div>
+  </div>
+</footer>
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+
+
+<!-- ECO:MANAGED:js -->
+<script src="assets/global.js" defer></script>
+<!-- /ECO:MANAGED:js -->
+</body>
+</html>
