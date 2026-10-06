@@ -217,3 +217,9 @@ footer a:focus-visible,
   html body .g-links { display: none; }
   html body .g-burger { display: flex; margin-left: auto; }
 }
+
+/* Выпадающее меню «Разделы»: прижато к правому краю пункта, а не центрировано —
+   иначе у правого края окна обрезается */
+@media (min-width: 861px) {
+  html body .g-dropdown { left: auto; right: 0; transform: none; max-width: calc(100vw - 2rem); }
+}
