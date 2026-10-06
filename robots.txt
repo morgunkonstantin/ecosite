@@ -8,4 +8,4 @@ Allow: /
 # не читается — robots.txt берётся с корня домена. Он начнёт
 # работать после подключения собственного домена.
 
-Sitemap: https://morgunkonstantin.github.io/ecology/sitemap.xml
+Sitemap: https://morgunkonstantin.github.io/ecosite/sitemap.xml

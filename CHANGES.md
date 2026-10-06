@@ -80,7 +80,7 @@
 - Проверено: `.nojekyll` на месте (отключает обработку Jekyll); `robots.txt` со
   ссылкой на sitemap; `sitemap.xml` — 119 URL, включая все новые материалы;
   битых ссылок по всему сайту нет; канонические адреса на
-  `morgunkonstantin.github.io/ecology`.
+  `morgunkonstantin.github.io/ecosite`.
 - Инструкция по публикации — в README.md.
 
 # Наведён лоск (11 сентября 2026)
