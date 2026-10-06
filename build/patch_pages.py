@@ -15,7 +15,7 @@ import re
 import sys
 import glob
 
-SITE = "https://morgunkonstantin.github.io/ecosite"
+SITE = "https://morgunkonstantin.github.io/ecology"
 MARK = "ECO:MANAGED"
 
 FONTS = ("https://fonts.googleapis.com/css2?"

@@ -18,7 +18,7 @@ import re
 from datetime import datetime, timezone
 from email.utils import format_datetime
 
-SITE = "https://morgunkonstantin.github.io/ecosite"
+SITE = "https://morgunkonstantin.github.io/ecology"
 TITLE = "ЭкоСознание"
 SUBTITLE = "Экология как способ смотреть на реальность"
 
