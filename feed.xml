@@ -6,7 +6,7 @@
   <atom:link href="https://morgunkonstantin.github.io/ecosite/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Экология как способ смотреть на реальность</description>
   <language>ru</language>
-  <lastBuildDate>Sun, 18 Oct 2026 07:49:13 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 18 Oct 2026 15:59:35 +0000</lastBuildDate>
   <image>
     <url>https://morgunkonstantin.github.io/ecosite/assets/og-image.png</url>
     <title>ЭкоСознание</title>
@@ -689,6 +689,14 @@
     <description>Крошечный дом на колёсах (tiny house on wheels) — полноценное жильё на прицепе в габарите дороги: свобода от участка и ипотеки, минимальный след, изобретательные компактные решения. Чем он отличается от автодома и дачи, как экономика долга вытолкнула движение tiny house, и честные ограничения — законная стоянка, размер, инженерия автономии, зима.</description>
     <category>Эссе</category>
     <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Деревья — живой насос для углерода</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-trees-carbon.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-trees-carbon.html</guid>
+    <description>Почему Земля нагревается и как деревья вытягивают углерод из воздуха: парниковый эффект, фотосинтез, сколько CO₂ поглощают леса мира и где хранят его. Четыре инфографики и честный разговор о том, чего посадки деревьев сделать не могут.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 18 Oct 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
     <title>Истина — главный вопрос экологии</title>
