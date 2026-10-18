@@ -189,9 +189,6 @@ def patch(fname):
         s = re.sub(r"<title>.*?</title>",
                    "<title>%s</title>" % esc(info["title_full"]), s, flags=re.S)
         log.append("title")
-    if "Двенадцать разделов" in s:
-        s = s.replace("Двенадцать разделов", "Семнадцать разделов")
-        log.append("desc-count")
 
     # 3. Единый набор шрифтов + preconnect на gstatic
     s = re.sub(r'https://fonts\.googleapis\.com/css2\?[^"]+', FONTS, s)
