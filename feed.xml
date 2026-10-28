@@ -6,7 +6,7 @@
   <atom:link href="https://morgunkonstantin.github.io/ecosite/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Экология как способ смотреть на реальность</description>
   <language>ru</language>
-  <lastBuildDate>Wed, 28 Oct 2026 13:29:17 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 28 Oct 2026 13:34:41 +0000</lastBuildDate>
   <image>
     <url>https://morgunkonstantin.github.io/ecosite/assets/og-image.png</url>
     <title>ЭкоСознание</title>
@@ -529,6 +529,14 @@
     <description>Саман (cob) — глина, песок и солома, слепленные руками без опалубки и кирпичей: свобода формы, самый низкий порог входа, здоровый микроклимат. Чем тяжёлый саман отличается от лёгкого (масса против изоляции), почему саманные дома Девона живут по пять веков, и честные ограничения.</description>
     <category>Эссе</category>
     <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Эволюция сознания — недостающее звено устойчивости</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-consciousness-evolution.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-consciousness-evolution.html</guid>
+    <description>Почему знаний и технологий недостаточно для устойчивого развития: ступени взрослого развития по Кигану, расширяющийся круг заботы, разрыв между знанием и действием, что доказано про связь с природой и ценности, Цели внутреннего развития и честный разговор о ловушках темы. Пять инфографик.</description>
+    <category>Эссе</category>
+    <pubDate>Wed, 28 Oct 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
     <title>Экологический кризис — это кризис образования (Дэвид Орр)</title>
