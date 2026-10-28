@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+<script>document.documentElement.classList.replace('no-js','js');</script>
+<meta charset="UTF-8">
+<meta name="description" content="Что такое ESG и чем оно отличается от устойчивого развития: история трёх букв, почему рейтинги разных агентств расходятся, одинарная и двойная существенность, три охвата выбросов, гринвошинг, ESG в России, лестница корпоративной зрелости и семь вопросов к любому ESG-отчёту. Шесть инфографик.">
+<meta property="og:title" content="ESG и устойчивое развитие: прибор или вывеска?">
+<meta property="og:description" content="Что такое ESG и чем оно отличается от устойчивого развития: история трёх букв, почему рейтинги разных агентств расходятся, одинарная и двойная существенность, три охвата выбросов, гринвошинг, ESG в России, лестница корпоративной зрелости и семь вопросов к любому ESG-отчёту. Шесть инфографик.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ESG и устойчивое развитие: прибор или вывеска? — ЭкоСознание</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/base.css">
+<style>
+.hero{padding:10rem 4rem 5rem;display:grid;grid-template-columns:1fr 380px;gap:4rem;align-items:end;border-bottom:1px solid rgba(74,124,89,.15);position:relative;overflow:hidden;}
+.hero-mark-svg{position:absolute;right:4rem;top:11rem;width:90px;height:90px;color:rgba(74,124,89,.18);pointer-events:none;}
+.hero-mark-svg svg{width:100%;height:100%;display:block;}
+.hero-tag{display:inline-flex;align-items:center;gap:.6rem;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);margin-bottom:1.5rem;}
+.hero-tag::before{content:'';display:block;width:24px;height:1px;background:var(--fern);}
+h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,6vw,5rem);font-weight:300;line-height:1.05;color:var(--ink);margin-bottom:1.8rem;}
+h1 em{font-style:italic;color:var(--moss);display:block;}
+.hero-lead{font-size:1rem;line-height:1.85;color:var(--ink-light);max-width:580px;}
+.hero-meta{display:flex;flex-direction:column;gap:1.5rem;padding-left:2rem;border-left:1px solid rgba(74,124,89,.2);}
+.meta-label{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);margin-bottom:.4rem;}
+.meta-value{font-size:.9rem;color:var(--ink-light);line-height:1.6;}
+.toc-bar{background:var(--ink);padding:0 4rem;display:flex;align-items:stretch;overflow-x:auto;}
+.toc-bar a{color:rgba(211,230,208,.6);text-decoration:none;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:1rem 1.5rem;border-right:1px solid rgba(255,255,255,.06);white-space:nowrap;transition:color .2s,background .2s;}
+.toc-bar a:hover{color:var(--mist);}
+.toc-bar a.active{color:var(--fern);}
+.content-section{padding:5rem 4rem;border-bottom:1px solid rgba(74,124,89,.1);}
+.content-section.alt{background:var(--cream);}
+.content-section.dark{background:var(--ink);}
+.section-label{display:flex;align-items:center;gap:1rem;margin-bottom:3rem;}
+.section-label-num{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);}
+.section-label-line{flex:1;height:1px;background:rgba(74,124,89,.15);}
+.section-label-tag{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);}
+h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:300;color:var(--ink);line-height:1.15;margin-bottom:1.5rem;}
+h2 em{font-style:italic;color:var(--moss);}
+h2.light{color:var(--cream);}
+h2.light em{color:var(--fern);}
+.article-layout{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}
+.article-layout.wide{grid-template-columns:3fr 2fr;}
+.article-body p{font-size:.95rem;line-height:1.9;color:var(--ink-light);margin-bottom:1.1rem;}
+.article-body p:last-child{margin-bottom:0;}
+.article-body p.light{color:rgba(211,230,208,.72);}
+.pull-quote{border-left:3px solid var(--moss);padding:1.2rem 1.5rem;margin:2rem 0;background:rgba(74,124,89,.05);}
+.pull-quote p{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;color:var(--ink);line-height:1.5;margin:0!important;}
+.pull-quote.light{background:rgba(255,255,255,.06);border-color:var(--fern);}
+.pull-quote.light p{color:var(--cream);}
+.pull-quote cite{display:block;margin-top:.6rem!important;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);font-style:normal;}
+.practices-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(74,124,89,.12);margin-top:2rem;}
+.practice-card{background:var(--paper);padding:2rem 1.8rem;transition:background .25s;}
+.content-section.alt .practice-card{background:var(--cream);}
+.practice-card:hover{background:var(--warm);}
+.practice-num{font-family:'Cormorant Garamond',serif;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);margin-bottom:.6rem;}
+.practice-name{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--ink);margin-bottom:.6rem;}
+.practice-name em{font-style:italic;color:var(--moss);}
+.practice-desc{font-size:.85rem;line-height:1.75;color:var(--ink-light);}
+.featured-strip{background:var(--ink);padding:3rem 3.5rem;display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center;margin-top:3rem;}
+.featured-label{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);margin-bottom:1rem;}
+.featured-strip h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;font-style:italic;color:var(--cream);margin-bottom:.8rem;line-height:1.2;}
+.featured-strip p{font-size:.87rem;line-height:1.8;color:rgba(211,230,208,.68);}
+.featured-btn{background:transparent;color:var(--fern);border:1px solid rgba(110,168,126,.4);padding:.8rem 1.6rem;text-decoration:none;font-family:'Jost',sans-serif;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;display:inline-block;transition:background .25s,color .25s;}
+.featured-btn:hover{background:var(--fern);color:var(--ink);}
+.rubrics-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,.12);margin-top:3rem;}
+.rubric-card{background:var(--paper);padding:2rem 1.6rem;transition:background .25s;}
+.rubric-card:hover{background:var(--warm);}
+.rubric-icon{font-size:1.4rem;margin-bottom:1rem;}
+.rubric-name{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--ink);margin-bottom:.6rem;}
+.rubric-desc{font-size:.82rem;line-height:1.75;color:var(--ink-light);}
+.rubric-example{margin-top:1rem;font-size:.78rem;font-style:italic;color:var(--moss);line-height:1.6;}
+.rubric-card.dark-card{background:var(--ink);}
+.rubric-card.dark-card .rubric-name{color:var(--cream);}
+.rubric-card.dark-card .rubric-desc{color:rgba(211,230,208,.65);}
+.rubric-card.dark-card .rubric-example{color:var(--fern);}
+.g-next-section{background:var(--ink);padding:2.5rem 4rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;}
+.g-next-label{font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(168,197,160,.45);margin-bottom:.5rem;}
+.g-next-link{display:inline-flex;align-items:center;gap:.8rem;text-decoration:none;}
+.g-next-name{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:var(--cream);font-style:italic;transition:color .2s;}
+.g-next-link:hover .g-next-name{color:var(--fern);}
+.g-next-arrow{font-family:'Cormorant Garamond',serif;font-size:2rem;color:rgba(110,168,126,.5);transition:transform .2s,color .2s;}
+.g-next-link:hover .g-next-arrow{transform:translateX(6px);color:var(--fern);}
+.g-next-num{font-family:'Cormorant Garamond',serif;font-size:4rem;font-weight:300;color:rgba(255,255,255,.06);line-height:1;}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease;}
+.reveal.visible{opacity:1;transform:none;}
+.d1{transition-delay:.1s;}
+.d2{transition-delay:.2s;}
+@media(max-width:800px){ .hero,.toc-bar,.content-section,.g-next-section{padding-left:1.5rem;padding-right:1.5rem;} .hero{grid-template-columns:1fr;} .hero-meta{padding-left:0;border-left:none;border-top:1px solid rgba(74,124,89,.2);padding-top:1.5rem;} .hero-mark-svg{right:1.5rem;top:9rem;width:60px;height:60px;} .article-layout,.article-layout.wide{grid-template-columns:1fr;gap:2rem;} .practices-grid,.rubrics-grid{grid-template-columns:1fr;} .featured-strip{grid-template-columns:1fr;gap:1.5rem;} }
+.methods-table{margin:2rem 0;border:1px solid rgba(74,124,89,.15);overflow-x:auto;}
+.methods-row{display:grid;grid-template-columns:180px repeat(4,1fr);gap:0;border-bottom:1px solid rgba(74,124,89,.1);min-width:760px;}
+.methods-row:last-child{border-bottom:none;}
+.methods-row.header{background:var(--ink);}
+.methods-row.header > div{color:var(--sage);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;padding:.9rem 1rem;}
+.methods-row > div{background:var(--paper);padding:.95rem 1rem;font-size:.85rem;color:var(--ink-light);line-height:1.5;border-right:1px solid rgba(74,124,89,.08);}
+.content-section.alt .methods-row > div{background:var(--cream);}
+.methods-row > div:last-child{border-right:none;}
+.methods-row > .method-name{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1rem;color:var(--ink);}
+.methods-row.header > .method-name{color:var(--sage);font-style:normal;}
+.seasons-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(74,124,89,.12);margin:2rem 0;}
+.season-card{background:var(--paper);padding:1.8rem 1.5rem;transition:background .25s;display:flex;flex-direction:column;}
+.content-section.alt .season-card{background:var(--cream);}
+.season-card:hover{background:var(--warm);}
+.season-icon{font-size:1.9rem;margin-bottom:.7rem;line-height:1;}
+.season-name{font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--ink);margin-bottom:.2rem;}
+.season-name em{font-style:italic;color:var(--moss);}
+.season-months{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--clay);margin-bottom:.9rem;}
+.season-actions{font-size:.83rem;line-height:1.7;color:var(--ink-light);margin-bottom:.8rem;}
+.season-watch{font-size:.78rem;line-height:1.6;color:var(--ink-light);padding-top:.7rem;border-top:1px dashed rgba(74,124,89,.18);margin-top:auto;}
+.season-watch strong{color:var(--rust);font-weight:400;}
+.timeline{margin:2rem 0;position:relative;border-left:1px solid rgba(74,124,89,.2);padding-left:2rem;}
+.timeline-item{margin-bottom:2rem;position:relative;}
+.timeline-item:last-child{margin-bottom:0;}
+.timeline-item::before{content:'';position:absolute;left:-2.45rem;top:.3rem;width:9px;height:9px;border-radius:50%;background:var(--moss);box-shadow:0 0 0 3px var(--paper);}
+.content-section.alt .timeline-item::before{box-shadow:0 0 0 3px var(--cream);}
+.timeline-era{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin-bottom:.4rem;}
+.timeline-name{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--ink);margin-bottom:.5rem;line-height:1.3;}
+.timeline-name em{font-style:italic;color:var(--moss);}
+.timeline-desc{font-size:.88rem;line-height:1.75;color:var(--ink-light);}
+.timeline-desc em{font-style:italic;color:var(--moss);}
+.case-block{background:var(--ink);padding:4rem 3.5rem;margin:2rem 0;}
+.case-inner{max-width:920px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start;}
+.case-block h3{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;color:var(--cream);line-height:1.25;margin-bottom:1.3rem;}
+.case-block h3 em{font-style:italic;color:var(--fern);}
+.case-block p{font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.75;color:rgba(211,230,208,.75);margin-bottom:1rem;}
+.case-stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.08);}
+.case-stat{background:rgba(255,255,255,.04);padding:1.4rem 1.2rem;text-align:center;}
+.case-stat-num{font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--fern);font-weight:300;line-height:1;margin-bottom:.4rem;}
+.case-stat-lbl{font-size:.72rem;color:rgba(211,230,208,.65);line-height:1.5;}
+.case-link{display:inline-flex;align-items:center;gap:.6rem;font-family:'Jost',sans-serif;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--fern);text-decoration:none;border-bottom:1px solid rgba(110,168,126,.4);padding-bottom:.3rem;margin-top:1rem;}
+.case-link:hover{border-color:var(--fern);}
+@media(max-width:800px){ .case-inner{grid-template-columns:1fr;gap:2rem;} .case-block{padding:2.5rem 1.5rem;} .seasons-grid{grid-template-columns:1fr 1fr;} .methods-row{grid-template-columns:140px repeat(4,1fr);min-width:660px;} }
+@media(max-width:540px){ .seasons-grid{grid-template-columns:1fr;} .case-stats{grid-template-columns:1fr 1fr;} }
+.cycle-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,.12);margin:2rem 0;}
+.cycle-card{background:var(--paper);padding:1.8rem 1.6rem;text-align:center;transition:background .25s;}
+.content-section.alt .cycle-card{background:var(--cream);}
+.cycle-card:hover{background:var(--warm);}
+.cycle-step{font-family:'Cormorant Garamond',serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);margin-bottom:.6rem;}
+.cycle-icon{font-size:2rem;margin-bottom:.8rem;line-height:1;}
+.cycle-name{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--ink);margin-bottom:.5rem;}
+.cycle-name em{font-style:italic;color:var(--moss);}
+.cycle-desc{font-size:.82rem;line-height:1.7;color:var(--ink-light);}
+.can-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:2rem 0;}
+.can-col h4{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:400;margin-bottom:1rem;}
+.can-col.yes h4{color:var(--moss);}
+.can-col.no h4{color:var(--rust);}
+.can-list{list-style:none;display:flex;flex-direction:column;gap:0;}
+.can-item{font-size:.85rem;line-height:1.6;color:var(--ink-light);padding:.45rem 0;border-bottom:1px dashed rgba(74,124,89,.12);}
+.can-item:last-child{border-bottom:none;}
+.can-item::before{margin-right:.5rem;}
+.can-col.yes .can-item::before{content:'✓';color:var(--fern);}
+.can-col.no .can-item::before{content:'✗';color:var(--rust);}
+.soil-block{background:var(--ink);padding:4rem 3.5rem;margin:3rem 0;}
+.soil-inner{max-width:720px;margin:0 auto;}
+.soil-block h3{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;font-style:italic;color:var(--cream);line-height:1.3;margin-bottom:1.5rem;}
+.soil-block h3 em{color:var(--fern);}
+.soil-block p{font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.8;color:rgba(211,230,208,.75);margin-bottom:1.2rem;}
+.soil-block p:last-child{margin-bottom:0;}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(74,124,89,.15);margin:2rem 0;}
+.stat-card{background:var(--paper);padding:1.6rem 1.2rem;text-align:center;}
+.content-section.alt .stat-card{background:var(--cream);}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:300;color:var(--moss);line-height:1;margin-bottom:.4rem;}
+.stat-label{font-size:.78rem;line-height:1.5;color:var(--ink-light);}
+.q-list{display:flex;flex-direction:column;gap:0;margin:1.5rem 0;}
+.q-item{padding:1.2rem 0;border-bottom:1px solid rgba(74,124,89,.1);}
+.q-item:last-child{border-bottom:none;}
+.q-question{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink);margin-bottom:.5rem;font-weight:400;}
+.q-question em{font-style:italic;color:var(--moss);}
+.q-answer{font-size:.88rem;line-height:1.75;color:var(--ink-light);}
+@media(max-width:800px){ .cycle-grid{grid-template-columns:1fr 1fr;} .can-grid{grid-template-columns:1fr;} .stats-row{grid-template-columns:1fr 1fr;} .soil-block{padding:2.5rem 1.5rem;} }
+@media(max-width:540px){ .cycle-grid{grid-template-columns:1fr;} .stats-row{grid-template-columns:1fr 1fr;} }
+.section-num{font-family:'Cormorant Garamond',serif;font-size:0.85rem;letter-spacing:0.3em;color:var(--moss);margin-bottom:1rem;font-style:italic;}
+.disc-meta{font-family:'Jost',sans-serif;font-size:0.78rem;letter-spacing:0.05em;color:var(--ink-light);margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:1px solid rgba(74,124,89,0.15);font-weight:300;line-height:1.7;}
+.content-section p{font-size:1rem;line-height:1.85;color:var(--ink);margin-top:1.2rem;}
+.content-section p strong{color:var(--moss);font-weight:500;}
+.content-section p em{font-style:italic;color:var(--ink-light);}
+.content-section h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:300;line-height:1.15;color:var(--ink);margin-bottom:0.5rem;}
+.content-section h2 em{color:var(--moss);font-style:italic;display:block;}
+</style>
+
+<style>
+/* ── Источники: единый блок для всех эссе и лабораторий ── */
+.sources{margin:5rem 0 0;padding-top:2.5rem;border-top:1px solid rgba(74,124,89,.2);}
+.src-title{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;margin-bottom:1.6rem;}
+.src-title small{display:block;font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--clay-text);font-weight:400;margin-bottom:.6rem;}
+.src-list{list-style:none;counter-reset:src;padding:0;margin:0;}
+.src-list li{position:relative;padding-left:2.4rem;margin-bottom:1.1rem;font-size:.86rem;
+  line-height:1.7;color:var(--ink-light);}
+.src-list li::before{counter-increment:src;content:counter(src,decimal-leading-zero);
+  position:absolute;left:0;top:.15rem;font-family:'Jost',sans-serif;font-size:.66rem;
+  letter-spacing:.1em;color:var(--sage-text);}
+.src-a{color:var(--ink);}
+/* ── Ссылка на термин глоссария ── */
+a.term{color:inherit;text-decoration:none;border-bottom:1px dotted var(--fern-text);}
+a.term:hover{border-bottom-style:solid;color:var(--moss);}
+/* ── Вопросы-врезка ── */
+.quiz{background:var(--warm);padding:2.2rem 2.4rem;margin:2.5rem 0;border-left:3px solid var(--moss);}
+.quiz ol{margin:0;padding-left:1.4rem;}
+.quiz li{font-family:'Cormorant Garamond',serif;font-size:1.1rem;line-height:1.6;
+  color:var(--ink);margin-bottom:.9rem;}
+.quiz li:last-child{margin-bottom:0;}
+</style>
+<!-- ECO:MANAGED:head -->
+  <link rel="canonical" href="https://morgunkonstantin.github.io/ecosite/essay-esg.html">
+  <meta property="og:url" content="https://morgunkonstantin.github.io/ecosite/essay-esg.html">
+  <meta property="og:site_name" content="ЭкоСознание">
+  <meta property="og:image" content="https://morgunkonstantin.github.io/ecosite/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ЭкоСознание — экология как способ смотреть на реальность">
+  <meta name="twitter:image" content="https://morgunkonstantin.github.io/ecosite/assets/og-image.png">
+  <meta name="theme-color" content="#faf6ef">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="alternate" type="application/rss+xml" title="ЭкоСознание — RSS" href="feed.xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","name":"ESG и устойчивое развитие: прибор или вывеска?","headline":"ESG и устойчивое развитие: прибор или вывеска?","description":"Что такое ESG и чем оно отличается от устойчивого развития: история трёх букв, почему рейтинги разных агентств расходятся, одинарная и двойная существенность, три охвата выбросов, гринвошинг, ESG в России, лестница корпоративной зрелости и семь вопросов к любому ESG-отчёту. Шесть инфографик.","inLanguage":"ru-RU","url":"https://morgunkonstantin.github.io/ecosite/essay-esg.html","isPartOf":{"@type":"WebSite","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecosite/"},"publisher":{"@type":"Organization","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecosite/"},"datePublished":"2026-10-28","author":{"@type":"Organization","name":"ЭкоСознание"},"articleSection":"Экономика"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://morgunkonstantin.github.io/ecosite/"},{"@type":"ListItem","position":2,"name":"Экономика","item":"https://morgunkonstantin.github.io/ecosite/section-economy.html"},{"@type":"ListItem","position":3,"name":"ESG и устойчивое развитие: прибор или вывеска?","item":"https://morgunkonstantin.github.io/ecosite/essay-esg.html"}]}</script>
+<!-- /ECO:MANAGED:head -->
+</head>
+<body>
+<a class="skip-link" href="#content">Перейти к содержанию</a>
+
+<!-- ECO:MANAGED:nav -->
+<div class="g-nav-wrap" id="gNavWrap">
+  <div class="g-nav">
+    <a href="index.html" class="g-logo">
+      <svg viewBox="0 0 100 100" fill="none" class="logo-svg"><circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#4a7c59"/></svg>
+      <span class="g-logo-text">Эко<em>Сознание</em></span>
+    </a>
+    <ul class="g-links">
+      <li>
+        <button class="g-drop-btn" aria-expanded="false">
+          Разделы
+          <svg class="g-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg>
+        </button>
+        <div class="g-dropdown">
+          <a href="section-philosophy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Философия</span><span class="g-dd-num">01</span></a>
+          <a href="section-psychology.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="g-dd-name">Психология</span><span class="g-dd-num">02</span></a>
+          <a href="section-lifestyle.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Стиль жизни</span><span class="g-dd-num">03</span></a>
+          <a href="section-technologies.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="g-dd-name">Технологии</span><span class="g-dd-num">04</span></a>
+          <a href="section-food.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-dd-name">Питание</span><span class="g-dd-num">05</span></a>
+          <a href="section-architecture.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="g-dd-name">Архитектура</span><span class="g-dd-num">06</span></a>
+          <a href="section-economy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Экономика</span><span class="g-dd-num">07</span></a>
+          <a href="section-education.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="g-dd-name">Образование</span><span class="g-dd-num">08</span></a>
+          <a href="section-community.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Сообщество</span><span class="g-dd-num">09</span></a>
+          <a href="section-travel.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-dd-name">Путешествия</span><span class="g-dd-num">10</span></a>
+          <a href="section-health.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Здоровье</span><span class="g-dd-num">11</span></a>
+          <a href="section-science.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Наука</span><span class="g-dd-num">12</span></a>
+        </div>
+      </li>
+      <li><a href="about.html">О проекте</a></li>
+    </ul>
+    <button class="g-burger" id="gBurger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+
+<div class="g-overlay" id="gOverlay">
+  <div class="g-ov-section">
+    <div class="g-ov-label">Разделы</div>
+    <div class="g-ov-grid">
+      <a href="section-philosophy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Философия</span></a>
+      <a href="section-psychology.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="g-ov-name">Психология</span></a>
+      <a href="section-lifestyle.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/></svg></span><span class="g-ov-name">Стиль жизни</span></a>
+      <a href="section-technologies.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="g-ov-name">Технологии</span></a>
+      <a href="section-food.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-ov-name">Питание</span></a>
+      <a href="section-architecture.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="g-ov-name">Архитектура</span></a>
+      <a href="section-economy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Экономика</span></a>
+      <a href="section-education.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="g-ov-name">Образование</span></a>
+      <a href="section-community.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Сообщество</span></a>
+      <a href="section-travel.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-ov-name">Путешествия</span></a>
+      <a href="section-health.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Здоровье</span></a>
+      <a href="section-science.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Наука</span></a>
+    </div>
+  </div>
+  <div class="g-ov-section">
+    <div class="g-ov-label">Навигация</div>
+    <div class="g-ov-simple-links">
+      <a href="index.html" class="g-ov-simple-link">Главная</a>
+      <a href="map.html" class="g-ov-simple-link">Карта связей</a>
+      <a href="contents.html" class="g-ov-simple-link">Все материалы</a>
+      <a href="revisions.html" class="g-ov-simple-link">Что не подтвердилось</a>
+      <a href="search.html" class="g-ov-simple-link">Поиск</a>
+      <a href="paths.html" class="g-ov-simple-link">Тропы чтения</a>
+      <a href="tree.html" class="g-ov-simple-link">Дерево материалов</a>
+      <a href="thinkers.html" class="g-ov-simple-link">Указатель имён</a>
+      <a href="about.html" class="g-ov-simple-link">О проекте</a>
+    </div>
+  </div>
+</div>
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<main id="content" tabindex="-1">
+<!-- ECO:MANAGED:breadcrumb -->
+<nav class="breadcrumb" aria-label="Хлебные крошки"><a href="index.html">Главная</a> <span class="bc-sep">→</span> <a href="section-economy.html">Экономика</a> <span class="bc-sep">→</span> <span class="bc-current">ESG и устойчивое развитие: прибор или вывеска?</span></nav>
+<!-- /ECO:MANAGED:breadcrumb -->
+
+<section class="hero" id="top">
+  <div class="hero-mark-svg"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="50" cy="50" r="45"/><path d="M28 66 V48 M44 66 V38 M60 66 V44 M76 66 V30" stroke-linecap="round"/><path d="M24 70 H80" stroke-linecap="round"/></svg></div>
+  <div>
+    <div class="hero-tag">Эссе с инфографикой · Экономика</div>
+    <h1>ESG и устойчивое развитие:<br><em>прибор или</em><br>вывеска?</h1>
+    <p class="hero-lead">За двадцать лет три буквы — E, S и G — превратились из идеи нескольких банкиров в язык, на котором говорят компании, инвесторы и регуляторы всего мира. На ESG ссылаются в годовых отчётах, ради ESG-рейтингов нанимают целые отделы. Но помогает ли это планете и людям — или только отчётности? Разбираемся, что такое ESG, чем оно отличается от устойчивого развития и как отличить настоящие перемены от красивой вывески.</p>
+  </div>
+  <div class="hero-meta">
+    <div><div class="meta-label">Коротко</div><div class="meta-value">ESG — набор критериев: экология, общество, управление · Придуман для инвесторов, чтобы оценивать риски компаний</div></div>
+    <div><div class="meta-label">Главная проблема</div><div class="meta-value">Рейтинги разных агентств расходятся между собой · Они часто меряют риск для компании, а не её влияние на мир</div></div>
+    <div><div class="meta-label">Наш вывод</div><div class="meta-value">ESG — полезный инструмент, но не цель. Цель — устойчивое развитие, и меряться нужно реальными результатами</div></div>
+  </div>
+</section>
+
+<div class="toc-bar">
+  <a href="#letters" class="active">Три буквы</a>
+  <a href="#history">История</a>
+  <a href="#sd">ESG и устойчивость</a>
+  <a href="#ratings">Рейтинги</a>
+  <a href="#materiality">Чей риск</a>
+  <a href="#scope">Выбросы компании</a>
+  <a href="#wash">Гринвошинг</a>
+  <a href="#russia">ESG в России</a>
+  <a href="#ladder">Лестница зрелости</a>
+  <a href="#honest">Честный взгляд</a>
+  <a href="#outro">Итог</a>
+</div>
+
+<!-- ═══ 00 ТРИ БУКВЫ ═════════════════════════════════════════════════════ -->
+<section class="content-section" id="letters">
+  <div style="max-width:860px;">
+    <div class="section-num">00</div>
+    <div class="disc-meta">environmental · social · governance</div>
+    <h2>Три буквы, <em>которые выучил весь бизнес</em></h2>
+    <p>ESG — сокращение от трёх английских слов: Environmental, Social, Governance. По-русски — экология, общество и корпоративное управление. Идея простая: чтобы понять, хороша ли компания, мало посмотреть на её прибыль. Нужно ещё спросить, как она обращается с природой, с людьми и как устроена власть внутри неё.</p>
+
+    <!-- ИНФОГРАФИКА 1: ТРИ БУКВЫ -->
+    <div class="eg-panel">
+      <div class="eg-sub">Инфографика 1 · Что скрывается за каждой буквой</div>
+      <div class="eg-abc">
+        <div class="eg-l eg-e"><div class="eg-big">E</div><div class="eg-name">Экология</div><ul><li>выбросы парниковых газов</li><li>энергия и вода</li><li>отходы и загрязнение</li><li>вырубка лесов, биоразнообразие</li><li>климатические риски для бизнеса</li></ul></div>
+        <div class="eg-l eg-s"><div class="eg-big">S</div><div class="eg-name">Общество</div><ul><li>условия и безопасность труда</li><li>права человека в цепочке поставок</li><li>отношения с местными сообществами</li><li>качество и безопасность продукции</li><li>разнообразие и равные возможности</li></ul></div>
+        <div class="eg-l eg-g"><div class="eg-big">G</div><div class="eg-name">Управление</div><ul><li>независимость совета директоров</li><li>прозрачность отчётности</li><li>борьба с коррупцией</li><li>права акционеров</li><li>вознаграждение руководства</li></ul></div>
+      </div>
+      <div class="eg-cap">Типичный набор тем; у каждого рейтингового агентства и стандарта он свой</div>
+    </div>
+
+    <p>Звучит разумно и даже очевидно. Но у ESG с самого начала была одна особенность, о которой часто забывают: его придумали не экологи и не социологи, а финансисты — и для финансистов.</p>
+  </div>
+</section>
+
+<!-- ═══ 01 ИСТОРИЯ ════════════════════════════════════════════════════════ -->
+<section class="content-section alt" id="history">
+  <div style="max-width:860px;">
+    <div class="section-num">01</div>
+    <div class="disc-meta">от доклада ООН до законов Евросоюза — и обратной волны</div>
+    <h2>Короткая <em>история</em></h2>
+    <p>Аббревиатура ESG появилась в 2004 году в докладе «Who Cares Wins» («Выигрывает тот, кому не всё равно»), подготовленном по инициативе Глобального договора ООН вместе с группой крупных банков. Аргумент был обращён к инвесторам: компании, которые плохо обращаются с природой, работниками и акционерами, рано или поздно платят за это — штрафами, забастовками, скандалами, потерей клиентов. Значит, учитывать эти факторы выгодно.</p>
+    <p>Через два года появились Принципы ответственного инвестирования ООН. Сегодня их подписали более пяти тысяч инвесторов и управляющих компаний. ESG превратилось в индустрию: рейтинги, индексы, «зелёные» облигации, отдельные фонды, консультанты.</p>
+
+    <!-- ИНФОГРАФИКА 2: ХРОНОЛОГИЯ -->
+    <div class="eg-panel">
+      <div class="eg-sub">Инфографика 2 · Как устойчивое развитие встретилось с финансами</div>
+      <div class="eg-time">
+        <div class="eg-t"><div class="eg-y">1987</div><div class="eg-d">Доклад ООН «Наше общее будущее» даёт определение устойчивого развития</div></div>
+        <div class="eg-t"><div class="eg-y">1994</div><div class="eg-d">Джон Элкингтон предлагает «тройной итог»: люди, планета, прибыль</div></div>
+        <div class="eg-t eg-key"><div class="eg-y">2004</div><div class="eg-d">Доклад «Who Cares Wins» вводит аббревиатуру ESG</div></div>
+        <div class="eg-t"><div class="eg-y">2006</div><div class="eg-d">Принципы ответственного инвестирования ООН</div></div>
+        <div class="eg-t eg-key"><div class="eg-y">2015</div><div class="eg-d">17 Целей устойчивого развития ООН и Парижское соглашение по климату</div></div>
+        <div class="eg-t"><div class="eg-y">2020–2021</div><div class="eg-d">Таксономия ЕС и правила раскрытия для финансового рынка; «зелёная» таксономия в России</div></div>
+        <div class="eg-t"><div class="eg-y">2023</div><div class="eg-d">Международные стандарты устойчивой отчётности ISSB; директива ЕС о корпоративной отчётности</div></div>
+        <div class="eg-t eg-back"><div class="eg-y">2023–2025</div><div class="eg-d">Обратная волна: «анти-ESG» законы в части штатов США, отток денег из устойчивых фондов, упрощение правил ЕС</div></div>
+      </div>
+    </div>
+
+    <p>В 2018 году Джон Элкингтон, автор «тройного итога», сделал необычный шаг: публично «отозвал» свою идею. Он написал, что концепция превратилась в инструмент бухгалтерии и пиара, тогда как задумывалась как способ изменить сам капитализм. Это хорошее предупреждение для разговора об ESG: любая метрика рискует стать целью сама по себе.</p>
+  </div>
+</section>
+
+<!-- ═══ 02 ESG И УСТОЙЧИВОЕ РАЗВИТИЕ ══════════════════════════════════════ -->
+<section class="content-section" id="sd">
+  <div style="max-width:820px;">
+    <div class="section-num">02</div>
+    <div class="disc-meta">инструмент и цель — не одно и то же</div>
+    <h2>ESG — это <em>не то же самое</em>, что устойчивость</h2>
+    <p>Эти понятия часто используют как синонимы, но у них разное происхождение и разный вопрос.</p>
+    <p><strong>Устойчивое развитие</strong> отвечает на вопрос общества: как жить так, чтобы удовлетворять свои потребности, не лишая этой возможности будущие поколения? Его мера — состояние мира: климат, леса, бедность, здоровье, справедливость. Хороший образ — «бублик» Кейт Рауорт: никого нельзя оставлять ниже социального фундамента, и нельзя всем вместе выходить за экологический потолок.</p>
+    <p><strong>ESG</strong> отвечает на вопрос инвестора: какие нефинансовые факторы могут повлиять на стоимость этой компании? Его мера — риски и возможности для бизнеса.</p>
+    <p>Иногда ответы совпадают: компания, которая сокращает выбросы, одновременно помогает климату и снижает свои риски. Но часто — нет. Компания может получить хороший ESG-рейтинг, потому что хорошо управляет рисками, при этом продолжая наращивать выбросы. А производитель, который делает очень нужную для перехода вещь, может иметь средний рейтинг из-за слабой отчётности. Помнить об этой разнице — первый шаг к трезвому взгляду.</p>
+  </div>
+</section>
+
+<!-- ═══ 03 РЕЙТИНГИ ═══════════════════════════════════════════════════════ -->
+<section class="content-section alt" id="ratings">
+  <div style="max-width:860px;">
+    <div class="section-num">03</div>
+    <div class="disc-meta">почему одна и та же компания может быть и лидером, и аутсайдером</div>
+    <h2>Рейтинги, <em>которые спорят друг с другом</em></h2>
+    <p>Кредитные рейтинги разных агентств почти всегда совпадают: если одно считает компанию надёжным заёмщиком, то и другое, скорее всего, тоже. С ESG-рейтингами всё иначе. Исследователи Массачусетского технологического института под руководством Роберто Ригобона сравнили оценки шести крупных агентств и получили результат, который назвали «совокупной путаницей».</p>
+
+    <!-- ИНФОГРАФИКА 3: РАСХОЖДЕНИЕ РЕЙТИНГОВ -->
+    <div class="eg-panel">
+      <div class="eg-sub">Инфографика 3 · Насколько согласуются оценки разных агентств</div>
+      <div class="eg-rows" role="img" aria-label="Корреляция кредитных рейтингов разных агентств около 0,99; ESG-рейтингов — в среднем около 0,54, от 0,38 до 0,71">
+        <div class="eg-row"><div class="eg-row-l">Кредитные рейтинги</div><div class="eg-row-b"><div class="eg-fill" style="width:99%;background:#3d5240"></div></div><div class="eg-row-v">≈ 0,99</div></div>
+        <div class="eg-row"><div class="eg-row-l">ESG-рейтинги: лучшая пара</div><div class="eg-row-b"><div class="eg-fill" style="width:71%;background:#6ea87e"></div></div><div class="eg-row-v">0,71</div></div>
+        <div class="eg-row"><div class="eg-row-l">ESG-рейтинги: в среднем</div><div class="eg-row-b"><div class="eg-fill" style="width:54%;background:#b8924a"></div></div><div class="eg-row-v">0,54</div></div>
+        <div class="eg-row"><div class="eg-row-l">ESG-рейтинги: худшая пара</div><div class="eg-row-b"><div class="eg-fill" style="width:38%;background:#7a4f2e"></div></div><div class="eg-row-v">0,38</div></div>
+      </div>
+      <div class="eg-cap">Коэффициент корреляции оценок (1 — полное совпадение, 0 — никакой связи) · Berg, Kölbel, Rigobon, «Aggregate Confusion», Review of Finance, 2022</div>
+    </div>
+
+    <p>Почему так? Исследователи нашли три причины. Агентства <em>оценивают разное</em>: одно включает в рейтинг, скажем, лоббирование, другое — нет. Они <em>измеряют по-разному</em> одно и то же: условия труда можно оценивать по текучести кадров, по числу судебных исков или по наличию политик. И они <em>по-разному взвешивают</em> темы: что важнее — выбросы или права работников? Больше всего расхождений даёт второе: даже одну и ту же вещь агентства меряют разными линейками.</p>
+    <p>Для инвестора это неудобно. Для общества — серьёзнее: если рейтинги так сильно расходятся, они плохо подходят на роль сигнала о том, кто действительно помогает устойчивому развитию.</p>
+  </div>
+</section>
+
+<!-- ═══ 04 ЧЕЙ РИСК ═══════════════════════════════════════════════════════ -->
+<section class="content-section" id="materiality">
+  <div style="max-width:860px;">
+    <div class="section-num">04</div>
+    <div class="disc-meta">одинарная и двойная существенность</div>
+    <h2>Риск <em>для кого?</em></h2>
+    <p>Есть и более глубокая проблема. Многие ESG-рейтинги отвечают на вопрос «как мир может навредить компании?», а не «как компания влияет на мир?». Например, климат в таком рейтинге важен в первую очередь как риск: затопит ли заводы, введут ли углеродный налог, отвернутся ли покупатели. Это называют одинарной существенностью.</p>
+    <p>Европейский союз в своих правилах корпоративной отчётности пошёл дальше и ввёл принцип двойной существенности: компания должна рассказывать и о том, как внешний мир влияет на неё, и о том, как она сама влияет на людей и природу.</p>
+
+    <!-- ИНФОГРАФИКА 4: ДВОЙНАЯ СУЩЕСТВЕННОСТЬ -->
+    <div class="eg-panel">
+      <div class="eg-sub">Инфографика 4 · Одинарная и двойная существенность</div>
+      <div class="eg-scroll">
+      <svg viewBox="0 0 760 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Схема: компания и мир. Стрелка от мира к компании — финансовая существенность, риски для бизнеса. Стрелка от компании к миру — влияние на людей и природу. Двойная существенность учитывает обе стрелки" style="width:100%;height:auto;display:block;">
+        <defs>
+          <marker id="egA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#b8924a"/></marker>
+          <marker id="egB" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#4a7c59"/></marker>
+        </defs>
+        <rect x="40" y="70" width="190" height="110" rx="6" fill="#1c2b1e"/>
+        <text x="135" y="122" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="26" fill="#f3ede3">Компания</text>
+        <text x="135" y="148" text-anchor="middle" font-family="Jost,sans-serif" font-size="12" fill="#a8c5a0">прибыль, активы, стоимость</text>
+        <ellipse cx="610" cy="125" rx="125" ry="80" fill="#a8c5a0" opacity=".35" stroke="#4a7c59"/>
+        <text x="610" y="118" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="26" fill="#1c2b1e">Мир</text>
+        <text x="610" y="144" text-anchor="middle" font-family="Jost,sans-serif" font-size="12" fill="#3d5240">климат, природа, люди</text>
+        <path d="M482 92 C 400 60, 320 60, 236 92" stroke="#b8924a" stroke-width="4" fill="none" marker-end="url(#egA)"/>
+        <text x="360" y="52" text-anchor="middle" font-family="Jost,sans-serif" font-size="13" fill="#7a5a20">финансовая существенность:</text>
+        <text x="360" y="70" text-anchor="middle" font-family="Jost,sans-serif" font-size="13" fill="#7a5a20">как мир влияет на компанию</text>
+        <path d="M236 160 C 320 192, 400 192, 482 160" stroke="#4a7c59" stroke-width="4" fill="none" marker-end="url(#egB)"/>
+        <text x="360" y="214" text-anchor="middle" font-family="Jost,sans-serif" font-size="13" fill="#2f5a3c">существенность влияния:</text>
+        <text x="360" y="232" text-anchor="middle" font-family="Jost,sans-serif" font-size="13" fill="#2f5a3c">как компания влияет на мир</text>
+      </svg>
+      </div>
+      <div class="eg-legend"><span><i style="background:#b8924a"></i>учитывают почти все ESG-рейтинги</span><span><i style="background:#4a7c59"></i>добавляет двойная существенность — важно для устойчивого развития</span></div>
+    </div>
+
+    <p>Для устойчивого развития важна именно нижняя, зелёная стрелка. Лесу, реке и климату всё равно, насколько хорошо компания управляет своими рисками. Им важно, сколько она выбрасывает, вырубает и загрязняет.</p>
+  </div>
+</section>
+
+<!-- ═══ 05 ВЫБРОСЫ КОМПАНИИ ═══════════════════════════════════════════════ -->
+<section class="content-section alt" id="scope">
+  <div style="max-width:860px;">
+    <div class="section-num">05</div>
+    <div class="disc-meta">охваты 1, 2 и 3 · где прячется большая часть следа</div>
+    <h2>Где прячутся <em>выбросы компании</em></h2>
+    <p>Самая измеримая часть буквы E — парниковые газы. По международному стандарту выбросы компании делят на три «охвата».</p>
+
+    <!-- ИНФОГРАФИКА 5: ОХВАТЫ -->
+    <div class="eg-panel">
+      <div class="eg-sub">Инфографика 5 · Три охвата выбросов на примере производителя одежды</div>
+      <div class="eg-scope">
+        <div class="eg-sc eg-sc1"><div class="eg-sc-k">Охват 1</div><div class="eg-sc-t">Свои прямые выбросы</div><div class="eg-sc-d">котельная фабрики, собственные грузовики</div><div class="eg-sc-bar" style="width:12%"></div></div>
+        <div class="eg-sc eg-sc2"><div class="eg-sc-k">Охват 2</div><div class="eg-sc-t">Купленная энергия</div><div class="eg-sc-d">электричество и тепло, произведённые на чужих станциях</div><div class="eg-sc-bar" style="width:14%"></div></div>
+        <div class="eg-sc eg-sc3"><div class="eg-sc-k">Охват 3</div><div class="eg-sc-t">Вся цепочка</div><div class="eg-sc-d">выращивание хлопка, производство ткани у поставщиков, доставка, стирка покупателями, свалка</div><div class="eg-sc-bar" style="width:74%"></div></div>
+      </div>
+      <div class="eg-cap">По стандарту GHG Protocol · доли иллюстративны: у многих компаний охват 3 во много раз больше охватов 1 и 2 вместе</div>
+    </div>
+
+    <p>Подвох в том, что первые два охвата компания контролирует и считает сравнительно легко, а третий — самый большой и самый неудобный: он складывается из работы сотен поставщиков и миллионов покупателей. Компания, которая гордится «углеродной нейтральностью» своих офисов, может умалчивать о том, что основной след её продукции возникает на чужих фабриках и в чужих домах. Поэтому первый вопрос к любому климатическому отчёту: включён ли в него охват 3?</p>
+    <p>Второй вопрос: идёт ли речь об абсолютных сокращениях или об «интенсивности»? Компания может гордиться, что выбросы на единицу продукции упали на треть, — но если продажи выросли вдвое, общий объём выбросов всё равно увеличился. Атмосфера считает тонны, а не проценты.</p>
+  </div>
+</section>
+
+<!-- ═══ 06 ГРИНВОШИНГ ══════════════════════════════════════════════════════ -->
+<section class="content-section" id="wash">
+  <div style="max-width:820px;">
+    <div class="section-num">06</div>
+    <div class="disc-meta">когда ESG становится вывеской</div>
+    <h2>Гринвошинг: <em>зелёная краска</em></h2>
+    <p>Чем популярнее становилось ESG, тем выгоднее было казаться устойчивым. Отсюда гринвошинг — «зелёная покраска»: преувеличение или выдумывание экологических заслуг.</p>
+    <p>Самые известные истории это хорошо показывают. В 2015 году выяснилось, что Volkswagen годами обманывал тесты на выбросы дизельных двигателей, — при том что компания до скандала числилась в лидерах отраслевых индексов устойчивости. В 2023 году американская Комиссия по ценным бумагам оштрафовала управляющую компанию DWS, входящую в группу Deutsche Bank, на 19 миллионов долларов за то, что она преувеличивала, насколько учитывает ESG-факторы в своих инвестициях. Фонды с «зелёными» названиями нередко держали акции нефтяных и угольных компаний.</p>
+    <p>Регуляторы ответили правилами: в Европе ограничили использование слов «устойчивый» и «ESG» в названиях фондов, ужесточили требования к рекламе «углеродно-нейтральных» товаров. Подробнее о механике гринвошинга — в эссе <a href="essay-greenwashing.html">«Гринвошинг: не обман, а отрасль»</a>.</p>
+  </div>
+</section>
+
+<!-- ═══ 07 РОССИЯ ═════════════════════════════════════════════════════════ -->
+<section class="content-section alt" id="russia">
+  <div style="max-width:820px;">
+    <div class="section-num">07</div>
+    <div class="disc-meta">национальная таксономия, рекомендации регулятора и смещение акцентов</div>
+    <h2>ESG <em>в России</em></h2>
+    <p>В России интерес к ESG резко вырос в 2020–2021 годах. Правительство утвердило национальную «зелёную» таксономию — перечень проектов, которые можно финансировать «зелёными» облигациями, Банк России выпустил рекомендации компаниям по раскрытию нефинансовой информации, появились российские ESG-рейтинги.</p>
+    <p>После 2022 года, с уходом многих иностранных инвесторов, повестка изменилась. Внимание сместилось от международных стандартов к национальным приоритетам, а внутри ESG — от буквы E к буквам S и G: занятости, социальным проектам в регионах, управлению. Климатическая часть во многом ушла на второй план, хотя в стране продолжают действовать закон об ограничении выбросов парниковых газов и эксперимент по квотированию выбросов на Сахалине.</p>
+    <p>Для России, где огромные лесные территории, северные экосистемы, тающая вечная мерзлота и экономика во многом построена на добыче, честная экологическая отчётность особенно важна. Ведь именно здесь находятся одни из крупнейших на планете природных хранилищ углерода — и одни из самых уязвимых.</p>
+  </div>
+</section>
+
+<!-- ═══ 08 ЛЕСТНИЦА ЗРЕЛОСТИ ══════════════════════════════════════════════ -->
+<section class="content-section" id="ladder">
+  <div style="max-width:860px;">
+    <div class="section-num">08</div>
+    <div class="disc-meta">от соблюдения правил к восстановлению</div>
+    <h2>Лестница <em>корпоративной зрелости</em></h2>
+    <p>Полезно смотреть на компании не через рейтинг, а через вопрос: зачем они этим занимаются? Ответы выстраиваются в лестницу.</p>
+
+    <!-- ИНФОГРАФИКА 6: ЛЕСТНИЦА -->
+    <div class="eg-panel">
+      <div class="eg-sub">Инфографика 6 · Пять ступеней: от отчёта к восстановлению</div>
+      <div class="eg-ladder">
+        <div class="eg-st" style="margin-left:0%"><b>1 · Соблюдение</b> — делаем то, что требует закон, и пишем отчёт, потому что обязаны</div>
+        <div class="eg-st" style="margin-left:6%"><b>2 · Управление рисками</b> — учитываем климат и людей, потому что это угрожает прибыли (классическое ESG)</div>
+        <div class="eg-st" style="margin-left:12%"><b>3 · Снижение вреда</b> — сокращаем абсолютные выбросы и отходы по всей цепочке, ставим цели, проверяемые наукой</div>
+        <div class="eg-st eg-st-g" style="margin-left:18%"><b>4 · Положительное влияние</b> — сам продукт или услуга решает общественную или экологическую задачу</div>
+        <div class="eg-st eg-st-d" style="margin-left:24%"><b>5 · Восстановление</b> — бизнес оставляет мир в лучшем состоянии: восстанавливает почвы, леса, местные сообщества</div>
+      </div>
+      <div class="eg-cap">Схема редакции · классические ESG-рейтинги в основном оценивают первые две ступени</div>
+    </div>
+
+    <p>Классические ESG-рейтинги хорошо видят первые две ступени. Устойчивое развитие требует подниматься выше: к реальному снижению вреда и к бизнесу, который не только меньше вредит, но и чинит. Примеры есть: кооперативы, которые восстанавливают почву, компании, которые проектируют товары для ремонта и вторичной переработки, энергетические проекты, принадлежащие жителям.</p>
+
+    <h3 class="eg-h3">Как читать ESG-отчёт: семь вопросов</h3>
+    <ol class="eg-q">
+      <li>Есть ли в отчёте <b>абсолютные</b> цифры выбросов, а не только «интенсивность»?</li>
+      <li>Учтён ли <b>охват 3</b> — цепочка поставок и использование продукции?</li>
+      <li>Есть ли цели с конкретными сроками и подтверждены ли они независимо — например, инициативой научно обоснованных целей (SBTi)?</li>
+      <li>На чём держится «углеродная нейтральность»: на реальном сокращении или на покупке компенсаций?</li>
+      <li>Говорит ли компания о своём <b>влиянии</b> на людей и природу, а не только о рисках для себя?</li>
+      <li>Совпадает ли то, что написано в отчёте, с тем, за что компания лоббирует в парламентах и министерствах?</li>
+      <li>Подтверждён ли отчёт независимым аудитом?</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ═══ 09 ЧЕСТНЫЙ ВЗГЛЯД ══════════════════════════════════════════════════ -->
+<section class="content-section alt" id="honest">
+  <div style="max-width:860px;">
+    <div class="section-num">09</div>
+    <div class="disc-meta">критика темы · что ESG может и чего не может</div>
+    <h2>Честный <em>взгляд</em></h2>
+    <p><strong>ESG критикуют с двух сторон.</strong> Одни говорят, что это пустая бюрократия и «политика», мешающая бизнесу зарабатывать, — отсюда законы против ESG в части американских штатов. Другие — что это слишком мягкий инструмент, который позволяет компаниям выглядеть хорошо, ничего по сути не меняя. Обе критики отчасти справедливы, и обе упускают главное: ESG — не цель, а язык. Им можно и честно рассказывать о реальных переменах, и красиво их подменять.</p>
+    <p><strong>Сумма несравнимого.</strong> Свести выбросы, условия труда и состав совета директоров в одну цифру — всё равно что сложить температуру, вес и рост человека. Высокий балл за управление может «перевесить» огромные выбросы. Поэтому полезнее смотреть на отдельные показатели, чем на итоговый рейтинг.</p>
+    <p><strong>Рынок не решит за нас.</strong> Даже идеальные ESG-рейтинги направляют деньги туда, где риск ниже, а не туда, где польза больше. Многие нужные для устойчивости вещи — охрана природы, адаптация бедных регионов к климату, общественный транспорт — малоприбыльны или вовсе убыточны. Их не построишь одними предпочтениями инвесторов. Нужны законы, цена на выбросы, государственные инвестиции.</p>
+    <p><strong>Абсолютные пределы.</strong> Планете неважно, какая компания «лучшая в отрасли». Ей важно, укладывается ли вся экономика в её возможности. Если все компании отрасли станут чуть лучше, но общий объём производства вырастет сильнее, нагрузка на природу всё равно увеличится. Об этом — в эссе <a href="essay-doughnut.html">о «бублике» и о том, что ВВП меряет скорость, а не направление</a>.</p>
+    <p><strong>И всё же — польза есть.</strong> Требования к раскрытию заставили тысячи компаний впервые посчитать свои выбросы. Инвесторы начали задавать неудобные вопросы. Сотрудники и покупатели получили язык, чтобы требовать от бизнеса большего. Это немало — если не путать измерение с решением.</p>
+  </div>
+</section>
+
+<!-- ═══ ИТОГ ══════════════════════════════════════════════════════════ -->
+<section class="content-section" id="outro">
+  <div style="max-width:820px;">
+    <div class="section-num">—</div>
+    <h2>Итог: <em>прибор, а не вывеска</em></h2>
+    <p>ESG родилось как способ для инвесторов увидеть риски, которых не видно в финансовом отчёте. Это полезный прибор — но прибор, показывающий в первую очередь здоровье компании, а не здоровье мира. Устойчивое развитие спрашивает о другом: становится ли жизнь людей лучше и укладываемся ли мы в возможности планеты.</p>
+    <p>Чтобы ESG служило устойчивости, а не только отчётности, ему нужны три вещи: смотреть на влияние, а не только на риски; считать абсолютные результаты по всей цепочке, а не красивые доли; и быть частью более широкой системы — законов, цен на выбросы, общественного контроля, — а не заменой ей.</p>
+    <p>А тем, кто читает ESG-отчёты как инвестор, сотрудник или покупатель, стоит помнить простое правило: верить тоннам, а не словам; делам, а не рейтингам.</p>
+    <p style="margin-top:2rem;">Читайте также: <a href="essay-greenwashing.html">Гринвошинг: не обман, а отрасль</a> · <a href="essay-carbon-markets.html">Углеродные рынки: почему механизм в основном не сработал</a> · <a href="essay-doughnut.html">ВВП меряет скорость. Нам нужен прибор, который мерит направление</a> · <a href="essay-emissions-map.html">Карта выбросов: где на самом деле углерод</a> · <a href="essay-network-states.html">Сетевые государства</a> · <a href="essay-consciousness-evolution.html">Эволюция сознания — недостающее звено устойчивости</a></p>
+
+    <div class="sources">
+      <div class="src-title"><small>Источники</small>На чём основан текст</div>
+      <ol class="src-list">
+        <li>The Global Compact (2004). Who Cares Wins: Connecting Financial Markets to a Changing World.</li>
+        <li>UN Principles for Responsible Investment — данные о числе подписантов.</li>
+        <li>WCED (1987). Our Common Future; United Nations (2015). Transforming our World: the 2030 Agenda for Sustainable Development.</li>
+        <li>Elkington J. (2018). 25 Years Ago I Coined the Phrase «Triple Bottom Line». Here's Why It's Time to Rethink It. Harvard Business Review.</li>
+        <li>Berg F., Kölbel J., Rigobon R. (2022). Aggregate Confusion: The Divergence of ESG Ratings. Review of Finance 26, 1315–1344.</li>
+        <li>Европейская комиссия: директива о корпоративной отчётности в области устойчивого развития (CSRD) и стандарты ESRS — принцип двойной существенности; таксономия ЕС и регламент SFDR.</li>
+        <li>IFRS Foundation (2023). IFRS S1 и IFRS S2 — стандарты ISSB.</li>
+        <li>GHG Protocol: Corporate Value Chain (Scope 3) Standard.</li>
+        <li>U.S. SEC (2023). Пресс-релиз о штрафе DWS Investment Management Americas за вводящие в заблуждение заявления об учёте ESG.</li>
+        <li>Постановление Правительства РФ № 1912 от 21.09.2021 о критериях проектов устойчивого развития; рекомендации Банка России по раскрытию информации об учёте ESG-факторов.</li>
+        <li>Science Based Targets initiative — методология научно обоснованных целей.</li>
+        <li>Raworth K. Doughnut Economics (2017).</li>
+      </ol>
+    </div>
+
+    <div style="margin-top:2.5rem;padding-top:2rem;border-top:1px solid rgba(74,124,89,0.15);font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--ink-light);text-align:center;font-size:1rem;">
+      — редакция «ЭкоСознания», раздел «Экономика»
+    </div>
+  </div>
+</section>
+
+<style>
+.eg-panel{background:var(--warm);border:1px solid rgba(74,124,89,.18);padding:1.6rem 1.4rem 1.1rem;margin:1.8rem 0;}
+.eg-sub{font-family:'Jost',sans-serif;font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);margin-bottom:1rem;text-align:center;}
+.eg-cap{font-family:'Jost',sans-serif;font-size:.62rem;letter-spacing:.08em;color:var(--sage-text,#6b8a70);text-align:center;margin-top:.9rem;line-height:1.6;}
+.eg-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.eg-h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:400;margin:2.4rem 0 .9rem;color:var(--ink);}
+.eg-abc{display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem;}
+.eg-l{background:var(--paper);border:1px solid rgba(74,124,89,.22);padding:1rem 1.1rem;}
+.eg-big{font-family:'Cormorant Garamond',serif;font-size:3rem;line-height:1;}
+.eg-e .eg-big{color:#4a7c59;}.eg-s .eg-big{color:#b8924a;}.eg-g .eg-big{color:#5b86a8;}
+.eg-name{font-family:'Jost',sans-serif;font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);margin:.3rem 0 .5rem;}
+.eg-l ul{margin:0;padding-left:1.1rem;font-size:.8rem;line-height:1.6;color:var(--ink-light);}
+.eg-time{position:relative;padding-left:1.4rem;border-left:2px solid rgba(74,124,89,.35);}
+.eg-t{position:relative;padding:.45rem 0 .45rem .4rem;display:grid;grid-template-columns:96px 1fr;gap:.8rem;align-items:baseline;}
+.eg-t::before{content:'';position:absolute;left:-1.85rem;top:.85rem;width:12px;height:12px;border-radius:50%;background:var(--warm);border:2px solid #4a7c59;}
+.eg-key::before{background:#4a7c59;}
+.eg-back::before{border-color:#7a4f2e;background:#7a4f2e;}
+.eg-y{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--moss);}
+.eg-back .eg-y{color:#7a4f2e;}
+.eg-d{font-size:.84rem;line-height:1.5;color:var(--ink-light);}
+.eg-rows{display:flex;flex-direction:column;gap:.7rem;}
+.eg-row{display:grid;grid-template-columns:190px 1fr 58px;align-items:center;gap:.9rem;}
+.eg-row-l{font-size:.84rem;color:var(--ink);}
+.eg-row-b{background:rgba(74,124,89,.08);height:24px;border-radius:2px;overflow:hidden;}
+.eg-fill{height:100%;}
+.eg-row-v{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--ink);text-align:right;}
+.eg-legend{display:flex;gap:1.4rem;justify-content:center;flex-wrap:wrap;font-size:.76rem;color:var(--ink-light);margin-top:.6rem;}
+.eg-legend span{display:inline-flex;align-items:center;gap:.45rem;}
+.eg-legend i{display:inline-block;width:20px;height:4px;}
+.eg-scope{display:flex;flex-direction:column;gap:.6rem;}
+.eg-sc{background:var(--paper);border:1px solid rgba(74,124,89,.22);padding:.8rem 1rem;display:grid;grid-template-columns:90px 180px 1fr;gap:.2rem .9rem;align-items:center;}
+.eg-sc-k{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--moss);}
+.eg-sc-t{font-size:.86rem;color:var(--ink);font-weight:500;}
+.eg-sc-d{font-size:.78rem;color:var(--ink-light);line-height:1.5;}
+.eg-sc-bar{grid-column:1 / -1;height:12px;border-radius:2px;background:#4a7c59;margin-top:.3rem;}
+.eg-sc2 .eg-sc-bar{background:#6ea87e;}.eg-sc3 .eg-sc-bar{background:#7a4f2e;}
+.eg-ladder{display:flex;flex-direction:column;gap:.45rem;}
+.eg-st{background:var(--paper);border:1px solid rgba(74,124,89,.22);padding:.7rem 1rem;font-size:.84rem;line-height:1.5;color:var(--ink-light);}
+.eg-st b{color:var(--ink);font-weight:500;}
+.eg-st-g{background:rgba(168,197,160,.35);}
+.eg-st-d{background:#4a7c59;color:rgba(250,246,239,.85);border-color:#4a7c59;}
+.eg-st-d b{color:#faf6ef;}
+.eg-q{padding-left:1.4rem;margin:1rem 0;}
+.eg-q li{margin-bottom:.7rem;line-height:1.7;}
+@media(max-width:700px){
+  .eg-scroll svg{min-width:600px;}
+  .eg-abc{grid-template-columns:1fr;}
+  .eg-t{grid-template-columns:1fr;gap:.1rem;}
+  .eg-row{grid-template-columns:1fr 52px;}
+  .eg-row-l{grid-column:1 / -1;}
+  .eg-sc{grid-template-columns:1fr;}
+  .eg-st{margin-left:0!important;}
+}
+</style>
+
+</main>
+
+<!-- ECO:MANAGED:footer -->
+<footer class="gf">
+  <div class="gf-top">
+    <div class="gf-brand">
+      <a href="index.html" class="gf-logo">
+        <svg viewBox="0 0 100 100" fill="none" class="logo-svg" style="width:24px;height:24px;flex-shrink:0;"><circle cx="50" cy="50" r="40" stroke="#f3ede3" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#6ea87e"/></svg>
+        <span class="gf-logo-text">Эко<em>Сознание</em></span>
+      </a>
+      <p class="gf-tagline">Экологический взгляд как линза для любой сферы жизни</p>
+    </div>
+    <div class="gf-cols">
+      <div>
+        <div class="gf-col-title">Разделы</div>
+        <div class="gf-sections">
+          <a href="section-philosophy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Философия</span></a>
+          <a href="section-psychology.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Психология</span></a>
+          <a href="section-lifestyle.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Стиль жизни</span></a>
+          <a href="section-technologies.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="gf-sec-name">Технологии</span></a>
+          <a href="section-food.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Питание</span></a>
+          <a href="section-architecture.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Архитектура</span></a>
+          <a href="section-economy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Экономика</span></a>
+          <a href="section-education.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="gf-sec-name">Образование</span></a>
+          <a href="section-community.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Сообщество</span></a>
+          <a href="section-travel.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="gf-sec-name">Путешествия</span></a>
+          <a href="section-health.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Здоровье</span></a>
+          <a href="section-science.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Наука</span></a>
+        </div>
+      </div>
+      <div>
+        <div class="gf-col-title">Навигация</div>
+        <nav class="gf-nav-links">
+          <a href="index.html" class="gf-nav-link">Главная</a>
+          <a href="map.html" class="gf-nav-link">Карта связей</a>
+          <a href="paths.html" class="gf-nav-link">Тропы чтения</a>
+          <a href="tree.html" class="gf-nav-link">Дерево материалов</a>
+          <a href="revisions.html" class="gf-nav-link">Что не подтвердилось</a>
+          <a href="thinkers.html" class="gf-nav-link">Указатель имён</a>
+          <a href="search.html" class="gf-nav-link">Поиск</a>
+          <a href="method.html" class="gf-nav-link">Как устроены материалы</a>
+            <a href="about.html" class="gf-nav-link">О проекте</a>
+          <a href="glossary.html" class="gf-nav-link">Глоссарий</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="gf-bottom">
+    <span class="gf-copy">© 2026 ЭкоСознание</span>
+    <div class="gf-bottom-links">
+      <a href="about.html">О проекте</a>
+      <a href="glossary.html">Глоссарий</a>
+    </div>
+  </div>
+</footer>
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+
+
+<!-- ECO:MANAGED:js -->
+<script src="assets/global.js" defer></script>
+<!-- /ECO:MANAGED:js -->
+</body>
+</html>
