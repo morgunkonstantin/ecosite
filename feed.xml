@@ -6,7 +6,7 @@
   <atom:link href="https://morgunkonstantin.github.io/ecosite/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Экология как способ смотреть на реальность</description>
   <language>ru</language>
-  <lastBuildDate>Wed, 28 Oct 2026 12:09:02 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 28 Oct 2026 13:15:38 +0000</lastBuildDate>
   <image>
     <url>https://morgunkonstantin.github.io/ecosite/assets/og-image.png</url>
     <title>ЭкоСознание</title>
@@ -641,6 +641,14 @@
     <description>Девять исторических вех научной картины мира — от замкнутого космоса античности через механику Ньютона, относительность и квант к планетарной системе. Образовательный лонгрид в хронологическом порядке: как каждая научная революция пересобирала мир и место человека в нём.</description>
     <category>Эссе</category>
     <pubDate>Sun, 30 Aug 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Сетевые государства: объединить людей не страхом</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-network-states.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-network-states.html</guid>
+    <description>Одиночество как болезнь эпохи, урок Ханны Арендт, доверие как капитал и идея сетевых государств — сообществ по ценностям, а не по паспорту. Какие эксперименты уже идут, где у идеи слепые пятна и какое место сетевые структуры могут занять в устойчивом обществе будущего: сеть мест, а не бегство от них. Восемь инфографик.</description>
+    <category>Эссе</category>
+    <pubDate>Wed, 28 Oct 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
     <title>Шесть принципов пассивного дизайна</title>
