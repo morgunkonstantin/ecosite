@@ -100,7 +100,7 @@ def build():
     from collections import defaultdict
     by_section = defaultdict(list)
     for fn, m in META.items():
-        if fn.startswith("section-") or fn == "index.html":
+        if fn.startswith("section-") or fn == "index.html" or m.get("noindex"):
             continue
         st = m.get("section_title")
         if st:
