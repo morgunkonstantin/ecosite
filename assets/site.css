@@ -223,3 +223,9 @@ footer a:focus-visible,
 @media (min-width: 861px) {
   html body .g-dropdown { left: auto; right: 0; transform: none; max-width: calc(100vw - 2rem); }
 }
+
+/* Тёмные полосы «featured»: описание было тёмным на тёмном фоне */
+html body .featured-strip p { color: rgba(211,230,208,.75); }
+/* Блок «Читайте также» в конце эссе */
+html body .see-also a { color: var(--moss); text-decoration: none; border-bottom: 1px solid rgba(74,124,89,.4); }
+html body .see-also a:hover { border-bottom-color: var(--moss); }

@@ -6,12 +6,20 @@
   <atom:link href="https://morgunkonstantin.github.io/ecosite/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Экология как способ смотреть на реальность</description>
   <language>ru</language>
-  <lastBuildDate>Wed, 28 Oct 2026 11:57:03 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 28 Oct 2026 12:09:02 +0000</lastBuildDate>
   <image>
     <url>https://morgunkonstantin.github.io/ecosite/assets/og-image.png</url>
     <title>ЭкоСознание</title>
     <link>https://morgunkonstantin.github.io/ecosite/</link>
   </image>
+  <item>
+    <title>Дерево из воздуха</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-trees-air.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-trees-air.html</guid>
+    <description>Откуда у дуба двадцать тонн массы? Не из земли: почти всё дерево сделано из воздуха и воды. Опыт ван Гельмонта, фотосинтез, огонь как фотосинтез наоборот, путешествие атома углерода, уголь как древний лес — и почему именно деревья помогают остановить перегрев планеты. Шесть инфографик.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 18 Oct 2026 09:00:00 +0000</pubDate>
+  </item>
   <item>
     <title>Экотехнологии: размер единицы предсказывает больше, чем идея</title>
     <link>https://morgunkonstantin.github.io/ecosite/essay-eco-technologies.html</link>
@@ -32,7 +40,7 @@
     <title>Тропы чтения</title>
     <link>https://morgunkonstantin.github.io/ecosite/paths.html</link>
     <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/paths.html</guid>
-    <description>Семь кураторских маршрутов по материалам «ЭкоСознания»: с чего начать, инструменты и зависимость, место как учебник, как считать, где мы ошибались, если вы не согласны, русская линия.</description>
+    <description>Кураторские маршруты по материалам «ЭкоСознания»: с чего начать, инструменты и зависимость, место как учебник, как считать, где мы ошибались, если вы не согласны, русская линия, углерод — от листа до неба.</description>
     <category>Эссе</category>
   </item>
   <item>
@@ -689,14 +697,6 @@
     <description>Крошечный дом на колёсах (tiny house on wheels) — полноценное жильё на прицепе в габарите дороги: свобода от участка и ипотеки, минимальный след, изобретательные компактные решения. Чем он отличается от автодома и дачи, как экономика долга вытолкнула движение tiny house, и честные ограничения — законная стоянка, размер, инженерия автономии, зима.</description>
     <category>Эссе</category>
     <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>Дерево из воздуха</title>
-    <link>https://morgunkonstantin.github.io/ecosite/essay-trees-air.html</link>
-    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-trees-air.html</guid>
-    <description>Откуда у дуба двадцать тонн массы? Не из земли: почти всё дерево сделано из воздуха и воды. Опыт ван Гельмонта, фотосинтез, огонь как фотосинтез наоборот, путешествие атома углерода, уголь как древний лес — и почему именно деревья помогают остановить перегрев планеты. Шесть инфографик.</description>
-    <category>Эссе</category>
-    <pubDate>Sun, 18 Oct 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
     <title>Истина — главный вопрос экологии</title>
