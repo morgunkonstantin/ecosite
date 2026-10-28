@@ -6,7 +6,7 @@
   <atom:link href="https://morgunkonstantin.github.io/ecosite/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Экология как способ смотреть на реальность</description>
   <language>ru</language>
-  <lastBuildDate>Wed, 28 Oct 2026 14:05:21 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 28 Oct 2026 14:42:25 +0000</lastBuildDate>
   <image>
     <url>https://morgunkonstantin.github.io/ecosite/assets/og-image.png</url>
     <title>ЭкоСознание</title>
@@ -609,6 +609,14 @@
     <description>Углеродная цена полёта — главное, что обходит стороной разговор об экотуризме. Почему один дальний перелёт равен годовому бюджету CO₂, отчего эффект высоты удваивает вред и чистой замены самолёту пока нет, что стоит за движением флюгскам («стыдно летать») и его критикой, и честный ответ — летать реже, оставаться дольше, мерить поездку глубиной.</description>
     <category>Эссе</category>
     <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Лесной активизм: вырастить лес своими руками</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-forest-activism.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-forest-activism.html</guid>
+    <description>Как вырастить дерево из жёлудя, семени или черенка: какие виды каким способом размножать, горшки и мини-теплицы из пластиковых бутылок, зимовка в неотапливаемой теплице, высадка и уход, школьный лесной питомник по календарю, урок бонсай и частые ошибки. Шесть инфографик.</description>
+    <category>Эссе</category>
+    <pubDate>Wed, 28 Oct 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
     <title>Лес как лекарство: целительная сила природы</title>
