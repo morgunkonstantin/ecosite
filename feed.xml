@@ -6,12 +6,28 @@
   <atom:link href="https://morgunkonstantin.github.io/ecosite/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Экология как способ смотреть на реальность</description>
   <language>ru</language>
-  <lastBuildDate>Sun, 01 Nov 2026 11:58:32 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 01 Nov 2026 12:17:45 +0000</lastBuildDate>
   <image>
     <url>https://morgunkonstantin.github.io/ecosite/assets/og-image.png</url>
     <title>ЭкоСознание</title>
     <link>https://morgunkonstantin.github.io/ecosite/</link>
   </image>
+  <item>
+    <title>Жара и здоровье</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-heat-health.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-heat-health.html</guid>
+    <description>Волны жары — одна из самых смертоносных климатических угроз в городах: что жара делает с телом, кто в группе риска, как отличить тепловое истощение от теплового удара, как сохранить прохладу дома без кондиционера, как защитить пожилых и что может сделать город. Пять инфографик.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Экологическая тревога у детей: как с ней говорить</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-kids-eco-anxiety.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-kids-eco-anxiety.html</guid>
+    <description>Практическое руководство для родителей и учителей: что такое экологическая тревога, как говорить о климате с детьми 3–6, 7–11 и 12+ лет, какие фразы помогают, а какие ранят, какая надежда работает, как превратить тревогу в общее дело и когда нужна помощь специалиста. Пять инфографик.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
   <item>
     <title>Как отличить честный углеродный офсет от продажи воздуха</title>
     <link>https://morgunkonstantin.github.io/ecosite/essay-carbon-offsets.html</link>
@@ -675,14 +691,6 @@
     <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
-    <title>Жара и здоровье</title>
-    <link>https://morgunkonstantin.github.io/ecosite/essay-heat-health.html</link>
-    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-heat-health.html</guid>
-    <description>Волны жары — одна из самых смертоносных климатических угроз в городах: что жара делает с телом, кто в группе риска, как отличить тепловое истощение от теплового удара, как сохранить прохладу дома без кондиционера, как защитить пожилых и что может сделать город. Пять инфографик.</description>
-    <category>Эссе</category>
-    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
-  </item>
-  <item>
     <title>Костробетон (конопля и известь): стена, поглощающая углерод</title>
     <link>https://morgunkonstantin.github.io/ecosite/essay-hempcrete.html</link>
     <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-hempcrete.html</guid>
@@ -697,14 +705,6 @@
     <description>Кривая Килинга — главный портрет климатической науки: рост CO₂ в атмосфере с ~315 (1958) до ~420+ млн⁻¹ сегодня, измеренный Чарльзом Килингом на Мауна-Лоа. Почему у кривой ежегодное «дыхание» биосферы, что значат миллионные доли, как изотопы выдают ископаемый углерод, и почему одна честная линия стала важнейшим доказательством.</description>
     <category>Эссе</category>
     <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>Экологическая тревога у детей: как с ней говорить</title>
-    <link>https://morgunkonstantin.github.io/ecosite/essay-kids-eco-anxiety.html</link>
-    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-kids-eco-anxiety.html</guid>
-    <description>Практическое руководство для родителей и учителей: что такое экологическая тревога, как говорить о климате с детьми 3–6, 7–11 и 12+ лет, какие фразы помогают, а какие ранят, какая надежда работает, как превратить тревогу в общее дело и когда нужна помощь специалиста. Пять инфографик.</description>
-    <category>Эссе</category>
-    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
     <title>Как менялась космологическая картина мира</title>
