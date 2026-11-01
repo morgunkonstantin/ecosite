@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+<script>document.documentElement.classList.replace('no-js','js');</script>
+<meta charset="UTF-8">
+<meta name="description" content="Что даёт сезонная и местная еда, где её польза преувеличена, календарь продуктов средней полосы, данные об углеродном следе и способы заготовки.">
+<meta property="og:title" content="Еда сезона и места: календарь, углерод и заготовки">
+<meta property="og:description" content="Что даёт сезонная и местная еда, где её польза преувеличена, календарь продуктов средней полосы, данные об углеродном следе и способы заготовки.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Еда сезона и места: календарь, углерод и заготовки — ЭкоСознание</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/base.css">
+<style>
+.hero{padding:10rem 4rem 5rem;display:grid;grid-template-columns:1fr 380px;gap:4rem;align-items:end;border-bottom:1px solid rgba(74,124,89,.15);position:relative;overflow:hidden;}
+.hero-mark-svg{position:absolute;right:4rem;top:11rem;width:90px;height:90px;color:rgba(74,124,89,.18);pointer-events:none;}
+.hero-mark-svg svg{width:100%;height:100%;display:block;}
+.hero-tag{display:inline-flex;align-items:center;gap:.6rem;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);margin-bottom:1.5rem;}
+.hero-tag::before{content:'';display:block;width:24px;height:1px;background:var(--fern);}
+h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,6vw,5rem);font-weight:300;line-height:1.05;color:var(--ink);margin-bottom:1.8rem;}
+h1 em{font-style:italic;color:var(--moss);display:block;}
+.hero-lead{font-size:1rem;line-height:1.85;color:var(--ink-light);max-width:580px;}
+.hero-meta{display:flex;flex-direction:column;gap:1.5rem;padding-left:2rem;border-left:1px solid rgba(74,124,89,.2);}
+.meta-label{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);margin-bottom:.4rem;}
+.meta-value{font-size:.9rem;color:var(--ink-light);line-height:1.6;}
+.toc-bar{background:var(--ink);padding:0 4rem;display:flex;align-items:stretch;overflow-x:auto;}
+.toc-bar a{color:rgba(211,230,208,.6);text-decoration:none;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:1rem 1.5rem;border-right:1px solid rgba(255,255,255,.06);white-space:nowrap;transition:color .2s,background .2s;}
+.toc-bar a:hover{color:var(--mist);}
+.toc-bar a.active{color:var(--fern);}
+.content-section{padding:5rem 4rem;border-bottom:1px solid rgba(74,124,89,.1);}
+.content-section.alt{background:var(--cream);}
+.content-section.dark{background:var(--ink);}
+.section-label{display:flex;align-items:center;gap:1rem;margin-bottom:3rem;}
+.section-label-num{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);}
+.section-label-line{flex:1;height:1px;background:rgba(74,124,89,.15);}
+.section-label-tag{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);}
+h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:300;color:var(--ink);line-height:1.15;margin-bottom:1.5rem;}
+h2 em{font-style:italic;color:var(--moss);}
+h2.light{color:var(--cream);}
+h2.light em{color:var(--fern);}
+.article-layout{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}
+.article-layout.wide{grid-template-columns:3fr 2fr;}
+.article-body p{font-size:.95rem;line-height:1.9;color:var(--ink-light);margin-bottom:1.1rem;}
+.article-body p:last-child{margin-bottom:0;}
+.article-body p.light{color:rgba(211,230,208,.72);}
+.pull-quote{border-left:3px solid var(--moss);padding:1.2rem 1.5rem;margin:2rem 0;background:rgba(74,124,89,.05);}
+.pull-quote p{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;color:var(--ink);line-height:1.5;margin:0!important;}
+.pull-quote.light{background:rgba(255,255,255,.06);border-color:var(--fern);}
+.pull-quote.light p{color:var(--cream);}
+.pull-quote cite{display:block;margin-top:.6rem!important;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);font-style:normal;}
+.practices-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(74,124,89,.12);margin-top:2rem;}
+.practice-card{background:var(--paper);padding:2rem 1.8rem;transition:background .25s;}
+.content-section.alt .practice-card{background:var(--cream);}
+.practice-card:hover{background:var(--warm);}
+.practice-num{font-family:'Cormorant Garamond',serif;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);margin-bottom:.6rem;}
+.practice-name{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--ink);margin-bottom:.6rem;}
+.practice-name em{font-style:italic;color:var(--moss);}
+.practice-desc{font-size:.85rem;line-height:1.75;color:var(--ink-light);}
+.featured-strip{background:var(--ink);padding:3rem 3.5rem;display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center;margin-top:3rem;}
+.featured-label{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);margin-bottom:1rem;}
+.featured-strip h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;font-style:italic;color:var(--cream);margin-bottom:.8rem;line-height:1.2;}
+.featured-strip p{font-size:.87rem;line-height:1.8;color:rgba(211,230,208,.68);}
+.featured-btn{background:transparent;color:var(--fern);border:1px solid rgba(110,168,126,.4);padding:.8rem 1.6rem;text-decoration:none;font-family:'Jost',sans-serif;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;display:inline-block;transition:background .25s,color .25s;}
+.featured-btn:hover{background:var(--fern);color:var(--ink);}
+.rubrics-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,.12);margin-top:3rem;}
+.rubric-card{background:var(--paper);padding:2rem 1.6rem;transition:background .25s;}
+.rubric-card:hover{background:var(--warm);}
+.rubric-icon{font-size:1.4rem;margin-bottom:1rem;}
+.rubric-name{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--ink);margin-bottom:.6rem;}
+.rubric-desc{font-size:.82rem;line-height:1.75;color:var(--ink-light);}
+.rubric-example{margin-top:1rem;font-size:.78rem;font-style:italic;color:var(--moss);line-height:1.6;}
+.rubric-card.dark-card{background:var(--ink);}
+.rubric-card.dark-card .rubric-name{color:var(--cream);}
+.rubric-card.dark-card .rubric-desc{color:rgba(211,230,208,.65);}
+.rubric-card.dark-card .rubric-example{color:var(--fern);}
+.g-next-section{background:var(--ink);padding:2.5rem 4rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;}
+.g-next-label{font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(168,197,160,.45);margin-bottom:.5rem;}
+.g-next-link{display:inline-flex;align-items:center;gap:.8rem;text-decoration:none;}
+.g-next-name{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:var(--cream);font-style:italic;transition:color .2s;}
+.g-next-link:hover .g-next-name{color:var(--fern);}
+.g-next-arrow{font-family:'Cormorant Garamond',serif;font-size:2rem;color:rgba(110,168,126,.5);transition:transform .2s,color .2s;}
+.g-next-link:hover .g-next-arrow{transform:translateX(6px);color:var(--fern);}
+.g-next-num{font-family:'Cormorant Garamond',serif;font-size:4rem;font-weight:300;color:rgba(255,255,255,.06);line-height:1;}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease;}
+.reveal.visible{opacity:1;transform:none;}
+.d1{transition-delay:.1s;}
+.d2{transition-delay:.2s;}
+@media(max-width:800px){ .hero,.toc-bar,.content-section,.g-next-section{padding-left:1.5rem;padding-right:1.5rem;} .hero{grid-template-columns:1fr;} .hero-meta{padding-left:0;border-left:none;border-top:1px solid rgba(74,124,89,.2);padding-top:1.5rem;} .hero-mark-svg{right:1.5rem;top:9rem;width:60px;height:60px;} .article-layout,.article-layout.wide{grid-template-columns:1fr;gap:2rem;} .practices-grid,.rubrics-grid{grid-template-columns:1fr;} .featured-strip{grid-template-columns:1fr;gap:1.5rem;} }
+.methods-table{margin:2rem 0;border:1px solid rgba(74,124,89,.15);overflow-x:auto;}
+.methods-row{display:grid;grid-template-columns:180px repeat(4,1fr);gap:0;border-bottom:1px solid rgba(74,124,89,.1);min-width:760px;}
+.methods-row:last-child{border-bottom:none;}
+.methods-row.header{background:var(--ink);}
+.methods-row.header > div{color:var(--sage);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;padding:.9rem 1rem;}
+.methods-row > div{background:var(--paper);padding:.95rem 1rem;font-size:.85rem;color:var(--ink-light);line-height:1.5;border-right:1px solid rgba(74,124,89,.08);}
+.content-section.alt .methods-row > div{background:var(--cream);}
+.methods-row > div:last-child{border-right:none;}
+.methods-row > .method-name{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1rem;color:var(--ink);}
+.methods-row.header > .method-name{color:var(--sage);font-style:normal;}
+.seasons-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(74,124,89,.12);margin:2rem 0;}
+.season-card{background:var(--paper);padding:1.8rem 1.5rem;transition:background .25s;display:flex;flex-direction:column;}
+.content-section.alt .season-card{background:var(--cream);}
+.season-card:hover{background:var(--warm);}
+.season-icon{font-size:1.9rem;margin-bottom:.7rem;line-height:1;}
+.season-name{font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--ink);margin-bottom:.2rem;}
+.season-name em{font-style:italic;color:var(--moss);}
+.season-months{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--clay);margin-bottom:.9rem;}
+.season-actions{font-size:.83rem;line-height:1.7;color:var(--ink-light);margin-bottom:.8rem;}
+.season-watch{font-size:.78rem;line-height:1.6;color:var(--ink-light);padding-top:.7rem;border-top:1px dashed rgba(74,124,89,.18);margin-top:auto;}
+.season-watch strong{color:var(--rust);font-weight:400;}
+.timeline{margin:2rem 0;position:relative;border-left:1px solid rgba(74,124,89,.2);padding-left:2rem;}
+.timeline-item{margin-bottom:2rem;position:relative;}
+.timeline-item:last-child{margin-bottom:0;}
+.timeline-item::before{content:'';position:absolute;left:-2.45rem;top:.3rem;width:9px;height:9px;border-radius:50%;background:var(--moss);box-shadow:0 0 0 3px var(--paper);}
+.content-section.alt .timeline-item::before{box-shadow:0 0 0 3px var(--cream);}
+.timeline-era{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin-bottom:.4rem;}
+.timeline-name{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--ink);margin-bottom:.5rem;line-height:1.3;}
+.timeline-name em{font-style:italic;color:var(--moss);}
+.timeline-desc{font-size:.88rem;line-height:1.75;color:var(--ink-light);}
+.timeline-desc em{font-style:italic;color:var(--moss);}
+.case-block{background:var(--ink);padding:4rem 3.5rem;margin:2rem 0;}
+.case-inner{max-width:920px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start;}
+.case-block h3{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;color:var(--cream);line-height:1.25;margin-bottom:1.3rem;}
+.case-block h3 em{font-style:italic;color:var(--fern);}
+.case-block p{font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.75;color:rgba(211,230,208,.75);margin-bottom:1rem;}
+.case-stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.08);}
+.case-stat{background:rgba(255,255,255,.04);padding:1.4rem 1.2rem;text-align:center;}
+.case-stat-num{font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--fern);font-weight:300;line-height:1;margin-bottom:.4rem;}
+.case-stat-lbl{font-size:.72rem;color:rgba(211,230,208,.65);line-height:1.5;}
+.case-link{display:inline-flex;align-items:center;gap:.6rem;font-family:'Jost',sans-serif;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--fern);text-decoration:none;border-bottom:1px solid rgba(110,168,126,.4);padding-bottom:.3rem;margin-top:1rem;}
+.case-link:hover{border-color:var(--fern);}
+@media(max-width:800px){ .case-inner{grid-template-columns:1fr;gap:2rem;} .case-block{padding:2.5rem 1.5rem;} .seasons-grid{grid-template-columns:1fr 1fr;} .methods-row{grid-template-columns:140px repeat(4,1fr);min-width:660px;} }
+@media(max-width:540px){ .seasons-grid{grid-template-columns:1fr;} .case-stats{grid-template-columns:1fr 1fr;} }
+.cycle-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,.12);margin:2rem 0;}
+.cycle-card{background:var(--paper);padding:1.8rem 1.6rem;text-align:center;transition:background .25s;}
+.content-section.alt .cycle-card{background:var(--cream);}
+.cycle-card:hover{background:var(--warm);}
+.cycle-step{font-family:'Cormorant Garamond',serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);margin-bottom:.6rem;}
+.cycle-icon{font-size:2rem;margin-bottom:.8rem;line-height:1;}
+.cycle-name{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--ink);margin-bottom:.5rem;}
+.cycle-name em{font-style:italic;color:var(--moss);}
+.cycle-desc{font-size:.82rem;line-height:1.7;color:var(--ink-light);}
+.can-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:2rem 0;}
+.can-col h4{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:400;margin-bottom:1rem;}
+.can-col.yes h4{color:var(--moss);}
+.can-col.no h4{color:var(--rust);}
+.can-list{list-style:none;display:flex;flex-direction:column;gap:0;}
+.can-item{font-size:.85rem;line-height:1.6;color:var(--ink-light);padding:.45rem 0;border-bottom:1px dashed rgba(74,124,89,.12);}
+.can-item:last-child{border-bottom:none;}
+.can-item::before{margin-right:.5rem;}
+.can-col.yes .can-item::before{content:'✓';color:var(--fern);}
+.can-col.no .can-item::before{content:'✗';color:var(--rust);}
+.soil-block{background:var(--ink);padding:4rem 3.5rem;margin:3rem 0;}
+.soil-inner{max-width:720px;margin:0 auto;}
+.soil-block h3{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;font-style:italic;color:var(--cream);line-height:1.3;margin-bottom:1.5rem;}
+.soil-block h3 em{color:var(--fern);}
+.soil-block p{font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.8;color:rgba(211,230,208,.75);margin-bottom:1.2rem;}
+.soil-block p:last-child{margin-bottom:0;}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(74,124,89,.15);margin:2rem 0;}
+.stat-card{background:var(--paper);padding:1.6rem 1.2rem;text-align:center;}
+.content-section.alt .stat-card{background:var(--cream);}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:300;color:var(--moss);line-height:1;margin-bottom:.4rem;}
+.stat-label{font-size:.78rem;line-height:1.5;color:var(--ink-light);}
+.q-list{display:flex;flex-direction:column;gap:0;margin:1.5rem 0;}
+.q-item{padding:1.2rem 0;border-bottom:1px solid rgba(74,124,89,.1);}
+.q-item:last-child{border-bottom:none;}
+.q-question{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink);margin-bottom:.5rem;font-weight:400;}
+.q-question em{font-style:italic;color:var(--moss);}
+.q-answer{font-size:.88rem;line-height:1.75;color:var(--ink-light);}
+@media(max-width:800px){ .cycle-grid{grid-template-columns:1fr 1fr;} .can-grid{grid-template-columns:1fr;} .stats-row{grid-template-columns:1fr 1fr;} .soil-block{padding:2.5rem 1.5rem;} }
+@media(max-width:540px){ .cycle-grid{grid-template-columns:1fr;} .stats-row{grid-template-columns:1fr 1fr;} }
+.section-num{font-family:'Cormorant Garamond',serif;font-size:0.85rem;letter-spacing:0.3em;color:var(--moss);margin-bottom:1rem;font-style:italic;}
+.disc-meta{font-family:'Jost',sans-serif;font-size:0.78rem;letter-spacing:0.05em;color:var(--ink-light);margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:1px solid rgba(74,124,89,0.15);font-weight:300;line-height:1.7;}
+.content-section p{font-size:1rem;line-height:1.85;color:var(--ink);margin-top:1.2rem;}
+.content-section p strong{color:var(--moss);font-weight:500;}
+.content-section p em{font-style:italic;color:var(--ink-light);}
+.content-section h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:300;line-height:1.15;color:var(--ink);margin-bottom:0.5rem;}
+.content-section h2 em{color:var(--moss);font-style:italic;display:block;}
+</style>
+
+<style>
+/* ── Источники: единый блок для всех эссе и лабораторий ── */
+.sources{margin:5rem 0 0;padding-top:2.5rem;border-top:1px solid rgba(74,124,89,.2);}
+.src-title{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;margin-bottom:1.6rem;}
+.src-title small{display:block;font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--clay-text);font-weight:400;margin-bottom:.6rem;}
+.src-list{list-style:none;counter-reset:src;padding:0;margin:0;}
+.src-list li{position:relative;padding-left:2.4rem;margin-bottom:1.1rem;font-size:.86rem;
+  line-height:1.7;color:var(--ink-light);}
+.src-list li::before{counter-increment:src;content:counter(src,decimal-leading-zero);
+  position:absolute;left:0;top:.15rem;font-family:'Jost',sans-serif;font-size:.66rem;
+  letter-spacing:.1em;color:var(--sage-text);}
+.src-a{color:var(--ink);}
+/* ── Ссылка на термин глоссария ── */
+a.term{color:inherit;text-decoration:none;border-bottom:1px dotted var(--fern-text);}
+a.term:hover{border-bottom-style:solid;color:var(--moss);}
+/* ── Вопросы-врезка ── */
+.quiz{background:var(--warm);padding:2.2rem 2.4rem;margin:2.5rem 0;border-left:3px solid var(--moss);}
+.quiz ol{margin:0;padding-left:1.4rem;}
+.quiz li{font-family:'Cormorant Garamond',serif;font-size:1.1rem;line-height:1.6;
+  color:var(--ink);margin-bottom:.9rem;}
+.quiz li:last-child{margin-bottom:0;}
+</style>
+<!-- ECO:MANAGED:head -->
+  <link rel="canonical" href="https://morgunkonstantin.github.io/ecosite/essay-seasonal-food.html">
+  <meta property="og:url" content="https://morgunkonstantin.github.io/ecosite/essay-seasonal-food.html">
+  <meta property="og:site_name" content="ЭкоСознание">
+  <meta property="og:image" content="https://morgunkonstantin.github.io/ecosite/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ЭкоСознание — экология как способ смотреть на реальность">
+  <meta name="twitter:image" content="https://morgunkonstantin.github.io/ecosite/assets/og-image.png">
+  <meta name="theme-color" content="#faf6ef">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="alternate" type="application/rss+xml" title="ЭкоСознание — RSS" href="feed.xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","name":"Еда сезона и места","headline":"Еда сезона и места","description":"Что даёт сезонная и местная еда, где её польза преувеличена, календарь продуктов средней полосы, данные об углеродном следе и способы заготовки.","inLanguage":"ru-RU","url":"https://morgunkonstantin.github.io/ecosite/essay-seasonal-food.html","isPartOf":{"@type":"WebSite","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecosite/"},"publisher":{"@type":"Organization","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecosite/"},"datePublished":"2026-11-01","author":{"@type":"Organization","name":"ЭкоСознание"},"articleSection":"Питание"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://morgunkonstantin.github.io/ecosite/"},{"@type":"ListItem","position":2,"name":"Питание","item":"https://morgunkonstantin.github.io/ecosite/section-food.html"},{"@type":"ListItem","position":3,"name":"Еда сезона и места","item":"https://morgunkonstantin.github.io/ecosite/essay-seasonal-food.html"}]}</script>
+<!-- /ECO:MANAGED:head -->
+</head>
+<body>
+<a class="skip-link" href="#content">Перейти к содержанию</a>
+
+<!-- ECO:MANAGED:nav -->
+<div class="g-nav-wrap" id="gNavWrap">
+  <div class="g-nav">
+    <a href="index.html" class="g-logo">
+      <svg viewBox="0 0 100 100" fill="none" class="logo-svg"><circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#4a7c59"/></svg>
+      <span class="g-logo-text">Эко<em>Сознание</em></span>
+    </a>
+    <ul class="g-links">
+      <li>
+        <button class="g-drop-btn" aria-expanded="false">
+          Разделы
+          <svg class="g-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg>
+        </button>
+        <div class="g-dropdown">
+          <a href="section-philosophy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Философия</span><span class="g-dd-num">01</span></a>
+          <a href="section-psychology.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="g-dd-name">Психология</span><span class="g-dd-num">02</span></a>
+          <a href="section-lifestyle.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Стиль жизни</span><span class="g-dd-num">03</span></a>
+          <a href="section-technologies.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="g-dd-name">Технологии</span><span class="g-dd-num">04</span></a>
+          <a href="section-food.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-dd-name">Питание</span><span class="g-dd-num">05</span></a>
+          <a href="section-architecture.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="g-dd-name">Архитектура</span><span class="g-dd-num">06</span></a>
+          <a href="section-economy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Экономика</span><span class="g-dd-num">07</span></a>
+          <a href="section-education.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="g-dd-name">Образование</span><span class="g-dd-num">08</span></a>
+          <a href="section-community.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Сообщество</span><span class="g-dd-num">09</span></a>
+          <a href="section-travel.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-dd-name">Путешествия</span><span class="g-dd-num">10</span></a>
+          <a href="section-health.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Здоровье</span><span class="g-dd-num">11</span></a>
+          <a href="section-science.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Наука</span><span class="g-dd-num">12</span></a>
+        </div>
+      </li>
+      <li><a href="about.html">О проекте</a></li>
+    </ul>
+    <button class="g-burger" id="gBurger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+
+<div class="g-overlay" id="gOverlay">
+  <div class="g-ov-section">
+    <div class="g-ov-label">Разделы</div>
+    <div class="g-ov-grid">
+      <a href="section-philosophy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Философия</span></a>
+      <a href="section-psychology.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="g-ov-name">Психология</span></a>
+      <a href="section-lifestyle.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/></svg></span><span class="g-ov-name">Стиль жизни</span></a>
+      <a href="section-technologies.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="g-ov-name">Технологии</span></a>
+      <a href="section-food.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-ov-name">Питание</span></a>
+      <a href="section-architecture.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="g-ov-name">Архитектура</span></a>
+      <a href="section-economy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Экономика</span></a>
+      <a href="section-education.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="g-ov-name">Образование</span></a>
+      <a href="section-community.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Сообщество</span></a>
+      <a href="section-travel.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-ov-name">Путешествия</span></a>
+      <a href="section-health.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Здоровье</span></a>
+      <a href="section-science.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Наука</span></a>
+    </div>
+  </div>
+  <div class="g-ov-section">
+    <div class="g-ov-label">Навигация</div>
+    <div class="g-ov-simple-links">
+      <a href="index.html" class="g-ov-simple-link">Главная</a>
+      <a href="map.html" class="g-ov-simple-link">Карта связей</a>
+      <a href="contents.html" class="g-ov-simple-link">Все материалы</a>
+      <a href="revisions.html" class="g-ov-simple-link">Что не подтвердилось</a>
+      <a href="search.html" class="g-ov-simple-link">Поиск</a>
+      <a href="paths.html" class="g-ov-simple-link">Тропы чтения</a>
+      <a href="tree.html" class="g-ov-simple-link">Дерево материалов</a>
+      <a href="thinkers.html" class="g-ov-simple-link">Указатель имён</a>
+      <a href="about.html" class="g-ov-simple-link">О проекте</a>
+    </div>
+  </div>
+</div>
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<main id="content" tabindex="-1">
+<!-- ECO:MANAGED:breadcrumb -->
+<nav class="breadcrumb" aria-label="Хлебные крошки"><a href="index.html">Главная</a> <span class="bc-sep">→</span> <a href="section-food.html">Питание</a> <span class="bc-sep">→</span> <span class="bc-current">Еда сезона и места</span></nav>
+<!-- /ECO:MANAGED:breadcrumb -->
+
+<section class="hero" id="top">
+  <div class="hero-mark-svg"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><path d="M50 28 V50 L64 58" stroke-linecap="round"/><path d="M50 14 V20 M86 50 H80 M50 86 V80 M14 50 H20" stroke-linecap="round"/></svg></div>
+  <div>
+    <div class="hero-tag">Практическое эссе с инфографикой · Питание</div>
+    <h1>Еда сезона<br><em>и места</em></h1>
+    <p class="hero-lead">Зимой клубника из супермаркета пахнет пластиком, а летняя с грядки — летом. Наши бабушки ели по сезону не из принципа, а по необходимости: квасили капусту, сушили грибы, хранили картошку в погребе. Сегодня есть всё и всегда, но привычка есть по сезону возвращается — ради вкуса, здоровья и климата. Разбираемся, что растёт в средней полосе в каждом месяце, почему «местное» не всегда значит «экологичное» и как сохранить урожай на зиму.</p>
+  </div>
+  <div class="hero-meta">
+    <div><div class="meta-label">Главное</div><div class="meta-value">Для климата важнее, что вы едите, чем откуда это привезли · исключения — самолёт и отапливаемые теплицы</div></div>
+    <div><div class="meta-label">Транспорт</div><div class="meta-value">В среднем около 6% выбросов от еды · основная часть — на поле и на ферме</div></div>
+    <div><div class="meta-label">Сезонно — значит</div><div class="meta-value">Выращено в открытом грунте в своё время или сохранено с урожая: погреб, квашение, заморозка, сушка</div></div>
+  </div>
+</section>
+
+<div class="toc-bar">
+  <a href="#why" class="active">Зачем</a>
+  <a href="#calendar">Календарь</a>
+  <a href="#local">Местное ≠ экологичное</a>
+  <a href="#greenhouse">Теплица зимой</a>
+  <a href="#rules">Как выбирать</a>
+  <a href="#farmers">Рынок и ферма</a>
+  <a href="#menu">Меню</a>
+  <a href="#store">Запасы на зиму</a>
+  <a href="#honest">Честный взгляд</a>
+  <a href="#outro">Итог</a>
+</div>
+
+<section class="content-section" id="why">
+  <div style="max-width:820px;">
+    <div class="section-num">00</div>
+    <div class="disc-meta">вкус, деньги, климат</div>
+    <h2>Зачем есть <em>по сезону</em></h2>
+    <p>У сезонной еды три преимущества. Первое — вкус: овощи и ягоды, выросшие в открытом грунте и собранные спелыми, вкуснее тех, что срывали зелёными, чтобы они выдержали тысячи километров дороги. Второе — цена: в разгар сезона урожай дешевле, особенно на рынке. Третье — экология, но здесь, как мы увидим, всё сложнее, чем кажется.</p>
+    <p>Есть и четвёртое, менее очевидное. Еда по сезону возвращает ощущение года: первый щавель, июльская клубника, августовские помидоры, осенние яблоки, зимняя квашеная капуста. Это та самая связь с местом и временем, о которой мы писали в эссе <a href="essay-place-based.html">о месте</a> и <a href="essay-bread.html">о хлебе</a>.</p>
+  </div>
+</section>
+
+<section class="content-section alt" id="calendar">
+  <div style="max-width:900px;">
+    <div class="section-num">01</div>
+    <div class="disc-meta">что растёт в средней полосе</div>
+    <h2>Календарь <em>сезонной еды</em></h2>
+    <div class="ar-panel">
+      <div class="ar-sub">Инфографика 1 · Сезонная еда средней полосы России по месяцам</div>
+      <div class="ar-months">
+        <div class="ar-m" style="--c:#6e8fa8"><b>Январь</b>картофель, морковь, свёкла, капуста, лук, тыква, лёжкие яблоки; квашеная капуста, соленья, замороженные ягоды</div>
+        <div class="ar-m" style="--c:#6e8fa8"><b>Февраль</b>то же из хранилища; лук на перо и микрозелень на подоконнике</div>
+        <div class="ar-m" style="--c:#6e8fa8"><b>Март</b>запасы подходят к концу: корнеплоды, квашенья, сушёные грибы и ягоды, проростки</div>
+        <div class="ar-m" style="--c:#6ea87e"><b>Апрель</b>первая зелень из теплиц, лук на перо, берёзовый сок</div>
+        <div class="ar-m" style="--c:#6ea87e"><b>Май</b>щавель, крапива, черемша, ревень, редис, зелёный лук</div>
+        <div class="ar-m" style="--c:#6ea87e"><b>Июнь</b>редис, салаты, укроп, горох, первые огурцы, клубника в конце месяца</div>
+        <div class="ar-m" style="--c:#b8924a"><b>Июль</b>клубника, смородина, малина, черника, вишня, огурцы, кабачки, молодой картофель</div>
+        <div class="ar-m" style="--c:#b8924a"><b>Август</b>томаты, перец, кукуруза, ранние яблоки, сливы, грибы, морковь, свёкла, начало брусники</div>
+        <div class="ar-m" style="--c:#c4956a"><b>Сентябрь</b>яблоки, груши, тыква, капуста, картофель, брусника, грибы, облепиха</div>
+        <div class="ar-m" style="--c:#c4956a"><b>Октябрь</b>капуста для квашения, клюква, рябина, корнеплоды и яблоки на хранение</div>
+        <div class="ar-m" style="--c:#8a6a3e"><b>Ноябрь</b>клюква, лёжкие яблоки, корнеплоды, капуста, тыква, квашенья</div>
+        <div class="ar-m" style="--c:#8a6a3e"><b>Декабрь</b>запасы погреба и морозилки, квашеная капуста, мочёные яблоки, клюква</div>
+      </div>
+      <div class="ar-cap">Ориентировочно для средней полосы · сроки сдвигаются на 2–3 недели в зависимости от региона и погоды года</div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section" id="local">
+  <div style="max-width:880px;">
+    <div class="section-num">02</div>
+    <div class="disc-meta">неожиданный ответ про «километры еды»</div>
+    <h2>Местное — <em>не всегда экологичное</em></h2>
+    <p>Кажется очевидным: чем ближе выращена еда, тем меньше выбросов. Но крупнейшее исследование углеродного следа продуктов, охватившее около 38 тысяч ферм по всему миру, показало: в среднем на транспорт приходится лишь около 6% выбросов от еды. Основная часть возникает на полях и фермах — от вырубки лесов под пастбища, удобрений, метана от скота.</p>
+    <div class="ar-panel">
+      <div class="ar-sub">Инфографика 2 · Откуда берутся выбросы мировой продовольственной системы</div>
+      <div class="ar-stack">
+        <div style="flex:31;background:#7a4f2e">животноводство и рыба 31%</div>
+        <div style="flex:27;background:#b8924a">растениеводство 27%</div>
+        <div style="flex:24;background:#8a6a3e">землепользование 24%</div>
+        <div style="flex:6;background:#5b86a8">6%</div>
+        <div style="flex:5;background:#6e8fa8">5%</div>
+        <div style="flex:4;background:#a8c5a0"></div>
+        <div style="flex:3;background:#d8bd85"></div>
+      </div>
+      <div class="ar-legend"><span><i style="background:#5b86a8"></i>транспорт 6%</span><span><i style="background:#6e8fa8"></i>упаковка 5%</span><span><i style="background:#a8c5a0"></i>переработка 4%</span><span><i style="background:#d8bd85"></i>торговля 3%</span></div>
+      <div class="ar-cap">Poore J., Nemecek T., Science, 2018; по визуализации Our World in Data · округлено</div>
+    </div>
+    <p>Поэтому <strong>что</strong> вы едите важнее, чем <strong>откуда</strong>. Говядина, выращенная на соседней ферме, всё равно оставляет в десятки раз больший след, чем горох, привезённый издалека. Об этом подробно — в эссе <a href="essay-diet-carbon.html">«Углеродный след тарелки»</a>.</p>
+    <p>Но у правила есть два важных исключения. <strong>Самолёт:</strong> продукты, которые везут авиатранспортом — свежие ягоды зимой, спаржа, экзотические фрукты с коротким сроком хранения, — могут иметь след в десятки раз больше, чем те же продукты, привезённые морем. <strong>Отапливаемые теплицы:</strong> местные помидоры и огурцы зимой, выращенные в теплице на газовом отоплении, нередко оставляют больший след, чем привезённые грузовиком из страны, где они росли в открытом грунте под солнцем.</p>
+  </div>
+</section>
+
+<section class="content-section alt" id="greenhouse">
+  <div style="max-width:820px;">
+    <div class="section-num">03</div>
+    <div class="disc-meta">огурец в январе</div>
+    <h2>Теплица зимой: <em>честный разбор</em></h2>
+    <p>За последние десять с лишним лет в России построили много крупных тепличных комбинатов, и сегодня огурцы, томаты и салаты отечественного производства лежат в магазинах круглый год. Это хорошо для продовольственной независимости и для свежести: продукт едет до прилавка день-два, а не неделю. Но с точки зрения энергии зимняя теплица на широте Москвы — сложное сооружение. Чтобы вырастить огурец в декабре, её нужно отапливать при минус двадцати за стеклом и почти круглые сутки досвечивать мощными лампами, потому что естественного света не хватает.</p>
+    <p>Сколько это стоит климату, зависит от того, откуда берутся тепло и электричество. Теплица, которая работает на газовой котельной и электричестве угольной станции, даёт зимнему огурцу большой след. Теплица, которая использует сбросное тепло ТЭЦ или промышленного предприятия, электричество от ГЭС или АЭС и светодиодные лампы вместо натриевых, — гораздо меньший. Такие решения уже применяются, но покупатель на полке их не видит.</p>
+    <p>Практический вывод простой. Летом и в начале осени, когда огурцы и томаты растут в открытом грунте и в неотапливаемых теплицах, — это лучший выбор. Зимой не обязательно отказываться от свежих овощей совсем, но стоит опираться на то, что хранится само: капусту, корнеплоды, тыкву, лук, квашенья и заморозку. А свежую зелень зимой проще всего вырастить на собственном подоконнике.</p>
+  </div>
+</section>
+
+<section class="content-section" id="rules">
+  <div style="max-width:880px;">
+    <div class="section-num">04</div>
+    <div class="disc-meta">простая иерархия</div>
+    <h2>Как <em>выбирать</em></h2>
+    <div class="ar-panel">
+      <div class="ar-sub">Инфографика 3 · От лучшего выбора к худшему (для овощей и фруктов)</div>
+      <div class="ar-grid ar-g4">
+        <div class="ar-card ar-dark"><div class="ar-card-n">1</div><div class="ar-card-h">Местное и сезонное</div><div class="ar-card-d">открытый грунт, в своё время, со своей грядки, рынка или фермы</div></div>
+        <div class="ar-card" style="--c:#6ea87e"><div class="ar-card-n">2</div><div class="ar-card-h">Сохранённое</div><div class="ar-card-d">урожай из погреба, квашенья, заморозка, сушка — сезонность, растянутая на зиму</div></div>
+        <div class="ar-card" style="--c:#b8924a"><div class="ar-card-n">3</div><div class="ar-card-h">Привезённое морем или по земле</div><div class="ar-card-d">выращено в открытом грунте там, где сейчас сезон</div></div>
+        <div class="ar-card ar-warn"><div class="ar-card-n">4</div><div class="ar-card-h">Самолёт и отопленная теплица</div><div class="ar-card-d">свежие ягоды зимой, нежные овощи «не в сезон» — самый большой след</div></div>
+      </div>
+      <div class="ar-cap">Обобщение редакции · по исследованиям жизненного цикла продуктов</div>
+    </div>
+    <p>Самое главное при этом — меньше выбрасывать. Около трети произведённой еды в мире теряется или выбрасывается. Купленное по сезону и с умом, съеденное, а остатки — <a href="essay-apartment-compost.html">в компост</a>: это даёт больше, чем любые расчёты километров.</p>
+  </div>
+</section>
+
+<section class="content-section alt" id="farmers">
+  <div style="max-width:820px;">
+    <div class="section-num">05</div>
+    <div class="disc-meta">короткая цепочка от поля до стола</div>
+    <h2>Рынок, ферма <em>и подписка</em></h2>
+    <p>Самый простой способ есть по сезону — покупать у тех, кто выращивает. На рынке сезонность видна сразу: в июне прилавки полны редиса и зелени, в августе — помидоров и огурцов, в сентябре — яблок и капусты. Там же можно спросить, откуда продукт и как его выращивали.</p>
+    <p>Есть и другие короткие цепочки, которые в последние годы распространились в России:</p>
+    <ul class="ar-list">
+      <li><b>Закупки напрямую у фермеров.</b> Фермерские хозяйства принимают заказы через сайт или мессенджер и раз в неделю привозят их в город — в пункты выдачи или до двери. Цены часто ниже, чем в фермерских магазинах.</li>
+      <li><b>Совместные закупки и продуктовые кооперативы.</b> Группа соседей или коллег заказывает у фермера крупную партию — мешок картошки, ящик яблок, сыр, — и делит её. Это дешевле и меньше упаковки.</li>
+      <li><b>Огород по подписке.</b> Модель, которую в мире называют «сельским хозяйством при поддержке сообщества» (CSA): весной семья оплачивает долю будущего урожая, а летом и осенью каждую неделю получает корзину того, что выросло. Фермер получает деньги тогда, когда они нужнее всего, а вместе с ними — общий риск неурожая с покупателями.</li>
+      <li><b>Свой огород или общественный.</b> Даже несколько грядок на даче или в общественном огороде во дворе дают понимание, как устроен сезон, лучше любой статьи. Как вернуть остатки в почву — в эссе <a href="essay-dacha-compost.html">«Компост на даче»</a>.</li>
+    </ul>
+    <p>Что спросить у фермера: где находится хозяйство, что сейчас в сезоне, как хранят урожай, чем удобряют и от чего защищают растения. Хороший фермер на такие вопросы отвечает охотно — и это само по себе знак.</p>
+  </div>
+</section>
+
+<section class="content-section" id="menu">
+  <div style="max-width:900px;">
+    <div class="section-num">06</div>
+    <div class="disc-meta">как это выглядит на тарелке</div>
+    <h2>Сезонное <em>меню</em></h2>
+    <p>Сезонная кухня средней полосы гораздо разнообразнее, чем кажется. Вот один примерный день для каждого времени года — без экзотики и сложных рецептов.</p>
+    <div class="ar-panel">
+      <div class="ar-sub">Инфографика 4 · Один день сезонного меню</div>
+      <div class="ar-grid ar-g4">
+        <div class="ar-card" style="--c:#6e8fa8"><div class="ar-card-h">Зима</div><ul><li>каша с замороженной смородиной или брусникой</li><li>щи из квашеной капусты, хлеб</li><li>винегрет, печёная тыква</li><li>чай с сушёными яблоками и травами</li></ul></div>
+        <div class="ar-card" style="--c:#6ea87e"><div class="ar-card-h">Весна</div><ul><li>яйца с зелёным луком с подоконника</li><li>зелёные щи из щавеля и крапивы</li><li>салат из редиса и микрозелени</li><li>последняя картошка из погреба с укропом</li></ul></div>
+        <div class="ar-card" style="--c:#b8924a"><div class="ar-card-h">Лето</div><ul><li>творог со свежей клубникой или черникой</li><li>холодник или окрошка</li><li>молодой картофель, огурцы, помидоры</li><li>овощное рагу из кабачков</li></ul></div>
+        <div class="ar-card" style="--c:#c4956a"><div class="ar-card-h">Осень</div><ul><li>каша с яблоками и тыквой</li><li>грибной суп, капустный пирог</li><li>тушёная свёкла и морковь</li><li>печёные яблоки с клюквой</li></ul></div>
+      </div>
+      <div class="ar-cap">Пример редакции · в основе — продукты открытого грунта, хранения и заготовок средней полосы; бобовые, крупы и хлеб — круглый год</div>
+    </div>
+    <p>Обратите внимание: опора сезонной кухни — не только овощи, но и то, что хранится всегда: крупы, горох, фасоль, чечевица, хлеб. Бобовые к тому же дают белок с самым маленьким углеродным следом. Если заменить ими часть мяса, это сделает для климата больше, чем вся сезонность вместе взятая.</p>
+  </div>
+</section>
+
+<section class="content-section alt" id="store">
+  <div style="max-width:880px;">
+    <div class="section-num">07</div>
+    <div class="disc-meta">наследие бабушкиной кладовой</div>
+    <h2>Запасы <em>на зиму</em></h2>
+    <p>Северные кухни веками решали одну задачу: как дожить до весны с витаминами. Решений накопилось много, и все они до сих пор работают.</p>
+    <div class="ar-panel">
+      <div class="ar-sub">Инфографика 5 · Шесть способов сохранить урожай</div>
+      <div class="ar-grid ar-g3">
+        <div class="ar-card" style="--c:#6ea87e"><div class="ar-card-h">Квашение</div><div class="ar-card-d">капуста, огурцы, яблоки, морковь — молочнокислые бактерии сохраняют овощи и витамин C и добавляют полезные микробы</div></div>
+        <div class="ar-card" style="--c:#8a6a3e"><div class="ar-card-h">Погреб и хранение</div><div class="ar-card-d">картофель, морковь, свёкла, капуста, лёжкие сорта яблок — при +2…+4 °C и правильной влажности до весны</div></div>
+        <div class="ar-card" style="--c:#6e8fa8"><div class="ar-card-h">Заморозка</div><div class="ar-card-d">ягоды, зелень, кабачки, перец — быстрее и лучше сохраняет витамины, чем варка</div></div>
+        <div class="ar-card" style="--c:#b8924a"><div class="ar-card-h">Сушка</div><div class="ar-card-d">грибы, яблоки, травы для чая, ягоды; лёгкое хранение без электричества</div></div>
+        <div class="ar-card" style="--c:#c5364a"><div class="ar-card-h">Варенье и консервы</div><div class="ar-card-d">привычно и вкусно, но много сахара и энергии — лучше в меру</div></div>
+        <div class="ar-card" style="--c:#3d5240"><div class="ar-card-h">Подоконник</div><div class="ar-card-d">лук на перо, микрозелень и проростки — свежая зелень в феврале за неделю</div></div>
+      </div>
+    </div>
+    <p><strong>А как же витамины?</strong> Бытует мнение, что зимой в овощах «ничего не осталось». Это не совсем так. Замороженные овощи и ягоды по содержанию витаминов, как показывают сравнительные исследования, обычно не уступают «свежим» из магазина, которые неделю ехали и лежали на полке, — заморозка останавливает потери. Квашеная капуста веками была главным зимним источником витамина C на Руси: в ней он сохраняется месяцами. Картофель и капуста при правильном хранении теряют витамины постепенно, но к весне всё ещё остаются полезными. А сушка хорошо сохраняет минералы и клетчатку, хотя витамин C при ней частично разрушается.</p>
+    <p>Немного истории. Русская кухня выработала, пожалуй, самый богатый в Европе набор способов зимнего хранения: квашение и мочение (мочёные яблоки и брусника), соление грибов, сушка в остывающей русской печи, ледники — погреба, куда зимой набивали лёд с реки, чтобы он держал холод до осени. Календарь постов тоже следовал сезонам: долгие посты приходились на время, когда в погребах оставались в основном овощи, грибы и соленья. Сегодня эти навыки снова интересны — не из нужды, а ради вкуса и бережного отношения к урожаю.</p>
+  </div>
+</section>
+
+<section class="content-section" id="honest">
+  <div style="max-width:820px;">
+    <div class="section-num">08</div>
+    <div class="disc-meta">критика темы</div>
+    <h2>Честный <em>взгляд</em></h2>
+    <p><strong>Сезонность — не догма.</strong> Апельсин зимой или банан, привезённые морем, не делают человека «плохим экологом». Отказ от них почти ничего не даёт климату по сравнению с тем, сколько мяса и молочных продуктов в рационе.</p>
+    <p><strong>Не у всех есть погреб и время.</strong> Квашение и заготовки требуют места, времени и навыков. Для городской семьи разумный компромисс — морозилка, рынок по выходным и несколько простых заготовок.</p>
+    <p><strong>Здоровье прежде всего.</strong> Разнообразное питание с овощами и фруктами круглый год важнее, чем строгая сезонность. Сезонность — способ сделать это вкуснее и дешевле, а не повод ограничивать себя.</p>
+  </div>
+</section>
+
+<section class="content-section alt" id="outro">
+  <div style="max-width:820px;">
+    <div class="section-num">—</div>
+    <h2>Итог: <em>год на тарелке</em></h2>
+    <p>Есть по сезону — значит слышать ритм года: майский щавель, июльские ягоды, августовские помидоры, октябрьскую капусту в бочке. Для климата важнее, что мы едим, чем откуда, — но авиаперевозки и отапливаемые теплицы стоит обходить стороной. А запасы на зиму — квашенья, погреб, морозилка — превращают летнее изобилие в зимнее здоровье и возвращают на кухню навыки, которые веками кормили север.</p>
+    <p style="margin-top:2rem;">Читайте также: <a href="essay-diet-carbon.html">Углеродный след тарелки</a> · <a href="essay-bread.html">Хлеб</a> · <a href="essay-apartment-compost.html">Компост в квартире</a> · <a href="essay-dacha-compost.html">Компост на даче</a> · <a href="essay-living-soil.html">Почва — живая</a></p>
+    <div class="sources">
+      <div class="src-title"><small>Источники</small>На чём основан текст</div>
+      <ol class="src-list">
+        <li>Poore J., Nemecek T. (2018). Reducing food's environmental impacts through producers and consumers. Science 360, 987–992.</li>
+        <li>Ritchie H. (2020). You want to reduce the carbon footprint of your food? Focus on what you eat, not whether your food is local. Our World in Data.</li>
+        <li>Theurl M. C. et al. (2014). Contrasted greenhouse gas emissions from local versus long-range tomato production. Agronomy for Sustainable Development 34, 593–602.</li>
+        <li>FAO (2011, 2019). Global food losses and food waste; The State of Food and Agriculture 2019.</li>
+        <li>Li L. et al. (2017). Selected nutrient analyses of fresh, fresh-stored, and frozen fruits and vegetables. Journal of Food Composition and Analysis 59, 8–17.</li>
+        <li>Rickman J. C., Barrett D. M., Bruhn C. M. (2007). Nutritional comparison of fresh, frozen and canned fruits and vegetables. Part 1. Journal of the Science of Food and Agriculture 87, 930–944.</li>
+        <li>Urgenci — международная сеть партнёрского земледелия (Community Supported Agriculture).</li>
+      </ol>
+    </div>
+    <div style="margin-top:2.5rem;padding-top:2rem;border-top:1px solid rgba(74,124,89,0.15);font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--ink-light);text-align:center;font-size:1rem;">
+      — редакция «ЭкоСознания», раздел «Питание»
+    </div>
+  </div>
+</section>
+
+<style>
+.ar-panel{background:var(--warm);border:1px solid rgba(74,124,89,.18);padding:1.6rem 1.4rem 1.1rem;margin:1.8rem 0;}
+.ar-sub{font-family:'Jost',sans-serif;font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);margin-bottom:1rem;text-align:center;}
+.ar-cap{font-family:'Jost',sans-serif;font-size:.62rem;letter-spacing:.08em;color:var(--sage-text,#6b8a70);text-align:center;margin-top:.9rem;line-height:1.6;}
+.ar-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.ar-list{list-style:none;padding:0;margin:1.2rem 0;}
+.ar-list li{padding:.7rem 0 .7rem 1.1rem;border-left:2px solid var(--fern);margin-bottom:.6rem;line-height:1.75;}
+.ar-rows{display:flex;flex-direction:column;gap:.65rem;}
+.ar-row{display:grid;grid-template-columns:200px 1fr 84px;align-items:center;gap:.9rem;}
+.ar-row-l{font-size:.85rem;color:var(--ink);line-height:1.35;}
+.ar-row-l small{display:block;color:var(--ink-light);font-size:.72rem;}
+.ar-row-b{background:rgba(74,124,89,.08);height:24px;border-radius:2px;overflow:hidden;}
+.ar-fill{height:100%;}
+.ar-row-v{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--ink);text-align:right;}
+.ar-grid{display:grid;gap:.6rem;}
+.ar-g2{grid-template-columns:repeat(2,1fr);}.ar-g3{grid-template-columns:repeat(3,1fr);}.ar-g4{grid-template-columns:repeat(4,1fr);}
+.ar-card{background:var(--paper);border:1px solid rgba(74,124,89,.22);border-top:4px solid var(--c,#6ea87e);padding:.85rem .95rem;}
+.ar-card-n{font-family:'Cormorant Garamond',serif;font-size:1.7rem;line-height:1;color:var(--c,#4a7c59);}
+.ar-card-h{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--ink);margin:.25rem 0 .3rem;line-height:1.25;}
+.ar-card-d{font-size:.78rem;line-height:1.5;color:var(--ink-light);}
+.ar-card ul{margin:.2rem 0 0;padding-left:1.05rem;font-size:.78rem;line-height:1.5;color:var(--ink-light);}
+.ar-card li{margin-bottom:.25rem;}
+.ar-dark{background:#4a7c59;border-color:#4a7c59;}
+.ar-dark .ar-card-n{color:#d3e6d0;}.ar-dark .ar-card-h{color:#faf6ef;}.ar-dark .ar-card-d,.ar-dark ul{color:rgba(250,246,239,.85);}
+.ar-warn{background:#f3e5dc;border-color:rgba(122,79,46,.3);--c:#7a4f2e;}
+.ar-table{width:100%;border-collapse:collapse;font-size:.8rem;line-height:1.45;min-width:620px;}
+.ar-table th{font-family:'Jost',sans-serif;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--moss);text-align:left;padding:.5rem .6rem;border-bottom:1px solid rgba(74,124,89,.3);font-weight:500;}
+.ar-table td{padding:.55rem .6rem;border-bottom:1px solid rgba(74,124,89,.12);color:var(--ink-light);vertical-align:top;}
+.ar-table td:first-child{color:var(--ink);font-weight:500;}
+.ar-table th,.ar-table td{overflow-wrap:normal;word-break:normal;}
+.ar-stack{display:flex;height:46px;border-radius:3px;overflow:hidden;font-family:'Jost',sans-serif;font-size:.74rem;color:#faf6ef;}
+.ar-stack>div{display:flex;align-items:center;justify-content:center;white-space:nowrap;overflow:hidden;padding:0 .25rem;}
+.ar-legend{display:flex;flex-wrap:wrap;gap:.5rem 1.2rem;justify-content:center;margin-top:.7rem;font-size:.74rem;color:var(--ink-light);}
+.ar-legend span{display:inline-flex;align-items:center;gap:.4rem;}
+.ar-legend i{display:inline-block;width:12px;height:12px;}
+.ar-check{margin:0;padding-left:1.4rem;}
+.ar-check li{margin-bottom:.6rem;line-height:1.6;font-size:.9rem;color:var(--ink-light);}
+.ar-check b{color:var(--ink);font-weight:500;}
+.ar-months{display:grid;grid-template-columns:repeat(6,1fr);gap:.4rem;}
+.ar-m{background:var(--paper);border:1px solid rgba(74,124,89,.2);border-top:4px solid var(--c,#6ea87e);padding:.6rem .65rem;font-size:.72rem;line-height:1.45;color:var(--ink-light);}
+.ar-m b{display:block;font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:500;color:var(--ink);margin-bottom:.15rem;}
+.ar-h3{font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:400;margin:2.2rem 0 .8rem;color:var(--ink);}
+@media(max-width:860px){ .ar-g4{grid-template-columns:repeat(2,1fr);} .ar-g3{grid-template-columns:repeat(2,1fr);} .ar-months{grid-template-columns:repeat(3,1fr);} }
+@media(max-width:700px){
+  .ar-scroll svg{min-width:620px;}
+  .ar-row{grid-template-columns:1fr 76px;}
+  .ar-row-l{grid-column:1 / -1;}
+  .ar-g2,.ar-g3,.ar-g4{grid-template-columns:1fr;}
+  .ar-months{grid-template-columns:repeat(2,1fr);}
+  .ar-stack{font-size:.62rem;}
+}
+</style>
+
+</main>
+
+<!-- ECO:MANAGED:footer -->
+<footer class="gf">
+  <div class="gf-top">
+    <div class="gf-brand">
+      <a href="index.html" class="gf-logo">
+        <svg viewBox="0 0 100 100" fill="none" class="logo-svg" style="width:24px;height:24px;flex-shrink:0;"><circle cx="50" cy="50" r="40" stroke="#f3ede3" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#6ea87e"/></svg>
+        <span class="gf-logo-text">Эко<em>Сознание</em></span>
+      </a>
+      <p class="gf-tagline">Экологический взгляд как линза для любой сферы жизни</p>
+    </div>
+    <div class="gf-cols">
+      <div>
+        <div class="gf-col-title">Разделы</div>
+        <div class="gf-sections">
+          <a href="section-philosophy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Философия</span></a>
+          <a href="section-psychology.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Психология</span></a>
+          <a href="section-lifestyle.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Стиль жизни</span></a>
+          <a href="section-technologies.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="gf-sec-name">Технологии</span></a>
+          <a href="section-food.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Питание</span></a>
+          <a href="section-architecture.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Архитектура</span></a>
+          <a href="section-economy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Экономика</span></a>
+          <a href="section-education.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="gf-sec-name">Образование</span></a>
+          <a href="section-community.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Сообщество</span></a>
+          <a href="section-travel.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="gf-sec-name">Путешествия</span></a>
+          <a href="section-health.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Здоровье</span></a>
+          <a href="section-science.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Наука</span></a>
+        </div>
+      </div>
+      <div>
+        <div class="gf-col-title">Навигация</div>
+        <nav class="gf-nav-links">
+          <a href="index.html" class="gf-nav-link">Главная</a>
+          <a href="map.html" class="gf-nav-link">Карта связей</a>
+          <a href="paths.html" class="gf-nav-link">Тропы чтения</a>
+          <a href="tree.html" class="gf-nav-link">Дерево материалов</a>
+          <a href="revisions.html" class="gf-nav-link">Что не подтвердилось</a>
+          <a href="thinkers.html" class="gf-nav-link">Указатель имён</a>
+          <a href="search.html" class="gf-nav-link">Поиск</a>
+          <a href="method.html" class="gf-nav-link">Как устроены материалы</a>
+            <a href="about.html" class="gf-nav-link">О проекте</a>
+          <a href="glossary.html" class="gf-nav-link">Глоссарий</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="gf-bottom">
+    <span class="gf-copy">© 2026 ЭкоСознание</span>
+    <div class="gf-bottom-links">
+      <a href="about.html">О проекте</a>
+      <a href="glossary.html">Глоссарий</a>
+    </div>
+  </div>
+</footer>
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+
+
+<!-- ECO:MANAGED:js -->
+<script src="assets/global.js" defer></script>
+<!-- /ECO:MANAGED:js -->
+</body>
+</html>
