@@ -6,12 +6,28 @@
   <atom:link href="https://morgunkonstantin.github.io/ecosite/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Экология как способ смотреть на реальность</description>
   <language>ru</language>
-  <lastBuildDate>Sun, 01 Nov 2026 11:42:44 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 01 Nov 2026 11:53:23 +0000</lastBuildDate>
   <image>
     <url>https://morgunkonstantin.github.io/ecosite/assets/og-image.png</url>
     <title>ЭкоСознание</title>
     <link>https://morgunkonstantin.github.io/ecosite/</link>
   </image>
+  <item>
+    <title>Как отличить честный углеродный офсет от продажи воздуха</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-carbon-offsets.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-carbon-offsets.html</guid>
+    <description>Как устроены углеродные кредиты, пять ловушек — дополнительность, базовый сценарий, постоянство, утечка, двойной счёт, — что показали независимые проверки, почему посадки деревьев плохо работают как «компенсация», лестница качества кредитов, чек-лист из десяти вопросов и новые правила. Пять инфографик.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Город, который пьёт дождь</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-sponge-city.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-sponge-city.html</guid>
+    <description>Городской остров тепла и ливни, которым некуда деться: как деревья охлаждают город и задерживают дождь, почему одно взрослое дерево ценнее десяти саженцев, правило 3-30-300, города-губки Китая, Копенгагена и Роттердама и что могут сделать жители. Пять инфографик.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
   <item>
     <title>Компост в квартире</title>
     <link>https://morgunkonstantin.github.io/ecosite/essay-apartment-compost.html</link>
@@ -547,14 +563,6 @@
     <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
-    <title>Как отличить честный углеродный офсет от продажи воздуха</title>
-    <link>https://morgunkonstantin.github.io/ecosite/essay-carbon-offsets.html</link>
-    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-carbon-offsets.html</guid>
-    <description>Как устроены углеродные кредиты, пять ловушек — дополнительность, базовый сценарий, постоянство, утечка, двойной счёт, — что показали независимые проверки, почему посадки деревьев плохо работают как «компенсация», лестница качества кредитов, чек-лист из десяти вопросов и новые правила. Пять инфографик.</description>
-    <category>Эссе</category>
-    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
-  </item>
-  <item>
     <title>Глина и земля как строительный материал</title>
     <link>https://morgunkonstantin.github.io/ecosite/essay-clay-earth.html</link>
     <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-clay-earth.html</guid>
@@ -737,14 +745,6 @@
     <description>Маленький дом — самый сильный экологический рычаг в строительстве: площадь бьёт по воплощённой и эксплуатационной энергии сразу. Почему непостроенный метр экологичнее любого материала, как проектирование делает маленькое просторным (принцип «не такого большого дома» Сары Сузанки), достаточность вместо гонки за метрами, и честные ограничения.</description>
     <category>Эссе</category>
     <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>Город, который пьёт дождь</title>
-    <link>https://morgunkonstantin.github.io/ecosite/essay-sponge-city.html</link>
-    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-sponge-city.html</guid>
-    <description>Городской остров тепла и ливни, которым некуда деться: как деревья охлаждают город и задерживают дождь, почему одно взрослое дерево ценнее десяти саженцев, правило 3-30-300, города-губки Китая, Копенгагена и Роттердама и что могут сделать жители. Пять инфографик.</description>
-    <category>Эссе</category>
-    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
     <title>Природный камень: стена, которая переживёт строителей</title>
