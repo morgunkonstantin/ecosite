@@ -6,7 +6,7 @@
   <atom:link href="https://morgunkonstantin.github.io/ecosite/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Экология как способ смотреть на реальность</description>
   <language>ru</language>
-  <lastBuildDate>Sun, 01 Nov 2026 12:17:45 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 01 Nov 2026 12:42:47 +0000</lastBuildDate>
   <image>
     <url>https://morgunkonstantin.github.io/ecosite/assets/og-image.png</url>
     <title>ЭкоСознание</title>
@@ -571,6 +571,14 @@
     <pubDate>Fri, 21 Aug 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
+    <title>Полторы тонны: углеродный бюджет одного человека</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-carbon-budget.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-carbon-budget.html</guid>
+    <description>Какой углеродный след на человека совместим с целью 1,5 °C, сколько выбрасывают страны, что весит одна тонна CO₂ и какие личные решения дают больше всего.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
     <title>Круговорот углерода: одна лишняя стрелка</title>
     <link>https://morgunkonstantin.github.io/ecosite/essay-carbon-cycle.html</link>
     <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-carbon-cycle.html</guid>
@@ -585,6 +593,14 @@
     <description>Глина и земля — самый распространённый строительный материал на планете, из которого живёт треть человечества. Семья земляных техник (саман, адобе, прессованная земля, earthbag, штукатурка), свойства (регуляция влажности, тепловая масса, здоровье), почти нулевая воплощённая энергия и полный возврат в почву, и единственная слабость — вода.</description>
     <category>Эссе</category>
     <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Воздух, которым мы дышим</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-clean-air.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-clean-air.html</guid>
+    <description>Что такое PM2.5 и диоксид азота, почему ВОЗ ужесточила нормы в 2021 году, какие источники загрязнения есть дома и что реально помогает дышать чище.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
     <title>Какое электричество на самом деле чистое?</title>
@@ -617,6 +633,14 @@
     <description>Дэвид Орр: экологический кризис — не провал образования, а его результат, ведь разрушают планету эффективнее всего наиболее образованные. Почему абстракция, дробление и культ успеха создали проблему, что такое «всякое образование — экологическое» и скрытый учебный план, чему учит само здание школы, и что такое экологическая грамотность (Капра).</description>
     <category>Эссе</category>
     <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Компост на даче: от кучи до тёплой грядки</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-dacha-compost.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-dacha-compost.html</guid>
+    <description>Как устроить компостную кучу на даче: зелёное и коричневое, влага и воздух, горячий и холодный компост, тёплая грядка и частые ошибки.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
     <title>Демархия: что если решения принимать жребием?</title>
@@ -657,6 +681,14 @@
     <description>Earthship — автономный дом Майкла Рейнольдса из шин, набитых землёй, с бутылочными перегородками, стеклянным южным фасадом, замкнутым круговоротом дождевой воды и солнечной энергией. Как эти системы сведены в единую замкнутую экосистему, история из пустыни Нью-Мексико, и честная цена автономии.</description>
     <category>Эссе</category>
     <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Экологическая тропа у школы</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-eco-trail.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-eco-trail.html</guid>
+    <description>Пошаговый план, как школе за один сезон сделать экологическую тропу: маршрут, восемь остановок, таблички, наблюдения учеников и план на год.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
     <title>Карта выбросов: где на самом деле углерод</title>
@@ -715,6 +747,22 @@
     <pubDate>Sun, 30 Aug 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
+    <title>Отпуск без следа</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-leave-no-trace.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-leave-no-trace.html</guid>
+    <description>Как отдыхать в лесу, в горах и у воды так, чтобы после нас природа осталась такой же: семь принципов «не оставляй следов», костёр, мусор, туалет и вода, походный набор.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Почва — живая</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-living-soil.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-living-soil.html</guid>
+    <description>Почва — одна из самых богатых жизнью сред на Земле: бактерии, грибы, черви и клещи, почвенный профиль, углерод в земле и почему перекопка вредит.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
     <title>Модульный и префаб-дом: точность цеха вместо площадки</title>
     <link>https://morgunkonstantin.github.io/ecosite/essay-modular-prefab.html</link>
     <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-modular-prefab.html</guid>
@@ -753,6 +801,14 @@
     <description>Вторичные материалы — балки, кирпич, окна и двери из разобранных зданий, взятые повторно с почти отрицательной воплощённой энергией. Чем повторное использование отличается от переработки, почему старый лес и кирпич часто лучше нового, двойная экономия для планеты, и честные ограничения — труд разборки, непредсказуемость, безопасность и нормы.</description>
     <category>Эссе</category>
     <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Еда сезона и места</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-seasonal-food.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-seasonal-food.html</guid>
+    <description>Что даёт сезонная и местная еда, где её польза преувеличена, календарь продуктов средней полосы, данные об углеродном следе и способы заготовки.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
     <title>Маленький дом: сорок метров, спроектированных как сто</title>
