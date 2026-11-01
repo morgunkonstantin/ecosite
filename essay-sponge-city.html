@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+<script>document.documentElement.classList.replace('no-js','js');</script>
+<meta charset="UTF-8">
+<meta name="description" content="Городской остров тепла и ливни, которым некуда деться: как деревья охлаждают город и задерживают дождь, почему одно взрослое дерево ценнее десяти саженцев, правило 3-30-300, города-губки Китая, Копенгагена и Роттердама и что могут сделать жители. Пять инфографик.">
+<meta property="og:title" content="Город, который пьёт дождь">
+<meta property="og:description" content="Городской остров тепла и ливни, которым некуда деться: как деревья охлаждают город и задерживают дождь, почему одно взрослое дерево ценнее десяти саженцев, правило 3-30-300, города-губки Китая, Копенгагена и Роттердама и что могут сделать жители. Пять инфографик.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Город, который пьёт дождь — ЭкоСознание</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/base.css">
+<style>
+.hero{padding:10rem 4rem 5rem;display:grid;grid-template-columns:1fr 380px;gap:4rem;align-items:end;border-bottom:1px solid rgba(74,124,89,.15);position:relative;overflow:hidden;}
+.hero-mark-svg{position:absolute;right:4rem;top:11rem;width:90px;height:90px;color:rgba(74,124,89,.18);pointer-events:none;}
+.hero-mark-svg svg{width:100%;height:100%;display:block;}
+.hero-tag{display:inline-flex;align-items:center;gap:.6rem;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);margin-bottom:1.5rem;}
+.hero-tag::before{content:'';display:block;width:24px;height:1px;background:var(--fern);}
+h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,6vw,5rem);font-weight:300;line-height:1.05;color:var(--ink);margin-bottom:1.8rem;}
+h1 em{font-style:italic;color:var(--moss);display:block;}
+.hero-lead{font-size:1rem;line-height:1.85;color:var(--ink-light);max-width:580px;}
+.hero-meta{display:flex;flex-direction:column;gap:1.5rem;padding-left:2rem;border-left:1px solid rgba(74,124,89,.2);}
+.meta-label{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);margin-bottom:.4rem;}
+.meta-value{font-size:.9rem;color:var(--ink-light);line-height:1.6;}
+.toc-bar{background:var(--ink);padding:0 4rem;display:flex;align-items:stretch;overflow-x:auto;}
+.toc-bar a{color:rgba(211,230,208,.6);text-decoration:none;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:1rem 1.5rem;border-right:1px solid rgba(255,255,255,.06);white-space:nowrap;transition:color .2s,background .2s;}
+.toc-bar a:hover{color:var(--mist);}
+.toc-bar a.active{color:var(--fern);}
+.content-section{padding:5rem 4rem;border-bottom:1px solid rgba(74,124,89,.1);}
+.content-section.alt{background:var(--cream);}
+.content-section.dark{background:var(--ink);}
+.section-label{display:flex;align-items:center;gap:1rem;margin-bottom:3rem;}
+.section-label-num{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);}
+.section-label-line{flex:1;height:1px;background:rgba(74,124,89,.15);}
+.section-label-tag{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);}
+h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:300;color:var(--ink);line-height:1.15;margin-bottom:1.5rem;}
+h2 em{font-style:italic;color:var(--moss);}
+h2.light{color:var(--cream);}
+h2.light em{color:var(--fern);}
+.article-layout{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}
+.article-layout.wide{grid-template-columns:3fr 2fr;}
+.article-body p{font-size:.95rem;line-height:1.9;color:var(--ink-light);margin-bottom:1.1rem;}
+.article-body p:last-child{margin-bottom:0;}
+.article-body p.light{color:rgba(211,230,208,.72);}
+.pull-quote{border-left:3px solid var(--moss);padding:1.2rem 1.5rem;margin:2rem 0;background:rgba(74,124,89,.05);}
+.pull-quote p{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;color:var(--ink);line-height:1.5;margin:0!important;}
+.pull-quote.light{background:rgba(255,255,255,.06);border-color:var(--fern);}
+.pull-quote.light p{color:var(--cream);}
+.pull-quote cite{display:block;margin-top:.6rem!important;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);font-style:normal;}
+.practices-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(74,124,89,.12);margin-top:2rem;}
+.practice-card{background:var(--paper);padding:2rem 1.8rem;transition:background .25s;}
+.content-section.alt .practice-card{background:var(--cream);}
+.practice-card:hover{background:var(--warm);}
+.practice-num{font-family:'Cormorant Garamond',serif;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);margin-bottom:.6rem;}
+.practice-name{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--ink);margin-bottom:.6rem;}
+.practice-name em{font-style:italic;color:var(--moss);}
+.practice-desc{font-size:.85rem;line-height:1.75;color:var(--ink-light);}
+.featured-strip{background:var(--ink);padding:3rem 3.5rem;display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center;margin-top:3rem;}
+.featured-label{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);margin-bottom:1rem;}
+.featured-strip h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;font-style:italic;color:var(--cream);margin-bottom:.8rem;line-height:1.2;}
+.featured-strip p{font-size:.87rem;line-height:1.8;color:rgba(211,230,208,.68);}
+.featured-btn{background:transparent;color:var(--fern);border:1px solid rgba(110,168,126,.4);padding:.8rem 1.6rem;text-decoration:none;font-family:'Jost',sans-serif;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;display:inline-block;transition:background .25s,color .25s;}
+.featured-btn:hover{background:var(--fern);color:var(--ink);}
+.rubrics-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,.12);margin-top:3rem;}
+.rubric-card{background:var(--paper);padding:2rem 1.6rem;transition:background .25s;}
+.rubric-card:hover{background:var(--warm);}
+.rubric-icon{font-size:1.4rem;margin-bottom:1rem;}
+.rubric-name{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--ink);margin-bottom:.6rem;}
+.rubric-desc{font-size:.82rem;line-height:1.75;color:var(--ink-light);}
+.rubric-example{margin-top:1rem;font-size:.78rem;font-style:italic;color:var(--moss);line-height:1.6;}
+.rubric-card.dark-card{background:var(--ink);}
+.rubric-card.dark-card .rubric-name{color:var(--cream);}
+.rubric-card.dark-card .rubric-desc{color:rgba(211,230,208,.65);}
+.rubric-card.dark-card .rubric-example{color:var(--fern);}
+.g-next-section{background:var(--ink);padding:2.5rem 4rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;}
+.g-next-label{font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(168,197,160,.45);margin-bottom:.5rem;}
+.g-next-link{display:inline-flex;align-items:center;gap:.8rem;text-decoration:none;}
+.g-next-name{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:var(--cream);font-style:italic;transition:color .2s;}
+.g-next-link:hover .g-next-name{color:var(--fern);}
+.g-next-arrow{font-family:'Cormorant Garamond',serif;font-size:2rem;color:rgba(110,168,126,.5);transition:transform .2s,color .2s;}
+.g-next-link:hover .g-next-arrow{transform:translateX(6px);color:var(--fern);}
+.g-next-num{font-family:'Cormorant Garamond',serif;font-size:4rem;font-weight:300;color:rgba(255,255,255,.06);line-height:1;}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease;}
+.reveal.visible{opacity:1;transform:none;}
+.d1{transition-delay:.1s;}
+.d2{transition-delay:.2s;}
+@media(max-width:800px){ .hero,.toc-bar,.content-section,.g-next-section{padding-left:1.5rem;padding-right:1.5rem;} .hero{grid-template-columns:1fr;} .hero-meta{padding-left:0;border-left:none;border-top:1px solid rgba(74,124,89,.2);padding-top:1.5rem;} .hero-mark-svg{right:1.5rem;top:9rem;width:60px;height:60px;} .article-layout,.article-layout.wide{grid-template-columns:1fr;gap:2rem;} .practices-grid,.rubrics-grid{grid-template-columns:1fr;} .featured-strip{grid-template-columns:1fr;gap:1.5rem;} }
+.methods-table{margin:2rem 0;border:1px solid rgba(74,124,89,.15);overflow-x:auto;}
+.methods-row{display:grid;grid-template-columns:180px repeat(4,1fr);gap:0;border-bottom:1px solid rgba(74,124,89,.1);min-width:760px;}
+.methods-row:last-child{border-bottom:none;}
+.methods-row.header{background:var(--ink);}
+.methods-row.header > div{color:var(--sage);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;padding:.9rem 1rem;}
+.methods-row > div{background:var(--paper);padding:.95rem 1rem;font-size:.85rem;color:var(--ink-light);line-height:1.5;border-right:1px solid rgba(74,124,89,.08);}
+.content-section.alt .methods-row > div{background:var(--cream);}
+.methods-row > div:last-child{border-right:none;}
+.methods-row > .method-name{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1rem;color:var(--ink);}
+.methods-row.header > .method-name{color:var(--sage);font-style:normal;}
+.seasons-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(74,124,89,.12);margin:2rem 0;}
+.season-card{background:var(--paper);padding:1.8rem 1.5rem;transition:background .25s;display:flex;flex-direction:column;}
+.content-section.alt .season-card{background:var(--cream);}
+.season-card:hover{background:var(--warm);}
+.season-icon{font-size:1.9rem;margin-bottom:.7rem;line-height:1;}
+.season-name{font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--ink);margin-bottom:.2rem;}
+.season-name em{font-style:italic;color:var(--moss);}
+.season-months{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--clay);margin-bottom:.9rem;}
+.season-actions{font-size:.83rem;line-height:1.7;color:var(--ink-light);margin-bottom:.8rem;}
+.season-watch{font-size:.78rem;line-height:1.6;color:var(--ink-light);padding-top:.7rem;border-top:1px dashed rgba(74,124,89,.18);margin-top:auto;}
+.season-watch strong{color:var(--rust);font-weight:400;}
+.timeline{margin:2rem 0;position:relative;border-left:1px solid rgba(74,124,89,.2);padding-left:2rem;}
+.timeline-item{margin-bottom:2rem;position:relative;}
+.timeline-item:last-child{margin-bottom:0;}
+.timeline-item::before{content:'';position:absolute;left:-2.45rem;top:.3rem;width:9px;height:9px;border-radius:50%;background:var(--moss);box-shadow:0 0 0 3px var(--paper);}
+.content-section.alt .timeline-item::before{box-shadow:0 0 0 3px var(--cream);}
+.timeline-era{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin-bottom:.4rem;}
+.timeline-name{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--ink);margin-bottom:.5rem;line-height:1.3;}
+.timeline-name em{font-style:italic;color:var(--moss);}
+.timeline-desc{font-size:.88rem;line-height:1.75;color:var(--ink-light);}
+.timeline-desc em{font-style:italic;color:var(--moss);}
+.case-block{background:var(--ink);padding:4rem 3.5rem;margin:2rem 0;}
+.case-inner{max-width:920px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start;}
+.case-block h3{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;color:var(--cream);line-height:1.25;margin-bottom:1.3rem;}
+.case-block h3 em{font-style:italic;color:var(--fern);}
+.case-block p{font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.75;color:rgba(211,230,208,.75);margin-bottom:1rem;}
+.case-stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.08);}
+.case-stat{background:rgba(255,255,255,.04);padding:1.4rem 1.2rem;text-align:center;}
+.case-stat-num{font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--fern);font-weight:300;line-height:1;margin-bottom:.4rem;}
+.case-stat-lbl{font-size:.72rem;color:rgba(211,230,208,.65);line-height:1.5;}
+.case-link{display:inline-flex;align-items:center;gap:.6rem;font-family:'Jost',sans-serif;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--fern);text-decoration:none;border-bottom:1px solid rgba(110,168,126,.4);padding-bottom:.3rem;margin-top:1rem;}
+.case-link:hover{border-color:var(--fern);}
+@media(max-width:800px){ .case-inner{grid-template-columns:1fr;gap:2rem;} .case-block{padding:2.5rem 1.5rem;} .seasons-grid{grid-template-columns:1fr 1fr;} .methods-row{grid-template-columns:140px repeat(4,1fr);min-width:660px;} }
+@media(max-width:540px){ .seasons-grid{grid-template-columns:1fr;} .case-stats{grid-template-columns:1fr 1fr;} }
+.cycle-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,.12);margin:2rem 0;}
+.cycle-card{background:var(--paper);padding:1.8rem 1.6rem;text-align:center;transition:background .25s;}
+.content-section.alt .cycle-card{background:var(--cream);}
+.cycle-card:hover{background:var(--warm);}
+.cycle-step{font-family:'Cormorant Garamond',serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);margin-bottom:.6rem;}
+.cycle-icon{font-size:2rem;margin-bottom:.8rem;line-height:1;}
+.cycle-name{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--ink);margin-bottom:.5rem;}
+.cycle-name em{font-style:italic;color:var(--moss);}
+.cycle-desc{font-size:.82rem;line-height:1.7;color:var(--ink-light);}
+.can-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:2rem 0;}
+.can-col h4{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:400;margin-bottom:1rem;}
+.can-col.yes h4{color:var(--moss);}
+.can-col.no h4{color:var(--rust);}
+.can-list{list-style:none;display:flex;flex-direction:column;gap:0;}
+.can-item{font-size:.85rem;line-height:1.6;color:var(--ink-light);padding:.45rem 0;border-bottom:1px dashed rgba(74,124,89,.12);}
+.can-item:last-child{border-bottom:none;}
+.can-item::before{margin-right:.5rem;}
+.can-col.yes .can-item::before{content:'✓';color:var(--fern);}
+.can-col.no .can-item::before{content:'✗';color:var(--rust);}
+.soil-block{background:var(--ink);padding:4rem 3.5rem;margin:3rem 0;}
+.soil-inner{max-width:720px;margin:0 auto;}
+.soil-block h3{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;font-style:italic;color:var(--cream);line-height:1.3;margin-bottom:1.5rem;}
+.soil-block h3 em{color:var(--fern);}
+.soil-block p{font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.8;color:rgba(211,230,208,.75);margin-bottom:1.2rem;}
+.soil-block p:last-child{margin-bottom:0;}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(74,124,89,.15);margin:2rem 0;}
+.stat-card{background:var(--paper);padding:1.6rem 1.2rem;text-align:center;}
+.content-section.alt .stat-card{background:var(--cream);}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:300;color:var(--moss);line-height:1;margin-bottom:.4rem;}
+.stat-label{font-size:.78rem;line-height:1.5;color:var(--ink-light);}
+.q-list{display:flex;flex-direction:column;gap:0;margin:1.5rem 0;}
+.q-item{padding:1.2rem 0;border-bottom:1px solid rgba(74,124,89,.1);}
+.q-item:last-child{border-bottom:none;}
+.q-question{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink);margin-bottom:.5rem;font-weight:400;}
+.q-question em{font-style:italic;color:var(--moss);}
+.q-answer{font-size:.88rem;line-height:1.75;color:var(--ink-light);}
+@media(max-width:800px){ .cycle-grid{grid-template-columns:1fr 1fr;} .can-grid{grid-template-columns:1fr;} .stats-row{grid-template-columns:1fr 1fr;} .soil-block{padding:2.5rem 1.5rem;} }
+@media(max-width:540px){ .cycle-grid{grid-template-columns:1fr;} .stats-row{grid-template-columns:1fr 1fr;} }
+.section-num{font-family:'Cormorant Garamond',serif;font-size:0.85rem;letter-spacing:0.3em;color:var(--moss);margin-bottom:1rem;font-style:italic;}
+.disc-meta{font-family:'Jost',sans-serif;font-size:0.78rem;letter-spacing:0.05em;color:var(--ink-light);margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:1px solid rgba(74,124,89,0.15);font-weight:300;line-height:1.7;}
+.content-section p{font-size:1rem;line-height:1.85;color:var(--ink);margin-top:1.2rem;}
+.content-section p strong{color:var(--moss);font-weight:500;}
+.content-section p em{font-style:italic;color:var(--ink-light);}
+.content-section h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:300;line-height:1.15;color:var(--ink);margin-bottom:0.5rem;}
+.content-section h2 em{color:var(--moss);font-style:italic;display:block;}
+</style>
+
+<style>
+/* ── Источники: единый блок для всех эссе и лабораторий ── */
+.sources{margin:5rem 0 0;padding-top:2.5rem;border-top:1px solid rgba(74,124,89,.2);}
+.src-title{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;margin-bottom:1.6rem;}
+.src-title small{display:block;font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--clay-text);font-weight:400;margin-bottom:.6rem;}
+.src-list{list-style:none;counter-reset:src;padding:0;margin:0;}
+.src-list li{position:relative;padding-left:2.4rem;margin-bottom:1.1rem;font-size:.86rem;
+  line-height:1.7;color:var(--ink-light);}
+.src-list li::before{counter-increment:src;content:counter(src,decimal-leading-zero);
+  position:absolute;left:0;top:.15rem;font-family:'Jost',sans-serif;font-size:.66rem;
+  letter-spacing:.1em;color:var(--sage-text);}
+.src-a{color:var(--ink);}
+/* ── Ссылка на термин глоссария ── */
+a.term{color:inherit;text-decoration:none;border-bottom:1px dotted var(--fern-text);}
+a.term:hover{border-bottom-style:solid;color:var(--moss);}
+/* ── Вопросы-врезка ── */
+.quiz{background:var(--warm);padding:2.2rem 2.4rem;margin:2.5rem 0;border-left:3px solid var(--moss);}
+.quiz ol{margin:0;padding-left:1.4rem;}
+.quiz li{font-family:'Cormorant Garamond',serif;font-size:1.1rem;line-height:1.6;
+  color:var(--ink);margin-bottom:.9rem;}
+.quiz li:last-child{margin-bottom:0;}
+</style>
+<!-- ECO:MANAGED:head -->
+  <link rel="canonical" href="https://morgunkonstantin.github.io/ecosite/essay-sponge-city.html">
+  <meta property="og:url" content="https://morgunkonstantin.github.io/ecosite/essay-sponge-city.html">
+  <meta property="og:site_name" content="ЭкоСознание">
+  <meta property="og:image" content="https://morgunkonstantin.github.io/ecosite/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ЭкоСознание — экология как способ смотреть на реальность">
+  <meta name="twitter:image" content="https://morgunkonstantin.github.io/ecosite/assets/og-image.png">
+  <meta name="theme-color" content="#faf6ef">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="alternate" type="application/rss+xml" title="ЭкоСознание — RSS" href="feed.xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","name":"Город, который пьёт дождь","headline":"Город, который пьёт дождь","description":"Городской остров тепла и ливни, которым некуда деться: как деревья охлаждают город и задерживают дождь, почему одно взрослое дерево ценнее десяти саженцев, правило 3-30-300, города-губки Китая, Копенгагена и Роттердама и что могут сделать жители. Пять инфографик.","inLanguage":"ru-RU","url":"https://morgunkonstantin.github.io/ecosite/essay-sponge-city.html","isPartOf":{"@type":"WebSite","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecosite/"},"publisher":{"@type":"Organization","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecosite/"},"datePublished":"2026-11-01","author":{"@type":"Organization","name":"ЭкоСознание"},"articleSection":"Архитектура"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://morgunkonstantin.github.io/ecosite/"},{"@type":"ListItem","position":2,"name":"Архитектура","item":"https://morgunkonstantin.github.io/ecosite/section-architecture.html"},{"@type":"ListItem","position":3,"name":"Город, который пьёт дождь","item":"https://morgunkonstantin.github.io/ecosite/essay-sponge-city.html"}]}</script>
+<!-- /ECO:MANAGED:head -->
+</head>
+<body>
+<a class="skip-link" href="#content">Перейти к содержанию</a>
+
+<!-- ECO:MANAGED:nav -->
+<div class="g-nav-wrap" id="gNavWrap">
+  <div class="g-nav">
+    <a href="index.html" class="g-logo">
+      <svg viewBox="0 0 100 100" fill="none" class="logo-svg"><circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#4a7c59"/></svg>
+      <span class="g-logo-text">Эко<em>Сознание</em></span>
+    </a>
+    <ul class="g-links">
+      <li>
+        <button class="g-drop-btn" aria-expanded="false">
+          Разделы
+          <svg class="g-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg>
+        </button>
+        <div class="g-dropdown">
+          <a href="section-philosophy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Философия</span><span class="g-dd-num">01</span></a>
+          <a href="section-psychology.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="g-dd-name">Психология</span><span class="g-dd-num">02</span></a>
+          <a href="section-lifestyle.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Стиль жизни</span><span class="g-dd-num">03</span></a>
+          <a href="section-technologies.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="g-dd-name">Технологии</span><span class="g-dd-num">04</span></a>
+          <a href="section-food.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-dd-name">Питание</span><span class="g-dd-num">05</span></a>
+          <a href="section-architecture.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="g-dd-name">Архитектура</span><span class="g-dd-num">06</span></a>
+          <a href="section-economy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Экономика</span><span class="g-dd-num">07</span></a>
+          <a href="section-education.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="g-dd-name">Образование</span><span class="g-dd-num">08</span></a>
+          <a href="section-community.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Сообщество</span><span class="g-dd-num">09</span></a>
+          <a href="section-travel.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-dd-name">Путешествия</span><span class="g-dd-num">10</span></a>
+          <a href="section-health.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Здоровье</span><span class="g-dd-num">11</span></a>
+          <a href="section-science.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Наука</span><span class="g-dd-num">12</span></a>
+        </div>
+      </li>
+      <li><a href="about.html">О проекте</a></li>
+    </ul>
+    <button class="g-burger" id="gBurger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+
+<div class="g-overlay" id="gOverlay">
+  <div class="g-ov-section">
+    <div class="g-ov-label">Разделы</div>
+    <div class="g-ov-grid">
+      <a href="section-philosophy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Философия</span></a>
+      <a href="section-psychology.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="g-ov-name">Психология</span></a>
+      <a href="section-lifestyle.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/></svg></span><span class="g-ov-name">Стиль жизни</span></a>
+      <a href="section-technologies.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="g-ov-name">Технологии</span></a>
+      <a href="section-food.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-ov-name">Питание</span></a>
+      <a href="section-architecture.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="g-ov-name">Архитектура</span></a>
+      <a href="section-economy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Экономика</span></a>
+      <a href="section-education.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="g-ov-name">Образование</span></a>
+      <a href="section-community.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Сообщество</span></a>
+      <a href="section-travel.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-ov-name">Путешествия</span></a>
+      <a href="section-health.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Здоровье</span></a>
+      <a href="section-science.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Наука</span></a>
+    </div>
+  </div>
+  <div class="g-ov-section">
+    <div class="g-ov-label">Навигация</div>
+    <div class="g-ov-simple-links">
+      <a href="index.html" class="g-ov-simple-link">Главная</a>
+      <a href="map.html" class="g-ov-simple-link">Карта связей</a>
+      <a href="contents.html" class="g-ov-simple-link">Все материалы</a>
+      <a href="revisions.html" class="g-ov-simple-link">Что не подтвердилось</a>
+      <a href="search.html" class="g-ov-simple-link">Поиск</a>
+      <a href="paths.html" class="g-ov-simple-link">Тропы чтения</a>
+      <a href="tree.html" class="g-ov-simple-link">Дерево материалов</a>
+      <a href="thinkers.html" class="g-ov-simple-link">Указатель имён</a>
+      <a href="about.html" class="g-ov-simple-link">О проекте</a>
+    </div>
+  </div>
+</div>
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<main id="content" tabindex="-1">
+<!-- ECO:MANAGED:breadcrumb -->
+<nav class="breadcrumb" aria-label="Хлебные крошки"><a href="index.html">Главная</a> <span class="bc-sep">→</span> <a href="section-architecture.html">Архитектура</a> <span class="bc-sep">→</span> <span class="bc-current">Город, который пьёт дождь</span></nav>
+<!-- /ECO:MANAGED:breadcrumb -->
+
+<section class="hero" id="top">
+  <div class="hero-mark-svg"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="50" cy="50" r="45"/><path d="M22 72 H78" stroke-linecap="round"/><path d="M28 72 V48 H40 V72 M60 72 V40 H72 V72" stroke-linejoin="round"/><path d="M50 72 V58" stroke-linecap="round"/><circle cx="50" cy="50" r="9"/><path d="M34 24 l-3 7 M50 20 l-3 7 M66 24 l-3 7" stroke-linecap="round"/></svg></div>
+  <div>
+    <div class="hero-tag">Практическое эссе с инфографикой · Архитектура</div>
+    <h1>Город,<br><em>который пьёт</em><br>дождь</h1>
+    <p class="hero-lead">Летом асфальт раскаляется так, что над ним дрожит воздух, а после ливня по улицам текут реки, и вода уходит в канализацию, не успев напоить ни одно дерево. Города, построенные из камня и асфальта, перегреваются и захлёбываются одновременно. Но есть и другой путь: город-губка, который впитывает дождь, и город-лес, который охлаждает сам себя. Разбираемся, как работают городские деревья, почему одно взрослое дерево во дворе ценнее десяти саженцев и что могут сделать жители, чтобы их улица пила дождь, а не тонула в нём.</p>
+  </div>
+  <div class="hero-meta">
+    <div><div class="meta-label">Проблема</div><div class="meta-value">Город теплее окрестностей на несколько градусов · С асфальта стекает в разы больше дождевой воды, чем с леса</div></div>
+    <div><div class="meta-label">Решение</div><div class="meta-value">Деревья, дождевые сады, проницаемые покрытия, зелёные крыши — город, который впитывает, охлаждает и хранит воду</div></div>
+    <div><div class="meta-label">Главное</div><div class="meta-value">Беречь взрослые деревья важнее, чем сажать новые: их польза растёт вместе с кроной</div></div>
+  </div>
+</section>
+
+<div class="toc-bar">
+  <a href="#heat" class="active">Жара</a>
+  <a href="#water">Ливни</a>
+  <a href="#tree">Дерево-кондиционер</a>
+  <a href="#mature">Одно взрослое дерево</a>
+  <a href="#rule">Правило 3-30-300</a>
+  <a href="#sponge">Город-губка</a>
+  <a href="#act">Что можем мы</a>
+  <a href="#honest">Честный взгляд</a>
+  <a href="#outro">Итог</a>
+</div>
+
+<!-- ═══ 00 ЖАРА ═══ -->
+<section class="content-section" id="heat">
+  <div style="max-width:880px;">
+    <div class="section-num">00</div>
+    <div class="disc-meta">остров тепла</div>
+    <h2>Почему в городе <em>жарче</em></h2>
+    <p>В жаркий летний день разница между центром большого города и загородным лесом может составлять несколько градусов, а ночью — иногда больше. Это явление называют городским островом тепла. Причины понятны каждому, кто хоть раз шёл босиком по асфальту: тёмные поверхности днём накапливают солнечное тепло, а ночью отдают его, не давая городу остыть. Стены домов, машины, кондиционеры добавляют своё. А вот того, что охлаждает, — испаряющей влагу зелени и открытой земли — в городе мало.</p>
+
+    <!-- ИНФОГРАФИКА 1 -->
+    <div class="sc-panel">
+      <div class="sc-sub">Инфографика 1 · Насколько нагреваются разные поверхности в жаркий солнечный день</div>
+      <div class="sc-rows" role="img" aria-label="Иллюстративные температуры поверхностей в жаркий день: тёмный асфальт на солнце около 55 градусов, бетон на солнце около 45, газон на солнце около 35, земля под кроной дерева около 28">
+        <div class="sc-row"><div class="sc-row-l">Тёмный асфальт на солнце</div><div class="sc-row-b"><div class="sc-fill" style="width:92%;background:#3d2b1e"></div></div><div class="sc-row-v">≈ 55 °C</div></div>
+        <div class="sc-row"><div class="sc-row-l">Бетон и плитка на солнце</div><div class="sc-row-b"><div class="sc-fill" style="width:75%;background:#8a6a3e"></div></div><div class="sc-row-v">≈ 45 °C</div></div>
+        <div class="sc-row"><div class="sc-row-l">Газон на солнце</div><div class="sc-row-b"><div class="sc-fill" style="width:58%;background:#a8c5a0"></div></div><div class="sc-row-v">≈ 35 °C</div></div>
+        <div class="sc-row"><div class="sc-row-l">Земля в тени кроны</div><div class="sc-row-b"><div class="sc-fill" style="width:47%;background:#4a7c59"></div></div><div class="sc-row-v">≈ 28 °C</div></div>
+      </div>
+      <div class="sc-cap">Иллюстративные значения при температуре воздуха около +30 °C · по данным измерений разница между затенёнными и солнечными поверхностями достигает 10–25 °C</div>
+    </div>
+
+    <p>Жара — не просто неудобство. Волны жары — одна из самых смертоносных климатических угроз: тяжелее всего они бьют по пожилым, больным и людям в плохо проветриваемых квартирах верхних этажей. Исследование, опубликованное в журнале The Lancet, оценило, что если бы деревья покрывали хотя бы треть площади европейских городов, это позволило бы предотвратить около трети летних смертей, связанных с городским островом тепла.</p>
+  </div>
+</section>
+
+<!-- ═══ 01 ЛИВНИ ═══ -->
+<section class="content-section alt" id="water">
+  <div style="max-width:880px;">
+    <div class="section-num">01</div>
+    <div class="disc-meta">куда уходит дождь</div>
+    <h2>Ливень, <em>которому некуда деться</em></h2>
+    <p>Вторая беда — вода. В лесу большая часть дождя задерживается кронами, впитывается подстилкой и почвой, медленно уходит в грунтовые воды. В городе дождь падает на крыши, асфальт и плитку, которые не впитывают ничего. Вода мгновенно собирается в потоки, переполняет ливнёвку, затапливает подземные переходы и дворы, несёт в реки мусор, масло и соль с дорог.</p>
+
+    <!-- ИНФОГРАФИКА 2 -->
+    <div class="sc-panel">
+      <div class="sc-sub">Инфографика 2 · Куда уходит дождь: природный участок и плотная застройка</div>
+      <div class="sc-water">
+        <div class="sc-wcol">
+          <div class="sc-wh">Природный участок</div>
+          <div class="sc-wbar"><div style="flex:40;background:#a8c5a0">испарение ≈ 40%</div><div style="flex:50;background:#6e8fa8">впитывается ≈ 50%</div><div style="flex:10;background:#7a4f2e">сток 10%</div></div>
+        </div>
+        <div class="sc-wcol">
+          <div class="sc-wh">Город, где 75–100% поверхности непроницаемы</div>
+          <div class="sc-wbar"><div style="flex:30;background:#a8c5a0">испарение ≈ 30%</div><div style="flex:15;background:#6e8fa8">впит. 15%</div><div style="flex:55;background:#7a4f2e">сток ≈ 55%</div></div>
+        </div>
+      </div>
+      <div class="sc-cap">Классическая схема Агентства по охране окружающей среды США · доли примерные и сильно зависят от климата и почв</div>
+    </div>
+
+    <p>Сток с плотно застроенной территории может быть в пять раз больше, чем с природной. А климат меняется так, что короткие сильные ливни становятся чаще и мощнее: тёплый воздух удерживает больше влаги и выливает её разом. Ливнёвые трубы, рассчитанные на климат прошлого века, с этим не справляются. Расширять их бесконечно — очень дорого. Поэтому всё больше городов идут другим путём: учат город впитывать воду там, где она падает.</p>
+  </div>
+</section>
+
+<!-- ═══ 02 ДЕРЕВО-КОНДИЦИОНЕР ═══ -->
+<section class="content-section" id="tree">
+  <div style="max-width:820px;">
+    <div class="section-num">02</div>
+    <div class="disc-meta">тень, испарение, дождевой зонтик</div>
+    <h2>Дерево — <em>кондиционер и губка</em></h2>
+    <p>Городское дерево работает сразу на двух фронтах.</p>
+    <p><strong>Против жары.</strong> Крона даёт тень: асфальт, стены, скамейки под ней не накаляются. Но главный секрет — испарение. Как мы писали в эссе <a href="essay-trees-air.html">«Дерево из воздуха»</a>, большое дерево в жаркий день поднимает из земли и испаряет листьями сотни литров воды. На испарение тратится огромное количество тепла — тот же принцип, по которому мы остываем, когда потеем. Одно крупное дерево охлаждает пространство вокруг себя так, как работал бы мощный кондиционер, только без электричества и шума.</p>
+    <p><strong>Против ливня.</strong> Крона — зонтик: листья и ветви задерживают часть дождя, и вода испаряется, не долетев до земли, или стекает медленно. Корни разрыхляют почву, по ходам от старых корней вода уходит вглубь. Земля под деревом, если её не закатали в асфальт, впитывает воду с окружающих поверхностей.</p>
+    <p>Есть и другие заслуги: деревья ловят пыль, гасят шум, дают дом птицам и насекомым, а люди в зелёных дворах, как показывают исследования, меньше страдают от стресса. Но всё это работает только при одном условии: дерево должно быть большим и здоровым.</p>
+  </div>
+</section>
+
+<!-- ═══ 03 ВЗРОСЛОЕ ДЕРЕВО ═══ -->
+<section class="content-section alt" id="mature">
+  <div style="max-width:880px;">
+    <div class="section-num">03</div>
+    <div class="disc-meta">почему польза растёт вместе с кроной</div>
+    <h2>Одно взрослое дерево <em>и десять саженцев</em></h2>
+    <p>Часто, когда вырубают старое дерево, обещают «компенсационное озеленение»: посадить взамен десять молодых. Звучит щедро. Но почти все полезные свойства дерева — тень, испарение, задержка дождя, очистка воздуха — зависят от площади листьев. А она у взрослого дерева несравнимо больше.</p>
+
+    <!-- ИНФОГРАФИКА 3 -->
+    <div class="sc-panel">
+      <div class="sc-sub">Инфографика 3 · Взрослое дерево и саженцы</div>
+      <div class="sc-scroll">
+      <svg viewBox="0 0 760 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Слева одно взрослое дерево с широкой кроной, отбрасывающей большую тень; справа десять тонких саженцев с маленькими кронами и почти без тени" style="width:100%;height:auto;display:block;">
+        <rect x="0" y="250" width="760" height="80" fill="#c4956a" opacity=".25"/>
+        <!-- большое дерево -->
+        <ellipse cx="190" cy="262" rx="150" ry="16" fill="#3d5240" opacity=".35"/>
+        <path d="M190 252 V150" stroke="#3d2b1e" stroke-width="22" stroke-linecap="round"/>
+        <path d="M190 180 L140 140 M190 166 L246 126" stroke="#3d2b1e" stroke-width="10" stroke-linecap="round"/>
+        <ellipse cx="190" cy="110" rx="140" ry="80" fill="#4a7c59"/>
+        <ellipse cx="150" cy="90" rx="60" ry="34" fill="#6ea87e" opacity=".7"/>
+        <!-- саженцы -->
+        <g>
+          <g transform="translate(430 0)"><path d="M0 252 V214" stroke="#3d2b1e" stroke-width="3"/><circle cy="206" r="11" fill="#6ea87e"/></g>
+          <g transform="translate(462 0)"><path d="M0 252 V214" stroke="#3d2b1e" stroke-width="3"/><circle cy="206" r="11" fill="#6ea87e"/></g>
+          <g transform="translate(494 0)"><path d="M0 252 V214" stroke="#3d2b1e" stroke-width="3"/><circle cy="206" r="11" fill="#6ea87e"/></g>
+          <g transform="translate(526 0)"><path d="M0 252 V214" stroke="#3d2b1e" stroke-width="3"/><circle cy="206" r="11" fill="#6ea87e"/></g>
+          <g transform="translate(558 0)"><path d="M0 252 V214" stroke="#3d2b1e" stroke-width="3"/><circle cy="206" r="11" fill="#6ea87e"/></g>
+          <g transform="translate(590 0)"><path d="M0 252 V214" stroke="#3d2b1e" stroke-width="3"/><circle cy="206" r="11" fill="#6ea87e"/></g>
+          <g transform="translate(622 0)"><path d="M0 252 V214" stroke="#3d2b1e" stroke-width="3"/><circle cy="206" r="11" fill="#6ea87e"/></g>
+          <g transform="translate(654 0)"><path d="M0 252 V214" stroke="#3d2b1e" stroke-width="3"/><circle cy="206" r="11" fill="#6ea87e"/></g>
+          <g transform="translate(686 0)"><path d="M0 252 V214" stroke="#3d2b1e" stroke-width="3"/><circle cy="206" r="11" fill="#6ea87e"/></g>
+          <g transform="translate(718 0)"><path d="M0 252 V214" stroke="#3d2b1e" stroke-width="3"/><circle cy="206" r="11" fill="#6ea87e"/></g>
+        </g>
+        <g font-family="Jost,sans-serif" font-size="14" fill="#1c2b1e">
+          <text x="190" y="292" text-anchor="middle">одно дерево 60–80 лет</text>
+          <text x="190" y="311" text-anchor="middle" fill="#3d5240">тень на десятках квадратных метров</text>
+          <text x="574" y="292" text-anchor="middle">десять саженцев</text>
+          <text x="574" y="311" text-anchor="middle" fill="#7a4f2e">почти без тени · многие не доживут до взрослого</text>
+        </g>
+      </svg>
+      </div>
+      <div class="sc-cap">Схема редакции · площадь листьев взрослого дерева может быть в десятки раз больше, чем у молодого</div>
+    </div>
+
+    <p>Есть и вторая причина. Городская жизнь тяжела для молодых деревьев: уплотнённая почва, соль, засуха, повреждения машинами и газонокосилками. По обзорам американских исследователей, значительная часть уличных деревьев погибает в первые годы после посадки, а средняя продолжительность жизни уличного дерева исчисляется лишь одним-двумя десятилетиями. Десять саженцев сегодня — это вовсе не гарантия десяти взрослых деревьев через полвека.</p>
+    <p>Вывод простой и важный: <strong>сохранить взрослое дерево — самый дешёвый и быстрый способ охладить город и напоить его дождём</strong>. Сажать новые нужно обязательно, но как добавку к сохранению, а не как оправдание вырубки.</p>
+    <p>Отдельная беда многих российских городов — «кронирование»: обрезка крупных деревьев до голых стволов-столбов. Это не уход, а увечье. Дерево теряет листья, которыми питается, раны загнивают, а из спящих почек вырастают слабые ветки, которые потом легко обламываются. Грамотная обрезка снимает только сухие, больные и опасные ветви.</p>
+  </div>
+</section>
+
+<!-- ═══ 04 3-30-300 ═══ -->
+<section class="content-section" id="rule">
+  <div style="max-width:880px;">
+    <div class="section-num">04</div>
+    <div class="disc-meta">простая мера зелёного города</div>
+    <h2>Правило <em>3-30-300</em></h2>
+    <p>Как понять, достаточно ли зелени вокруг вас? Нидерландский специалист по городским лесам Сесил Конейнендейк предложил простое правило, которое быстро стало популярным у городских планировщиков всего мира.</p>
+
+    <!-- ИНФОГРАФИКА 4 -->
+    <div class="sc-panel">
+      <div class="sc-sub">Инфографика 4 · Правило 3-30-300</div>
+      <div class="sc-rule">
+        <div class="sc-r"><div class="sc-r-n">3</div><div class="sc-r-t">дерева видно из окна</div><div class="sc-r-d">из каждого дома, школы и офиса — хотя бы три взрослых дерева</div></div>
+        <div class="sc-r"><div class="sc-r-n">30%</div><div class="sc-r-t">кроны в квартале</div><div class="sc-r-d">кроны деревьев закрывают не меньше трети площади района</div></div>
+        <div class="sc-r"><div class="sc-r-n">300 м</div><div class="sc-r-t">до парка</div><div class="sc-r-d">от любого дома не больше трёхсот метров до качественного зелёного пространства</div></div>
+      </div>
+      <div class="sc-cap">По C. C. Konijnendijk (2021) · правило задумано как простой ориентир, а не строгий норматив</div>
+    </div>
+
+    <p>Проверьте свой двор. Многие районы массовой застройки с выросшими за полвека деревьями проходят тест неожиданно хорошо. А новые жилые комплексы с парковками и молодыми саженцами часто не проходят ни один пункт. Это ещё один довод беречь старые дворовые деревья: на их выращивание ушли десятилетия.</p>
+  </div>
+</section>
+
+<!-- ═══ 05 ГОРОД-ГУБКА ═══ -->
+<section class="content-section alt" id="sponge">
+  <div style="max-width:880px;">
+    <div class="section-num">05</div>
+    <div class="disc-meta">Китай, Копенгаген, Роттердам</div>
+    <h2>Город-губка: <em>как это работает</em></h2>
+    <p>Термин «город-губка» популяризировал китайский ландшафтный архитектор Юй Концзянь. В 2015 году Китай запустил национальную программу: к 2030 году большая часть городских территорий должна впитывать и использовать основную долю дождевой воды. Копенгаген после разрушительного ливня 2011 года принял план, по которому часть улиц и парков превращается в «реки» и «озёра», временно принимающие воду при сильном дожде. В Роттердаме появились «водные площади» — днём это спортивные и игровые площадки, а в ливень они заполняются водой и медленно отдают её в землю.</p>
+
+    <!-- ИНФОГРАФИКА 5 -->
+    <div class="sc-panel">
+      <div class="sc-sub">Инфографика 5 · Инструменты города-губки</div>
+      <div class="sc-tools">
+        <div class="sc-t"><div class="sc-t-h">Дождевой сад</div><div class="sc-t-d">понижение с влаголюбивыми растениями, куда отводят воду с крыш и дорожек; она впитывается за день-два</div></div>
+        <div class="sc-t"><div class="sc-t-h">Биоканава</div><div class="sc-t-d">заросшая травой и кустарником канава вдоль дороги, которая замедляет, очищает и впитывает сток</div></div>
+        <div class="sc-t"><div class="sc-t-h">Проницаемые покрытия</div><div class="sc-t-d">газонная решётка, плитка с зазорами, гравий — вода уходит в землю, а не в ливнёвку</div></div>
+        <div class="sc-t"><div class="sc-t-h">Зелёные крыши</div><div class="sc-t-d">слой почвы и растений на крыше задерживает часть дождя и охлаждает верхние этажи</div></div>
+        <div class="sc-t"><div class="sc-t-h">Деревья с «большой» почвой</div><div class="sc-t-d">под тротуаром — объём рыхлой почвы для корней, который одновременно служит резервуаром для дождя</div></div>
+        <div class="sc-t"><div class="sc-t-h">Водные площади и парки</div><div class="sc-t-d">места, которые в ливень можно безопасно затопить: площадки, низины парков, поймы рек</div></div>
+      </div>
+    </div>
+
+    <p>Общий принцип прост: замедлить, впитать, сохранить. Вместо того чтобы как можно быстрее убрать воду с улиц, город пытается удержать её там, где она упала, — напоить деревья, пополнить грунтовые воды, а излишки отдавать постепенно. Заодно влажная зелёная поверхность охлаждает воздух. Город-губка и город-лес — это одна и та же идея.</p>
+  </div>
+</section>
+
+<!-- ═══ 06 ЧТО МОЖЕМ МЫ ═══ -->
+<section class="content-section" id="act">
+  <div style="max-width:820px;">
+    <div class="section-num">06</div>
+    <div class="disc-meta">двор, дом, улица</div>
+    <h2>Что можем <em>мы</em></h2>
+    <p>Город-губку строят не только архитекторы и мэрии. Многое под силу жителям — особенно вместе.</p>
+    <ul class="sc-list">
+      <li><b>Защищать взрослые деревья.</b> Узнавать о планах благоустройства и вырубок заранее, участвовать в общественных обсуждениях, требовать сохранения крупных деревьев и запрещать «кронирование» во дворе через решения собрания собственников.</li>
+      <li><b>Поливать молодые деревья.</b> В первые три-пять лет после посадки уличным деревьям часто не хватает воды. Ведро раз в неделю в засуху — и шансы саженца выжить резко растут. В некоторых городах жители договариваются «шефствовать» над деревьями своей улицы.</li>
+      <li><b>Освобождать землю у ствола.</b> Асфальт и плитка вплотную к стволу душат корни. Приствольный круг с мульчой, решёткой или низкими растениями даёт дереву воздух и воду.</li>
+      <li><b>Сделать дождевой сад во дворе.</b> Отвести воду с водостока в неглубокую впадину с влаголюбивыми растениями вместо того, чтобы спускать её на асфальт.</li>
+      <li><b>Собирать дождь.</b> Бочка под водостоком на даче или в частном доме — бесплатная вода для полива и меньше нагрузки на ливнёвку.</li>
+      <li><b>Сажать с умом.</b> Если сажать, то крупномерные долгоживущие местные виды в места, где у корней будет достаточно почвы, — и договариваться об уходе. О том, как вырастить саженцы самим, мы писали в эссе <a href="essay-forest-activism.html">«Лесной активизм»</a>.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═══ 07 ЧЕСТНО ═══ -->
+<section class="content-section alt" id="honest">
+  <div style="max-width:820px;">
+    <div class="section-num">07</div>
+    <div class="disc-meta">критика темы</div>
+    <h2>Честный <em>взгляд</em></h2>
+    <p><strong>Губка не спасает от всего.</strong> Город-губка хорошо справляется с обычными сильными дождями, но не с катастрофическими. Летом 2021 года китайский Чжэнчжоу, один из пилотных «городов-губок», пережил ливень такой силы, что за сутки выпало почти годовое количество осадков; город затопило, погибли сотни людей. Зелёные решения должны дополнять, а не заменять трубы, дамбы и системы предупреждения.</p>
+    <p><strong>Деревьям тоже нужна вода.</strong> В засуху городские деревья сами нуждаются в поливе. Подбирать виды нужно с учётом будущего, более жаркого климата, иначе через двадцать лет посадки будут сохнуть.</p>
+    <p><strong>Не всякое дерево — везде.</strong> Корни могут повреждать трубы и фундаменты, если дерево посажено слишком близко, а пыльца берёзы и некоторых других деревьев — серьёзная проблема для аллергиков. Хорошее городское озеленение — это разнообразие видов, а не одна порода.</p>
+    <p><strong>Зелень и справедливость.</strong> Зелёные районы обычно богаче, и жара сильнее всего бьёт по бедным кварталам, где деревьев меньше. А когда в бедный район приходит новый парк, растут цены на жильё и прежние жители иногда вынуждены уехать. Городская зелень должна доставаться всем.</p>
+  </div>
+</section>
+
+<!-- ═══ ИТОГ ═══ -->
+<section class="content-section" id="outro">
+  <div style="max-width:820px;">
+    <div class="section-num">—</div>
+    <h2>Итог: <em>беречь, впитывать, охлаждать</em></h2>
+    <p>Город из асфальта и бетона одновременно перегревается и тонет. Город, в котором много больших деревьев, живой земли и мест для воды, сам себя охлаждает и пьёт дождь. Это не утопия: Копенгаген, Роттердам, сотни китайских городов уже перестраиваются по этому принципу.</p>
+    <p>А для каждого двора главный вывод звучит просто: взрослое дерево — это готовый кондиционер, губка и укрытие, на которое природа потратила полвека. Его нельзя заменить десятью саженцами за один день. Беречь старые деревья, поливать молодые, освобождать землю от асфальта и давать дождю впитаться — вот с чего начинается город, в котором приятно жить и в жару, и в ливень.</p>
+    <p style="margin-top:2rem;">Читайте также: <a href="essay-trees-air.html">Дерево из воздуха</a> · <a href="essay-forest-activism.html">Лесной активизм: вырастить лес своими руками</a> · <a href="essay-mycorrhiza.html">Как устроен лес: подземная сеть</a> · <a href="essay-forest-medicine.html">Лес как лекарство: целительная сила природы</a> · <a href="essay-network-states.html">Сетевые государства: объединить людей не страхом</a></p>
+
+    <div class="sources">
+      <div class="src-title"><small>Источники</small>На чём основан текст</div>
+      <ol class="src-list">
+        <li>U.S. EPA. Heat Island Effect; Reducing Urban Heat Islands: Compendium of Strategies — температуры поверхностей и роль деревьев.</li>
+        <li>Iungman T. et al. (2023). Cooling cities through urban green infrastructure: a health impact assessment of European cities. The Lancet 401, 577–589.</li>
+        <li>FISRWG / U.S. EPA (1998). Stream Corridor Restoration — классическая схема распределения осадков при разной доле непроницаемых поверхностей.</li>
+        <li>Konijnendijk C. C. (2021, 2023). The 3-30-300 rule for urban forestry and greener cities. Urban Forestry &amp; Urban Greening.</li>
+        <li>Roman L. A., Scatena F. N. (2011). Street tree survival rates: meta-analysis of previous studies and application to a field survey in Philadelphia. Urban Forestry &amp; Urban Greening 10, 269–274.</li>
+        <li>Nowak D. J. et al. — исследования экосистемных услуг городских деревьев (модель i-Tree, Лесная служба США).</li>
+        <li>Yu K. — концепция «города-губки»; Государственный совет КНР (2015) — национальная программа строительства городов-губок.</li>
+        <li>City of Copenhagen (2012). Cloudburst Management Plan; Rotterdam — водная площадь Бентемплейн (2013).</li>
+        <li>Отчёты о наводнении в Чжэнчжоу в июле 2021 года.</li>
+      </ol>
+    </div>
+
+    <div style="margin-top:2.5rem;padding-top:2rem;border-top:1px solid rgba(74,124,89,0.15);font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--ink-light);text-align:center;font-size:1rem;">
+      — редакция «ЭкоСознания», раздел «Архитектура»
+    </div>
+  </div>
+</section>
+
+<style>
+.sc-panel{background:var(--warm);border:1px solid rgba(74,124,89,.18);padding:1.6rem 1.4rem 1.1rem;margin:1.8rem 0;}
+.sc-sub{font-family:'Jost',sans-serif;font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);margin-bottom:1rem;text-align:center;}
+.sc-cap{font-family:'Jost',sans-serif;font-size:.62rem;letter-spacing:.08em;color:var(--sage-text,#6b8a70);text-align:center;margin-top:.9rem;line-height:1.6;}
+.sc-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.sc-list{list-style:none;padding:0;margin:1.2rem 0;}
+.sc-list li{padding:.7rem 0 .7rem 1.1rem;border-left:2px solid var(--fern);margin-bottom:.6rem;line-height:1.75;}
+.sc-rows{display:flex;flex-direction:column;gap:.7rem;}
+.sc-row{display:grid;grid-template-columns:200px 1fr 70px;align-items:center;gap:.9rem;}
+.sc-row-l{font-size:.85rem;color:var(--ink);}
+.sc-row-b{background:rgba(74,124,89,.08);height:24px;border-radius:2px;overflow:hidden;}
+.sc-fill{height:100%;}
+.sc-row-v{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--ink);text-align:right;}
+.sc-water{display:flex;flex-direction:column;gap:1rem;}
+.sc-wh{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--ink);margin-bottom:.35rem;}
+.sc-wbar{display:flex;height:42px;border-radius:3px;overflow:hidden;font-family:'Jost',sans-serif;font-size:.76rem;color:#faf6ef;}
+.sc-wbar>div{display:flex;align-items:center;justify-content:center;white-space:nowrap;overflow:hidden;padding:0 .3rem;}
+.sc-rule{display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem;}
+.sc-r{background:var(--paper);border:1px solid rgba(74,124,89,.22);padding:1.1rem;text-align:center;}
+.sc-r-n{font-family:'Cormorant Garamond',serif;font-size:3rem;line-height:1;color:var(--moss);}
+.sc-r-t{font-family:'Jost',sans-serif;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin:.4rem 0;}
+.sc-r-d{font-size:.8rem;line-height:1.5;color:var(--ink-light);}
+.sc-tools{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;}
+.sc-t{background:var(--paper);border:1px solid rgba(74,124,89,.22);border-top:4px solid #6e8fa8;padding:.85rem .95rem;}
+.sc-t-h{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--ink);margin-bottom:.3rem;}
+.sc-t-d{font-size:.78rem;line-height:1.5;color:var(--ink-light);}
+@media(max-width:700px){
+  .sc-scroll svg{min-width:620px;}
+  .sc-row{grid-template-columns:1fr 64px;}
+  .sc-row-l{grid-column:1 / -1;}
+  .sc-wbar{font-size:.62rem;}
+  .sc-rule,.sc-tools{grid-template-columns:1fr;}
+}
+</style>
+
+</main>
+
+<!-- ECO:MANAGED:footer -->
+<footer class="gf">
+  <div class="gf-top">
+    <div class="gf-brand">
+      <a href="index.html" class="gf-logo">
+        <svg viewBox="0 0 100 100" fill="none" class="logo-svg" style="width:24px;height:24px;flex-shrink:0;"><circle cx="50" cy="50" r="40" stroke="#f3ede3" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#6ea87e"/></svg>
+        <span class="gf-logo-text">Эко<em>Сознание</em></span>
+      </a>
+      <p class="gf-tagline">Экологический взгляд как линза для любой сферы жизни</p>
+    </div>
+    <div class="gf-cols">
+      <div>
+        <div class="gf-col-title">Разделы</div>
+        <div class="gf-sections">
+          <a href="section-philosophy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Философия</span></a>
+          <a href="section-psychology.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Психология</span></a>
+          <a href="section-lifestyle.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Стиль жизни</span></a>
+          <a href="section-technologies.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="gf-sec-name">Технологии</span></a>
+          <a href="section-food.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Питание</span></a>
+          <a href="section-architecture.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Архитектура</span></a>
+          <a href="section-economy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Экономика</span></a>
+          <a href="section-education.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="gf-sec-name">Образование</span></a>
+          <a href="section-community.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Сообщество</span></a>
+          <a href="section-travel.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="gf-sec-name">Путешествия</span></a>
+          <a href="section-health.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Здоровье</span></a>
+          <a href="section-science.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Наука</span></a>
+        </div>
+      </div>
+      <div>
+        <div class="gf-col-title">Навигация</div>
+        <nav class="gf-nav-links">
+          <a href="index.html" class="gf-nav-link">Главная</a>
+          <a href="map.html" class="gf-nav-link">Карта связей</a>
+          <a href="paths.html" class="gf-nav-link">Тропы чтения</a>
+          <a href="tree.html" class="gf-nav-link">Дерево материалов</a>
+          <a href="revisions.html" class="gf-nav-link">Что не подтвердилось</a>
+          <a href="thinkers.html" class="gf-nav-link">Указатель имён</a>
+          <a href="search.html" class="gf-nav-link">Поиск</a>
+          <a href="method.html" class="gf-nav-link">Как устроены материалы</a>
+            <a href="about.html" class="gf-nav-link">О проекте</a>
+          <a href="glossary.html" class="gf-nav-link">Глоссарий</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="gf-bottom">
+    <span class="gf-copy">© 2026 ЭкоСознание</span>
+    <div class="gf-bottom-links">
+      <a href="about.html">О проекте</a>
+      <a href="glossary.html">Глоссарий</a>
+    </div>
+  </div>
+</footer>
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+
+
+<!-- ECO:MANAGED:js -->
+<script src="assets/global.js" defer></script>
+<!-- /ECO:MANAGED:js -->
+</body>
+</html>

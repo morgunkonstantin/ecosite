@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+<script>document.documentElement.classList.replace('no-js','js');</script>
+<meta charset="UTF-8">
+<meta name="description" content="Как устроены углеродные кредиты, пять ловушек — дополнительность, базовый сценарий, постоянство, утечка, двойной счёт, — что показали независимые проверки, почему посадки деревьев плохо работают как «компенсация», лестница качества кредитов, чек-лист из десяти вопросов и новые правила. Пять инфографик.">
+<meta property="og:title" content="Как отличить честный углеродный офсет от продажи воздуха">
+<meta property="og:description" content="Как устроены углеродные кредиты, пять ловушек — дополнительность, базовый сценарий, постоянство, утечка, двойной счёт, — что показали независимые проверки, почему посадки деревьев плохо работают как «компенсация», лестница качества кредитов, чек-лист из десяти вопросов и новые правила. Пять инфографик.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Как отличить честный углеродный офсет от продажи воздуха — ЭкоСознание</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/base.css">
+<style>
+.hero{padding:10rem 4rem 5rem;display:grid;grid-template-columns:1fr 380px;gap:4rem;align-items:end;border-bottom:1px solid rgba(74,124,89,.15);position:relative;overflow:hidden;}
+.hero-mark-svg{position:absolute;right:4rem;top:11rem;width:90px;height:90px;color:rgba(74,124,89,.18);pointer-events:none;}
+.hero-mark-svg svg{width:100%;height:100%;display:block;}
+.hero-tag{display:inline-flex;align-items:center;gap:.6rem;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);margin-bottom:1.5rem;}
+.hero-tag::before{content:'';display:block;width:24px;height:1px;background:var(--fern);}
+h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,6vw,5rem);font-weight:300;line-height:1.05;color:var(--ink);margin-bottom:1.8rem;}
+h1 em{font-style:italic;color:var(--moss);display:block;}
+.hero-lead{font-size:1rem;line-height:1.85;color:var(--ink-light);max-width:580px;}
+.hero-meta{display:flex;flex-direction:column;gap:1.5rem;padding-left:2rem;border-left:1px solid rgba(74,124,89,.2);}
+.meta-label{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);margin-bottom:.4rem;}
+.meta-value{font-size:.9rem;color:var(--ink-light);line-height:1.6;}
+.toc-bar{background:var(--ink);padding:0 4rem;display:flex;align-items:stretch;overflow-x:auto;}
+.toc-bar a{color:rgba(211,230,208,.6);text-decoration:none;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:1rem 1.5rem;border-right:1px solid rgba(255,255,255,.06);white-space:nowrap;transition:color .2s,background .2s;}
+.toc-bar a:hover{color:var(--mist);}
+.toc-bar a.active{color:var(--fern);}
+.content-section{padding:5rem 4rem;border-bottom:1px solid rgba(74,124,89,.1);}
+.content-section.alt{background:var(--cream);}
+.content-section.dark{background:var(--ink);}
+.section-label{display:flex;align-items:center;gap:1rem;margin-bottom:3rem;}
+.section-label-num{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);}
+.section-label-line{flex:1;height:1px;background:rgba(74,124,89,.15);}
+.section-label-tag{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);}
+h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:300;color:var(--ink);line-height:1.15;margin-bottom:1.5rem;}
+h2 em{font-style:italic;color:var(--moss);}
+h2.light{color:var(--cream);}
+h2.light em{color:var(--fern);}
+.article-layout{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}
+.article-layout.wide{grid-template-columns:3fr 2fr;}
+.article-body p{font-size:.95rem;line-height:1.9;color:var(--ink-light);margin-bottom:1.1rem;}
+.article-body p:last-child{margin-bottom:0;}
+.article-body p.light{color:rgba(211,230,208,.72);}
+.pull-quote{border-left:3px solid var(--moss);padding:1.2rem 1.5rem;margin:2rem 0;background:rgba(74,124,89,.05);}
+.pull-quote p{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;color:var(--ink);line-height:1.5;margin:0!important;}
+.pull-quote.light{background:rgba(255,255,255,.06);border-color:var(--fern);}
+.pull-quote.light p{color:var(--cream);}
+.pull-quote cite{display:block;margin-top:.6rem!important;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);font-style:normal;}
+.practices-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(74,124,89,.12);margin-top:2rem;}
+.practice-card{background:var(--paper);padding:2rem 1.8rem;transition:background .25s;}
+.content-section.alt .practice-card{background:var(--cream);}
+.practice-card:hover{background:var(--warm);}
+.practice-num{font-family:'Cormorant Garamond',serif;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);margin-bottom:.6rem;}
+.practice-name{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--ink);margin-bottom:.6rem;}
+.practice-name em{font-style:italic;color:var(--moss);}
+.practice-desc{font-size:.85rem;line-height:1.75;color:var(--ink-light);}
+.featured-strip{background:var(--ink);padding:3rem 3.5rem;display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center;margin-top:3rem;}
+.featured-label{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);margin-bottom:1rem;}
+.featured-strip h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;font-style:italic;color:var(--cream);margin-bottom:.8rem;line-height:1.2;}
+.featured-strip p{font-size:.87rem;line-height:1.8;color:rgba(211,230,208,.68);}
+.featured-btn{background:transparent;color:var(--fern);border:1px solid rgba(110,168,126,.4);padding:.8rem 1.6rem;text-decoration:none;font-family:'Jost',sans-serif;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;display:inline-block;transition:background .25s,color .25s;}
+.featured-btn:hover{background:var(--fern);color:var(--ink);}
+.rubrics-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,.12);margin-top:3rem;}
+.rubric-card{background:var(--paper);padding:2rem 1.6rem;transition:background .25s;}
+.rubric-card:hover{background:var(--warm);}
+.rubric-icon{font-size:1.4rem;margin-bottom:1rem;}
+.rubric-name{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--ink);margin-bottom:.6rem;}
+.rubric-desc{font-size:.82rem;line-height:1.75;color:var(--ink-light);}
+.rubric-example{margin-top:1rem;font-size:.78rem;font-style:italic;color:var(--moss);line-height:1.6;}
+.rubric-card.dark-card{background:var(--ink);}
+.rubric-card.dark-card .rubric-name{color:var(--cream);}
+.rubric-card.dark-card .rubric-desc{color:rgba(211,230,208,.65);}
+.rubric-card.dark-card .rubric-example{color:var(--fern);}
+.g-next-section{background:var(--ink);padding:2.5rem 4rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;}
+.g-next-label{font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(168,197,160,.45);margin-bottom:.5rem;}
+.g-next-link{display:inline-flex;align-items:center;gap:.8rem;text-decoration:none;}
+.g-next-name{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:var(--cream);font-style:italic;transition:color .2s;}
+.g-next-link:hover .g-next-name{color:var(--fern);}
+.g-next-arrow{font-family:'Cormorant Garamond',serif;font-size:2rem;color:rgba(110,168,126,.5);transition:transform .2s,color .2s;}
+.g-next-link:hover .g-next-arrow{transform:translateX(6px);color:var(--fern);}
+.g-next-num{font-family:'Cormorant Garamond',serif;font-size:4rem;font-weight:300;color:rgba(255,255,255,.06);line-height:1;}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease;}
+.reveal.visible{opacity:1;transform:none;}
+.d1{transition-delay:.1s;}
+.d2{transition-delay:.2s;}
+@media(max-width:800px){ .hero,.toc-bar,.content-section,.g-next-section{padding-left:1.5rem;padding-right:1.5rem;} .hero{grid-template-columns:1fr;} .hero-meta{padding-left:0;border-left:none;border-top:1px solid rgba(74,124,89,.2);padding-top:1.5rem;} .hero-mark-svg{right:1.5rem;top:9rem;width:60px;height:60px;} .article-layout,.article-layout.wide{grid-template-columns:1fr;gap:2rem;} .practices-grid,.rubrics-grid{grid-template-columns:1fr;} .featured-strip{grid-template-columns:1fr;gap:1.5rem;} }
+.methods-table{margin:2rem 0;border:1px solid rgba(74,124,89,.15);overflow-x:auto;}
+.methods-row{display:grid;grid-template-columns:180px repeat(4,1fr);gap:0;border-bottom:1px solid rgba(74,124,89,.1);min-width:760px;}
+.methods-row:last-child{border-bottom:none;}
+.methods-row.header{background:var(--ink);}
+.methods-row.header > div{color:var(--sage);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;padding:.9rem 1rem;}
+.methods-row > div{background:var(--paper);padding:.95rem 1rem;font-size:.85rem;color:var(--ink-light);line-height:1.5;border-right:1px solid rgba(74,124,89,.08);}
+.content-section.alt .methods-row > div{background:var(--cream);}
+.methods-row > div:last-child{border-right:none;}
+.methods-row > .method-name{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1rem;color:var(--ink);}
+.methods-row.header > .method-name{color:var(--sage);font-style:normal;}
+.seasons-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(74,124,89,.12);margin:2rem 0;}
+.season-card{background:var(--paper);padding:1.8rem 1.5rem;transition:background .25s;display:flex;flex-direction:column;}
+.content-section.alt .season-card{background:var(--cream);}
+.season-card:hover{background:var(--warm);}
+.season-icon{font-size:1.9rem;margin-bottom:.7rem;line-height:1;}
+.season-name{font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--ink);margin-bottom:.2rem;}
+.season-name em{font-style:italic;color:var(--moss);}
+.season-months{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--clay);margin-bottom:.9rem;}
+.season-actions{font-size:.83rem;line-height:1.7;color:var(--ink-light);margin-bottom:.8rem;}
+.season-watch{font-size:.78rem;line-height:1.6;color:var(--ink-light);padding-top:.7rem;border-top:1px dashed rgba(74,124,89,.18);margin-top:auto;}
+.season-watch strong{color:var(--rust);font-weight:400;}
+.timeline{margin:2rem 0;position:relative;border-left:1px solid rgba(74,124,89,.2);padding-left:2rem;}
+.timeline-item{margin-bottom:2rem;position:relative;}
+.timeline-item:last-child{margin-bottom:0;}
+.timeline-item::before{content:'';position:absolute;left:-2.45rem;top:.3rem;width:9px;height:9px;border-radius:50%;background:var(--moss);box-shadow:0 0 0 3px var(--paper);}
+.content-section.alt .timeline-item::before{box-shadow:0 0 0 3px var(--cream);}
+.timeline-era{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin-bottom:.4rem;}
+.timeline-name{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--ink);margin-bottom:.5rem;line-height:1.3;}
+.timeline-name em{font-style:italic;color:var(--moss);}
+.timeline-desc{font-size:.88rem;line-height:1.75;color:var(--ink-light);}
+.timeline-desc em{font-style:italic;color:var(--moss);}
+.case-block{background:var(--ink);padding:4rem 3.5rem;margin:2rem 0;}
+.case-inner{max-width:920px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start;}
+.case-block h3{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;color:var(--cream);line-height:1.25;margin-bottom:1.3rem;}
+.case-block h3 em{font-style:italic;color:var(--fern);}
+.case-block p{font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.75;color:rgba(211,230,208,.75);margin-bottom:1rem;}
+.case-stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.08);}
+.case-stat{background:rgba(255,255,255,.04);padding:1.4rem 1.2rem;text-align:center;}
+.case-stat-num{font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--fern);font-weight:300;line-height:1;margin-bottom:.4rem;}
+.case-stat-lbl{font-size:.72rem;color:rgba(211,230,208,.65);line-height:1.5;}
+.case-link{display:inline-flex;align-items:center;gap:.6rem;font-family:'Jost',sans-serif;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--fern);text-decoration:none;border-bottom:1px solid rgba(110,168,126,.4);padding-bottom:.3rem;margin-top:1rem;}
+.case-link:hover{border-color:var(--fern);}
+@media(max-width:800px){ .case-inner{grid-template-columns:1fr;gap:2rem;} .case-block{padding:2.5rem 1.5rem;} .seasons-grid{grid-template-columns:1fr 1fr;} .methods-row{grid-template-columns:140px repeat(4,1fr);min-width:660px;} }
+@media(max-width:540px){ .seasons-grid{grid-template-columns:1fr;} .case-stats{grid-template-columns:1fr 1fr;} }
+.cycle-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,.12);margin:2rem 0;}
+.cycle-card{background:var(--paper);padding:1.8rem 1.6rem;text-align:center;transition:background .25s;}
+.content-section.alt .cycle-card{background:var(--cream);}
+.cycle-card:hover{background:var(--warm);}
+.cycle-step{font-family:'Cormorant Garamond',serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);margin-bottom:.6rem;}
+.cycle-icon{font-size:2rem;margin-bottom:.8rem;line-height:1;}
+.cycle-name{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--ink);margin-bottom:.5rem;}
+.cycle-name em{font-style:italic;color:var(--moss);}
+.cycle-desc{font-size:.82rem;line-height:1.7;color:var(--ink-light);}
+.can-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:2rem 0;}
+.can-col h4{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:400;margin-bottom:1rem;}
+.can-col.yes h4{color:var(--moss);}
+.can-col.no h4{color:var(--rust);}
+.can-list{list-style:none;display:flex;flex-direction:column;gap:0;}
+.can-item{font-size:.85rem;line-height:1.6;color:var(--ink-light);padding:.45rem 0;border-bottom:1px dashed rgba(74,124,89,.12);}
+.can-item:last-child{border-bottom:none;}
+.can-item::before{margin-right:.5rem;}
+.can-col.yes .can-item::before{content:'✓';color:var(--fern);}
+.can-col.no .can-item::before{content:'✗';color:var(--rust);}
+.soil-block{background:var(--ink);padding:4rem 3.5rem;margin:3rem 0;}
+.soil-inner{max-width:720px;margin:0 auto;}
+.soil-block h3{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;font-style:italic;color:var(--cream);line-height:1.3;margin-bottom:1.5rem;}
+.soil-block h3 em{color:var(--fern);}
+.soil-block p{font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.8;color:rgba(211,230,208,.75);margin-bottom:1.2rem;}
+.soil-block p:last-child{margin-bottom:0;}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(74,124,89,.15);margin:2rem 0;}
+.stat-card{background:var(--paper);padding:1.6rem 1.2rem;text-align:center;}
+.content-section.alt .stat-card{background:var(--cream);}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:300;color:var(--moss);line-height:1;margin-bottom:.4rem;}
+.stat-label{font-size:.78rem;line-height:1.5;color:var(--ink-light);}
+.q-list{display:flex;flex-direction:column;gap:0;margin:1.5rem 0;}
+.q-item{padding:1.2rem 0;border-bottom:1px solid rgba(74,124,89,.1);}
+.q-item:last-child{border-bottom:none;}
+.q-question{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink);margin-bottom:.5rem;font-weight:400;}
+.q-question em{font-style:italic;color:var(--moss);}
+.q-answer{font-size:.88rem;line-height:1.75;color:var(--ink-light);}
+@media(max-width:800px){ .cycle-grid{grid-template-columns:1fr 1fr;} .can-grid{grid-template-columns:1fr;} .stats-row{grid-template-columns:1fr 1fr;} .soil-block{padding:2.5rem 1.5rem;} }
+@media(max-width:540px){ .cycle-grid{grid-template-columns:1fr;} .stats-row{grid-template-columns:1fr 1fr;} }
+.section-num{font-family:'Cormorant Garamond',serif;font-size:0.85rem;letter-spacing:0.3em;color:var(--moss);margin-bottom:1rem;font-style:italic;}
+.disc-meta{font-family:'Jost',sans-serif;font-size:0.78rem;letter-spacing:0.05em;color:var(--ink-light);margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:1px solid rgba(74,124,89,0.15);font-weight:300;line-height:1.7;}
+.content-section p{font-size:1rem;line-height:1.85;color:var(--ink);margin-top:1.2rem;}
+.content-section p strong{color:var(--moss);font-weight:500;}
+.content-section p em{font-style:italic;color:var(--ink-light);}
+.content-section h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:300;line-height:1.15;color:var(--ink);margin-bottom:0.5rem;}
+.content-section h2 em{color:var(--moss);font-style:italic;display:block;}
+</style>
+
+<style>
+/* ── Источники: единый блок для всех эссе и лабораторий ── */
+.sources{margin:5rem 0 0;padding-top:2.5rem;border-top:1px solid rgba(74,124,89,.2);}
+.src-title{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;margin-bottom:1.6rem;}
+.src-title small{display:block;font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--clay-text);font-weight:400;margin-bottom:.6rem;}
+.src-list{list-style:none;counter-reset:src;padding:0;margin:0;}
+.src-list li{position:relative;padding-left:2.4rem;margin-bottom:1.1rem;font-size:.86rem;
+  line-height:1.7;color:var(--ink-light);}
+.src-list li::before{counter-increment:src;content:counter(src,decimal-leading-zero);
+  position:absolute;left:0;top:.15rem;font-family:'Jost',sans-serif;font-size:.66rem;
+  letter-spacing:.1em;color:var(--sage-text);}
+.src-a{color:var(--ink);}
+/* ── Ссылка на термин глоссария ── */
+a.term{color:inherit;text-decoration:none;border-bottom:1px dotted var(--fern-text);}
+a.term:hover{border-bottom-style:solid;color:var(--moss);}
+/* ── Вопросы-врезка ── */
+.quiz{background:var(--warm);padding:2.2rem 2.4rem;margin:2.5rem 0;border-left:3px solid var(--moss);}
+.quiz ol{margin:0;padding-left:1.4rem;}
+.quiz li{font-family:'Cormorant Garamond',serif;font-size:1.1rem;line-height:1.6;
+  color:var(--ink);margin-bottom:.9rem;}
+.quiz li:last-child{margin-bottom:0;}
+</style>
+<!-- ECO:MANAGED:head -->
+  <link rel="canonical" href="https://morgunkonstantin.github.io/ecosite/essay-carbon-offsets.html">
+  <meta property="og:url" content="https://morgunkonstantin.github.io/ecosite/essay-carbon-offsets.html">
+  <meta property="og:site_name" content="ЭкоСознание">
+  <meta property="og:image" content="https://morgunkonstantin.github.io/ecosite/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ЭкоСознание — экология как способ смотреть на реальность">
+  <meta name="twitter:image" content="https://morgunkonstantin.github.io/ecosite/assets/og-image.png">
+  <meta name="theme-color" content="#faf6ef">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="alternate" type="application/rss+xml" title="ЭкоСознание — RSS" href="feed.xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","name":"Как отличить честный углеродный офсет от продажи воздуха","headline":"Как отличить честный углеродный офсет от продажи воздуха","description":"Как устроены углеродные кредиты, пять ловушек — дополнительность, базовый сценарий, постоянство, утечка, двойной счёт, — что показали независимые проверки, почему посадки деревьев плохо работают как «компенсация», лестница качества кредитов, чек-лист из десяти вопросов и новые правила. Пять инфографик.","inLanguage":"ru-RU","url":"https://morgunkonstantin.github.io/ecosite/essay-carbon-offsets.html","isPartOf":{"@type":"WebSite","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecosite/"},"publisher":{"@type":"Organization","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecosite/"},"datePublished":"2026-11-01","author":{"@type":"Organization","name":"ЭкоСознание"},"articleSection":"Экономика"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://morgunkonstantin.github.io/ecosite/"},{"@type":"ListItem","position":2,"name":"Экономика","item":"https://morgunkonstantin.github.io/ecosite/section-economy.html"},{"@type":"ListItem","position":3,"name":"Как отличить честный углеродный офсет от продажи воздуха","item":"https://morgunkonstantin.github.io/ecosite/essay-carbon-offsets.html"}]}</script>
+<!-- /ECO:MANAGED:head -->
+</head>
+<body>
+<a class="skip-link" href="#content">Перейти к содержанию</a>
+
+<!-- ECO:MANAGED:nav -->
+<div class="g-nav-wrap" id="gNavWrap">
+  <div class="g-nav">
+    <a href="index.html" class="g-logo">
+      <svg viewBox="0 0 100 100" fill="none" class="logo-svg"><circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#4a7c59"/></svg>
+      <span class="g-logo-text">Эко<em>Сознание</em></span>
+    </a>
+    <ul class="g-links">
+      <li>
+        <button class="g-drop-btn" aria-expanded="false">
+          Разделы
+          <svg class="g-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg>
+        </button>
+        <div class="g-dropdown">
+          <a href="section-philosophy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Философия</span><span class="g-dd-num">01</span></a>
+          <a href="section-psychology.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="g-dd-name">Психология</span><span class="g-dd-num">02</span></a>
+          <a href="section-lifestyle.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Стиль жизни</span><span class="g-dd-num">03</span></a>
+          <a href="section-technologies.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="g-dd-name">Технологии</span><span class="g-dd-num">04</span></a>
+          <a href="section-food.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-dd-name">Питание</span><span class="g-dd-num">05</span></a>
+          <a href="section-architecture.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="g-dd-name">Архитектура</span><span class="g-dd-num">06</span></a>
+          <a href="section-economy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Экономика</span><span class="g-dd-num">07</span></a>
+          <a href="section-education.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="g-dd-name">Образование</span><span class="g-dd-num">08</span></a>
+          <a href="section-community.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Сообщество</span><span class="g-dd-num">09</span></a>
+          <a href="section-travel.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-dd-name">Путешествия</span><span class="g-dd-num">10</span></a>
+          <a href="section-health.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Здоровье</span><span class="g-dd-num">11</span></a>
+          <a href="section-science.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Наука</span><span class="g-dd-num">12</span></a>
+        </div>
+      </li>
+      <li><a href="about.html">О проекте</a></li>
+    </ul>
+    <button class="g-burger" id="gBurger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+
+<div class="g-overlay" id="gOverlay">
+  <div class="g-ov-section">
+    <div class="g-ov-label">Разделы</div>
+    <div class="g-ov-grid">
+      <a href="section-philosophy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Философия</span></a>
+      <a href="section-psychology.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="g-ov-name">Психология</span></a>
+      <a href="section-lifestyle.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/></svg></span><span class="g-ov-name">Стиль жизни</span></a>
+      <a href="section-technologies.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="g-ov-name">Технологии</span></a>
+      <a href="section-food.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-ov-name">Питание</span></a>
+      <a href="section-architecture.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="g-ov-name">Архитектура</span></a>
+      <a href="section-economy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Экономика</span></a>
+      <a href="section-education.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="g-ov-name">Образование</span></a>
+      <a href="section-community.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Сообщество</span></a>
+      <a href="section-travel.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-ov-name">Путешествия</span></a>
+      <a href="section-health.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Здоровье</span></a>
+      <a href="section-science.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Наука</span></a>
+    </div>
+  </div>
+  <div class="g-ov-section">
+    <div class="g-ov-label">Навигация</div>
+    <div class="g-ov-simple-links">
+      <a href="index.html" class="g-ov-simple-link">Главная</a>
+      <a href="map.html" class="g-ov-simple-link">Карта связей</a>
+      <a href="contents.html" class="g-ov-simple-link">Все материалы</a>
+      <a href="revisions.html" class="g-ov-simple-link">Что не подтвердилось</a>
+      <a href="search.html" class="g-ov-simple-link">Поиск</a>
+      <a href="paths.html" class="g-ov-simple-link">Тропы чтения</a>
+      <a href="tree.html" class="g-ov-simple-link">Дерево материалов</a>
+      <a href="thinkers.html" class="g-ov-simple-link">Указатель имён</a>
+      <a href="about.html" class="g-ov-simple-link">О проекте</a>
+    </div>
+  </div>
+</div>
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<main id="content" tabindex="-1">
+<!-- ECO:MANAGED:breadcrumb -->
+<nav class="breadcrumb" aria-label="Хлебные крошки"><a href="index.html">Главная</a> <span class="bc-sep">→</span> <a href="section-economy.html">Экономика</a> <span class="bc-sep">→</span> <span class="bc-current">Как отличить честный углеродный офсет от продажи в…</span></nav>
+<!-- /ECO:MANAGED:breadcrumb -->
+
+<section class="hero" id="top">
+  <div class="hero-mark-svg"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="50" cy="50" r="45"/><rect x="26" y="34" width="48" height="32" rx="3"/><path d="M34 44 H56 M34 52 H50" stroke-linecap="round"/><circle cx="62" cy="56" r="7"/><path d="M58 56 l3 3 l5 -6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  <div>
+    <div class="hero-tag">Эссе с инфографикой · Экономика</div>
+    <h1>Как отличить<br><em>честный офсет</em><br>от продажи воздуха</h1>
+    <p class="hero-lead">«Этот рейс углеродно нейтрален», «мы компенсировали выбросы, посадив лес», «купите кредит — спасите тропики». Углеродные компенсации, или офсеты, обещают простую вещь: заплатить, чтобы кто-то где-то сократил выбросы вместо вас. Иногда это работает. Но крупные расследования последних лет показали, что большая часть проданных кредитов не соответствует реальному сокращению выбросов. Разбираемся, как устроен офсет, где в нём прячется обман и по каким признакам отличить честный проект от продажи воздуха.</p>
+  </div>
+  <div class="hero-meta">
+    <div><div class="meta-label">Что такое офсет</div><div class="meta-value">Кредит за тонну CO₂, которую проект якобы сократил или удалил из атмосферы, — её покупают, чтобы «зачесть» свои выбросы</div></div>
+    <div><div class="meta-label">Главная проблема</div><div class="meta-value">По систематическому анализу 2024 года реальным сокращениям соответствует лишь меньше шестой части выпущенных кредитов</div></div>
+    <div><div class="meta-label">Правило</div><div class="meta-value">Сначала сокращать свои выбросы. Покупать кредиты — только для остатка и как вклад, а не как «нейтральность»</div></div>
+  </div>
+</section>
+
+<div class="toc-bar">
+  <a href="#how" class="active">Как работает</a>
+  <a href="#pitfalls">Пять ловушек</a>
+  <a href="#scandals">Что показали проверки</a>
+  <a href="#trees">Деревья в зачёт</a>
+  <a href="#quality">Лестница качества</a>
+  <a href="#check">10 вопросов</a>
+  <a href="#rules">Правила игры</a>
+  <a href="#honest">Честный взгляд</a>
+  <a href="#outro">Итог</a>
+</div>
+
+<!-- ═══ 00 ═══ -->
+<section class="content-section" id="how">
+  <div style="max-width:880px;">
+    <div class="section-num">00</div>
+    <div class="disc-meta">тонна здесь в обмен на тонну там</div>
+    <h2>Как устроен <em>офсет</em></h2>
+    <p>Идея проста и логична. Для атмосферы неважно, где именно сокращена тонна CO₂. Если компании дорого сократить выбросы у себя, она может заплатить проекту, который сократит их где-то ещё дешевле: защитит лес от вырубки, построит ветровую станцию, раздаст экономичные печи, уловит метан на свалке. За каждую тонну проект получает углеродный кредит, а покупатель «гасит» его в реестре и заявляет, что компенсировал свои выбросы.</p>
+
+    <!-- ИНФОГРАФИКА 1 -->
+    <div class="co-panel">
+      <div class="co-sub">Инфографика 1 · Откуда берётся углеродный кредит</div>
+      <div class="co-scroll">
+      <svg viewBox="0 0 760 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="График: пунктирная линия — базовый сценарий, что было бы без проекта; сплошная линия — реальные выбросы с проектом; разница между ними — кредиты. Если базовый сценарий завышен, кредиты возникают из воздуха" style="width:100%;height:auto;display:block;">
+        <line x1="70" y1="270" x2="540" y2="270" stroke="#3d5240" stroke-width="1.5"/>
+        <line x1="70" y1="40" x2="70" y2="270" stroke="#3d5240" stroke-width="1.5"/>
+        <text x="62" y="46" text-anchor="end" font-family="Jost,sans-serif" font-size="12" fill="#3d5240">выбросы</text>
+        <text x="540" y="290" text-anchor="end" font-family="Jost,sans-serif" font-size="12" fill="#3d5240">годы</text>
+        <path d="M70 180 L540 180 L540 210 Z" fill="#4a7c59" opacity=".2"/>
+        <path d="M70 180 L540 60 L540 150 Z" fill="#7a4f2e" opacity=".13"/>
+        <path d="M70 180 L540 150 L540 180 Z" fill="#4a7c59" opacity=".2"/>
+        <path d="M70 180 L 540 60" stroke="#7a4f2e" stroke-width="2.5" stroke-dasharray="3 6" fill="none"/>
+        <path d="M70 180 L 540 150" stroke="#b8924a" stroke-width="2.5" stroke-dasharray="8 6" fill="none"/>
+        <path d="M70 180 L 540 210" stroke="#4a7c59" stroke-width="3.5" fill="none"/>
+        <g font-family="Jost,sans-serif" font-size="13">
+          <text x="552" y="58" fill="#7a4f2e">завышенный сценарий</text><text x="552" y="74" fill="#7a4f2e">«без проекта»</text>
+          <text x="552" y="148" fill="#7a5a20">честный сценарий</text><text x="552" y="164" fill="#7a5a20">«без проекта»</text>
+          <text x="552" y="210" fill="#2f5a3c">реальные выбросы</text><text x="552" y="226" fill="#2f5a3c">с проектом</text>
+          <text x="400" y="122" fill="#7a4f2e" font-size="14" text-anchor="middle">«кредиты из воздуха»</text>
+          <text x="470" y="186" fill="#2f5a3c" font-size="13" text-anchor="middle">настоящие</text>
+          <text x="470" y="201" fill="#2f5a3c" font-size="13" text-anchor="middle">кредиты</text>
+        </g>
+      </svg>
+      </div>
+      <div class="co-cap">Схема редакции · кредиты считаются как разница между сценарием «что было бы без проекта» и реальностью</div>
+    </div>
+
+    <p>Вся конструкция держится на одном вопросе: что было бы, если бы проекта не было? Этот гипотетический мир называют базовым сценарием. Кредит — это разница между ним и реальностью. Проблема в том, что базовый сценарий нельзя увидеть или измерить — его можно только оценить. А продавец кредитов заинтересован оценить его как можно мрачнее: чем больше «вырубили бы» без проекта, тем больше кредитов можно продать.</p>
+  </div>
+</section>
+
+<!-- ═══ 01 ЛОВУШКИ ═══ -->
+<section class="content-section alt" id="pitfalls">
+  <div style="max-width:880px;">
+    <div class="section-num">01</div>
+    <div class="disc-meta">где прячется обман — даже без злого умысла</div>
+    <h2>Пять ловушек <em>углеродного кредита</em></h2>
+
+    <!-- ИНФОГРАФИКА 2 -->
+    <div class="co-panel">
+      <div class="co-sub">Инфографика 2 · Пять вопросов, на которых проваливаются офсеты</div>
+      <div class="co-traps">
+        <div class="co-t"><div class="co-t-n">1</div><div class="co-t-h">Дополнительность</div><div class="co-t-q">Случилось бы это и без денег за кредиты?</div><div class="co-t-d">Ветровая станция, которая и так выгодна, или лес, который никто не собирался рубить, не дают реального сокращения.</div></div>
+        <div class="co-t"><div class="co-t-n">2</div><div class="co-t-h">Завышенный базовый сценарий</div><div class="co-t-q">Не преувеличена ли угроза «без проекта»?</div><div class="co-t-d">Чем страшнее прогноз вырубки, тем больше кредитов. Проверки показывают, что прогнозы часто завышены.</div></div>
+        <div class="co-t"><div class="co-t-n">3</div><div class="co-t-h">Постоянство</div><div class="co-t-q">Как долго углерод останется вне атмосферы?</div><div class="co-t-d">Выброс CO₂ остаётся в воздухе на века, а лес может сгореть через десять лет. Тогда «компенсация» исчезает.</div></div>
+        <div class="co-t"><div class="co-t-n">4</div><div class="co-t-h">Утечка</div><div class="co-t-q">Не переехали ли выбросы в соседнее место?</div><div class="co-t-d">Если лесорубы просто перешли в соседний лес, планета ничего не выиграла.</div></div>
+        <div class="co-t"><div class="co-t-n">5</div><div class="co-t-h">Двойной счёт</div><div class="co-t-q">Не засчитали ли одну тонну дважды?</div><div class="co-t-d">Одно и то же сокращение может записать в свои достижения и компания-покупатель, и страна, где идёт проект.</div></div>
+      </div>
+    </div>
+
+    <p>Важно понимать: эти ловушки возникают не обязательно из-за мошенников. Многие участники рынка искренне хотят помочь климату. Но система устроена так, что почти все её участники — разработчик проекта, верификатор, которому платит разработчик, продавец, покупатель — заинтересованы в том, чтобы кредитов было больше и они выглядели надёжнее. Голоса, заинтересованного в меньшем числе кредитов, в этой цепочке нет. Кроме атмосферы.</p>
+  </div>
+</section>
+
+<!-- ═══ 02 ПРОВЕРКИ ═══ -->
+<section class="content-section" id="scandals">
+  <div style="max-width:880px;">
+    <div class="section-num">02</div>
+    <div class="disc-meta">что нашли учёные и журналисты</div>
+    <h2>Что показали <em>проверки</em></h2>
+    <p>В 2021–2024 годах учёные и журналисты впервые взялись за массовую независимую проверку углеродных кредитов. Результаты оказались тяжёлыми для рынка.</p>
+
+    <!-- ИНФОГРАФИКА 3 -->
+    <div class="co-panel">
+      <div class="co-sub">Инфографика 3 · Что нашли независимые исследования</div>
+      <div class="co-find">
+        <div class="co-f"><div class="co-f-big">&lt; 16%</div><div class="co-f-t">кредитов соответствуют реальным сокращениям</div><div class="co-f-d">Систематический анализ более двух тысяч проектов, на которые приходится почти пятая часть всех выпущенных кредитов · Nature Communications, 2024</div></div>
+        <div class="co-f"><div class="co-f-big">большинство</div><div class="co-f-t">проектов защиты тропических лесов не снизили вырубку так, как заявляли</div><div class="co-f-d">Сравнение с похожими незащищёнными территориями · Science, 2023</div></div>
+        <div class="co-f"><div class="co-f-big">≈ 29%</div><div class="co-f-t">лишних кредитов в программе лесных офсетов Калифорнии</div><div class="co-f-d">из-за завышенных базовых сценариев · Global Change Biology, 2022</div></div>
+        <div class="co-f"><div class="co-f-big">≈ ×9</div><div class="co-f-t">завышение кредитов в проектах экономичных печей</div><div class="co-f-d">в среднем по проверенным проектам · Nature Sustainability, 2024</div></div>
+      </div>
+      <div class="co-cap">Цифры округлены · подробности в списке источников</div>
+    </div>
+
+    <p>В 2023 году совместное расследование британской газеты The Guardian, немецкой Die Zeit и группы SourceMaterial по проектам крупнейшего стандарта добровольного рынка Verra пришло к выводу, что подавляющая часть кредитов за сохранение тропических лесов, вероятно, не дала реального эффекта. Verra оспорила выводы, но вскоре сменился её руководитель, а методику для лесных проектов пересмотрели. Многие крупные компании отказались от заявлений о «нейтральности», а объём добровольного рынка упал с примерно двух миллиардов долларов в 2021 году до меньше чем миллиарда в 2023-м.</p>
+    <p>Лесные пожары на западе США в 2020–2021 годах уничтожили часть лесов, кредиты за которые уже были проданы. Резервные фонды, созданные на такой случай, местами оказались исчерпаны куда быстрее, чем рассчитывали. Это наглядная иллюстрация ловушки постоянства: углерод в лесу — не в сейфе.</p>
+  </div>
+</section>
+
+<!-- ═══ 03 ДЕРЕВЬЯ ═══ -->
+<section class="content-section alt" id="trees">
+  <div style="max-width:820px;">
+    <div class="section-num">03</div>
+    <div class="disc-meta">почему посадки плохо работают как «компенсация»</div>
+    <h2>Деревья <em>в зачёт выбросов</em></h2>
+    <p>Самый популярный образ офсета — посадка деревьев. Он понятен и красив, и именно поэтому стоит разобраться, почему как «компенсация» он работает хуже всего.</p>
+    <p><strong>Время.</strong> Выбросы от перелёта случились сегодня, а саженец заберёт тот же углерод только за десятилетия, если вырастет. Атмосфера всё это время греется.</p>
+    <p><strong>Выживание.</strong> Значительная часть посаженных деревьев погибает в первые годы — от засухи, травы, вытаптывания, неправильного места. Если кредиты выданы «за посаженные», а не «за выросшие» деревья, они почти наверняка завышены.</p>
+    <p><strong>Постоянство.</strong> Ископаемый углерод, выпущенный из угля и нефти, был заперт в земле сотни миллионов лет. Углерод в дереве держится десятилетия, в лучшем случае столетия, и может вернуться в воздух за один пожар.</p>
+    <p><strong>Место.</strong> Посадки на лугах, в степях и на болотах, о которых мы писали в эссе <a href="essay-forest-activism.html">«Лесной активизм»</a>, могут навредить природе и при этом дать красивую отчётность.</p>
+    <p>Вывод не в том, что сажать деревья не нужно. Наоборот: сажать, выращивать и особенно беречь леса — одно из лучших дел для климата и природы. Но честно называть это <em>вкладом</em> в общее дело, а не «компенсацией», которая якобы стирает собственные выбросы.</p>
+  </div>
+</section>
+
+<!-- ═══ 04 ЛЕСТНИЦА КАЧЕСТВА ═══ -->
+<section class="content-section" id="quality">
+  <div style="max-width:880px;">
+    <div class="section-num">04</div>
+    <div class="disc-meta">сокращение или удаление, на годы или на века</div>
+    <h2>Не все тонны <em>одинаковы</em></h2>
+    <p>Учёные Оксфордского университета сформулировали принципы честной компенсации. Одна из их главных идей: тонна тонне рознь. Важно, сокращает ли проект будущие выбросы или удаляет уже выброшенный CO₂, и насколько надёжно и долго хранится удалённый углерод.</p>
+
+    <!-- ИНФОГРАФИКА 4 -->
+    <div class="co-panel">
+      <div class="co-sub">Инфографика 4 · Лестница качества углеродных кредитов</div>
+      <div class="co-ladder">
+        <div class="co-st co-st1"><b>Избежание выбросов</b> — например, защита леса, который «могли бы» вырубить: больше всего риска завышения, не удаляет уже выброшенное</div>
+        <div class="co-st co-st2"><b>Сокращение выбросов</b> — улавливание метана на свалке, замена угля: эффект измерим точнее, но тоже не удаляет выброшенное</div>
+        <div class="co-st co-st3"><b>Удаление с коротким хранением</b> — новые леса, углерод в почве: забирают CO₂ из воздуха, но могут вернуть его при пожаре или распашке</div>
+        <div class="co-st co-st4"><b>Удаление с долгим хранением</b> — минерализация, закачка в геологические пласты, стойкий биоуголь: держат углерод веками, пока дороги и малы по масштабу</div>
+      </div>
+      <div class="co-cap">По Oxford Principles for Net Zero Aligned Carbon Offsetting (2020, обновлены в 2024) · чтобы прийти к «нулю нетто», доля удаления с долгим хранением должна со временем расти</div>
+    </div>
+
+    <p>Отсюда практическое правило для компании, которая всерьёз думает о климате: сначала сократить свои выбросы настолько, насколько возможно. Для оставшихся — покупать кредиты высокого качества, постепенно смещаясь вверх по лестнице. А честнее всего — вообще не называть это «нейтральностью».</p>
+  </div>
+</section>
+
+<!-- ═══ 05 ЧЕК-ЛИСТ ═══ -->
+<section class="content-section alt" id="check">
+  <div style="max-width:880px;">
+    <div class="section-num">05</div>
+    <div class="disc-meta">для покупателя, сотрудника и журналиста</div>
+    <h2>Десять вопросов <em>к углеродному кредиту</em></h2>
+
+    <!-- ИНФОГРАФИКА 5 -->
+    <div class="co-panel">
+      <div class="co-sub">Инфографика 5 · Чек-лист честного офсета</div>
+      <ol class="co-check">
+        <li><b>Дополнительность.</b> Есть ли убедительные доказательства, что без денег от кредитов проекта не было бы?</li>
+        <li><b>Базовый сценарий.</b> На чём основан прогноз «что было бы без проекта»? Проверялся ли он независимо, например сравнением с похожими территориями?</li>
+        <li><b>Постоянство.</b> Сколько лет гарантируется хранение углерода? Есть ли резервный фонд на случай пожара и достаточно ли он велик?</li>
+        <li><b>Утечка.</b> Учтено ли, что вредная деятельность может просто переместиться по соседству?</li>
+        <li><b>Проверка.</b> Кто проверял проект и кто этому проверяющему платит? Есть ли спутниковые данные и выезды на место?</li>
+        <li><b>Реестр.</b> Можно ли найти кредит в публичном реестре и убедиться, что он погашен на имя покупателя и не продан ещё раз?</li>
+        <li><b>Двойной счёт.</b> Не засчитывает ли это же сокращение страна, где идёт проект?</li>
+        <li><b>Люди на месте.</b> Согласны ли местные жители и коренные народы, получают ли они долю дохода, не теряют ли доступ к земле?</li>
+        <li><b>Цена.</b> Подозрительно дешёвые кредиты — несколько долларов за тонну — почти всегда означают низкое качество. Настоящее удаление с долгим хранением стоит в десятки раз дороже.</li>
+        <li><b>Заявление.</b> Что обещает покупатель? «Мы углеродно нейтральны» — тревожный сигнал. «Мы сократили выбросы на столько-то и дополнительно поддерживаем такие-то проекты» — честнее.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 06 ПРАВИЛА ═══ -->
+<section class="content-section" id="rules">
+  <div style="max-width:820px;">
+    <div class="section-num">06</div>
+    <div class="disc-meta">регуляторы, стандарты и Россия</div>
+    <h2>Правила <em>игры меняются</em></h2>
+    <p>После скандалов рынок начал меняться. Международный совет по добровольному углеродному рынку (ICVCM) в 2023 году выпустил «Основные углеродные принципы» и начал присваивать знак качества тем методикам, которые им соответствуют. Инициатива научно обоснованных целей (SBTi) не позволяет компаниям засчитывать офсеты в достижение своих целей по сокращению выбросов: сначала — реальные сокращения.</p>
+    <p>Европейский союз пошёл ещё дальше. Директива о защите потребителей при «зелёном» переходе, принятая в 2024 году, запрещает рекламировать товар как имеющий нейтральное, уменьшенное или положительное влияние на климат, если это утверждение основано на компенсациях. Правило вступает в силу с осени 2026 года. Надписи «углеродно нейтральный продукт» на основе купленных кредитов в Европе уходят в прошлое.</p>
+    <p>В России в 2021 году принят закон об ограничении выбросов парниковых газов, создан реестр углеродных единиц и порядок реализации климатических проектов, а на Сахалине идёт эксперимент по квотированию выбросов. Это молодая система, и к ней применимы те же вопросы: дополнительность, постоянство, независимая проверка. Особенно для лесных проектов в стране, где лесные пожары каждый год уничтожают огромные площади.</p>
+  </div>
+</section>
+
+<!-- ═══ 07 ЧЕСТНО ═══ -->
+<section class="content-section alt" id="honest">
+  <div style="max-width:820px;">
+    <div class="section-num">07</div>
+    <div class="disc-meta">критика темы</div>
+    <h2>Честный <em>взгляд</em></h2>
+    <p><strong>Не выплёскивать ребёнка.</strong> После расследований легко решить, что все офсеты — обман. Это не так. Хорошие проекты существуют: они приносят деньги на защиту лесов, чистую энергию и здоровье людей там, где иначе этих денег не было бы. Проблема не в самой идее, а в обещании, что кредит «стирает» собственные выбросы.</p>
+    <p><strong>Опасность бездействия.</strong> Если компании, испугавшись обвинений в гринвошинге, просто перестанут платить за проекты, деньги для тропических лесов и бедных стран станет ещё меньше. Лучше честный «вклад» без громких заявлений, чем молчаливый отказ.</p>
+    <p><strong>Офсет как отсрочка.</strong> Главный вред плохих кредитов не в потраченных деньгах, а в потерянном времени: компания, которая «уже нейтральна», не спешит сокращать свои выбросы. Климату нужно и то, и другое, но в правильном порядке.</p>
+    <p><strong>Справедливость.</strong> Многие проекты расположены в бедных странах, а покупатели — в богатых. Бывали случаи, когда ради «углеродного» леса местных жителей лишали доступа к земле. Честный проект — тот, от которого выигрывают и климат, и люди, живущие рядом.</p>
+  </div>
+</section>
+
+<!-- ═══ ИТОГ ═══ -->
+<section class="content-section" id="outro">
+  <div style="max-width:820px;">
+    <div class="section-num">—</div>
+    <h2>Итог: <em>вклад, а не индульгенция</em></h2>
+    <p>Углеродный кредит — это обещание, что где-то стало на тонну меньше CO₂, чем было бы без вас. Проверить такое обещание трудно, и независимые исследования показали, что большая часть таких обещаний была завышена. Это не повод отказаться от поддержки проектов, но повод перестать относиться к ним как к индульгенции.</p>
+    <p>Правильный порядок простой: сначала сокращать собственные выбросы, потом поддерживать качественные проекты — как вклад, а не как отмену своих выбросов. Задавать десять вопросов из чек-листа. Предпочитать удаление с долгим хранением. И помнить, что для атмосферы важны реальные тонны, а не красивые сертификаты.</p>
+    <p style="margin-top:2rem;">Читайте также: <a href="essay-carbon-markets.html">Углеродные рынки: почему механизм в основном не сработал</a> · <a href="essay-esg.html">ESG и устойчивое развитие: прибор или вывеска?</a> · <a href="essay-greenwashing.html">Гринвошинг: не обман, а отрасль</a> · <a href="essay-trees-air.html">Дерево из воздуха</a> · <a href="essay-forest-activism.html">Лесной активизм: вырастить лес своими руками</a></p>
+
+    <div class="sources">
+      <div class="src-title"><small>Источники</small>На чём основан текст</div>
+      <ol class="src-list">
+        <li>Probst B. S. et al. (2024). Systematic assessment of the achieved emission reductions of carbon crediting projects. Nature Communications 15, 9562.</li>
+        <li>West T. A. P. et al. (2023). Action needed to make carbon offsets from forest conservation work for climate change mitigation. Science 381, 873–877.</li>
+        <li>Badgley G. et al. (2022). Systematic over-crediting in California's forest carbon offsets program. Global Change Biology 28, 1433–1445.</li>
+        <li>Gill-Wiehl A., Kammen D. M., Haya B. K. (2024). Pervasive over-crediting from cookstove offset methodologies. Nature Sustainability 7, 191–202.</li>
+        <li>The Guardian, Die Zeit, SourceMaterial (январь 2023). Расследование о кредитах за сохранение тропических лесов по стандарту Verra.</li>
+        <li>Ecosystem Marketplace — ежегодные отчёты State of the Voluntary Carbon Market.</li>
+        <li>Allen M. et al. (2020, 2024). The Oxford Principles for Net Zero Aligned Carbon Offsetting.</li>
+        <li>ICVCM (2023). Core Carbon Principles; SBTi Corporate Net-Zero Standard.</li>
+        <li>Директива (ЕС) 2024/825 о расширении прав потребителей в «зелёном» переходе.</li>
+        <li>Федеральный закон от 02.07.2021 № 296-ФЗ «Об ограничении выбросов парниковых газов»; Федеральный закон № 34-ФЗ (2022) о сахалинском эксперименте.</li>
+      </ol>
+    </div>
+
+    <div style="margin-top:2.5rem;padding-top:2rem;border-top:1px solid rgba(74,124,89,0.15);font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--ink-light);text-align:center;font-size:1rem;">
+      — редакция «ЭкоСознания», раздел «Экономика»
+    </div>
+  </div>
+</section>
+
+<style>
+.co-panel{background:var(--warm);border:1px solid rgba(74,124,89,.18);padding:1.6rem 1.4rem 1.1rem;margin:1.8rem 0;}
+.co-sub{font-family:'Jost',sans-serif;font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);margin-bottom:1rem;text-align:center;}
+.co-cap{font-family:'Jost',sans-serif;font-size:.62rem;letter-spacing:.08em;color:var(--sage-text,#6b8a70);text-align:center;margin-top:.9rem;line-height:1.6;}
+.co-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.co-traps{display:grid;grid-template-columns:repeat(5,1fr);gap:.5rem;}
+.co-t{background:var(--paper);border:1px solid rgba(74,124,89,.22);padding:.85rem .8rem;}
+.co-t-n{font-family:'Cormorant Garamond',serif;font-size:1.8rem;line-height:1;color:#7a4f2e;}
+.co-t-h{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink);margin:.25rem 0;}
+.co-t-q{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--moss);font-size:.95rem;line-height:1.3;margin-bottom:.4rem;}
+.co-t-d{font-size:.74rem;line-height:1.5;color:var(--ink-light);}
+.co-find{display:grid;grid-template-columns:repeat(2,1fr);gap:.6rem;}
+.co-f{background:var(--paper);border:1px solid rgba(74,124,89,.22);border-left:4px solid #7a4f2e;padding:1rem;}
+.co-f-big{font-family:'Cormorant Garamond',serif;font-size:2.2rem;line-height:1;color:#7a4f2e;}
+.co-f-t{font-size:.86rem;color:var(--ink);margin:.35rem 0;line-height:1.4;}
+.co-f-d{font-size:.74rem;color:var(--ink-light);line-height:1.5;}
+.co-ladder{display:flex;flex-direction:column;gap:.45rem;}
+.co-st{padding:.75rem 1rem;font-size:.84rem;line-height:1.5;border:1px solid rgba(74,124,89,.22);}
+.co-st b{font-weight:500;}
+.co-st1{background:rgba(122,79,46,.12);color:var(--ink-light);margin-right:24%;}
+.co-st2{background:rgba(184,146,74,.16);color:var(--ink-light);margin-left:8%;margin-right:16%;}
+.co-st3{background:rgba(168,197,160,.3);color:var(--ink-light);margin-left:16%;margin-right:8%;}
+.co-st4{background:#4a7c59;color:rgba(250,246,239,.88);margin-left:24%;border-color:#4a7c59;}
+.co-st1 b,.co-st2 b,.co-st3 b{color:var(--ink);}
+.co-st4 b{color:#faf6ef;}
+.co-check{margin:0;padding-left:1.4rem;}
+.co-check li{margin-bottom:.65rem;line-height:1.65;font-size:.9rem;color:var(--ink-light);}
+.co-check b{color:var(--ink);font-weight:500;}
+@media(max-width:860px){ .co-traps{grid-template-columns:repeat(2,1fr);} }
+@media(max-width:700px){
+  .co-scroll svg{min-width:620px;}
+  .co-traps,.co-find{grid-template-columns:1fr;}
+  .co-st1,.co-st2,.co-st3,.co-st4{margin-left:0;margin-right:0;}
+}
+</style>
+
+</main>
+
+<!-- ECO:MANAGED:footer -->
+<footer class="gf">
+  <div class="gf-top">
+    <div class="gf-brand">
+      <a href="index.html" class="gf-logo">
+        <svg viewBox="0 0 100 100" fill="none" class="logo-svg" style="width:24px;height:24px;flex-shrink:0;"><circle cx="50" cy="50" r="40" stroke="#f3ede3" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#6ea87e"/></svg>
+        <span class="gf-logo-text">Эко<em>Сознание</em></span>
+      </a>
+      <p class="gf-tagline">Экологический взгляд как линза для любой сферы жизни</p>
+    </div>
+    <div class="gf-cols">
+      <div>
+        <div class="gf-col-title">Разделы</div>
+        <div class="gf-sections">
+          <a href="section-philosophy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Философия</span></a>
+          <a href="section-psychology.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Психология</span></a>
+          <a href="section-lifestyle.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Стиль жизни</span></a>
+          <a href="section-technologies.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="gf-sec-name">Технологии</span></a>
+          <a href="section-food.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Питание</span></a>
+          <a href="section-architecture.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Архитектура</span></a>
+          <a href="section-economy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Экономика</span></a>
+          <a href="section-education.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="gf-sec-name">Образование</span></a>
+          <a href="section-community.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Сообщество</span></a>
+          <a href="section-travel.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="gf-sec-name">Путешествия</span></a>
+          <a href="section-health.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Здоровье</span></a>
+          <a href="section-science.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Наука</span></a>
+        </div>
+      </div>
+      <div>
+        <div class="gf-col-title">Навигация</div>
+        <nav class="gf-nav-links">
+          <a href="index.html" class="gf-nav-link">Главная</a>
+          <a href="map.html" class="gf-nav-link">Карта связей</a>
+          <a href="paths.html" class="gf-nav-link">Тропы чтения</a>
+          <a href="tree.html" class="gf-nav-link">Дерево материалов</a>
+          <a href="revisions.html" class="gf-nav-link">Что не подтвердилось</a>
+          <a href="thinkers.html" class="gf-nav-link">Указатель имён</a>
+          <a href="search.html" class="gf-nav-link">Поиск</a>
+          <a href="method.html" class="gf-nav-link">Как устроены материалы</a>
+            <a href="about.html" class="gf-nav-link">О проекте</a>
+          <a href="glossary.html" class="gf-nav-link">Глоссарий</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="gf-bottom">
+    <span class="gf-copy">© 2026 ЭкоСознание</span>
+    <div class="gf-bottom-links">
+      <a href="about.html">О проекте</a>
+      <a href="glossary.html">Глоссарий</a>
+    </div>
+  </div>
+</footer>
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+
+
+<!-- ECO:MANAGED:js -->
+<script src="assets/global.js" defer></script>
+<!-- /ECO:MANAGED:js -->
+</body>
+</html>
