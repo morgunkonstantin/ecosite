@@ -6,12 +6,44 @@
   <atom:link href="https://morgunkonstantin.github.io/ecosite/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Экология как способ смотреть на реальность</description>
   <language>ru</language>
-  <lastBuildDate>Sun, 01 Nov 2026 13:09:28 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 01 Nov 2026 13:16:38 +0000</lastBuildDate>
   <image>
     <url>https://morgunkonstantin.github.io/ecosite/assets/og-image.png</url>
     <title>ЭкоСознание</title>
     <link>https://morgunkonstantin.github.io/ecosite/</link>
   </image>
+  <item>
+    <title>Отпуск без следа</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-leave-no-trace.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-leave-no-trace.html</guid>
+    <description>Как отдыхать в лесу, в горах и у воды так, чтобы после нас природа осталась такой же: семь принципов «не оставляй следов», костёр, мусор, туалет и вода, походный набор.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Почва — живая</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-living-soil.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-living-soil.html</guid>
+    <description>Почва — одна из самых богатых жизнью сред на Земле: бактерии, грибы, черви и клещи, почвенный профиль, углерод в земле и почему перекопка вредит.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Воздух, которым мы дышим</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-clean-air.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-clean-air.html</guid>
+    <description>Что такое PM2.5 и диоксид азота, почему ВОЗ ужесточила нормы в 2021 году, какие источники загрязнения есть дома и что реально помогает дышать чище.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Полторы тонны: углеродный бюджет одного человека</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-carbon-budget.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-carbon-budget.html</guid>
+    <description>Какой углеродный след на человека совместим с целью 1,5 °C, сколько выбрасывают страны, что весит одна тонна CO₂ и какие личные решения дают больше всего.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
   <item>
     <title>Жара и здоровье</title>
     <link>https://morgunkonstantin.github.io/ecosite/essay-heat-health.html</link>
@@ -571,14 +603,6 @@
     <pubDate>Fri, 21 Aug 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
-    <title>Полторы тонны: углеродный бюджет одного человека</title>
-    <link>https://morgunkonstantin.github.io/ecosite/essay-carbon-budget.html</link>
-    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-carbon-budget.html</guid>
-    <description>Какой углеродный след на человека совместим с целью 1,5 °C, сколько выбрасывают страны, что весит одна тонна CO₂ и какие личные решения дают больше всего.</description>
-    <category>Эссе</category>
-    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
-  </item>
-  <item>
     <title>Круговорот углерода: одна лишняя стрелка</title>
     <link>https://morgunkonstantin.github.io/ecosite/essay-carbon-cycle.html</link>
     <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-carbon-cycle.html</guid>
@@ -593,14 +617,6 @@
     <description>Глина и земля — самый распространённый строительный материал на планете, из которого живёт треть человечества. Семья земляных техник (саман, адобе, прессованная земля, earthbag, штукатурка), свойства (регуляция влажности, тепловая масса, здоровье), почти нулевая воплощённая энергия и полный возврат в почву, и единственная слабость — вода.</description>
     <category>Эссе</category>
     <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>Воздух, которым мы дышим</title>
-    <link>https://morgunkonstantin.github.io/ecosite/essay-clean-air.html</link>
-    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-clean-air.html</guid>
-    <description>Что такое PM2.5 и диоксид азота, почему ВОЗ ужесточила нормы в 2021 году, какие источники загрязнения есть дома и что реально помогает дышать чище.</description>
-    <category>Эссе</category>
-    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
     <title>Какое электричество на самом деле чистое?</title>
@@ -745,22 +761,6 @@
     <description>Девять вех космологической картины мира — от мифологического космоса с твердью небесной через гелиоцентризм, бесконечную Вселенную и галактики к расширению, Большому взрыву и тёмной Вселенной. Как менялось представление о мире как целом и о месте человека в нём.</description>
     <category>Эссе</category>
     <pubDate>Sun, 30 Aug 2026 09:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>Отпуск без следа</title>
-    <link>https://morgunkonstantin.github.io/ecosite/essay-leave-no-trace.html</link>
-    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-leave-no-trace.html</guid>
-    <description>Как отдыхать в лесу, в горах и у воды так, чтобы после нас природа осталась такой же: семь принципов «не оставляй следов», костёр, мусор, туалет и вода, походный набор.</description>
-    <category>Эссе</category>
-    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>Почва — живая</title>
-    <link>https://morgunkonstantin.github.io/ecosite/essay-living-soil.html</link>
-    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-living-soil.html</guid>
-    <description>Почва — одна из самых богатых жизнью сред на Земле: бактерии, грибы, черви и клещи, почвенный профиль, углерод в земле и почему перекопка вредит.</description>
-    <category>Эссе</category>
-    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
     <title>Модульный и префаб-дом: точность цеха вместо площадки</title>
