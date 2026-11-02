@@ -6,7 +6,7 @@
   <atom:link href="https://morgunkonstantin.github.io/ecosite/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Экология как способ смотреть на реальность</description>
   <language>ru</language>
-  <lastBuildDate>Sun, 01 Nov 2026 13:16:38 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 02 Nov 2026 10:10:15 +0000</lastBuildDate>
   <image>
     <url>https://morgunkonstantin.github.io/ecosite/assets/og-image.png</url>
     <title>ЭкоСознание</title>
@@ -665,6 +665,14 @@
     <description>Демархия — назначение решающих не выборами, а жребием. От античных Афин, где жребий считался демократией, а выборы олигархией, до климатических гражданских собраний Ирландии и Франции. Почему случайные информированные граждане оказываются дальновиднее избранных политиков.</description>
     <category>Эссе</category>
     <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Проектирование под климат</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-design-climate.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-design-climate.html</guid>
+    <description>Как спроектировать дом под свой климат: градусо-сутки, пять климатов России, шесть рычагов пассивного дизайна, солнце, ветер, снег и мерзлота, микроклимат участка и чек-лист перед проектом.</description>
+    <category>Эссе</category>
+    <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
     <title>Углеродный след тарелки: что весит больше всего</title>

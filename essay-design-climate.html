@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+<script>document.documentElement.classList.replace('no-js','js');</script>
+<meta charset="UTF-8">
+<meta name="description" content="Как спроектировать дом под свой климат: градусо-сутки, пять климатов России, шесть рычагов пассивного дизайна, солнце, ветер, снег и мерзлота, микроклимат участка и чек-лист перед проектом.">
+<meta property="og:title" content="Проектирование под климат: от Сочи до Якутска">
+<meta property="og:description" content="Как спроектировать дом под свой климат: градусо-сутки, пять климатов России, шесть рычагов пассивного дизайна, солнце, ветер, снег и мерзлота, микроклимат участка и чек-лист перед проектом.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Проектирование под климат: от Сочи до Якутска — ЭкоСознание</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/base.css">
+<style>
+.hero{padding:10rem 4rem 5rem;display:grid;grid-template-columns:1fr 380px;gap:4rem;align-items:end;border-bottom:1px solid rgba(74,124,89,.15);position:relative;overflow:hidden;}
+.hero-mark-svg{position:absolute;right:4rem;top:11rem;width:90px;height:90px;color:rgba(74,124,89,.18);pointer-events:none;}
+.hero-mark-svg svg{width:100%;height:100%;display:block;}
+.hero-tag{display:inline-flex;align-items:center;gap:.6rem;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);margin-bottom:1.5rem;}
+.hero-tag::before{content:'';display:block;width:24px;height:1px;background:var(--fern);}
+h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,6vw,5rem);font-weight:300;line-height:1.05;color:var(--ink);margin-bottom:1.8rem;}
+h1 em{font-style:italic;color:var(--moss);display:block;}
+.hero-lead{font-size:1rem;line-height:1.85;color:var(--ink-light);max-width:580px;}
+.hero-meta{display:flex;flex-direction:column;gap:1.5rem;padding-left:2rem;border-left:1px solid rgba(74,124,89,.2);}
+.meta-label{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);margin-bottom:.4rem;}
+.meta-value{font-size:.9rem;color:var(--ink-light);line-height:1.6;}
+.toc-bar{background:var(--ink);padding:0 4rem;display:flex;align-items:stretch;overflow-x:auto;}
+.toc-bar a{color:rgba(211,230,208,.6);text-decoration:none;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:1rem 1.5rem;border-right:1px solid rgba(255,255,255,.06);white-space:nowrap;transition:color .2s,background .2s;}
+.toc-bar a:hover{color:var(--mist);}
+.toc-bar a.active{color:var(--fern);}
+.content-section{padding:5rem 4rem;border-bottom:1px solid rgba(74,124,89,.1);}
+.content-section.alt{background:var(--cream);}
+.content-section.dark{background:var(--ink);}
+.section-label{display:flex;align-items:center;gap:1rem;margin-bottom:3rem;}
+.section-label-num{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);}
+.section-label-line{flex:1;height:1px;background:rgba(74,124,89,.15);}
+.section-label-tag{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);}
+h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:300;color:var(--ink);line-height:1.15;margin-bottom:1.5rem;}
+h2 em{font-style:italic;color:var(--moss);}
+h2.light{color:var(--cream);}
+h2.light em{color:var(--fern);}
+.article-layout{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}
+.article-layout.wide{grid-template-columns:3fr 2fr;}
+.article-body p{font-size:.95rem;line-height:1.9;color:var(--ink-light);margin-bottom:1.1rem;}
+.article-body p:last-child{margin-bottom:0;}
+.article-body p.light{color:rgba(211,230,208,.72);}
+.pull-quote{border-left:3px solid var(--moss);padding:1.2rem 1.5rem;margin:2rem 0;background:rgba(74,124,89,.05);}
+.pull-quote p{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;color:var(--ink);line-height:1.5;margin:0!important;}
+.pull-quote.light{background:rgba(255,255,255,.06);border-color:var(--fern);}
+.pull-quote.light p{color:var(--cream);}
+.pull-quote cite{display:block;margin-top:.6rem!important;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);font-style:normal;}
+.practices-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(74,124,89,.12);margin-top:2rem;}
+.practice-card{background:var(--paper);padding:2rem 1.8rem;transition:background .25s;}
+.content-section.alt .practice-card{background:var(--cream);}
+.practice-card:hover{background:var(--warm);}
+.practice-num{font-family:'Cormorant Garamond',serif;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);margin-bottom:.6rem;}
+.practice-name{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--ink);margin-bottom:.6rem;}
+.practice-name em{font-style:italic;color:var(--moss);}
+.practice-desc{font-size:.85rem;line-height:1.75;color:var(--ink-light);}
+.featured-strip{background:var(--ink);padding:3rem 3.5rem;display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center;margin-top:3rem;}
+.featured-label{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);margin-bottom:1rem;}
+.featured-strip h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;font-style:italic;color:var(--cream);margin-bottom:.8rem;line-height:1.2;}
+.featured-strip p{font-size:.87rem;line-height:1.8;color:rgba(211,230,208,.68);}
+.featured-btn{background:transparent;color:var(--fern);border:1px solid rgba(110,168,126,.4);padding:.8rem 1.6rem;text-decoration:none;font-family:'Jost',sans-serif;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;display:inline-block;transition:background .25s,color .25s;}
+.featured-btn:hover{background:var(--fern);color:var(--ink);}
+.rubrics-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,.12);margin-top:3rem;}
+.rubric-card{background:var(--paper);padding:2rem 1.6rem;transition:background .25s;}
+.rubric-card:hover{background:var(--warm);}
+.rubric-icon{font-size:1.4rem;margin-bottom:1rem;}
+.rubric-name{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--ink);margin-bottom:.6rem;}
+.rubric-desc{font-size:.82rem;line-height:1.75;color:var(--ink-light);}
+.rubric-example{margin-top:1rem;font-size:.78rem;font-style:italic;color:var(--moss);line-height:1.6;}
+.rubric-card.dark-card{background:var(--ink);}
+.rubric-card.dark-card .rubric-name{color:var(--cream);}
+.rubric-card.dark-card .rubric-desc{color:rgba(211,230,208,.65);}
+.rubric-card.dark-card .rubric-example{color:var(--fern);}
+.g-next-section{background:var(--ink);padding:2.5rem 4rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;}
+.g-next-label{font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(168,197,160,.45);margin-bottom:.5rem;}
+.g-next-link{display:inline-flex;align-items:center;gap:.8rem;text-decoration:none;}
+.g-next-name{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:var(--cream);font-style:italic;transition:color .2s;}
+.g-next-link:hover .g-next-name{color:var(--fern);}
+.g-next-arrow{font-family:'Cormorant Garamond',serif;font-size:2rem;color:rgba(110,168,126,.5);transition:transform .2s,color .2s;}
+.g-next-link:hover .g-next-arrow{transform:translateX(6px);color:var(--fern);}
+.g-next-num{font-family:'Cormorant Garamond',serif;font-size:4rem;font-weight:300;color:rgba(255,255,255,.06);line-height:1;}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease;}
+.reveal.visible{opacity:1;transform:none;}
+.d1{transition-delay:.1s;}
+.d2{transition-delay:.2s;}
+@media(max-width:800px){ .hero,.toc-bar,.content-section,.g-next-section{padding-left:1.5rem;padding-right:1.5rem;} .hero{grid-template-columns:1fr;} .hero-meta{padding-left:0;border-left:none;border-top:1px solid rgba(74,124,89,.2);padding-top:1.5rem;} .hero-mark-svg{right:1.5rem;top:9rem;width:60px;height:60px;} .article-layout,.article-layout.wide{grid-template-columns:1fr;gap:2rem;} .practices-grid,.rubrics-grid{grid-template-columns:1fr;} .featured-strip{grid-template-columns:1fr;gap:1.5rem;} }
+.methods-table{margin:2rem 0;border:1px solid rgba(74,124,89,.15);overflow-x:auto;}
+.methods-row{display:grid;grid-template-columns:180px repeat(4,1fr);gap:0;border-bottom:1px solid rgba(74,124,89,.1);min-width:760px;}
+.methods-row:last-child{border-bottom:none;}
+.methods-row.header{background:var(--ink);}
+.methods-row.header > div{color:var(--sage);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;padding:.9rem 1rem;}
+.methods-row > div{background:var(--paper);padding:.95rem 1rem;font-size:.85rem;color:var(--ink-light);line-height:1.5;border-right:1px solid rgba(74,124,89,.08);}
+.content-section.alt .methods-row > div{background:var(--cream);}
+.methods-row > div:last-child{border-right:none;}
+.methods-row > .method-name{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1rem;color:var(--ink);}
+.methods-row.header > .method-name{color:var(--sage);font-style:normal;}
+.seasons-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(74,124,89,.12);margin:2rem 0;}
+.season-card{background:var(--paper);padding:1.8rem 1.5rem;transition:background .25s;display:flex;flex-direction:column;}
+.content-section.alt .season-card{background:var(--cream);}
+.season-card:hover{background:var(--warm);}
+.season-icon{font-size:1.9rem;margin-bottom:.7rem;line-height:1;}
+.season-name{font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--ink);margin-bottom:.2rem;}
+.season-name em{font-style:italic;color:var(--moss);}
+.season-months{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--clay);margin-bottom:.9rem;}
+.season-actions{font-size:.83rem;line-height:1.7;color:var(--ink-light);margin-bottom:.8rem;}
+.season-watch{font-size:.78rem;line-height:1.6;color:var(--ink-light);padding-top:.7rem;border-top:1px dashed rgba(74,124,89,.18);margin-top:auto;}
+.season-watch strong{color:var(--rust);font-weight:400;}
+.timeline{margin:2rem 0;position:relative;border-left:1px solid rgba(74,124,89,.2);padding-left:2rem;}
+.timeline-item{margin-bottom:2rem;position:relative;}
+.timeline-item:last-child{margin-bottom:0;}
+.timeline-item::before{content:'';position:absolute;left:-2.45rem;top:.3rem;width:9px;height:9px;border-radius:50%;background:var(--moss);box-shadow:0 0 0 3px var(--paper);}
+.content-section.alt .timeline-item::before{box-shadow:0 0 0 3px var(--cream);}
+.timeline-era{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin-bottom:.4rem;}
+.timeline-name{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--ink);margin-bottom:.5rem;line-height:1.3;}
+.timeline-name em{font-style:italic;color:var(--moss);}
+.timeline-desc{font-size:.88rem;line-height:1.75;color:var(--ink-light);}
+.timeline-desc em{font-style:italic;color:var(--moss);}
+.case-block{background:var(--ink);padding:4rem 3.5rem;margin:2rem 0;}
+.case-inner{max-width:920px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start;}
+.case-block h3{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;color:var(--cream);line-height:1.25;margin-bottom:1.3rem;}
+.case-block h3 em{font-style:italic;color:var(--fern);}
+.case-block p{font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.75;color:rgba(211,230,208,.75);margin-bottom:1rem;}
+.case-stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.08);}
+.case-stat{background:rgba(255,255,255,.04);padding:1.4rem 1.2rem;text-align:center;}
+.case-stat-num{font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--fern);font-weight:300;line-height:1;margin-bottom:.4rem;}
+.case-stat-lbl{font-size:.72rem;color:rgba(211,230,208,.65);line-height:1.5;}
+.case-link{display:inline-flex;align-items:center;gap:.6rem;font-family:'Jost',sans-serif;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--fern);text-decoration:none;border-bottom:1px solid rgba(110,168,126,.4);padding-bottom:.3rem;margin-top:1rem;}
+.case-link:hover{border-color:var(--fern);}
+@media(max-width:800px){ .case-inner{grid-template-columns:1fr;gap:2rem;} .case-block{padding:2.5rem 1.5rem;} .seasons-grid{grid-template-columns:1fr 1fr;} .methods-row{grid-template-columns:140px repeat(4,1fr);min-width:660px;} }
+@media(max-width:540px){ .seasons-grid{grid-template-columns:1fr;} .case-stats{grid-template-columns:1fr 1fr;} }
+.cycle-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,.12);margin:2rem 0;}
+.cycle-card{background:var(--paper);padding:1.8rem 1.6rem;text-align:center;transition:background .25s;}
+.content-section.alt .cycle-card{background:var(--cream);}
+.cycle-card:hover{background:var(--warm);}
+.cycle-step{font-family:'Cormorant Garamond',serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);margin-bottom:.6rem;}
+.cycle-icon{font-size:2rem;margin-bottom:.8rem;line-height:1;}
+.cycle-name{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--ink);margin-bottom:.5rem;}
+.cycle-name em{font-style:italic;color:var(--moss);}
+.cycle-desc{font-size:.82rem;line-height:1.7;color:var(--ink-light);}
+.can-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:2rem 0;}
+.can-col h4{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:400;margin-bottom:1rem;}
+.can-col.yes h4{color:var(--moss);}
+.can-col.no h4{color:var(--rust);}
+.can-list{list-style:none;display:flex;flex-direction:column;gap:0;}
+.can-item{font-size:.85rem;line-height:1.6;color:var(--ink-light);padding:.45rem 0;border-bottom:1px dashed rgba(74,124,89,.12);}
+.can-item:last-child{border-bottom:none;}
+.can-item::before{margin-right:.5rem;}
+.can-col.yes .can-item::before{content:'✓';color:var(--fern);}
+.can-col.no .can-item::before{content:'✗';color:var(--rust);}
+.soil-block{background:var(--ink);padding:4rem 3.5rem;margin:3rem 0;}
+.soil-inner{max-width:720px;margin:0 auto;}
+.soil-block h3{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;font-style:italic;color:var(--cream);line-height:1.3;margin-bottom:1.5rem;}
+.soil-block h3 em{color:var(--fern);}
+.soil-block p{font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.8;color:rgba(211,230,208,.75);margin-bottom:1.2rem;}
+.soil-block p:last-child{margin-bottom:0;}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(74,124,89,.15);margin:2rem 0;}
+.stat-card{background:var(--paper);padding:1.6rem 1.2rem;text-align:center;}
+.content-section.alt .stat-card{background:var(--cream);}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:300;color:var(--moss);line-height:1;margin-bottom:.4rem;}
+.stat-label{font-size:.78rem;line-height:1.5;color:var(--ink-light);}
+.q-list{display:flex;flex-direction:column;gap:0;margin:1.5rem 0;}
+.q-item{padding:1.2rem 0;border-bottom:1px solid rgba(74,124,89,.1);}
+.q-item:last-child{border-bottom:none;}
+.q-question{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink);margin-bottom:.5rem;font-weight:400;}
+.q-question em{font-style:italic;color:var(--moss);}
+.q-answer{font-size:.88rem;line-height:1.75;color:var(--ink-light);}
+@media(max-width:800px){ .cycle-grid{grid-template-columns:1fr 1fr;} .can-grid{grid-template-columns:1fr;} .stats-row{grid-template-columns:1fr 1fr;} .soil-block{padding:2.5rem 1.5rem;} }
+@media(max-width:540px){ .cycle-grid{grid-template-columns:1fr;} .stats-row{grid-template-columns:1fr 1fr;} }
+.section-num{font-family:'Cormorant Garamond',serif;font-size:0.85rem;letter-spacing:0.3em;color:var(--moss);margin-bottom:1rem;font-style:italic;}
+.disc-meta{font-family:'Jost',sans-serif;font-size:0.78rem;letter-spacing:0.05em;color:var(--ink-light);margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:1px solid rgba(74,124,89,0.15);font-weight:300;line-height:1.7;}
+.content-section p{font-size:1rem;line-height:1.85;color:var(--ink);margin-top:1.2rem;}
+.content-section p strong{color:var(--moss);font-weight:500;}
+.content-section p em{font-style:italic;color:var(--ink-light);}
+.content-section h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:300;line-height:1.15;color:var(--ink);margin-bottom:0.5rem;}
+.content-section h2 em{color:var(--moss);font-style:italic;display:block;}
+</style>
+
+<style>
+/* ── Источники: единый блок для всех эссе и лабораторий ── */
+.sources{margin:5rem 0 0;padding-top:2.5rem;border-top:1px solid rgba(74,124,89,.2);}
+.src-title{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;margin-bottom:1.6rem;}
+.src-title small{display:block;font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--clay-text);font-weight:400;margin-bottom:.6rem;}
+.src-list{list-style:none;counter-reset:src;padding:0;margin:0;}
+.src-list li{position:relative;padding-left:2.4rem;margin-bottom:1.1rem;font-size:.86rem;
+  line-height:1.7;color:var(--ink-light);}
+.src-list li::before{counter-increment:src;content:counter(src,decimal-leading-zero);
+  position:absolute;left:0;top:.15rem;font-family:'Jost',sans-serif;font-size:.66rem;
+  letter-spacing:.1em;color:var(--sage-text);}
+.src-a{color:var(--ink);}
+/* ── Ссылка на термин глоссария ── */
+a.term{color:inherit;text-decoration:none;border-bottom:1px dotted var(--fern-text);}
+a.term:hover{border-bottom-style:solid;color:var(--moss);}
+/* ── Вопросы-врезка ── */
+.quiz{background:var(--warm);padding:2.2rem 2.4rem;margin:2.5rem 0;border-left:3px solid var(--moss);}
+.quiz ol{margin:0;padding-left:1.4rem;}
+.quiz li{font-family:'Cormorant Garamond',serif;font-size:1.1rem;line-height:1.6;
+  color:var(--ink);margin-bottom:.9rem;}
+.quiz li:last-child{margin-bottom:0;}
+</style>
+<!-- ECO:MANAGED:head -->
+  <link rel="canonical" href="https://morgunkonstantin.github.io/ecosite/essay-design-climate.html">
+  <meta property="og:url" content="https://morgunkonstantin.github.io/ecosite/essay-design-climate.html">
+  <meta property="og:site_name" content="ЭкоСознание">
+  <meta property="og:image" content="https://morgunkonstantin.github.io/ecosite/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ЭкоСознание — экология как способ смотреть на реальность">
+  <meta name="twitter:image" content="https://morgunkonstantin.github.io/ecosite/assets/og-image.png">
+  <meta name="theme-color" content="#faf6ef">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="alternate" type="application/rss+xml" title="ЭкоСознание — RSS" href="feed.xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","name":"Проектирование под климат","headline":"Проектирование под климат","description":"Как спроектировать дом под свой климат: градусо-сутки, пять климатов России, шесть рычагов пассивного дизайна, солнце, ветер, снег и мерзлота, микроклимат участка и чек-лист перед проектом.","inLanguage":"ru-RU","url":"https://morgunkonstantin.github.io/ecosite/essay-design-climate.html","isPartOf":{"@type":"WebSite","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecosite/"},"publisher":{"@type":"Organization","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecosite/"},"datePublished":"2026-11-02","author":{"@type":"Organization","name":"ЭкоСознание"},"articleSection":"Строительство"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://morgunkonstantin.github.io/ecosite/"},{"@type":"ListItem","position":2,"name":"Архитектура","item":"https://morgunkonstantin.github.io/ecosite/section-architecture.html"},{"@type":"ListItem","position":3,"name":"Строительство","item":"https://morgunkonstantin.github.io/ecosite/section-construction.html"},{"@type":"ListItem","position":4,"name":"Проектирование под климат","item":"https://morgunkonstantin.github.io/ecosite/essay-design-climate.html"}]}</script>
+<!-- /ECO:MANAGED:head -->
+</head>
+<body>
+<a class="skip-link" href="#content">Перейти к содержанию</a>
+
+<!-- ECO:MANAGED:nav -->
+<div class="g-nav-wrap" id="gNavWrap">
+  <div class="g-nav">
+    <a href="index.html" class="g-logo">
+      <svg viewBox="0 0 100 100" fill="none" class="logo-svg"><circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#4a7c59"/></svg>
+      <span class="g-logo-text">Эко<em>Сознание</em></span>
+    </a>
+    <ul class="g-links">
+      <li>
+        <button class="g-drop-btn" aria-expanded="false">
+          Разделы
+          <svg class="g-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg>
+        </button>
+        <div class="g-dropdown">
+          <a href="section-philosophy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Философия</span><span class="g-dd-num">01</span></a>
+          <a href="section-psychology.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="g-dd-name">Психология</span><span class="g-dd-num">02</span></a>
+          <a href="section-lifestyle.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Стиль жизни</span><span class="g-dd-num">03</span></a>
+          <a href="section-technologies.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="g-dd-name">Технологии</span><span class="g-dd-num">04</span></a>
+          <a href="section-food.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-dd-name">Питание</span><span class="g-dd-num">05</span></a>
+          <a href="section-architecture.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="g-dd-name">Архитектура</span><span class="g-dd-num">06</span></a>
+          <a href="section-economy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Экономика</span><span class="g-dd-num">07</span></a>
+          <a href="section-education.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="g-dd-name">Образование</span><span class="g-dd-num">08</span></a>
+          <a href="section-community.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Сообщество</span><span class="g-dd-num">09</span></a>
+          <a href="section-travel.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-dd-name">Путешествия</span><span class="g-dd-num">10</span></a>
+          <a href="section-health.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Здоровье</span><span class="g-dd-num">11</span></a>
+          <a href="section-science.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Наука</span><span class="g-dd-num">12</span></a>
+        </div>
+      </li>
+      <li><a href="about.html">О проекте</a></li>
+    </ul>
+    <button class="g-burger" id="gBurger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+
+<div class="g-overlay" id="gOverlay">
+  <div class="g-ov-section">
+    <div class="g-ov-label">Разделы</div>
+    <div class="g-ov-grid">
+      <a href="section-philosophy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Философия</span></a>
+      <a href="section-psychology.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="g-ov-name">Психология</span></a>
+      <a href="section-lifestyle.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/></svg></span><span class="g-ov-name">Стиль жизни</span></a>
+      <a href="section-technologies.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="g-ov-name">Технологии</span></a>
+      <a href="section-food.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-ov-name">Питание</span></a>
+      <a href="section-architecture.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="g-ov-name">Архитектура</span></a>
+      <a href="section-economy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Экономика</span></a>
+      <a href="section-education.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="g-ov-name">Образование</span></a>
+      <a href="section-community.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Сообщество</span></a>
+      <a href="section-travel.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-ov-name">Путешествия</span></a>
+      <a href="section-health.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Здоровье</span></a>
+      <a href="section-science.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Наука</span></a>
+    </div>
+  </div>
+  <div class="g-ov-section">
+    <div class="g-ov-label">Навигация</div>
+    <div class="g-ov-simple-links">
+      <a href="index.html" class="g-ov-simple-link">Главная</a>
+      <a href="map.html" class="g-ov-simple-link">Карта связей</a>
+      <a href="contents.html" class="g-ov-simple-link">Все материалы</a>
+      <a href="revisions.html" class="g-ov-simple-link">Что не подтвердилось</a>
+      <a href="search.html" class="g-ov-simple-link">Поиск</a>
+      <a href="paths.html" class="g-ov-simple-link">Тропы чтения</a>
+      <a href="tree.html" class="g-ov-simple-link">Дерево материалов</a>
+      <a href="thinkers.html" class="g-ov-simple-link">Указатель имён</a>
+      <a href="about.html" class="g-ov-simple-link">О проекте</a>
+    </div>
+  </div>
+</div>
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<main id="content" tabindex="-1">
+<!-- ECO:MANAGED:breadcrumb -->
+<nav class="breadcrumb" aria-label="Хлебные крошки"><a href="index.html">Главная</a> <span class="bc-sep">→</span> <a href="section-architecture.html">Архитектура</a> <span class="bc-sep">→</span> <a href="section-construction.html">Строительство</a> <span class="bc-sep">→</span> <span class="bc-current">Проектирование под климат</span></nav>
+<!-- /ECO:MANAGED:breadcrumb -->
+
+<section class="hero" id="top">
+  <div class="hero-mark-svg"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="50" cy="50" r="45"/><path d="M28 72 V48 L50 30 L72 48 V72 Z" stroke-linejoin="round"/><circle cx="72" cy="26" r="7"/><path d="M18 60 c6 -4 10 4 16 0" stroke-linecap="round"/></svg></div>
+  <div>
+    <div class="hero-tag">Практическое эссе с инфографикой · Строительство · Цикл «Дом по климату», часть 1</div>
+    <h1>Проектирование<br><em>под климат:</em><br>от Сочи до Якутска</h1>
+    <p class="hero-lead">Один и тот же типовой коттедж из каталога сегодня строят и под Краснодаром, и под Новосибирском. А ведь между этими городами разница в климате больше, чем между Москвой и Лондоном. Дом, который не знает своего климата, всю жизнь борется с ним с помощью котлов, кондиционеров и счетов за энергию. Дом, спроектированный под климат, использует солнце, ветер, землю и тень как союзников. Разбираемся, с чего начинается климатическое проектирование, какие климаты есть в России и какие решения работают в каждом из них.</p>
+  </div>
+  <div class="hero-meta">
+    <div><div class="meta-label">Главная мысль</div><div class="meta-value">Сначала климат и участок — потом план дома · самые дешёвые решения принимаются на эскизе</div></div>
+    <div><div class="meta-label">Главное число</div><div class="meta-value">Градусо-сутки отопительного периода: в Сочи ≈ 1 300, в Москве ≈ 4 600, в Якутске ≈ 10 000</div></div>
+    <div><div class="meta-label">Цикл</div><div class="meta-value">Первая статья серии о доме, который работает с климатом: отопление, охлаждение, энергия, вода, материалы</div></div>
+  </div>
+</section>
+
+<div class="toc-bar">
+  <a href="#why" class="active">Зачем</a>
+  <a href="#numbers">Климат в числах</a>
+  <a href="#zones">Пять климатов России</a>
+  <a href="#levers">Рычаги</a>
+  <a href="#sun">Солнце</a>
+  <a href="#wind">Ветер, снег, мерзлота</a>
+  <a href="#site">Участок</a>
+  <a href="#future">Климат будущего</a>
+  <a href="#check">Чек-лист</a>
+  <a href="#honest">Честный взгляд</a>
+  <a href="#outro">Итог</a>
+</div>
+
+<section class="content-section" id="why">
+  <div style="max-width:820px;">
+    <div class="section-num">00</div>
+    <div class="disc-meta">почему климат — первый пункт техзадания</div>
+    <h2>Дом, который <em>знает, где стоит</em></h2>
+    <p>Традиционные дома разных народов удивительно точно отвечали своему климату. Северная изба с огромной печью в центре, маленькими окнами и хозяйственным двором под одной крышей. Южная мазанка с толстыми глиняными стенами, которые днём держат прохладу, а ночью отдают тепло. Якутская балаганная юрта, обмазанная глиной и навозом и обращённая окнами на юг. Об этом мы подробно писали в эссе <a href="essay-vernacular.html">«Вернакулярная архитектура»</a>.</p>
+    <p>В XX веке дешёвая энергия позволила забыть о климате: любой дом можно было согреть котлом и охладить кондиционером. Типовые проекты стали одинаковыми от Балтики до Тихого океана. Цена этого — огромные счета за тепло, перегретые летом квартиры, промерзающие углы и выбросы, о которых мы писали в эссе <a href="essay-carbon-budget.html">«Полторы тонны»</a>: отопление — одна из главных статей углеродного следа россиян.</p>
+    <p>Климатическое проектирование возвращает старую логику на новом уровне знаний. Его главный принцип прост: решения, принятые на этапе эскиза, — ориентация дома, его форма, размер и расположение окон, навесы, планировка — почти ничего не стоят, но определяют, сколько энергии дом будет тратить следующие сто лет. Исправить их потом очень дорого или невозможно. Австралийское государственное руководство Your Home, на которое мы опираемся в этом цикле, начинается именно с этой мысли, и она одинаково верна для Австралии и для России.</p>
+  </div>
+</section>
+
+<section class="content-section alt" id="numbers">
+  <div style="max-width:880px;">
+    <div class="section-num">01</div>
+    <div class="disc-meta">как измерить «холодность» климата</div>
+    <h2>Климат <em>в числах</em></h2>
+    <p>Чтобы сравнить климаты, инженеры используют понятие <strong>градусо-суток отопительного периода (ГСОП)</strong>. Берут разницу между температурой внутри дома (обычно +20 °C) и средней температурой на улице за отопительный сезон и умножают на длительность этого сезона в сутках. Получается число, пропорциональное тому, сколько тепла дом потеряет за зиму. Чем оно больше, тем важнее утепление и тем меньше прощаются ошибки.</p>
+    <div class="ar-panel">
+      <div class="ar-sub">Инфографика 1 · Градусо-сутки отопительного периода в городах России</div>
+      <div class="ar-rows">
+        <div class="ar-row"><div class="ar-row-l">Сочи</div><div class="ar-row-b"><div class="ar-fill" style="width:12%;background:#6ea87e"></div></div><div class="ar-row-v">≈ 1 300</div></div>
+        <div class="ar-row"><div class="ar-row-l">Краснодар</div><div class="ar-row-b"><div class="ar-fill" style="width:26%;background:#6ea87e"></div></div><div class="ar-row-v">≈ 2 700</div></div>
+        <div class="ar-row"><div class="ar-row-l">Калининград</div><div class="ar-row-b"><div class="ar-fill" style="width:35%;background:#b8924a"></div></div><div class="ar-row-v">≈ 3 600</div></div>
+        <div class="ar-row"><div class="ar-row-l">Москва</div><div class="ar-row-b"><div class="ar-fill" style="width:45%;background:#b8924a"></div></div><div class="ar-row-v">≈ 4 600</div></div>
+        <div class="ar-row"><div class="ar-row-l">Екатеринбург</div><div class="ar-row-b"><div class="ar-fill" style="width:55%;background:#c4956a"></div></div><div class="ar-row-v">≈ 5 600</div></div>
+        <div class="ar-row"><div class="ar-row-l">Новосибирск</div><div class="ar-row-b"><div class="ar-fill" style="width:61%;background:#c4956a"></div></div><div class="ar-row-v">≈ 6 200</div></div>
+        <div class="ar-row"><div class="ar-row-l">Мурманск</div><div class="ar-row-b"><div class="ar-fill" style="width:63%;background:#6e8fa8"></div></div><div class="ar-row-v">≈ 6 400</div></div>
+        <div class="ar-row"><div class="ar-row-l">Якутск</div><div class="ar-row-b"><div class="ar-fill" style="width:100%;background:#3d5240"></div></div><div class="ar-row-v">≈ 10 200</div></div>
+      </div>
+      <div class="ar-cap">°C·сут при температуре внутри +20 °C · рассчитано по средним температурам и длительности отопительного периода из СП 131.13330 «Строительная климатология» · округлено</div>
+    </div>
+    <p>Разница почти в восемь раз. Это значит, что дом в Якутске при одинаковом утеплении потеряет за зиму в восемь раз больше тепла, чем такой же дом в Сочи. Поэтому российские нормы тепловой защиты (СП 50.13330) требуют для стен, крыш и окон разного сопротивления теплопередаче в зависимости от ГСОП: в Якутске стена должна быть примерно вдвое «теплее», чем в Краснодаре.</p>
+    <p>Но одних градусо-суток мало. Для проектирования важны ещё летняя жара и её продолжительность, суточный перепад температур (в степи и пустыне он огромный, у моря — маленький), влажность, количество солнечных дней зимой, направление и сила ветров, снеговая нагрузка, глубина промерзания грунта и наличие мерзлоты. Все эти данные для сотен городов собраны в том же своде правил по строительной климатологии — его стоит открыть до того, как открывать каталог проектов.</p>
+  </div>
+</section>
+
+<section class="content-section" id="zones">
+  <div style="max-width:900px;">
+    <div class="section-num">02</div>
+    <div class="disc-meta">упрощённая карта для архитектора</div>
+    <h2>Пять климатов <em>России</em></h2>
+    <p>Официальное климатическое районирование для строительства в России подробное, с десятками подрайонов. Для понимания главных стратегий его можно упростить до пяти типов. Австралийское руководство делает то же самое для своей страны, выделяя восемь климатических зон, — у нас логика та же, только климаты другие.</p>
+    <div class="ar-panel">
+      <div class="ar-sub">Инфографика 2 · Пять климатов и главная задача дома в каждом</div>
+      <div class="ar-scroll"><table class="ar-table">
+        <thead><tr><th>Климат</th><th>Где</th><th>Главная задача</th><th>Ключевые решения</th></tr></thead>
+        <tbody>
+          <tr><td>Тёплый влажный</td><td>Черноморское побережье Кавказа, юг Крыма</td><td>не перегреться летом, избежать сырости</td><td>тень, сквозное проветривание, лёгкие светлые фасады, защита от влажности, умеренное утепление</td></tr>
+          <tr><td>Степной: жаркое лето, холодная зима</td><td>Нижнее Поволжье, юг Урала, степи Предкавказья, юг Сибири</td><td>и прогреть зимой, и сохранить прохладу летом; большой суточный перепад</td><td>тепловая масса, хорошее утепление, навесы над южными окнами, ночное проветривание, защита от суховеев</td></tr>
+          <tr><td>Умеренный</td><td>центр европейской части, Северо-Запад, Калининград</td><td>долгая, но не экстремальная зима; влажность</td><td>утепление и герметичность, южная ориентация жилых комнат, защита от влаги и плесени, тень для западных окон</td></tr>
+          <tr><td>Резко континентальный холодный</td><td>Урал, Сибирь, Забайкалье, Дальний Восток вдали от моря</td><td>долгие морозы до −40 °C, но много зимнего солнца</td><td>очень сильное утепление, компактная форма, тамбуры, тройное остекление, южные окна для солнца</td></tr>
+          <tr><td>Северный и мерзлотный</td><td>Заполярье, Якутия, север Сибири</td><td>экстремальный холод, полярная ночь, мерзлота, метели</td><td>предельно компактный дом, минимум окон на север, проветриваемое подполье над мерзлотой, защита от снежных заносов</td></tr>
+        </tbody>
+      </table></div>
+      <div class="ar-cap">Упрощение редакции на основе СП 131.13330 (климатические районы I–IV) · внутри каждого типа есть важные местные различия: побережье, горы, долины</div>
+    </div>
+    <p>Самый недооценённый климат в этом списке — степной. Многие в Поволжье или на юге Урала проектируют дом только «от зимы» и потом страдают летом: при +35 °C в тени хорошо утеплённый дом с большими незатенёнными окнами на запад превращается в духовку, а утепление лишь мешает ему остыть ночью. Здесь нужен дом с двумя режимами: зимой — закрытый термос, ловящий солнце; летом — затенённый, массивный, проветриваемый по ночам.</p>
+    <p>Второй частый промах — перенос «северной» логики на юг. На Черноморском побережье толстое утепление и герметичность важны меньше, чем тень, движение воздуха и борьба с сыростью и плесенью. А тёмная металлическая крыша без вентилируемого зазора там — гарантия раскалённой мансарды.</p>
+  </div>
+</section>
+
+<section class="content-section alt" id="levers">
+  <div style="max-width:900px;">
+    <div class="section-num">03</div>
+    <div class="disc-meta">одни и те же инструменты — разный вес</div>
+    <h2>Шесть <em>рычагов</em></h2>
+    <p>У архитектора, проектирующего под климат, по сути шесть инструментов: ориентация, форма дома, утепление и герметичность, окна, тепловая масса, тень и проветривание. О каждом из них мы подробно рассказывали в эссе <a href="essay-passive-design.html">«Шесть принципов пассивного дизайна»</a>. Но в разных климатах их значение очень разное.</p>
+    <div class="ar-panel">
+      <div class="ar-sub">Инфографика 3 · Насколько важен каждый рычаг в разных климатах</div>
+      <div class="ar-scroll"><table class="ar-table">
+        <thead><tr><th>Рычаг</th><th>Тёплый влажный</th><th>Степной</th><th>Умеренный</th><th>Холодный</th><th>Северный</th></tr></thead>
+        <tbody>
+          <tr><td>Ориентация на юг</td><td>●●○</td><td>●●●</td><td>●●●</td><td>●●●</td><td>●●○</td></tr>
+          <tr><td>Компактная форма</td><td>●○○</td><td>●●○</td><td>●●○</td><td>●●●</td><td>●●●</td></tr>
+          <tr><td>Утепление и герметичность</td><td>●○○</td><td>●●●</td><td>●●●</td><td>●●●</td><td>●●●</td></tr>
+          <tr><td>Окна: размер и качество</td><td>●●○</td><td>●●●</td><td>●●●</td><td>●●●</td><td>●●●</td></tr>
+          <tr><td>Тепловая масса</td><td>●○○</td><td>●●●</td><td>●●○</td><td>●●○</td><td>●○○</td></tr>
+          <tr><td>Тень летом</td><td>●●●</td><td>●●●</td><td>●●○</td><td>●○○</td><td>○○○</td></tr>
+          <tr><td>Проветривание и охлаждение</td><td>●●●</td><td>●●●</td><td>●●○</td><td>●○○</td><td>○○○</td></tr>
+        </tbody>
+      </table></div>
+      <div class="ar-cap">●●● — решающий фактор · ●○○ — второстепенный · ○○○ — почти не важен · оценка редакции по принципам климатического проектирования</div>
+    </div>
+    <p>Из таблицы видно главное. На всей территории России, кроме самого юга, первым идёт <strong>утепление и герметичность</strong>: это фундамент, без которого остальные приёмы не работают. Окна важны везде, но по-разному: на юге — чтобы не пускать лишнее солнце, на севере — чтобы не выпускать тепло. А тень и проветривание, о которых в средней полосе вспоминают редко, после жаркого лета 2010 года и последующих волн жары становятся важными даже для Москвы — об этом ниже.</p>
+  </div>
+</section>
+
+<section class="content-section" id="sun">
+  <div style="max-width:880px;">
+    <div class="section-num">04</div>
+    <div class="disc-meta">геометрия, которую стоит знать</div>
+    <h2>Солнце: <em>высоко и низко</em></h2>
+    <p>В полдень солнце стоит выше всего над горизонтом, и его высоту легко посчитать: в день летнего солнцестояния она равна 90° минус широта плюс 23,4°, в день зимнего — 90° минус широта минус 23,4°. Это простая школьная геометрия, но из неё следуют важные вещи для дома.</p>
+    <div class="ar-panel">
+      <div class="ar-sub">Инфографика 4 · Высота полуденного солнца летом и зимой</div>
+      <div class="ar-scroll">
+      <svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Высота солнца в полдень: Сочи — летом 70 градусов, зимой 23; Москва — летом 58, зимой 11; Якутск — летом 51, зимой 4,5" style="width:100%;height:auto;display:block;">
+        <g font-family="Jost,sans-serif" fill="#1c2b1e">
+          <g transform="translate(40,0)">
+            <line x1="0" y1="240" x2="200" y2="240" stroke="#8a6a3e" stroke-width="2"/>
+            <rect x="20" y="200" width="50" height="40" fill="#d8bd85"/><path d="M14 202 L45 180 L76 202 Z" fill="#8a6a3e"/>
+            <path d="M45 240 L 108 66" stroke="#c4956a" stroke-width="3"/>
+            <circle cx="108" cy="66" r="10" fill="#e3b34a"/>
+            <path d="M45 240 L 215 168" stroke="#6e8fa8" stroke-width="3"/>
+            <circle cx="200" cy="174" r="8" fill="#e3b34a" opacity=".7"/>
+            <text x="120" y="70" font-size="13">лето 70°</text>
+            <text x="150" y="160" font-size="13">зима 23°</text>
+            <text x="60" y="280" font-size="15" font-weight="500">Сочи, 43,6° с. ш.</text>
+          </g>
+          <g transform="translate(290,0)">
+            <line x1="0" y1="240" x2="200" y2="240" stroke="#8a6a3e" stroke-width="2"/>
+            <rect x="20" y="200" width="50" height="40" fill="#d8bd85"/><path d="M14 202 L45 180 L76 202 Z" fill="#8a6a3e"/>
+            <path d="M45 240 L 139 90" stroke="#c4956a" stroke-width="3"/>
+            <circle cx="139" cy="90" r="10" fill="#e3b34a"/>
+            <path d="M45 240 L 215 207" stroke="#6e8fa8" stroke-width="3"/>
+            <circle cx="200" cy="210" r="8" fill="#e3b34a" opacity=".7"/>
+            <text x="150" y="92" font-size="13">лето 58°</text>
+            <text x="140" y="196" font-size="13">зима 11°</text>
+            <text x="50" y="280" font-size="15" font-weight="500">Москва, 55,8° с. ш.</text>
+          </g>
+          <g transform="translate(540,0)">
+            <line x1="0" y1="240" x2="200" y2="240" stroke="#8a6a3e" stroke-width="2"/>
+            <rect x="20" y="200" width="50" height="40" fill="#d8bd85"/><path d="M14 202 L45 180 L76 202 Z" fill="#8a6a3e"/>
+            <path d="M45 240 L 154 105" stroke="#c4956a" stroke-width="3"/>
+            <circle cx="154" cy="105" r="10" fill="#e3b34a"/>
+            <path d="M45 240 L 215 227" stroke="#6e8fa8" stroke-width="3"/>
+            <circle cx="200" cy="228" r="8" fill="#e3b34a" opacity=".7"/>
+            <text x="120" y="96" font-size="13">лето 51°</text>
+            <text x="120" y="215" font-size="13">зима 4,5°</text>
+            <text x="50" y="280" font-size="15" font-weight="500">Якутск, 62° с. ш.</text>
+          </g>
+        </g>
+      </svg>
+      </div>
+      <div class="ar-cap">Высота солнца в полдень в дни солнцестояний · углы на схеме соблюдены · за Полярным кругом зимой солнце не поднимается вовсе</div>
+    </div>
+    <p><strong>На юге</strong> разница между летним и зимним солнцем огромная. Это подарок для архитектора: козырёк или балкон над южным окном правильной глубины летом полностью закрывает окно от высокого солнца, а зимой пропускает низкое солнце глубоко в комнату. В Сочи или Краснодаре так можно бесплатно и без всякой автоматики решить и летнюю, и зимнюю задачу.</p>
+    <p><strong>В средней полосе</strong> зимнее солнце низкое, а дни короткие и часто пасмурные. Южные окна всё равно дают ощутимую прибавку тепла весной и осенью, а в солнечные морозные дни — даже в январе. Но главное здесь — не столько «ловить» солнце, сколько не терять тепло через окна, особенно на северной стороне. Подробно о том, как устроить пассивное солнечное отопление, — в следующей статье цикла.</p>
+    <p><strong>В Сибири</strong> ситуация неожиданная. Зимы там холоднее, но гораздо солнечнее, чем в европейской части: антициклон приносит ясное небо и мороз. Поэтому большие южные окна с хорошим остеклением в Иркутске или Улан-Удэ работают лучше, чем в Москве или Петербурге, где зимой солнца почти нет. <strong>На Крайнем Севере</strong> зимнего солнца нет совсем, и окна рассматривают прежде всего как источник света летом и потерь тепла зимой.</p>
+    <p>Ещё одна важная деталь — <strong>западные окна</strong>. Летом вечернее солнце бьёт в них низко и горизонтально, козырьки не помогают, а дом к вечеру уже прогрет за день. Именно западные спальни и кухни становятся самыми душными комнатами. Решение — меньше окон на запад, вертикальные ламели, наружные жалюзи или деревья с этой стороны дома.</p>
+  </div>
+</section>
+
+<section class="content-section alt" id="wind">
+  <div style="max-width:820px;">
+    <div class="section-num">05</div>
+    <div class="disc-meta">то, что выдувает тепло и наметает сугробы</div>
+    <h2>Ветер, снег <em>и мерзлота</em></h2>
+    <p><strong>Ветер</strong> зимой усиливает теплопотери: продувает щели, охлаждает стены и выдувает тёплый воздух через неплотности. Поэтому в ветреных местах — в степи, на побережье, на открытых холмах — важно знать преобладающее направление зимних ветров (его показывает «роза ветров» в климатических справочниках) и защититься с этой стороны. Хорошо работают глухая стена с хозяйственными помещениями, гараж или кладовая с наветренной стороны, тамбур у входа и, конечно, деревья. Ветрозащитная полоса из елей и кустарников снижает силу ветра на расстоянии, в несколько раз превышающем её высоту. Это та же идея, что у степных лесополос Докучаева, о которых мы писали в эссе <a href="essay-living-soil.html">«Почва — живая»</a>, только в масштабе одного участка.</p>
+    <p>Летом ветер — наоборот, союзник. В жарком климате дом ставят так, чтобы летние ветры проходили сквозь него: окна на противоположных стенах, открытая планировка, высокие проёмы для выхода горячего воздуха.</p>
+    <p><strong>Снег</strong> — особая российская тема. Снег на крыше — хороший утеплитель, но и огромная нагрузка: в некоторых районах Сибири и Урала нормативная снеговая нагрузка в несколько раз больше, чем на юге, и её закладывают в конструкцию крыши. Метели наметают сугробы с подветренной стороны дома, поэтому вход и ворота там лучше не делать. Крыша простой формы без сложных ендов меньше протекает и меньше страдает от наледей. А сосульки и наледь на карнизах — почти всегда признак того, что тепло из дома уходит через плохо утеплённую крышу и подтапливает снег.</p>
+    <p><strong>Мерзлота</strong> занимает около двух третей территории России. Дом, поставленный прямо на мёрзлый грунт, отапливает его, мерзлота под ним оттаивает, и здание проседает и трескается. Поэтому в Якутске и Норильске здания ставят на сваи, а под ними оставляют проветриваемое подполье, где зимний мороз свободно охлаждает грунт. С потеплением климата мерзлота отступает, и многие здания на Севере, построенные в расчёте на её устойчивость, уже получают повреждения. Проектируя на Севере сегодня, приходится закладывать климат, который будет через тридцать-пятьдесят лет, а не тот, что был при постройке соседних домов.</p>
+  </div>
+</section>
+
+<section class="content-section" id="site">
+  <div style="max-width:820px;">
+    <div class="section-num">06</div>
+    <div class="disc-meta">климат одного участка</div>
+    <h2>Микроклимат <em>участка</em></h2>
+    <p>Климат города — только начало. На одном и том же участке разница между лучшим и худшим местом для дома может быть заметной. Прежде чем ставить дом, стоит прожить на участке хотя бы несколько сезонов или хотя бы внимательно его обойти в разное время года и суток.</p>
+    <ul class="ar-list">
+      <li><b>Склон.</b> Южный склон получает больше солнца и теплее; северный — холоднее и дольше держит снег. В холодном климате дом на южном склоне выигрывает десятки процентов солнечной энергии.</li>
+      <li><b>Низины.</b> Холодный воздух тяжелее тёплого и ночью стекает в низины, как вода. Дом на дне лощины и в пойме будет мёрзнуть сильнее, страдать от туманов, сырости и заморозков. Лучшее место — средняя часть склона.</li>
+      <li><b>Деревья.</b> Лиственные деревья с южной и западной стороны летом дают тень, а зимой, сбросив листья, пропускают солнце. Хвойные с северной и наветренной стороны защищают от ветра. Старые деревья стоит беречь при строительстве — они дают дому то, что потом придётся покупать.</li>
+      <li><b>Соседние здания.</b> Высокий соседний дом на юге может на всю зиму закрыть солнце. Это стоит проверить до покупки участка: зимой солнце низкое, и тени длинные — длиннее высоты здания в несколько раз.</li>
+      <li><b>Вода и грунт.</b> Близкие грунтовые воды, глина или торф определяют фундамент и подвал, а значит, и то, можно ли использовать тепло земли.</li>
+      <li><b>Город.</b> В центре большого города на несколько градусов теплее, чем за его пределами, — это остров тепла. Зимой это небольшой плюс, летом — серьёзный минус, о котором мы писали в эссе <a href="essay-heat-health.html">«Жара и здоровье»</a>.</li>
+    </ul>
+    <p>Внутри дома климатическое мышление продолжается в <strong>планировке</strong>. Гостиную и кухню, где проводят больше всего времени днём, ставят на юг или юго-восток. Спальни — на восток: утреннее солнце будит мягко, а к вечеру они не перегреты. На север — кладовые, санузлы, лестницы, гардеробные, котельную: они работают буфером между тёплыми комнатами и холодной стороной. В холодном климате полезно разделить дом на зоны, которые можно отапливать отдельно, и обязательно сделать тамбур у входа.</p>
+  </div>
+</section>
+
+<section class="content-section alt" id="future">
+  <div style="max-width:820px;">
+    <div class="section-num">07</div>
+    <div class="disc-meta">дом стоит сто лет — климат меняется быстрее</div>
+    <h2>Проектировать <em>под климат будущего</em></h2>
+    <p>Климатические справочники описывают прошлое: средние данные за последние десятилетия. А дом, который строится сейчас, будет стоять в 2070-х и 2100-х. Россия нагревается примерно в два с половиной раза быстрее, чем планета в среднем. Зимы становятся мягче, отопительный сезон короче, но волны летней жары — сильнее и длиннее, ливни — интенсивнее, а мерзлота на Севере отступает.</p>
+    <p>Для проектирования это означает несколько вещей. Даже в средней полосе стоит закладывать защиту от летнего перегрева: наружные солнцезащитные устройства на южных и западных окнах, возможность сквозного проветривания, светлую кровлю. В регионах, где раньше кондиционер был не нужен, лучше заранее предусмотреть место для теплового насоса, который зимой греет, а летом охлаждает. Водостоки и дренаж — рассчитывать на ливни сильнее нынешних, а участок — делать способным впитывать воду, о чём мы писали в эссе <a href="essay-sponge-city.html">«Город, который пьёт дождь»</a>. Хорошая новость: утепление, которое помогает зимой, помогает и летом, если дом при этом затенён и проветривается.</p>
+  </div>
+</section>
+
+<section class="content-section" id="check">
+  <div style="max-width:880px;">
+    <div class="section-num">08</div>
+    <div class="disc-meta">до того, как выбирать проект</div>
+    <h2>Чек-лист <em>климатического проекта</em></h2>
+    <div class="ar-panel">
+      <div class="ar-sub">Инфографика 5 · Десять вопросов до начала проектирования</div>
+      <ol class="ar-list">
+        <li><b>Какой у меня климат?</b> Градусо-сутки, летние максимумы, суточный перепад, влажность — по своду правил «Строительная климатология».</li>
+        <li><b>Сколько зимнего солнца?</b> Ясная морозная зима или пасмурная сырая — от этого зависит, насколько большими делать южные окна.</li>
+        <li><b>Откуда дуют ветры?</b> Зимние — от чего защищаться, летние — чем проветривать.</li>
+        <li><b>Где юг на участке</b> и что его затеняет: соседи, деревья, рельеф — зимой и летом.</li>
+        <li><b>Где низины и куда течёт вода</b> после дождя и весной.</li>
+        <li><b>Какой грунт</b> и как глубоко он промерзает; есть ли мерзлота или близкие грунтовые воды.</li>
+        <li><b>Какую форму выбрать?</b> Чем холоднее, тем компактнее — без лишних выступов, эркеров и сложных крыш.</li>
+        <li><b>Как расположить комнаты</b> — дневные на юг, буферные на север, спальни на восток.</li>
+        <li><b>Как защитить окна от летнего солнца</b> — козырьки на юге, вертикальные экраны на западе.</li>
+        <li><b>Каким будет климат через 50 лет</b> — жарче, с ливнями, с отступающей мерзлотой.</li>
+      </ol>
+      <div class="ar-cap">Чек-лист редакции по мотивам руководства Your Home (Australian Government) и российских строительных норм</div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section alt" id="honest">
+  <div style="max-width:820px;">
+    <div class="section-num">09</div>
+    <div class="disc-meta">критика темы</div>
+    <h2>Честный <em>взгляд</em></h2>
+    <p><strong>На городском участке выбора мало.</strong> Узкий участок в коттеджном посёлке, улица с севера, соседи в трёх метрах — и ориентировать дом «как надо» уже невозможно. Но даже тогда можно выиграть на планировке, размере и защите окон.</p>
+    <p><strong>Типовой проект дешевле — на старте.</strong> Индивидуальный климатический проект стоит денег и времени, а у многих застройщиков нет ни того, ни другого. Но разница в счетах за отопление и охлаждение за двадцать-тридцать лет обычно многократно превышает стоимость проекта.</p>
+    <p><strong>Нормы задают минимум, а не оптимум.</strong> СП 50.13330 требует определённого уровня утепления, но ничего не говорит об ориентации, тени и летнем перегреве. Дом может полностью соответствовать нормам и при этом быть неудобным и прожорливым.</p>
+    <p><strong>Климат — не единственный фактор.</strong> Вид из окна, шум улицы, расположение дороги и соседей тоже важны, и иногда приходится идти на компромисс. Задача не в том, чтобы слепо следовать климату, а в том, чтобы знать, чем платишь за каждый компромисс.</p>
+  </div>
+</section>
+
+<section class="content-section" id="outro">
+  <div style="max-width:820px;">
+    <div class="section-num">—</div>
+    <h2>Итог: <em>сначала климат, потом план</em></h2>
+    <p>Дом, спроектированный под климат, не требует сложной техники — ему просто меньше с чем бороться. Начать стоит с чисел: градусо-суток, летней жары, ветров и солнца. Потом — с участка: склон, низины, деревья, соседи. И только потом — с плана дома, в котором форма, окна, навесы и комнаты отвечают на вопросы, которые задаёт климат. Эти решения почти ничего не стоят на эскизе и стоят очень дорого, если о них забыть.</p>
+    <p>Это первая статья цикла «Дом по климату». Дальше — пассивное отопление, пассивное охлаждение, энергия, горячая вода, материалы, отходы и вода в доме и саду.</p>
+    <p style="margin-top:2rem;">Читайте также: <a href="essay-passive-design.html">Шесть принципов пассивного дизайна</a> · <a href="essay-vernacular.html">Вернакулярная архитектура: дома, которые знали свой климат</a> · <a href="number-embodied.html">Воплощённая энергия дома</a> · <a href="essay-small-house.html">Маленький дом: сорок метров, спроектированных как сто</a> · <a href="essay-heat-health.html">Жара и здоровье</a></p>
+    <div class="sources">
+      <div class="src-title"><small>Источники</small>На чём основан текст</div>
+      <ol class="src-list">
+        <li>Your Home: Australia's guide to environmentally sustainable homes (Australian Government) — раздел Passive design: Design for climate.</li>
+        <li>СП 131.13330.2020 «Строительная климатология».</li>
+        <li>СП 50.13330.2012 «Тепловая защита зданий» (с изменениями).</li>
+        <li>Olgyay V. Design with Climate: Bioclimatic Approach to Architectural Regionalism (1963; переиздание 2015).</li>
+        <li>Givoni B. Climate Considerations in Building and Urban Design (1998).</li>
+        <li>Росгидромет. Доклад о климатических рисках на территории Российской Федерации; ежегодные доклады об особенностях климата.</li>
+        <li>Streletskiy D. A. et al. (2019). Assessment of climate change impacts on buildings, structures and infrastructure in the Russian regions on permafrost. Environmental Research Letters 14, 025003.</li>
+      </ol>
+    </div>
+    <div style="margin-top:2.5rem;padding-top:2rem;border-top:1px solid rgba(74,124,89,0.15);font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--ink-light);text-align:center;font-size:1rem;">
+      — редакция «ЭкоСознания», раздел «Строительство»
+    </div>
+  </div>
+</section>
+
+<style>
+.ar-panel{background:var(--warm);border:1px solid rgba(74,124,89,.18);padding:1.6rem 1.4rem 1.1rem;margin:1.8rem 0;}
+.ar-sub{font-family:'Jost',sans-serif;font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);margin-bottom:1rem;text-align:center;}
+.ar-cap{font-family:'Jost',sans-serif;font-size:.62rem;letter-spacing:.08em;color:var(--sage-text,#6b8a70);text-align:center;margin-top:.9rem;line-height:1.6;}
+.ar-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.ar-list{list-style:none;padding:0;margin:1.2rem 0;}
+.ar-list li{padding:.7rem 0 .7rem 1.1rem;border-left:2px solid var(--fern);margin-bottom:.6rem;line-height:1.75;}
+.ar-rows{display:flex;flex-direction:column;gap:.65rem;}
+.ar-row{display:grid;grid-template-columns:200px 1fr 84px;align-items:center;gap:.9rem;}
+.ar-row-l{font-size:.85rem;color:var(--ink);line-height:1.35;}
+.ar-row-l small{display:block;color:var(--ink-light);font-size:.72rem;}
+.ar-row-b{background:rgba(74,124,89,.08);height:24px;border-radius:2px;overflow:hidden;}
+.ar-fill{height:100%;}
+.ar-row-v{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--ink);text-align:right;}
+.ar-grid{display:grid;gap:.6rem;}
+.ar-g2{grid-template-columns:repeat(2,1fr);}.ar-g3{grid-template-columns:repeat(3,1fr);}.ar-g4{grid-template-columns:repeat(4,1fr);}
+.ar-card{background:var(--paper);border:1px solid rgba(74,124,89,.22);border-top:4px solid var(--c,#6ea87e);padding:.85rem .95rem;}
+.ar-card-n{font-family:'Cormorant Garamond',serif;font-size:1.7rem;line-height:1;color:var(--c,#4a7c59);}
+.ar-card-h{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--ink);margin:.25rem 0 .3rem;line-height:1.25;}
+.ar-card-d{font-size:.78rem;line-height:1.5;color:var(--ink-light);}
+.ar-card ul{margin:.2rem 0 0;padding-left:1.05rem;font-size:.78rem;line-height:1.5;color:var(--ink-light);}
+.ar-card li{margin-bottom:.25rem;}
+.ar-dark{background:#4a7c59;border-color:#4a7c59;}
+.ar-dark .ar-card-n{color:#d3e6d0;}.ar-dark .ar-card-h{color:#faf6ef;}.ar-dark .ar-card-d,.ar-dark ul{color:rgba(250,246,239,.85);}
+.ar-warn{background:#f3e5dc;border-color:rgba(122,79,46,.3);--c:#7a4f2e;}
+.ar-table{width:100%;border-collapse:collapse;font-size:.8rem;line-height:1.45;min-width:620px;}
+.ar-table th{font-family:'Jost',sans-serif;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--moss);text-align:left;padding:.5rem .6rem;border-bottom:1px solid rgba(74,124,89,.3);font-weight:500;}
+.ar-table td{padding:.55rem .6rem;border-bottom:1px solid rgba(74,124,89,.12);color:var(--ink-light);vertical-align:top;}
+.ar-table th,.ar-table td{overflow-wrap:normal;word-break:normal;}
+.ar-table td:first-child{color:var(--ink);font-weight:500;}
+.ar-stack{display:flex;height:46px;border-radius:3px;overflow:hidden;font-family:'Jost',sans-serif;font-size:.74rem;color:#faf6ef;}
+.ar-stack>div{display:flex;align-items:center;justify-content:center;white-space:nowrap;overflow:hidden;padding:0 .25rem;}
+.ar-legend{display:flex;flex-wrap:wrap;gap:.5rem 1.2rem;justify-content:center;margin-top:.7rem;font-size:.74rem;color:var(--ink-light);}
+.ar-legend span{display:inline-flex;align-items:center;gap:.4rem;}
+.ar-legend i{display:inline-block;width:12px;height:12px;}
+.ar-check{margin:0;padding-left:1.4rem;}
+.ar-check li{margin-bottom:.6rem;line-height:1.6;font-size:.9rem;color:var(--ink-light);}
+.ar-check b{color:var(--ink);font-weight:500;}
+.ar-months{display:grid;grid-template-columns:repeat(6,1fr);gap:.4rem;}
+.ar-m{background:var(--paper);border:1px solid rgba(74,124,89,.2);border-top:4px solid var(--c,#6ea87e);padding:.6rem .65rem;font-size:.72rem;line-height:1.45;color:var(--ink-light);}
+.ar-m b{display:block;font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:500;color:var(--ink);margin-bottom:.15rem;}
+.ar-h3{font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:400;margin:2.2rem 0 .8rem;color:var(--ink);}
+@media(max-width:860px){ .ar-g4{grid-template-columns:repeat(2,1fr);} .ar-g3{grid-template-columns:repeat(2,1fr);} .ar-months{grid-template-columns:repeat(3,1fr);} }
+@media(max-width:700px){
+  .ar-scroll svg{min-width:620px;}
+  .ar-row{grid-template-columns:1fr 76px;}
+  .ar-row-l{grid-column:1 / -1;}
+  .ar-g2,.ar-g3,.ar-g4{grid-template-columns:1fr;}
+  .ar-months{grid-template-columns:repeat(2,1fr);}
+  .ar-stack{font-size:.62rem;}
+}
+</style>
+
+</main>
+
+<!-- ECO:MANAGED:footer -->
+<footer class="gf">
+  <div class="gf-top">
+    <div class="gf-brand">
+      <a href="index.html" class="gf-logo">
+        <svg viewBox="0 0 100 100" fill="none" class="logo-svg" style="width:24px;height:24px;flex-shrink:0;"><circle cx="50" cy="50" r="40" stroke="#f3ede3" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#6ea87e"/></svg>
+        <span class="gf-logo-text">Эко<em>Сознание</em></span>
+      </a>
+      <p class="gf-tagline">Экологический взгляд как линза для любой сферы жизни</p>
+    </div>
+    <div class="gf-cols">
+      <div>
+        <div class="gf-col-title">Разделы</div>
+        <div class="gf-sections">
+          <a href="section-philosophy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Философия</span></a>
+          <a href="section-psychology.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Психология</span></a>
+          <a href="section-lifestyle.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Стиль жизни</span></a>
+          <a href="section-technologies.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="gf-sec-name">Технологии</span></a>
+          <a href="section-food.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Питание</span></a>
+          <a href="section-architecture.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Архитектура</span></a>
+          <a href="section-economy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Экономика</span></a>
+          <a href="section-education.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="gf-sec-name">Образование</span></a>
+          <a href="section-community.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Сообщество</span></a>
+          <a href="section-travel.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="gf-sec-name">Путешествия</span></a>
+          <a href="section-health.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Здоровье</span></a>
+          <a href="section-science.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Наука</span></a>
+        </div>
+      </div>
+      <div>
+        <div class="gf-col-title">Навигация</div>
+        <nav class="gf-nav-links">
+          <a href="index.html" class="gf-nav-link">Главная</a>
+          <a href="map.html" class="gf-nav-link">Карта связей</a>
+          <a href="paths.html" class="gf-nav-link">Тропы чтения</a>
+          <a href="tree.html" class="gf-nav-link">Дерево материалов</a>
+          <a href="revisions.html" class="gf-nav-link">Что не подтвердилось</a>
+          <a href="thinkers.html" class="gf-nav-link">Указатель имён</a>
+          <a href="search.html" class="gf-nav-link">Поиск</a>
+          <a href="method.html" class="gf-nav-link">Как устроены материалы</a>
+            <a href="about.html" class="gf-nav-link">О проекте</a>
+          <a href="glossary.html" class="gf-nav-link">Глоссарий</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="gf-bottom">
+    <span class="gf-copy">© 2026 ЭкоСознание</span>
+    <div class="gf-bottom-links">
+      <a href="about.html">О проекте</a>
+      <a href="glossary.html">Глоссарий</a>
+    </div>
+  </div>
+</footer>
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+
+
+<!-- ECO:MANAGED:js -->
+<script src="assets/global.js" defer></script>
+<!-- /ECO:MANAGED:js -->
+</body>
+</html>
