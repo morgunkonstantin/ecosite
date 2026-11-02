@@ -6,7 +6,7 @@
   <atom:link href="https://morgunkonstantin.github.io/ecosite/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Экология как способ смотреть на реальность</description>
   <language>ru</language>
-  <lastBuildDate>Mon, 02 Nov 2026 10:34:31 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 02 Nov 2026 10:44:12 +0000</lastBuildDate>
   <image>
     <url>https://morgunkonstantin.github.io/ecosite/assets/og-image.png</url>
     <title>ЭкоСознание</title>
@@ -785,6 +785,14 @@
     <description>Девять исторических вех научной картины мира — от замкнутого космоса античности через механику Ньютона, относительность и квант к планетарной системе. Образовательный лонгрид в хронологическом порядке: как каждая научная революция пересобирала мир и место человека в нём.</description>
     <category>Эссе</category>
     <pubDate>Sun, 30 Aug 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Пассивное охлаждение</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-passive-cooling.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-passive-cooling.html</guid>
+    <description>Как сохранить прохладу в доме в жару почти без электричества: тень на окнах, крыша, ночное проветривание, сквозняк и тяга, вентиляторы, разумный кондиционер, решения по климатам России и для обычной квартиры.</description>
+    <category>Эссе</category>
+    <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
     <title>Шесть принципов пассивного дизайна</title>
