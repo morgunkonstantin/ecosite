@@ -6,7 +6,7 @@
   <atom:link href="https://morgunkonstantin.github.io/ecosite/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Экология как способ смотреть на реальность</description>
   <language>ru</language>
-  <lastBuildDate>Mon, 02 Nov 2026 10:10:15 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 02 Nov 2026 10:34:31 +0000</lastBuildDate>
   <image>
     <url>https://morgunkonstantin.github.io/ecosite/assets/og-image.png</url>
     <title>ЭкоСознание</title>
@@ -793,6 +793,14 @@
     <description>Ориентация, оболочка, герметичность, рекуперация, тепловая масса — архитектура без активных систем.</description>
     <category>Эссе</category>
     <pubDate>Tue, 19 May 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Пассивное отопление</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-passive-heating.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-passive-heating.html</guid>
+    <description>Как дом может греться солнцем: пять задач пассивного отопления, сколько солнца зимой в разных городах России, тепловая масса и русская печь, окна, козырьки, планировка и утепление.</description>
+    <category>Эссе</category>
+    <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
     <title>Прессованная земля (rammed earth): стена в полоску</title>
