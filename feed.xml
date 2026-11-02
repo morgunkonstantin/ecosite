@@ -6,12 +6,44 @@
   <atom:link href="https://morgunkonstantin.github.io/ecosite/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Экология как способ смотреть на реальность</description>
   <language>ru</language>
-  <lastBuildDate>Mon, 02 Nov 2026 12:23:22 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 02 Nov 2026 12:54:06 +0000</lastBuildDate>
   <image>
     <url>https://morgunkonstantin.github.io/ecosite/assets/og-image.png</url>
     <title>ЭкоСознание</title>
     <link>https://morgunkonstantin.github.io/ecosite/</link>
   </image>
+  <item>
+    <title>Дождевая вода</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-rainwater.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-rainwater.html</guid>
+    <description>Как собирать и использовать дождевую воду: сколько её даёт крыша в разных городах России, устройство системы, баки, сброс первой воды, зима и мороз, насосы и фильтры, качество и уход.</description>
+    <category>Эссе</category>
+    <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Экономия воды</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-water-saving.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-water-saving.html</guid>
+    <description>Куда уходит вода в доме и как сократить её расход на треть без потери комфорта: лейки и аэраторы, унитазы с двойным смывом, стиральные и посудомоечные машины, поиск утечек и привычки.</description>
+    <category>Эссе</category>
+    <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Сад без лишней воды</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-water-wise-garden.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-water-wise-garden.html</guid>
+    <description>Как устроить сад и огород, которым нужно мало полива: зонирование, растения по климату, меньше газона, мульча, почва, правильный и капельный полив и экономия воды за пределами сада.</description>
+    <category>Эссе</category>
+    <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Стройка без горы мусора</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-construction-waste.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-construction-waste.html</guid>
+    <description>Как сократить отходы при строительстве и ремонте дома: состав строительного мусора, правило «сократить — использовать повторно — переработать», решения на этапе проекта, в договоре и на стройплощадке, опасные отходы.</description>
+    <category>Эссе</category>
+    <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
   <item>
     <title>Проектирование под климат</title>
     <link>https://morgunkonstantin.github.io/ecosite/essay-design-climate.html</link>
@@ -675,14 +707,6 @@
     <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
-    <title>Стройка без горы мусора</title>
-    <link>https://morgunkonstantin.github.io/ecosite/essay-construction-waste.html</link>
-    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-construction-waste.html</guid>
-    <description>Как сократить отходы при строительстве и ремонте дома: состав строительного мусора, правило «сократить — использовать повторно — переработать», решения на этапе проекта, в договоре и на стройплощадке, опасные отходы.</description>
-    <category>Эссе</category>
-    <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
-  </item>
-  <item>
     <title>Экологический кризис — это кризис образования (Дэвид Орр)</title>
     <link>https://morgunkonstantin.github.io/ecosite/essay-crisis-of-education.html</link>
     <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-crisis-of-education.html</guid>
@@ -843,14 +867,6 @@
     <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
-    <title>Дождевая вода</title>
-    <link>https://morgunkonstantin.github.io/ecosite/essay-rainwater.html</link>
-    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-rainwater.html</guid>
-    <description>Как собирать и использовать дождевую воду: сколько её даёт крыша в разных городах России, устройство системы, баки, сброс первой воды, зима и мороз, насосы и фильтры, качество и уход.</description>
-    <category>Эссе</category>
-    <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
-  </item>
-  <item>
     <title>Прессованная земля (rammed earth): стена в полоску</title>
     <link>https://morgunkonstantin.github.io/ecosite/essay-rammed-earth.html</link>
     <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-rammed-earth.html</guid>
@@ -937,22 +953,6 @@
     <description>Виртуальная вода — тонны воды, невидимо потраченные на еду: гамбургер ~2500 л, говядина &gt;15 000 л/кг против овощей ~300. Диаграмма водного следа продуктов, почему мясо так водоёмко, торговля виртуальной водой и пересохшие реки (Арал), и вывод — углерод и вода тянутся одним, один сдвиг рациона облегчает оба.</description>
     <category>Эссе</category>
     <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>Экономия воды</title>
-    <link>https://morgunkonstantin.github.io/ecosite/essay-water-saving.html</link>
-    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-water-saving.html</guid>
-    <description>Куда уходит вода в доме и как сократить её расход на треть без потери комфорта: лейки и аэраторы, унитазы с двойным смывом, стиральные и посудомоечные машины, поиск утечек и привычки.</description>
-    <category>Эссе</category>
-    <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>Сад без лишней воды</title>
-    <link>https://morgunkonstantin.github.io/ecosite/essay-water-wise-garden.html</link>
-    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-water-wise-garden.html</guid>
-    <description>Как устроить сад и огород, которым нужно мало полива: зонирование, растения по климату, меньше газона, мульча, почва, правильный и капельный полив и экономия воды за пределами сада.</description>
-    <category>Эссе</category>
-    <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
     <title>Дерево и массивные панели (CLT): материал, который растёт</title>
