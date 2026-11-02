@@ -6,12 +6,44 @@
   <atom:link href="https://morgunkonstantin.github.io/ecosite/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Экология как способ смотреть на реальность</description>
   <language>ru</language>
-  <lastBuildDate>Sun, 01 Nov 2026 13:16:38 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 02 Nov 2026 11:30:23 +0000</lastBuildDate>
   <image>
     <url>https://morgunkonstantin.github.io/ecosite/assets/og-image.png</url>
     <title>ЭкоСознание</title>
     <link>https://morgunkonstantin.github.io/ecosite/</link>
   </image>
+  <item>
+    <title>Проектирование под климат</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-design-climate.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-design-climate.html</guid>
+    <description>Как спроектировать дом под свой климат: градусо-сутки, пять климатов России, шесть рычагов пассивного дизайна, солнце, ветер, снег и мерзлота, микроклимат участка и чек-лист перед проектом.</description>
+    <category>Эссе</category>
+    <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Пассивное охлаждение</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-passive-cooling.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-passive-cooling.html</guid>
+    <description>Как сохранить прохладу в доме в жару почти без электричества: тень на окнах, крыша, ночное проветривание, сквозняк и тяга, вентиляторы, разумный кондиционер, решения по климатам России и для обычной квартиры.</description>
+    <category>Эссе</category>
+    <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Возобновляемая энергия дома</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-renewable-energy.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-renewable-energy.html</guid>
+    <description>Какие домашние технологии возобновляемой энергии имеют смысл в российском климате: тепловые насосы, солнце, дрова, ветер и микро-ГЭС, микрогенерация до 15 кВт, автономные системы и правильный порядок шагов.</description>
+    <category>Эссе</category>
+    <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Солнечные панели на крыше</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-rooftop-solar.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-rooftop-solar.html</guid>
+    <description>Сколько энергии дают солнечные панели в разных городах России, лето и зима, сетевые и автономные системы, размер, ориентация и наклон, снег и мороз, окупаемость, выбор, гарантии и уход.</description>
+    <category>Эссе</category>
+    <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
   <item>
     <title>Отпуск без следа</title>
     <link>https://morgunkonstantin.github.io/ecosite/essay-leave-no-trace.html</link>
@@ -747,6 +779,14 @@
     <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
+    <title>Горячая вода</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-hot-water.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-hot-water.html</guid>
+    <description>Как греть воду экономнее и чище: тепловые насосы, солнечные коллекторы, электробойлеры и газ, горячая вода в квартире, монтаж, безопасная температура, привычки и время нагрева.</description>
+    <category>Эссе</category>
+    <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
     <title>Кривая Килинга: как увидели, что воздух меняется</title>
     <link>https://morgunkonstantin.github.io/ecosite/essay-keeling-curve.html</link>
     <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-keeling-curve.html</guid>
@@ -785,6 +825,14 @@
     <description>Ориентация, оболочка, герметичность, рекуперация, тепловая масса — архитектура без активных систем.</description>
     <category>Эссе</category>
     <pubDate>Tue, 19 May 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Пассивное отопление</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-passive-heating.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-passive-heating.html</guid>
+    <description>Как дом может греться солнцем: пять задач пассивного отопления, сколько солнца зимой в разных городах России, тепловая масса и русская печь, окна, козырьки, планировка и утепление.</description>
+    <category>Эссе</category>
+    <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
     <title>Прессованная земля (rammed earth): стена в полоску</title>
