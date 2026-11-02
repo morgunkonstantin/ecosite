@@ -61,6 +61,9 @@ build/patch_pages.py      приводит все страницы к едино
 build/make_feeds.py       генерирует feed.xml, sitemap.xml, robots.txt
 build/make_contents.py    пересобирает contents.html
 build/make_section_lists.py блоки «Материалы раздела» на страницах разделов
+build/make_secnav.py      внутренние меню разделов: блок «Раздел» в конце каждой статьи
+                          и «Материалы раздела по темам» на страницах разделов
+build/sections.json       темы внутри разделов и сквозные циклы статей для make_secnav.py
 build/make_termlinks.py   автолинковка понятий глоссария в текстах
 ```
 
@@ -73,8 +76,9 @@ build/make_termlinks.py   автолинковка понятий глоссар
 3. `python3 build/patch_pages.py` — проставит canonical, Open Graph,
    иконки, JSON-LD, `<main>`, skip-link, подключит общие CSS и JS.
 4. Прогнать сборку в таком порядке:
-   `make_section_lists.py` → `make_contents.py` → `patch_pages.py`
-   → `make_termlinks.py` → `make_feeds.py`
+   `make_section_lists.py` → `make_contents.py` → `make_tree.py` → `make_secnav.py`
+   → `patch_pages.py`
+   → `make_termlinks.py` → `make_feeds.py` → `make_search.py`
 5. Добавить ссылку в подвал (колонка «Материалы») и на главную,
    если материал должен попасть в блок «свежее».
 

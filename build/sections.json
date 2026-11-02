@@ -1,0 +1,87 @@
+{
+ "_comment": "Внутренние меню разделов. groups — темы внутри раздела в порядке показа; материалы раздела, не попавшие ни в одну группу, автоматически уходят в группу «Другое». series — сквозные циклы статей с навигацией «предыдущая / следующая». Используется build/make_secnav.py.",
+ "series": {
+  "home-climate": {
+   "title": "Дом по климату",
+   "items": [
+    "essay-design-climate.html", "essay-passive-heating.html", "essay-passive-cooling.html",
+    "essay-renewable-energy.html", "essay-rooftop-solar.html", "essay-hot-water.html",
+    "essay-rainwater.html", "essay-water-saving.html", "essay-water-wise-garden.html",
+    "essay-construction-waste.html"
+   ]
+  }
+ },
+ "sections": {
+  "Строительство": [
+   {"title": "Цикл «Дом по климату»", "items": ["essay-design-climate.html", "essay-passive-heating.html", "essay-passive-cooling.html", "essay-construction-waste.html"]},
+   {"title": "Основы и путеводители", "items": ["essay-building-technologies.html", "essay-alternative-building.html", "essay-passive-design.html", "number-embodied.html", "essay-small-house.html"]},
+   {"title": "Земля и глина", "items": ["essay-clay-earth.html", "essay-earthbag.html", "essay-rammed-earth.html", "essay-cob.html", "essay-earth-shelter.html"]},
+   {"title": "Растения, дерево, камень", "items": ["essay-straw-bale.html", "essay-hempcrete.html", "essay-wood-clt.html", "essay-stone.html", "essay-reclaimed.html"]},
+   {"title": "Формы жилья", "items": ["essay-a-frame.html", "essay-earthship.html", "essay-greenhouse-home.html", "essay-modular-prefab.html", "essay-tiny-house-wheels.html", "essay-yurt.html", "essay-van-boat.html"]}
+  ],
+  "Технологии": [
+   {"title": "Цикл «Дом по климату»: энергия", "items": ["essay-renewable-energy.html", "essay-rooftop-solar.html", "essay-hot-water.html"]},
+   {"title": "Цикл «Дом по климату»: вода", "items": ["essay-rainwater.html", "essay-water-saving.html", "essay-water-wise-garden.html"]},
+   {"title": "Технологии и природа", "items": ["essay-tech-history.html", "essay-eco-technologies.html", "essay-biomimicry.html", "essay-clean-electricity.html"]},
+   {"title": "Биографии вещей", "items": ["thing-battery.html", "thing-server.html"]},
+   {"title": "Лаборатории", "items": ["lab-illich-benyus.html", "lab-benyus-engineer.html", "lab-illich-social.html"]}
+  ],
+  "Экономика": [
+   {"title": "Чем измерять", "items": ["essay-doughnut.html", "essay-emissions-map.html", "essay-esg.html"]},
+   {"title": "Углерод и рынки", "items": ["essay-carbon-markets.html", "essay-carbon-offsets.html"]},
+   {"title": "Ресурсы и справедливость", "items": ["essay-critical-minerals.html", "essay-imperial-ecology.html", "essay-right-to-repair.html", "essay-greenwashing.html"]},
+   {"title": "Лаборатории и споры", "items": ["lab-degrowth-ecomodern.html", "lab-morton-raworth.html", "lab-raworth-chinovnik.html"]}
+  ],
+  "Наука": [
+   {"title": "Климат и углерод", "items": ["number-15.html", "essay-carbon-cycle.html", "essay-keeling-curve.html", "essay-trees-air.html"]},
+   {"title": "Лес и жизнь", "items": ["essay-mycorrhiza.html"]},
+   {"title": "Места", "items": ["essay-aral-zone.html", "place-kola.html"]},
+   {"title": "Картина мира", "items": ["essay-vernadsky.html", "essay-nauchnaya-kartina-mira.html", "essay-kosmologicheskaya-kartina-mira.html", "term-shifting-baseline.html"]}
+  ],
+  "Философия": [
+   {"title": "Эссе", "items": ["essay-truth-and-climate.html", "essay-zapovednik.html", "essay-demarchy.html"]},
+   {"title": "Понятия", "items": ["term-hyperobject.html", "term-conviviality.html"]},
+   {"title": "Лаборатории", "items": ["lab-heidegger-plastic.html", "lab-hyperobject-room.html"]}
+  ],
+  "Питание": [
+   {"title": "Что на тарелке", "items": ["essay-diet-carbon.html", "essay-seasonal-food.html", "essay-bread.html", "thing-tomato.html"]},
+   {"title": "Скрытые потоки", "items": ["number-third.html", "essay-virtual-water.html"]}
+  ],
+  "Сообщество": [
+   {"title": "Как живут сообщества", "items": ["essay-community-survives.html", "essay-community-power.html", "essay-network-states.html"]},
+   {"title": "Общее", "items": ["essay-commons.html", "term-commons.html", "essay-kropotkin.html"]}
+  ],
+  "Психология": [
+   {"title": "Тревога и утрата", "items": ["essay-climate-anxiety-symptom.html", "essay-eco-anxiety.html", "essay-solastalgia.html"]},
+   {"title": "Сознание", "items": ["essay-consciousness-evolution.html", "lab-bateson-gpt.html"]}
+  ],
+  "Архитектура": [
+   {"title": "Дом и место", "items": ["essay-vernacular.html", "essay-heritage-buildings.html"]},
+   {"title": "Город", "items": ["essay-sponge-city.html", "lab-15min-city.html"]},
+   {"title": "Лаборатории", "items": ["lab-heidegger-builder.html"]}
+  ],
+  "Стиль жизни": [
+   {"title": "Свой след", "items": ["essay-carbon-budget.html", "lab-jacket-biography.html", "essay-moneyless-year.html"]},
+   {"title": "Ритм и дело", "items": ["essay-slow-life.html", "essay-forest-activism.html"]}
+  ],
+  "Здоровье": [
+   {"title": "Среда и здоровье", "items": ["essay-planetary-health.html", "essay-clean-air.html", "essay-heat-health.html"]},
+   {"title": "Природа как лекарство", "items": ["essay-forest-medicine.html", "essay-morning-light.html"]}
+  ],
+  "Образование": [
+   {"title": "Идеи", "items": ["essay-crisis-of-education.html", "essay-place-based.html"]},
+   {"title": "Практика", "items": ["essay-outdoor-school.html", "essay-eco-trail.html", "essay-kids-eco-anxiety.html"]}
+  ],
+  "Путешествия": [
+   {"title": "Как путешествовать", "items": ["essay-slow-travel.html", "essay-flight-carbon.html", "essay-leave-no-trace.html"]},
+   {"title": "Места", "items": ["place-curonian.html"]}
+  ],
+  "Компост": [
+   {"title": "Практика", "items": ["essay-apartment-compost.html", "essay-dacha-compost.html"]},
+   {"title": "Почва и круговорот", "items": ["essay-living-soil.html", "essay-compost-return.html"]}
+  ],
+  "Ревизия": [
+   {"title": "Что не подтвердилось", "items": ["revision-limits.html", "revision-ehrlich.html", "revision-nuclear.html", "revision-organic.html"]}
+  ]
+ }
+}
