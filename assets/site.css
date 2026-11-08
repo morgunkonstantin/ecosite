@@ -229,3 +229,32 @@ html body .featured-strip p { color: rgba(211,230,208,.75); }
 /* Блок «Читайте также» в конце эссе */
 html body .see-also a { color: var(--moss); text-decoration: none; border-bottom: 1px solid rgba(74,124,89,.4); }
 html body .see-also a:hover { border-bottom-color: var(--moss); }
+
+/* ── Меню цикла статей (build/make_secnav.py) ───────────────────── */
+.secnav{background:var(--warm);border-top:1px solid rgba(74,124,89,.18);padding:3.5rem 4rem 4rem;}
+.secnav-in{max-width:1100px;margin:0 auto;}
+.secnav-head{display:flex;align-items:baseline;gap:.9rem;flex-wrap:wrap;margin-bottom:1.2rem;}
+.secnav-label{font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--moss);}
+.secnav-title{font-family:'Cormorant Garamond',serif;font-size:1.75rem;font-weight:400;color:var(--ink);line-height:1.2;}
+.secnav-part{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--clay-text);}
+.secnav a{color:var(--ink-light);text-decoration:none;}
+.secnav-series{background:var(--paper);border:1px solid rgba(74,124,89,.2);padding:1.3rem 1.5rem 1.4rem;}
+.secnav-pn{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:0 0 1.1rem;}
+.secnav-prev,.secnav-next{display:block;padding:.85rem 1rem;border:1px solid rgba(74,124,89,.25);font-family:'Cormorant Garamond',serif;font-size:1.12rem;line-height:1.3;color:var(--ink)!important;transition:background .2s;}
+a.secnav-prev:hover,a.secnav-next:hover{background:var(--warm);}
+.secnav-next{text-align:right;}
+.secnav-prev small,.secnav-next small{display:block;font-family:'Jost',sans-serif;font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--moss);margin-bottom:.25rem;}
+.secnav-pn .is-empty{border:none;}
+.secnav-series-list{list-style:none;padding:0;margin:0;columns:2;column-gap:2.2rem;}
+.secnav-series-list li{break-inside:avoid;margin:0;padding:.21rem 0 .21rem .75rem;font-size:.85rem;line-height:1.4;border-left:2px solid transparent;}
+.secnav-series-list a:hover{color:var(--moss);}
+.secnav .is-current{border-left-color:var(--moss);}
+.secnav .is-current span{color:var(--ink);font-weight:500;}
+@media(max-width:800px){
+  .secnav{padding:2.5rem 1.5rem 3rem;}
+  .secnav-pn{grid-template-columns:1fr;}
+  .secnav-pn .is-empty{display:none;}
+  .secnav-next{text-align:left;}
+  .secnav-series-list{columns:1;}
+}
+@media print{.secnav{display:none;}}
