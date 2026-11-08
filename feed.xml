@@ -6,7 +6,7 @@
   <atom:link href="https://morgunkonstantin.github.io/ecosite/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Экология как способ смотреть на реальность</description>
   <language>ru</language>
-  <lastBuildDate>Mon, 02 Nov 2026 12:54:06 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 08 Nov 2026 16:12:12 +0000</lastBuildDate>
   <image>
     <url>https://morgunkonstantin.github.io/ecosite/assets/og-image.png</url>
     <title>ЭкоСознание</title>
@@ -865,6 +865,14 @@
     <description>Как дом может греться солнцем: пять задач пассивного отопления, сколько солнца зимой в разных городах России, тепловая масса и русская печь, окна, козырьки, планировка и утепление.</description>
     <category>Эссе</category>
     <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Основы психологии</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-psychology-basics.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-psychology-basics.html</guid>
+    <description>Обзор главных школ психологии: критерии научности, психоанализ Фрейда и архетипы Юнга, бихевиоризм, гештальт, когнитивные искажения и КПТ, Пиаже, Выготский и Бандура, конформизм, защиты психики, интеллект — и что это значит для экологии.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 08 Nov 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
     <title>Прессованная земля (rammed earth): стена в полоску</title>
