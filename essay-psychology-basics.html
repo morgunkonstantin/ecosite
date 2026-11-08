@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+<script>document.documentElement.classList.replace('no-js','js');</script>
+<meta charset="UTF-8">
+<meta name="description" content="Обзор главных школ психологии: критерии научности, психоанализ Фрейда и архетипы Юнга, бихевиоризм, гештальт, когнитивные искажения и КПТ, Пиаже, Выготский и Бандура, конформизм, защиты психики, интеллект — и что это значит для экологии.">
+<meta property="og:title" content="Основы психологии: от Фрейда до когнитивных искажений">
+<meta property="og:description" content="Обзор главных школ психологии: критерии научности, психоанализ Фрейда и архетипы Юнга, бихевиоризм, гештальт, когнитивные искажения и КПТ, Пиаже, Выготский и Бандура, конформизм, защиты психики, интеллект — и что это значит для экологии.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Основы психологии: от Фрейда до когнитивных искажений — ЭкоСознание</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/base.css">
+<style>
+.hero{padding:10rem 4rem 5rem;display:grid;grid-template-columns:1fr 380px;gap:4rem;align-items:end;border-bottom:1px solid rgba(74,124,89,.15);position:relative;overflow:hidden;}
+.hero-mark-svg{position:absolute;right:4rem;top:11rem;width:90px;height:90px;color:rgba(74,124,89,.18);pointer-events:none;}
+.hero-mark-svg svg{width:100%;height:100%;display:block;}
+.hero-tag{display:inline-flex;align-items:center;gap:.6rem;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);margin-bottom:1.5rem;}
+.hero-tag::before{content:'';display:block;width:24px;height:1px;background:var(--fern);}
+h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,6vw,5rem);font-weight:300;line-height:1.05;color:var(--ink);margin-bottom:1.8rem;}
+h1 em{font-style:italic;color:var(--moss);display:block;}
+.hero-lead{font-size:1rem;line-height:1.85;color:var(--ink-light);max-width:580px;}
+.hero-meta{display:flex;flex-direction:column;gap:1.5rem;padding-left:2rem;border-left:1px solid rgba(74,124,89,.2);}
+.meta-label{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);margin-bottom:.4rem;}
+.meta-value{font-size:.9rem;color:var(--ink-light);line-height:1.6;}
+.toc-bar{background:var(--ink);padding:0 4rem;display:flex;align-items:stretch;overflow-x:auto;}
+.toc-bar a{color:rgba(211,230,208,.6);text-decoration:none;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:1rem 1.5rem;border-right:1px solid rgba(255,255,255,.06);white-space:nowrap;transition:color .2s,background .2s;}
+.toc-bar a:hover{color:var(--mist);}
+.toc-bar a.active{color:var(--fern);}
+.content-section{padding:5rem 4rem;border-bottom:1px solid rgba(74,124,89,.1);}
+.content-section.alt{background:var(--cream);}
+.content-section.dark{background:var(--ink);}
+.section-label{display:flex;align-items:center;gap:1rem;margin-bottom:3rem;}
+.section-label-num{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);}
+.section-label-line{flex:1;height:1px;background:rgba(74,124,89,.15);}
+.section-label-tag{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);}
+h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:300;color:var(--ink);line-height:1.15;margin-bottom:1.5rem;}
+h2 em{font-style:italic;color:var(--moss);}
+h2.light{color:var(--cream);}
+h2.light em{color:var(--fern);}
+.article-layout{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}
+.article-layout.wide{grid-template-columns:3fr 2fr;}
+.article-body p{font-size:.95rem;line-height:1.9;color:var(--ink-light);margin-bottom:1.1rem;}
+.article-body p:last-child{margin-bottom:0;}
+.article-body p.light{color:rgba(211,230,208,.72);}
+.pull-quote{border-left:3px solid var(--moss);padding:1.2rem 1.5rem;margin:2rem 0;background:rgba(74,124,89,.05);}
+.pull-quote p{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;color:var(--ink);line-height:1.5;margin:0!important;}
+.pull-quote.light{background:rgba(255,255,255,.06);border-color:var(--fern);}
+.pull-quote.light p{color:var(--cream);}
+.pull-quote cite{display:block;margin-top:.6rem!important;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);font-style:normal;}
+.practices-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(74,124,89,.12);margin-top:2rem;}
+.practice-card{background:var(--paper);padding:2rem 1.8rem;transition:background .25s;}
+.content-section.alt .practice-card{background:var(--cream);}
+.practice-card:hover{background:var(--warm);}
+.practice-num{font-family:'Cormorant Garamond',serif;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);margin-bottom:.6rem;}
+.practice-name{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--ink);margin-bottom:.6rem;}
+.practice-name em{font-style:italic;color:var(--moss);}
+.practice-desc{font-size:.85rem;line-height:1.75;color:var(--ink-light);}
+.featured-strip{background:var(--ink);padding:3rem 3.5rem;display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center;margin-top:3rem;}
+.featured-label{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);margin-bottom:1rem;}
+.featured-strip h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;font-style:italic;color:var(--cream);margin-bottom:.8rem;line-height:1.2;}
+.featured-strip p{font-size:.87rem;line-height:1.8;color:rgba(211,230,208,.68);}
+.featured-btn{background:transparent;color:var(--fern);border:1px solid rgba(110,168,126,.4);padding:.8rem 1.6rem;text-decoration:none;font-family:'Jost',sans-serif;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;display:inline-block;transition:background .25s,color .25s;}
+.featured-btn:hover{background:var(--fern);color:var(--ink);}
+.rubrics-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,.12);margin-top:3rem;}
+.rubric-card{background:var(--paper);padding:2rem 1.6rem;transition:background .25s;}
+.rubric-card:hover{background:var(--warm);}
+.rubric-icon{font-size:1.4rem;margin-bottom:1rem;}
+.rubric-name{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--ink);margin-bottom:.6rem;}
+.rubric-desc{font-size:.82rem;line-height:1.75;color:var(--ink-light);}
+.rubric-example{margin-top:1rem;font-size:.78rem;font-style:italic;color:var(--moss);line-height:1.6;}
+.rubric-card.dark-card{background:var(--ink);}
+.rubric-card.dark-card .rubric-name{color:var(--cream);}
+.rubric-card.dark-card .rubric-desc{color:rgba(211,230,208,.65);}
+.rubric-card.dark-card .rubric-example{color:var(--fern);}
+.g-next-section{background:var(--ink);padding:2.5rem 4rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;}
+.g-next-label{font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(168,197,160,.45);margin-bottom:.5rem;}
+.g-next-link{display:inline-flex;align-items:center;gap:.8rem;text-decoration:none;}
+.g-next-name{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:var(--cream);font-style:italic;transition:color .2s;}
+.g-next-link:hover .g-next-name{color:var(--fern);}
+.g-next-arrow{font-family:'Cormorant Garamond',serif;font-size:2rem;color:rgba(110,168,126,.5);transition:transform .2s,color .2s;}
+.g-next-link:hover .g-next-arrow{transform:translateX(6px);color:var(--fern);}
+.g-next-num{font-family:'Cormorant Garamond',serif;font-size:4rem;font-weight:300;color:rgba(255,255,255,.06);line-height:1;}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease;}
+.reveal.visible{opacity:1;transform:none;}
+.d1{transition-delay:.1s;}
+.d2{transition-delay:.2s;}
+@media(max-width:800px){ .hero,.toc-bar,.content-section,.g-next-section{padding-left:1.5rem;padding-right:1.5rem;} .hero{grid-template-columns:1fr;} .hero-meta{padding-left:0;border-left:none;border-top:1px solid rgba(74,124,89,.2);padding-top:1.5rem;} .hero-mark-svg{right:1.5rem;top:9rem;width:60px;height:60px;} .article-layout,.article-layout.wide{grid-template-columns:1fr;gap:2rem;} .practices-grid,.rubrics-grid{grid-template-columns:1fr;} .featured-strip{grid-template-columns:1fr;gap:1.5rem;} }
+.methods-table{margin:2rem 0;border:1px solid rgba(74,124,89,.15);overflow-x:auto;}
+.methods-row{display:grid;grid-template-columns:180px repeat(4,1fr);gap:0;border-bottom:1px solid rgba(74,124,89,.1);min-width:760px;}
+.methods-row:last-child{border-bottom:none;}
+.methods-row.header{background:var(--ink);}
+.methods-row.header > div{color:var(--sage);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;padding:.9rem 1rem;}
+.methods-row > div{background:var(--paper);padding:.95rem 1rem;font-size:.85rem;color:var(--ink-light);line-height:1.5;border-right:1px solid rgba(74,124,89,.08);}
+.content-section.alt .methods-row > div{background:var(--cream);}
+.methods-row > div:last-child{border-right:none;}
+.methods-row > .method-name{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1rem;color:var(--ink);}
+.methods-row.header > .method-name{color:var(--sage);font-style:normal;}
+.seasons-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(74,124,89,.12);margin:2rem 0;}
+.season-card{background:var(--paper);padding:1.8rem 1.5rem;transition:background .25s;display:flex;flex-direction:column;}
+.content-section.alt .season-card{background:var(--cream);}
+.season-card:hover{background:var(--warm);}
+.season-icon{font-size:1.9rem;margin-bottom:.7rem;line-height:1;}
+.season-name{font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--ink);margin-bottom:.2rem;}
+.season-name em{font-style:italic;color:var(--moss);}
+.season-months{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--clay);margin-bottom:.9rem;}
+.season-actions{font-size:.83rem;line-height:1.7;color:var(--ink-light);margin-bottom:.8rem;}
+.season-watch{font-size:.78rem;line-height:1.6;color:var(--ink-light);padding-top:.7rem;border-top:1px dashed rgba(74,124,89,.18);margin-top:auto;}
+.season-watch strong{color:var(--rust);font-weight:400;}
+.timeline{margin:2rem 0;position:relative;border-left:1px solid rgba(74,124,89,.2);padding-left:2rem;}
+.timeline-item{margin-bottom:2rem;position:relative;}
+.timeline-item:last-child{margin-bottom:0;}
+.timeline-item::before{content:'';position:absolute;left:-2.45rem;top:.3rem;width:9px;height:9px;border-radius:50%;background:var(--moss);box-shadow:0 0 0 3px var(--paper);}
+.content-section.alt .timeline-item::before{box-shadow:0 0 0 3px var(--cream);}
+.timeline-era{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin-bottom:.4rem;}
+.timeline-name{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--ink);margin-bottom:.5rem;line-height:1.3;}
+.timeline-name em{font-style:italic;color:var(--moss);}
+.timeline-desc{font-size:.88rem;line-height:1.75;color:var(--ink-light);}
+.timeline-desc em{font-style:italic;color:var(--moss);}
+.case-block{background:var(--ink);padding:4rem 3.5rem;margin:2rem 0;}
+.case-inner{max-width:920px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start;}
+.case-block h3{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;color:var(--cream);line-height:1.25;margin-bottom:1.3rem;}
+.case-block h3 em{font-style:italic;color:var(--fern);}
+.case-block p{font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.75;color:rgba(211,230,208,.75);margin-bottom:1rem;}
+.case-stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.08);}
+.case-stat{background:rgba(255,255,255,.04);padding:1.4rem 1.2rem;text-align:center;}
+.case-stat-num{font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--fern);font-weight:300;line-height:1;margin-bottom:.4rem;}
+.case-stat-lbl{font-size:.72rem;color:rgba(211,230,208,.65);line-height:1.5;}
+.case-link{display:inline-flex;align-items:center;gap:.6rem;font-family:'Jost',sans-serif;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--fern);text-decoration:none;border-bottom:1px solid rgba(110,168,126,.4);padding-bottom:.3rem;margin-top:1rem;}
+.case-link:hover{border-color:var(--fern);}
+@media(max-width:800px){ .case-inner{grid-template-columns:1fr;gap:2rem;} .case-block{padding:2.5rem 1.5rem;} .seasons-grid{grid-template-columns:1fr 1fr;} .methods-row{grid-template-columns:140px repeat(4,1fr);min-width:660px;} }
+@media(max-width:540px){ .seasons-grid{grid-template-columns:1fr;} .case-stats{grid-template-columns:1fr 1fr;} }
+.cycle-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,.12);margin:2rem 0;}
+.cycle-card{background:var(--paper);padding:1.8rem 1.6rem;text-align:center;transition:background .25s;}
+.content-section.alt .cycle-card{background:var(--cream);}
+.cycle-card:hover{background:var(--warm);}
+.cycle-step{font-family:'Cormorant Garamond',serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);margin-bottom:.6rem;}
+.cycle-icon{font-size:2rem;margin-bottom:.8rem;line-height:1;}
+.cycle-name{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--ink);margin-bottom:.5rem;}
+.cycle-name em{font-style:italic;color:var(--moss);}
+.cycle-desc{font-size:.82rem;line-height:1.7;color:var(--ink-light);}
+.can-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:2rem 0;}
+.can-col h4{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:400;margin-bottom:1rem;}
+.can-col.yes h4{color:var(--moss);}
+.can-col.no h4{color:var(--rust);}
+.can-list{list-style:none;display:flex;flex-direction:column;gap:0;}
+.can-item{font-size:.85rem;line-height:1.6;color:var(--ink-light);padding:.45rem 0;border-bottom:1px dashed rgba(74,124,89,.12);}
+.can-item:last-child{border-bottom:none;}
+.can-item::before{margin-right:.5rem;}
+.can-col.yes .can-item::before{content:'✓';color:var(--fern);}
+.can-col.no .can-item::before{content:'✗';color:var(--rust);}
+.soil-block{background:var(--ink);padding:4rem 3.5rem;margin:3rem 0;}
+.soil-inner{max-width:720px;margin:0 auto;}
+.soil-block h3{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;font-style:italic;color:var(--cream);line-height:1.3;margin-bottom:1.5rem;}
+.soil-block h3 em{color:var(--fern);}
+.soil-block p{font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.8;color:rgba(211,230,208,.75);margin-bottom:1.2rem;}
+.soil-block p:last-child{margin-bottom:0;}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(74,124,89,.15);margin:2rem 0;}
+.stat-card{background:var(--paper);padding:1.6rem 1.2rem;text-align:center;}
+.content-section.alt .stat-card{background:var(--cream);}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:300;color:var(--moss);line-height:1;margin-bottom:.4rem;}
+.stat-label{font-size:.78rem;line-height:1.5;color:var(--ink-light);}
+.q-list{display:flex;flex-direction:column;gap:0;margin:1.5rem 0;}
+.q-item{padding:1.2rem 0;border-bottom:1px solid rgba(74,124,89,.1);}
+.q-item:last-child{border-bottom:none;}
+.q-question{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink);margin-bottom:.5rem;font-weight:400;}
+.q-question em{font-style:italic;color:var(--moss);}
+.q-answer{font-size:.88rem;line-height:1.75;color:var(--ink-light);}
+@media(max-width:800px){ .cycle-grid{grid-template-columns:1fr 1fr;} .can-grid{grid-template-columns:1fr;} .stats-row{grid-template-columns:1fr 1fr;} .soil-block{padding:2.5rem 1.5rem;} }
+@media(max-width:540px){ .cycle-grid{grid-template-columns:1fr;} .stats-row{grid-template-columns:1fr 1fr;} }
+.section-num{font-family:'Cormorant Garamond',serif;font-size:0.85rem;letter-spacing:0.3em;color:var(--moss);margin-bottom:1rem;font-style:italic;}
+.disc-meta{font-family:'Jost',sans-serif;font-size:0.78rem;letter-spacing:0.05em;color:var(--ink-light);margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:1px solid rgba(74,124,89,0.15);font-weight:300;line-height:1.7;}
+.content-section p{font-size:1rem;line-height:1.85;color:var(--ink);margin-top:1.2rem;}
+.content-section p strong{color:var(--moss);font-weight:500;}
+.content-section p em{font-style:italic;color:var(--ink-light);}
+.content-section h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:300;line-height:1.15;color:var(--ink);margin-bottom:0.5rem;}
+.content-section h2 em{color:var(--moss);font-style:italic;display:block;}
+</style>
+
+<style>
+/* ── Источники: единый блок для всех эссе и лабораторий ── */
+.sources{margin:5rem 0 0;padding-top:2.5rem;border-top:1px solid rgba(74,124,89,.2);}
+.src-title{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;margin-bottom:1.6rem;}
+.src-title small{display:block;font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--clay-text);font-weight:400;margin-bottom:.6rem;}
+.src-list{list-style:none;counter-reset:src;padding:0;margin:0;}
+.src-list li{position:relative;padding-left:2.4rem;margin-bottom:1.1rem;font-size:.86rem;
+  line-height:1.7;color:var(--ink-light);}
+.src-list li::before{counter-increment:src;content:counter(src,decimal-leading-zero);
+  position:absolute;left:0;top:.15rem;font-family:'Jost',sans-serif;font-size:.66rem;
+  letter-spacing:.1em;color:var(--sage-text);}
+.src-a{color:var(--ink);}
+/* ── Ссылка на термин глоссария ── */
+a.term{color:inherit;text-decoration:none;border-bottom:1px dotted var(--fern-text);}
+a.term:hover{border-bottom-style:solid;color:var(--moss);}
+/* ── Вопросы-врезка ── */
+.quiz{background:var(--warm);padding:2.2rem 2.4rem;margin:2.5rem 0;border-left:3px solid var(--moss);}
+.quiz ol{margin:0;padding-left:1.4rem;}
+.quiz li{font-family:'Cormorant Garamond',serif;font-size:1.1rem;line-height:1.6;
+  color:var(--ink);margin-bottom:.9rem;}
+.quiz li:last-child{margin-bottom:0;}
+</style>
+<!-- ECO:MANAGED:head -->
+  <link rel="canonical" href="https://morgunkonstantin.github.io/ecosite/essay-psychology-basics.html">
+  <meta property="og:url" content="https://morgunkonstantin.github.io/ecosite/essay-psychology-basics.html">
+  <meta property="og:site_name" content="ЭкоСознание">
+  <meta property="og:image" content="https://morgunkonstantin.github.io/ecosite/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ЭкоСознание — экология как способ смотреть на реальность">
+  <meta name="twitter:image" content="https://morgunkonstantin.github.io/ecosite/assets/og-image.png">
+  <meta name="theme-color" content="#faf6ef">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="alternate" type="application/rss+xml" title="ЭкоСознание — RSS" href="feed.xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","name":"Основы психологии","headline":"Основы психологии","description":"Обзор главных школ психологии: критерии научности, психоанализ Фрейда и архетипы Юнга, бихевиоризм, гештальт, когнитивные искажения и КПТ, Пиаже, Выготский и Бандура, конформизм, защиты психики, интеллект — и что это значит для экологии.","inLanguage":"ru-RU","url":"https://morgunkonstantin.github.io/ecosite/essay-psychology-basics.html","isPartOf":{"@type":"WebSite","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecosite/"},"publisher":{"@type":"Organization","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecosite/"},"datePublished":"2026-11-08","author":{"@type":"Organization","name":"ЭкоСознание"},"articleSection":"Психология"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://morgunkonstantin.github.io/ecosite/"},{"@type":"ListItem","position":2,"name":"Психология","item":"https://morgunkonstantin.github.io/ecosite/section-psychology.html"},{"@type":"ListItem","position":3,"name":"Основы психологии","item":"https://morgunkonstantin.github.io/ecosite/essay-psychology-basics.html"}]}</script>
+<!-- /ECO:MANAGED:head -->
+</head>
+<body>
+<a class="skip-link" href="#content">Перейти к содержанию</a>
+
+<!-- ECO:MANAGED:nav -->
+<div class="g-nav-wrap" id="gNavWrap">
+  <div class="g-nav">
+    <a href="index.html" class="g-logo">
+      <svg viewBox="0 0 100 100" fill="none" class="logo-svg"><circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#4a7c59"/></svg>
+      <span class="g-logo-text">Эко<em>Сознание</em></span>
+    </a>
+    <ul class="g-links">
+      <li>
+        <button class="g-drop-btn" aria-expanded="false">
+          Разделы
+          <svg class="g-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg>
+        </button>
+        <div class="g-dropdown">
+          <a href="section-philosophy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Философия</span><span class="g-dd-num">01</span></a>
+          <a href="section-psychology.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="g-dd-name">Психология</span><span class="g-dd-num">02</span></a>
+          <a href="section-lifestyle.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Стиль жизни</span><span class="g-dd-num">03</span></a>
+          <a href="section-technologies.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="g-dd-name">Технологии</span><span class="g-dd-num">04</span></a>
+          <a href="section-food.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-dd-name">Питание</span><span class="g-dd-num">05</span></a>
+          <a href="section-architecture.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="g-dd-name">Архитектура</span><span class="g-dd-num">06</span></a>
+          <a href="section-economy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Экономика</span><span class="g-dd-num">07</span></a>
+          <a href="section-education.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="g-dd-name">Образование</span><span class="g-dd-num">08</span></a>
+          <a href="section-community.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Сообщество</span><span class="g-dd-num">09</span></a>
+          <a href="section-travel.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-dd-name">Путешествия</span><span class="g-dd-num">10</span></a>
+          <a href="section-health.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Здоровье</span><span class="g-dd-num">11</span></a>
+          <a href="section-science.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Наука</span><span class="g-dd-num">12</span></a>
+        </div>
+      </li>
+      <li><a href="about.html">О проекте</a></li>
+    </ul>
+    <button class="g-burger" id="gBurger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+
+<div class="g-overlay" id="gOverlay">
+  <div class="g-ov-section">
+    <div class="g-ov-label">Разделы</div>
+    <div class="g-ov-grid">
+      <a href="section-philosophy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Философия</span></a>
+      <a href="section-psychology.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="g-ov-name">Психология</span></a>
+      <a href="section-lifestyle.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/></svg></span><span class="g-ov-name">Стиль жизни</span></a>
+      <a href="section-technologies.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="g-ov-name">Технологии</span></a>
+      <a href="section-food.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-ov-name">Питание</span></a>
+      <a href="section-architecture.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="g-ov-name">Архитектура</span></a>
+      <a href="section-economy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Экономика</span></a>
+      <a href="section-education.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="g-ov-name">Образование</span></a>
+      <a href="section-community.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Сообщество</span></a>
+      <a href="section-travel.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-ov-name">Путешествия</span></a>
+      <a href="section-health.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Здоровье</span></a>
+      <a href="section-science.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Наука</span></a>
+    </div>
+  </div>
+  <div class="g-ov-section">
+    <div class="g-ov-label">Навигация</div>
+    <div class="g-ov-simple-links">
+      <a href="index.html" class="g-ov-simple-link">Главная</a>
+      <a href="map.html" class="g-ov-simple-link">Карта связей</a>
+      <a href="contents.html" class="g-ov-simple-link">Все материалы</a>
+      <a href="revisions.html" class="g-ov-simple-link">Что не подтвердилось</a>
+      <a href="search.html" class="g-ov-simple-link">Поиск</a>
+      <a href="paths.html" class="g-ov-simple-link">Тропы чтения</a>
+      <a href="tree.html" class="g-ov-simple-link">Дерево материалов</a>
+      <a href="thinkers.html" class="g-ov-simple-link">Указатель имён</a>
+      <a href="about.html" class="g-ov-simple-link">О проекте</a>
+    </div>
+  </div>
+</div>
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<main id="content" tabindex="-1">
+<!-- ECO:MANAGED:breadcrumb -->
+<nav class="breadcrumb" aria-label="Хлебные крошки"><a href="index.html">Главная</a> <span class="bc-sep">→</span> <a href="section-psychology.html">Психология</a> <span class="bc-sep">→</span> <span class="bc-current">Основы психологии</span></nav>
+<!-- /ECO:MANAGED:breadcrumb -->
+
+<section class="hero" id="top">
+  <div class="hero-mark-svg"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></div>
+  <div>
+    <div class="hero-tag">Обзорное эссе с инфографикой · Психология</div>
+    <h1>Основы психологии:<br><em>от Фрейда</em><br>до когнитивных искажений</h1>
+    <p class="hero-lead">Почему мы поступаем вопреки собственной логике, соглашаемся с группой, даже когда видим, что она неправа, и снова наступаем на те же эмоциональные грабли? Психология за полтора века предложила на эти вопросы несколько очень разных ответов: бессознательное Фрейда и архетипы Юнга, стимулы и подкрепления бихевиористов, целостные образы гештальта, когнитивные схемы и ловушки мышления, теории развития и эксперименты о силе группы. Этот обзор — карта главных школ и идей: что каждая из них объясняет, на чём основана, чего стоит её научность и что всё это значит для того, как мы относимся к миру и к экологическим проблемам.</p>
+  </div>
+  <div class="hero-meta">
+    <div><div class="meta-label">Что внутри</div><div class="meta-value">Критерии научности · психоанализ и Юнг · бихевиоризм · гештальт · когнитивная психология и КПТ · развитие · конформизм · защиты психики · интеллект</div></div>
+    <div><div class="meta-label">Главная мысль</div><div class="meta-value">Нет одной «психологии» — есть разные подходы, и научность каждого нужно оценивать отдельно</div></div>
+    <div><div class="meta-label">Для экологии</div><div class="meta-value">Почему знание о проблеме не превращается в действие и что с этим делать</div></div>
+  </div>
+</section>
+
+<div class="toc-bar">
+  <a href="#map" class="active">Карта</a>
+  <a href="#science">Научность</a>
+  <a href="#freud">Фрейд</a>
+  <a href="#jung">Юнг</a>
+  <a href="#behavior">Бихевиоризм</a>
+  <a href="#gestalt">Гештальт</a>
+  <a href="#cognitive">Когнитивная</a>
+  <a href="#cbt">КПТ</a>
+  <a href="#development">Развитие</a>
+  <a href="#conformity">Конформизм</a>
+  <a href="#defense">Защиты</a>
+  <a href="#intelligence">Интеллект</a>
+  <a href="#ecology">Экология</a>
+  <a href="#honest">Честный взгляд</a>
+  <a href="#outro">Итог</a>
+</div>
+
+<section class="content-section" id="map">
+  <div style="max-width:900px;">
+    <div class="section-num">00</div>
+    <div class="disc-meta">полтора века поисков в одной ленте</div>
+    <h2>Карта <em>психологии</em></h2>
+    <p>Привычное нам рациональное «я», которое принимает решения и знает, почему поступает именно так, — лишь верхушка гораздо более сложной системы. Под ней работают процессы, которых мы не замечаем: привычки, сформированные подкреплением, быстрые и экономные, но ошибающиеся схемы мышления, древние механизмы защиты от тревоги, сильная тяга быть как все. Разные школы психологии высвечивали разные части этой системы, и вместе они дают довольно объёмную картину.</p>
+    <div class="ar-panel">
+      <div class="ar-sub">Инфографика 1 · Вехи психологии</div>
+      <div class="ar-grid ar-g4">
+        <div class="ar-card" style="--c:#6e8fa8"><div class="ar-card-n">1879</div><div class="ar-card-h">Вильгельм Вундт</div><div class="ar-card-d">первая психологическая лаборатория в Лейпциге — психология отделяется от философии</div></div>
+        <div class="ar-card" style="--c:#7a4f2e"><div class="ar-card-n">1900</div><div class="ar-card-h">Зигмунд Фрейд</div><div class="ar-card-d">«Толкование сновидений» — рождение психоанализа и идеи бессознательного</div></div>
+        <div class="ar-card" style="--c:#b8924a"><div class="ar-card-n">1912</div><div class="ar-card-h">Гештальт-психология</div><div class="ar-card-d">Макс Вертгеймер описывает фи-феномен: целое больше суммы частей</div></div>
+        <div class="ar-card" style="--c:#c5364a"><div class="ar-card-n">1913</div><div class="ar-card-h">Джон Уотсон</div><div class="ar-card-d">манифест бихевиоризма: изучать только наблюдаемое поведение</div></div>
+        <div class="ar-card" style="--c:#8a6a3e"><div class="ar-card-n">1921</div><div class="ar-card-h">Карл Юнг</div><div class="ar-card-d">«Психологические типы»; позже — коллективное бессознательное и архетипы</div></div>
+        <div class="ar-card" style="--c:#4a7c59"><div class="ar-card-n">1934</div><div class="ar-card-h">Лев Выготский</div><div class="ar-card-d">«Мышление и речь» — культурно-историческая теория развития</div></div>
+        <div class="ar-card" style="--c:#c5364a"><div class="ar-card-n">1938</div><div class="ar-card-h">Беррес Скиннер</div><div class="ar-card-d">оперантное обусловливание: поведение управляется последствиями</div></div>
+        <div class="ar-card" style="--c:#3d5240"><div class="ar-card-n">1951–1963</div><div class="ar-card-h">Аш и Милгрэм</div><div class="ar-card-d">эксперименты о групповом давлении и подчинении авторитету</div></div>
+        <div class="ar-card" style="--c:#6e8fa8"><div class="ar-card-n">1956</div><div class="ar-card-h">Когнитивная революция</div><div class="ar-card-d">психология возвращается к изучению мышления, памяти, внимания</div></div>
+        <div class="ar-card" style="--c:#6ea87e"><div class="ar-card-n">1961</div><div class="ar-card-h">Альберт Бандура</div><div class="ar-card-d">эксперимент с куклой Бобо — научение через наблюдение</div></div>
+        <div class="ar-card" style="--c:#4a7c59"><div class="ar-card-n">1960-е</div><div class="ar-card-h">Аарон Бек, Альберт Эллис</div><div class="ar-card-d">когнитивная и когнитивно-поведенческая терапия</div></div>
+        <div class="ar-card" style="--c:#b8924a"><div class="ar-card-n">1974–1999</div><div class="ar-card-h">Искажения и интеллект</div><div class="ar-card-d">Канеман и Тверски о ловушках мышления; модель интеллекта Кеттелла — Хорна — Кэрролла</div></div>
+      </div>
+      <div class="ar-cap">Обзор редакции · даты указаны по ключевым публикациям и экспериментам · история каждой вехи — в эссе <a href="essay-psychology-history.html">«История психологии: двенадцать вех»</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section alt" id="science">
+  <div style="max-width:880px;">
+    <div class="section-num">01</div>
+    <div class="disc-meta">чем знание отличается от мнения</div>
+    <h2>Что делает психологию <em>наукой</em></h2>
+    <p>Спор о том, наука ли психология, тянется с тех пор, как она появилась. Он быстро теряет смысл, если договориться о критериях. Научная психология начинается в 1879 году, когда Вильгельм Вундт открыл в Лейпциге первую экспериментальную лабораторию: вопросы о душе впервые стали проверять измерениями, а не только размышлениями. С тех пор научное знание о психике отличают от спекуляции по трём признакам.</p>
+    <div class="ar-panel">
+      <div class="ar-sub">Инфографика 2 · Три признака научной теории</div>
+      <div class="ar-grid ar-g3">
+        <div class="ar-card" style="--c:#4a7c59"><div class="ar-card-n">1</div><div class="ar-card-h">Проверяемость и воспроизводимость</div><div class="ar-card-d">гипотезу проверяют экспериментом, который другие исследователи могут повторить в тех же условиях и получить похожий результат</div></div>
+        <div class="ar-card" style="--c:#b8924a"><div class="ar-card-n">2</div><div class="ar-card-h">Согласованность</div><div class="ar-card-d">новая теория не противоречит надёжно установленным фактам соседних наук — биологии, физиологии мозга, генетики</div></div>
+        <div class="ar-card" style="--c:#6e8fa8"><div class="ar-card-n">3</div><div class="ar-card-h">Фальсифицируемость</div><div class="ar-card-d">критерий Карла Поппера: теория должна указывать, какие наблюдения её опровергли бы. Утверждение, которое объясняет любой исход, не объясняет ничего</div></div>
+      </div>
+      <div class="ar-cap">Поппер К. «Логика научного исследования» (1934), «Предположения и опровержения» (1963)</div>
+    </div>
+    <p>Пример разницы. Утверждение «у людей, которые чаще бывают на природе, ниже уровень стресса» можно проверить: измерить стресс у разных групп, сравнить, повторить в другой стране. Если разницы не окажется, утверждение будет опровергнуто. А утверждение «каждое ваше несчастье — следствие кармы из прошлой жизни» нельзя ни подтвердить, ни опровергнуть никаким наблюдением — поэтому оно вне науки, как бы утешительно ни звучало.</p>
+    <p>Важный вывод: психология — это не одна теория, а множество подходов, и они по-разному соответствуют этим критериям. Поэтому корректнее спрашивать не «научна ли психология», а «насколько научна вот эта конкретная теория». Это и стоит держать в голове, читая дальше.</p>
+  </div>
+</section>
+
+<section class="content-section" id="freud">
+  <div style="max-width:820px;">
+    <div class="section-num">02</div>
+    <div class="disc-meta">сознание — лишь тонкая корка</div>
+    <h2>Психоанализ: <em>Зигмунд Фрейд</em></h2>
+    <p>Веками человека определяли как существо разумное, отдающее себе отчёт в своих поступках. Венский врач Зигмунд Фрейд на рубеже XIX и XX веков предложил радикально иную картину: сознание — лишь небольшая часть психики, а поведением в значительной мере управляют бессознательные желания, страхи и воспоминания, которые мы не допускаем в сознание.</p>
+    <p>В зрелой версии своей теории (работа «Я и Оно», 1923) Фрейд описал психику как поле напряжения между тремя инстанциями:</p>
+    <ul class="ar-list">
+      <li><b>Оно (Ид).</b> Самый глубокий, бессознательный слой: врождённые влечения. Фрейд выделял влечения к жизни, питаемые психической энергией — либидо, и влечения к разрушению и агрессии. Оно не знает морали и времени и требует удовлетворения немедленно.</li>
+      <li><b>Сверх-Я (Суперэго).</b> Внутренний надзиратель: усвоенные от родителей и общества запреты, идеалы и совесть. За нарушение норм оно наказывает чувством вины и стыда.</li>
+      <li><b>Я (Эго).</b> Сознательная, ориентированная на реальность часть личности, которая ищет компромисс между требованиями Оно, запретами Сверх-Я и условиями внешнего мира. Когда компромисс не находится, возникает тревога, а хронический неразрешённый конфликт, по Фрейду, ведёт к неврозу.</li>
+    </ul>
+    <p><strong>Развитие и Эдипов комплекс.</strong> Фрейд считал, что личность складывается в детстве, проходя психосексуальные стадии — оральную, анальную, фаллическую, латентную и генитальную. На фаллической стадии, примерно в 3–6 лет, по его теории, ребёнок переживает Эдипов комплекс: влечение к родителю противоположного пола и соперничество с родителем своего пола. Разрешение этого конфликта через отождествление с родителем своего пола Фрейд считал основой формирования Сверх-Я.</p>
+    <p><strong>Методы.</strong> Чтобы добраться до вытесненного, Фрейд разработал метод свободных ассоциаций — пациент говорит всё, что приходит в голову, без цензуры, — толкование сновидений, которые он называл «царской дорогой к бессознательному», и анализ «ошибочных действий»: оговорок, описок, забываний.</p>
+  </div>
+</section>
+
+<section class="content-section alt" id="jung">
+  <div style="max-width:880px;">
+    <div class="section-num">03</div>
+    <div class="disc-meta">бессознательное, общее для всех</div>
+    <h2>Аналитическая психология: <em>Карл Юнг</em></h2>
+    <p>Швейцарский психиатр Карл Густав Юнг был одним из самых близких учеников Фрейда, но в 1913 году их пути разошлись. Юнг считал либидо не сексуальной, а общей жизненной, творческой энергией. И главное — он добавил к личному бессознательному, где хранятся вытесненные переживания одного человека, ещё один, более глубокий слой — <strong>коллективное бессознательное</strong>, общее для всего человечества.</p>
+    <p>Содержание коллективного бессознательного, по Юнгу, — <strong>архетипы</strong>: универсальные первообразы, которые повторяются в мифах, сказках, религиях и снах людей разных эпох и культур.</p>
+    <div class="ar-panel">
+      <div class="ar-sub">Инфографика 3 · Фрейд и Юнг: две карты бессознательного</div>
+      <div class="ar-scroll"><table class="ar-table">
+        <thead><tr><th></th><th>Зигмунд Фрейд</th><th>Карл Юнг</th></tr></thead>
+        <tbody>
+          <tr><td>Структура психики</td><td>Оно, Я, Сверх-Я</td><td>Я (сознание), личное бессознательное, коллективное бессознательное</td></tr>
+          <tr><td>Либидо</td><td>прежде всего сексуальная энергия</td><td>общая жизненная, созидательная энергия</td></tr>
+          <tr><td>Что в бессознательном</td><td>вытесненные желания и травмы конкретного человека</td><td>кроме личного — архетипы, общие для всех людей</td></tr>
+          <tr><td>Ключевые образы</td><td>Эдипов комплекс, влечения к жизни и смерти</td><td>Персона, Тень, Анима и Анимус, Мудрый старец, Великая мать, Самость</td></tr>
+          <tr><td>Цель работы</td><td>сделать бессознательное сознательным, ослабить невротический конфликт</td><td>индивидуация — интеграция всех частей личности в целостную Самость</td></tr>
+          <tr><td>Методы</td><td>свободные ассоциации, толкование снов, анализ оговорок</td><td>анализ снов и символов, активное воображение, работа с мифами</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <ul class="ar-list">
+      <li><b>Персона</b> — социальная маска, роль, которую мы играем на публике. Без неё невозможна жизнь в обществе, но опасно с ней срастись.</li>
+      <li><b>Тень</b> — то в нас, что мы не принимаем: вытесненные импульсы, «недостойные» черты. Часто мы видим свою Тень в других — и особенно яростно её осуждаем.</li>
+      <li><b>Анима и Анимус</b> — женское начало в психике мужчины и мужское — в психике женщины.</li>
+      <li><b>Мудрый старец и Великая мать</b> — образы мудрости и наставничества, заботы и защиты.</li>
+      <li><b>Самость</b> — центр и целостность личности, к которой ведёт развитие.</li>
+    </ul>
+    <p>Цель жизни и терапии по Юнгу — <strong>индивидуация</strong>: постепенное осознание и принятие всех своих сторон, включая Тень, и обретение целостности. Юнгу же мы обязаны и понятиями интроверсии и экстраверсии, которые сегодня, уже в измеряемом виде, входят в научные модели личности.</p>
+  </div>
+</section>
+
+<section class="content-section" id="behavior">
+  <div style="max-width:880px;">
+    <div class="section-num">04</div>
+    <div class="disc-meta">изучать только то, что видно</div>
+    <h2>Бихевиоризм: <em>от Уотсона до Скиннера</em></h2>
+    <p>Пока психоаналитики уходили всё глубже в невидимое бессознательное, американец Джон Уотсон в 1913 году объявил: сознание, душа, переживания — непроверяемые абстракции. Научная психология должна изучать только то, что можно наблюдать и измерять, — <strong>поведение</strong> (по-английски behavior, отсюда название направления).</p>
+    <div class="ar-panel">
+      <div class="ar-sub">Инфографика 4 · Две схемы научения в бихевиоризме</div>
+      <div class="ar-grid ar-g2">
+        <div class="ar-card" style="--c:#c5364a"><div class="ar-card-h">Классическое обусловливание (Павлов, Уотсон)</div><div class="ar-card-n" style="font-size:1.25rem;margin:.5rem 0 .7rem;">Стимул → Реакция</div><div class="ar-card-d">нейтральный стимул, много раз совпавший с сильным, начинает сам вызывать реакцию: звонок — слюна у собаки Павлова, белая крыса — страх у «маленького Альберта»</div></div>
+        <div class="ar-card" style="--c:#4a7c59"><div class="ar-card-h">Оперантное обусловливание (Скиннер)</div><div class="ar-card-n" style="font-size:1.25rem;margin:.5rem 0 .7rem;">Ситуация → Действие → Последствие</div><div class="ar-card-d">действие, за которым следует подкрепление, повторяется чаще; без подкрепления угасает; наказание его подавляет</div></div>
+      </div>
+      <div class="ar-cap">Иван Павлов описал условные рефлексы у собак на рубеже XIX–XX веков; его работы стали опорой американского бихевиоризма</div>
+    </div>
+    <p><strong>«Маленький Альберт».</strong> Уотсон считал, что у младенца есть лишь несколько врождённых эмоциональных реакций — страх, гнев и любовь, — а всё сложное поведение взрослого складывается из них под влиянием среды. В 1920 году вместе с Розали Рейнер он провёл эксперимент, который сегодня считается этически недопустимым. Годовалому мальчику показывали белую крысу, которой он не боялся, и каждый раз, когда ребёнок тянулся к ней, за его спиной громко ударяли молотком по металлу. Вскоре малыш стал пугаться одной крысы, а затем — и других белых пушистых предметов: кролика, меха, ваты.</p>
+    <p><strong>Скиннер и подкрепление.</strong> Беррес Фредерик Скиннер заметил, что большая часть поведения — не ответ на предшествующий стимул, а действие ради последствий. В «ящике Скиннера» голодная крыса, бегая по клетке, случайно нажимала на рычаг и получала корм — и вскоре начинала нажимать на него целенаправленно. Поведение, за которым следует <em>подкрепление</em> (еда, похвала, деньги, внимание), закрепляется; поведение без подкрепления угасает. Скиннер шёл до конца: свобода воли, по его мнению, — иллюзия, а человек формируется системой подкреплений, которую можно сознательно проектировать.</p>
+    <p>Бихевиоризм дал работающие методы: обучение навыкам, лечение фобий, поведенческие программы в школах и клиниках, а его идеи о подкреплении лежат в основе любой системы бонусов, «лайков» и игровых механик приложений.</p>
+  </div>
+</section>
+
+<section class="content-section alt" id="gestalt">
+  <div style="max-width:880px;">
+    <div class="section-num">05</div>
+    <div class="disc-meta">целое больше суммы частей</div>
+    <h2>Гештальт-психология <em>и незакрытые гештальты</em></h2>
+    <p>Пока бихевиористы разбирали поведение на стимулы и реакции, в Германии Макс Вертгеймер, Вольфганг Кёлер и Курт Коффка утверждали обратное: мы воспринимаем мир не по деталям, а сразу целостными образами — гештальтами (нем. Gestalt — форма, образ). Целое не сводится к сумме частей. Классическая демонстрация — фи-феномен: если две лампочки поочерёдно быстро вспыхивают, мы видим не две отдельные вспышки, а одну движущуюся точку. Движения нет — его достраивает мозг. На этом же эффекте держится кино.</p>
+    <div class="ar-panel">
+      <div class="ar-sub">Инфографика 5 · Законы восприятия гештальта</div>
+      <div class="ar-scroll">
+      <svg viewBox="0 0 760 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Три закона гештальта: близость — точки, стоящие рядом, видятся группами; сходство — одинаковые фигуры объединяются в ряды; замкнутость — мозг достраивает незавершённый круг" style="width:100%;height:auto;display:block;">
+        <g font-family="Jost,sans-serif" font-size="14" fill="#1c2b1e" text-anchor="middle">
+          <g fill="#4a7c59"><circle cx="50" cy="60" r="9"/><circle cx="74" cy="60" r="9"/><circle cx="50" cy="90" r="9"/><circle cx="74" cy="90" r="9"/><circle cx="50" cy="120" r="9"/><circle cx="74" cy="120" r="9"/>
+          <circle cx="150" cy="60" r="9"/><circle cx="174" cy="60" r="9"/><circle cx="150" cy="90" r="9"/><circle cx="174" cy="90" r="9"/><circle cx="150" cy="120" r="9"/><circle cx="174" cy="120" r="9"/></g>
+          <text x="112" y="170">Близость</text><text x="112" y="190" font-size="11" fill="#5b4636">две группы, а не 12 точек</text>
+          <g fill="#4a7c59"><circle cx="300" cy="60" r="9"/><circle cx="330" cy="60" r="9"/><circle cx="360" cy="60" r="9"/><circle cx="390" cy="60" r="9"/><circle cx="420" cy="60" r="9"/></g>
+          <g fill="#c4956a"><rect x="291" y="81" width="18" height="18"/><rect x="321" y="81" width="18" height="18"/><rect x="351" y="81" width="18" height="18"/><rect x="381" y="81" width="18" height="18"/><rect x="411" y="81" width="18" height="18"/></g>
+          <g fill="#4a7c59"><circle cx="300" cy="120" r="9"/><circle cx="330" cy="120" r="9"/><circle cx="360" cy="120" r="9"/><circle cx="390" cy="120" r="9"/><circle cx="420" cy="120" r="9"/></g>
+          <text x="360" y="170">Сходство</text><text x="360" y="190" font-size="11" fill="#5b4636">видим ряды, а не столбцы</text>
+          <path d="M 640 50 A 40 40 0 1 1 600 90" fill="none" stroke="#4a7c59" stroke-width="6" stroke-linecap="round"/>
+          <text x="640" y="170">Замкнутость</text><text x="640" y="190" font-size="11" fill="#5b4636">разорванное кольцо видим кругом</text>
+        </g>
+      </svg>
+      </div>
+      <div class="ar-cap">Принципы перцептивной организации, сформулированные гештальт-психологами в 1920-х · ими пользуются дизайнеры интерфейсов, плакатов и карт</div>
+    </div>
+    <p><strong>Гештальт-терапия.</strong> В 1950-х Фредерик (Фриц) Перлз перенёс идею целостности с восприятия на жизнь человека. Каждая потребность — это фигура, которая выходит на первый план, требует действия и, будучи удовлетворённой, «закрывается», уступая место следующей. Если ситуация не завершена — не сказаны важные слова, не прожито горе, оборвался конфликт с человеком, которого уже нет, — гештальт остаётся «открытым», психика снова и снова к нему возвращается, и это становится источником тревоги и напряжения.</p>
+    <p>Один из известных приёмов гештальт-терапии — <strong>техника пустого стула</strong>: человек представляет на пустом стуле того, с кем связана незавершённая ситуация, и говорит ему всё, что не успел сказать, а иногда пересаживается и отвечает от его лица. Это помогает прожить чувства и завершить переживание. Стоит, однако, помнить, что гештальт-терапия связана с классической гештальт-психологией восприятия скорее метафорически, чем научно.</p>
+  </div>
+</section>
+
+<section class="content-section" id="cognitive">
+  <div style="max-width:880px;">
+    <div class="section-num">06</div>
+    <div class="disc-meta">мозг как экономный и ошибающийся вычислитель</div>
+    <h2>Когнитивная психология: <em>как мы мыслим и где ошибаемся</em></h2>
+    <p>В середине 1950-х произошла «когнитивная революция». Психологи вернулись к тому, что бихевиоризм вынес за скобки: восприятию, вниманию, памяти, мышлению, речи. Под влиянием первых компьютеров психику стали описывать как систему обработки информации со своими схемами, ограничениями и правилами. В 1970-х Даниэль Канеман и Амос Тверски показали, что, принимая решения, мы систематически отклоняемся от логики: мозг экономит силы и пользуется упрощёнными правилами — эвристиками, которые обычно выручают, но в определённых ситуациях предсказуемо ошибаются. Эти отклонения называют когнитивными искажениями.</p>
+    <ul class="ar-list">
+      <li><b>Ошибка выжившего.</b> Мы делаем выводы по тем, кто «дошёл до финиша», и не видим остальных. Классический пример — анализ повреждений самолётов, вернувшихся из боя во Вторую мировую: статистик Абрахам Вальд заметил, что укреплять нужно не те места, где больше пробоин, а те, где их нет, — самолёты с попаданиями туда просто не вернулись. Так же истории миллионеров, бросивших учёбу, молчат о тысячах бросивших и прогоревших.</li>
+      <li><b>Иллюзия частотности (феномен Баадера — Майнхоф).</b> Узнав новое слово или купив машину определённой марки, мы вдруг начинаем встречать их повсюду. Их не стало больше — просто внимание теперь их замечает.</li>
+      <li><b>Эффект Даннинга — Крюгера.</b> В исследовании 1999 года люди с низкими результатами в тестах на логику и грамматику сильнее всего переоценивали свои успехи. Популярная картинка с «пиком глупости», «долиной отчаяния» и «склоном просветления» — уже интернет-иллюстрация, а не график из статьи, но идея о том, что для оценки своей компетентности нужна сама компетентность, оказалась удачной.</li>
+      <li><b>Склонность к подтверждению.</b> Мы охотнее замечаем и запоминаем факты, подтверждающие наше мнение, и отмахиваемся от противоречащих ему.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="content-section alt" id="cbt">
+  <div style="max-width:880px;">
+    <div class="section-num">07</div>
+    <div class="disc-meta">чувства зависят от толкования</div>
+    <h2>Когнитивно-поведенческая <em>терапия</em></h2>
+    <p>Из когнитивной психологии выросла когнитивно-поведенческая терапия (КПТ), которую в 1950–1960-х создавали Альберт Эллис и Аарон Бек. Её главная идея проста: наши чувства зависят не столько от самой ситуации, сколько от того, как мы её истолковываем. Одна и та же неотвеченная записка может вызвать спокойствие («занят»), обиду («меня игнорируют») или панику («что-то случилось»). Автоматические мысли проскакивают так быстро, что мы их не замечаем, — но именно они запускают эмоцию.</p>
+    <div class="ar-panel">
+      <div class="ar-sub">Инфографика 6 · Ловушки мышления и как с ними работают в КПТ</div>
+      <div class="ar-scroll"><table class="ar-table">
+        <thead><tr><th>Искажение</th><th>Автоматическая мысль</th><th>Более реалистичная мысль</th></tr></thead>
+        <tbody>
+          <tr><td>Сверхобобщение</td><td>«Мне вечно не везёт»</td><td>«Сегодня не получилось. На прошлой неделе получилось»</td></tr>
+          <tr><td>Катастрофизация</td><td>«Не берёт трубку — значит, случилось страшное»</td><td>«Чаще всего люди не отвечают, потому что заняты»</td></tr>
+          <tr><td>Чтение мыслей</td><td>«Он улыбнулся, потому что я выгляжу глупо»</td><td>«Я не знаю, почему он улыбнулся. Может быть, ему просто весело»</td></tr>
+          <tr><td>Чёрно-белое мышление</td><td>«Если не идеально — значит, провал»</td><td>«Получилось хорошо в главном, остальное можно улучшить»</td></tr>
+          <tr><td>Долженствование</td><td>«Я должен всегда со всем справляться сам»</td><td>«Просить о помощи — нормально»</td></tr>
+        </tbody>
+      </table></div>
+      <div class="ar-cap">Классификация искажений по работам А. Бека и его последователей · формулировки — примеры редакции</div>
+    </div>
+    <p>Основной инструмент КПТ — дневник мыслей, который в русскоязычной практике часто называют <strong>СМЭР</strong>: <em>Ситуация → Мысль → Эмоция → Реакция</em>. Записывая, что произошло, что я подумал, что почувствовал и что сделал, человек учится замечать автоматические мысли, проверять их на реалистичность и заменять более взвешенными — это называют когнитивной реструктуризацией. При страхах и тревожных расстройствах добавляется <strong>экспозиция</strong>: постепенное, безопасное столкновение с пугающей ситуацией, после которого страх ослабевает. КПТ — одно из самых хорошо изученных направлений психотерапии: её эффективность при депрессии и тревожных расстройствах подтверждена множеством контролируемых исследований.</p>
+  </div>
+</section>
+
+<section class="content-section" id="development">
+  <div style="max-width:880px;">
+    <div class="section-num">08</div>
+    <div class="disc-meta">как мы растём и учимся</div>
+    <h2>Психология развития: <em>Пиаже, Выготский, Бандура</em></h2>
+    <p><strong>Жан Пиаже</strong>, швейцарский психолог, наблюдая за детьми (в том числе своими), пришёл к выводу, что мышление развивается через последовательные стадии, и ребёнок не может «перепрыгнуть» стадию, пока не созреет. Развитие, по Пиаже, идёт впереди обучения.</p>
+    <div class="ar-panel">
+      <div class="ar-sub">Инфографика 7 · Стадии развития мышления по Пиаже</div>
+      <div class="ar-rows">
+        <div class="ar-row"><div class="ar-row-l">Сенсомоторная<small>0–2 года</small></div><div class="ar-row-b"><div class="ar-fill" style="width:15%;background:#6ea87e"></div></div><div class="ar-row-v">0–2</div></div>
+        <div class="ar-row"><div class="ar-row-l">Дооперациональная<small>речь, символы, но эгоцентризм</small></div><div class="ar-row-b"><div class="ar-fill" style="width:50%;background:#b8924a"></div></div><div class="ar-row-v">2–7</div></div>
+        <div class="ar-row"><div class="ar-row-l">Конкретных операций<small>логика на конкретных предметах</small></div><div class="ar-row-b"><div class="ar-fill" style="width:77%;background:#c4956a"></div></div><div class="ar-row-v">7–11</div></div>
+        <div class="ar-row"><div class="ar-row-l">Формальных операций<small>абстракции, гипотезы</small></div><div class="ar-row-b"><div class="ar-fill" style="width:100%;background:#4a7c59"></div></div><div class="ar-row-v">12+</div></div>
+      </div>
+      <div class="ar-cap">Возраст в годах, ориентировочно · современные исследования показывают, что дети часто осваивают многое раньше, чем думал Пиаже</div>
+    </div>
+    <p>На сенсомоторной стадии ребёнок познаёт мир через ощущения и действия. На дооперациональной появляются речь и воображение, но мышление эгоцентрично: малышу трудно встать на чужую точку зрения, и он уверен, что воды стало больше, если её перелили из широкого стакана в узкий и высокий. На стадии конкретных операций ребёнок уже понимает сохранение количества и логику — но на конкретных вещах. И только подросток способен рассуждать абстрактно, строить гипотезы, понимать метафоры.</p>
+    <p><strong>Лев Выготский</strong> спорил с Пиаже: развитие, по его мнению, не просто созревает изнутри, а рождается в общении. Сначала ребёнок решает задачи вместе со взрослым, в диалоге, а потом этот внешний диалог становится внутренней речью и мышлением — Выготский называл это <em>интериоризацией</em>. Поэтому обучение не плетётся за развитием, а ведёт его за собой.</p>
+    <div class="ar-panel">
+      <div class="ar-sub">Инфографика 8 · Зона ближайшего развития</div>
+      <div class="ar-scroll">
+      <svg viewBox="0 0 760 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Три вложенных круга: в центре — что ребёнок умеет сам; вокруг — зона ближайшего развития, что он может с помощью взрослого; снаружи — пока недоступное" style="width:100%;height:auto;display:block;">
+        <g font-family="Jost,sans-serif" font-size="13" fill="#1c2b1e">
+          <circle cx="200" cy="130" r="115" fill="#e3e0d4"/>
+          <circle cx="200" cy="130" r="80" fill="#a8c5a0"/>
+          <circle cx="200" cy="130" r="42" fill="#4a7c59"/>
+          <text x="200" y="134" text-anchor="middle" fill="#faf6ef" font-size="12">умеет сам</text>
+          <path d="M 268 100 L 420 70" stroke="#3d5240"/><text x="428" y="74">Зона ближайшего развития:</text><text x="428" y="92" font-size="12" fill="#5b4636">то, что ребёнок может сделать с помощью взрослого</text><text x="428" y="108" font-size="12" fill="#5b4636">или более опытного товарища — здесь и идёт обучение</text>
+          <path d="M 228 130 L 420 150" stroke="#3d5240"/><text x="428" y="154">Актуальное развитие:</text><text x="428" y="172" font-size="12" fill="#5b4636">задачи, которые ребёнок уже решает самостоятельно</text>
+          <path d="M 300 200 L 420 214" stroke="#3d5240"/><text x="428" y="218">Пока недоступно:</text><text x="428" y="236" font-size="12" fill="#5b4636">даже с помощью — слишком рано</text>
+        </g>
+      </svg>
+      </div>
+      <div class="ar-cap">По Л. С. Выготскому · завтрашняя самостоятельность ребёнка — это сегодняшняя совместная работа со взрослым</div>
+    </div>
+    <p><strong>Альберт Бандура</strong> соединил идеи бихевиоризма и когнитивной психологии. В знаменитых экспериментах начала 1960-х дети смотрели, как взрослый колотит надувную куклу Бобо, а потом, оставшись с куклой, повторяли его действия с поразительной точностью — хотя самих их никто за это не подкреплял. Бандура показал, что мы учимся, наблюдая за другими, — через модели поведения. Он же предложил идею <em>взаимного детерминизма</em> (среда, мышление и поведение влияют друг на друга) и понятие <em>самоэффективности</em> — веры человека в то, что его действия могут что-то изменить. Эта вера, как выяснилось, сильно определяет, возьмётся ли человек за дело вообще.</p>
+  </div>
+</section>
+
+<section class="content-section alt" id="conformity">
+  <div style="max-width:880px;">
+    <div class="section-num">09</div>
+    <div class="disc-meta">сила группы и авторитета</div>
+    <h2>Конформизм <em>и подчинение</em></h2>
+    <p>Конформизм — склонность менять мнение или поведение под влиянием группы, стремление быть как все. Эксперименты XX века показали, насколько эта склонность сильна.</p>
+    <ul class="ar-list">
+      <li><b>Белые пирамидки.</b> В советских экспериментах с детьми, которые описывают учебники возрастной психологии и обычно связывают с именем В. С. Мухиной, перед ребёнком ставили чёрную и белую пирамидки. Несколько подговорённых детей уверенно называли обе белыми — и испытуемый часто соглашался, хотя наедине без труда отличал чёрную. Похожий вариант — с кашей, в которую вместо сахара подсыпали соль: «все говорят, что сладкая».</li>
+      <li><b>Линии Соломона Аша (1951).</b> Студентам нужно было сравнить длину линий — задача, в которой поодиночке почти никто не ошибался. Но когда несколько подставных участников единодушно называли неверный ответ, примерно в трети таких проб испытуемые соглашались с ними, а около трёх четвертей людей хотя бы раз уступили группе вопреки собственным глазам.</li>
+      <li><b>«Третья волна» Рона Джонса (1967).</b> Школьный учитель истории в Калифорнии, пытаясь объяснить ученикам, как обычные немцы могли поддержать нацизм, за пять дней превратил класс в движение с лозунгами, приветствиями, членскими карточками и доносами на «нарушителей». Ученики с энтузиазмом меняли индивидуальность на чувство избранности и общности. История известна в основном по рассказу самого Джонса.</li>
+      <li><b>Эксперимент Стэнли Милгрэма (1963).</b> Участник в роли «учителя» по указанию экспериментатора наказывал «ученика» за ошибки ударами тока всё большей силы — до отметки 450 вольт. На самом деле ток не подавался, а «ученик» был актёром, который кричал, умолял остановиться, а потом замолкал. Тем не менее под спокойное «эксперимент требует, чтобы вы продолжали» 26 из 40 участников (65%) дошли до максимального разряда.</li>
+    </ul>
+    <div class="ar-panel">
+      <div class="ar-sub">Инфографика 9 · Насколько силён групповой и авторитетный нажим</div>
+      <div class="ar-rows">
+        <div class="ar-row"><div class="ar-row-l">Аш: хотя бы раз уступили группе</div><div class="ar-row-b"><div class="ar-fill" style="width:75%;background:#b8924a"></div></div><div class="ar-row-v">≈ 75%</div></div>
+        <div class="ar-row"><div class="ar-row-l">Аш: доля проб, где ответ подстроили под группу</div><div class="ar-row-b"><div class="ar-fill" style="width:37%;background:#c4956a"></div></div><div class="ar-row-v">≈ 37%</div></div>
+        <div class="ar-row"><div class="ar-row-l">Милгрэм: дошли до 450 вольт</div><div class="ar-row-b"><div class="ar-fill" style="width:65%;background:#c5364a"></div></div><div class="ar-row-v">65%</div></div>
+        <div class="ar-row"><div class="ar-row-l">Повтор Бургера (2009): продолжили после 150 вольт</div><div class="ar-row-b"><div class="ar-fill" style="width:70%;background:#7a2b33"></div></div><div class="ar-row-v">≈ 70%</div></div>
+      </div>
+      <div class="ar-cap">Asch S. E. (1951, 1956); Milgram S. (1963), базовый вариант; Burger J. M. (2009) — этичная частичная репликация, остановленная на 150 вольтах</div>
+    </div>
+    <p>Важно, что те же эксперименты показали и обратную сторону. Достаточно было одного союзника в группе Аша, который давал правильный ответ, — и конформизм резко падал. А в вариантах Милгрэма, где рядом были другие «учителя», отказывавшиеся продолжать, или экспериментатор отдавал указания по телефону, послушание заметно снижалось. Давление сильно, но не всесильно: один несогласный голос меняет поведение многих.</p>
+  </div>
+</section>
+
+<section class="content-section" id="defense">
+  <div style="max-width:880px;">
+    <div class="section-num">10</div>
+    <div class="disc-meta">щиты от тревоги</div>
+    <h2>Защитные <em>механизмы психики</em></h2>
+    <p>Идея защитных механизмов пришла из психоанализа и была систематизирована Анной Фрейд в книге «Я и механизмы защиты» (1936). Это неосознанные способы, которыми психика снижает тревогу и сохраняет привычный образ себя. В небольших дозах они помогают пережить трудное время, но, становясь привычными, мешают видеть реальность и решать проблемы.</p>
+    <div class="ar-panel">
+      <div class="ar-sub">Инфографика 10 · Восемь защитных механизмов</div>
+      <div class="ar-scroll"><table class="ar-table">
+        <thead><tr><th>Механизм</th><th>Что происходит</th><th>Пример</th></tr></thead>
+        <tbody>
+          <tr><td>Отрицание</td><td>отказ признавать болезненный факт</td><td>человек не верит в тяжёлый диагноз и откладывает лечение</td></tr>
+          <tr><td>Вытеснение</td><td>травматичное переживание «забывается» и не допускается в сознание</td><td>не помнит пугающий эпизод детства, но тревожится в похожих ситуациях</td></tr>
+          <tr><td>Проекция</td><td>свои неприемлемые чувства приписываются другим</td><td>тот, кто сам склонен к обману, всех подозревает в нечестности</td></tr>
+          <tr><td>Реактивное образование</td><td>чувство заменяется противоположным</td><td>зависть превращается в подчёркнутое восхищение</td></tr>
+          <tr><td>Замещение</td><td>чувство переносится на безопасный объект</td><td>начальник накричал — человек срывается дома на близких</td></tr>
+          <tr><td>Рационализация</td><td>удобное «логичное» объяснение вместо настоящей причины</td><td>«экзамен не сдал, потому что преподаватель был не в духе»</td></tr>
+          <tr><td>Регрессия</td><td>возврат к детским способам поведения</td><td>в стрессе взрослый капризничает, обижается, ждёт, что его спасут</td></tr>
+          <tr><td>Сублимация</td><td>энергия переводится в социально ценное дело</td><td>горе или злость превращаются в творчество, спорт, общественную работу</td></tr>
+        </tbody>
+      </table></div>
+      <div class="ar-cap">По А. Фрейд и последующим классификациям · сублимацию обычно считают самой зрелой и полезной из защит</div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section alt" id="intelligence">
+  <div style="max-width:880px;">
+    <div class="section-num">11</div>
+    <div class="disc-meta">что такое ум и как он меняется с возрастом</div>
+    <h2>Интеллект: <em>модель Кеттелла — Хорна — Кэрролла</em></h2>
+    <p>О том, что такое интеллект, психологи спорят больше века. Сегодня наиболее влиятельна иерархическая модель Кеттелла — Хорна — Кэрролла (CHC), объединившая идеи Реймонда Кеттелла и Джона Хорна о двух видах интеллекта с масштабным анализом сотен исследований, проведённым Джоном Кэрроллом в 1993 году.</p>
+    <ul class="ar-list">
+      <li><b>Подвижный (флюидный) интеллект, Gf</b> — способность решать новые задачи, видеть закономерности, рассуждать абстрактно, независимо от накопленных знаний. Он во многом зависит от биологии мозга, достигает максимума в молодости и затем постепенно снижается.</li>
+      <li><b>Кристаллизованный интеллект, Gc</b> — накопленные знания, словарный запас, опыт, умение применять выученное. Он растёт большую часть жизни и держится до глубокой зрелости.</li>
+      <li><b>Три уровня.</b> Внизу — множество узких способностей (например, скорость чтения или различение звуков); выше — около десятка широких (подвижный и кристаллизованный интеллект, память, скорость обработки, зрительно-пространственные способности и другие); на вершине — общий фактор интеллекта g.</li>
+    </ul>
+    <div class="ar-panel">
+      <div class="ar-sub">Инфографика 11 · Подвижный и кристаллизованный интеллект с возрастом</div>
+      <div class="ar-scroll">
+      <svg viewBox="0 0 760 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Схематичный график: подвижный интеллект растёт до 20–25 лет и затем снижается; кристаллизованный растёт до 60–70 лет и потом медленно снижается" style="width:100%;height:auto;display:block;">
+        <g font-family="Jost,sans-serif" font-size="12" fill="#1c2b1e">
+          <line x1="60" y1="230" x2="720" y2="230" stroke="#3d5240"/><line x1="60" y1="230" x2="60" y2="30" stroke="#3d5240"/>
+          <g text-anchor="middle" fill="#5b4636"><text x="60" y="250">0</text><text x="170" y="250">20</text><text x="280" y="250">40</text><text x="390" y="250">60</text><text x="500" y="250">80</text></g>
+          <text x="560" y="250" fill="#5b4636">возраст, лет</text>
+          <path d="M 60 220 C 110 120, 150 60, 185 55 C 230 50, 300 100, 390 145 C 440 170, 480 185, 520 195" fill="none" stroke="#6e8fa8" stroke-width="4"/>
+          <path d="M 60 225 C 120 170, 200 110, 300 80 C 360 65, 410 65, 450 80 C 480 92, 505 110, 520 125" fill="none" stroke="#b8924a" stroke-width="4"/>
+          <text x="190" y="44" fill="#6e8fa8" font-size="13">подвижный (Gf)</text>
+          <text x="330" y="60" fill="#b8924a" font-size="13">кристаллизованный (Gc)</text>
+          <text x="570" y="110" fill="#5b4636">гены задают диапазон,</text><text x="570" y="126" fill="#5b4636">среда, учёба и активность</text><text x="570" y="142" fill="#5b4636">определяют, где в нём</text><text x="570" y="158" fill="#5b4636">окажется человек</text>
+        </g>
+      </svg>
+      </div>
+      <div class="ar-cap">Схема редакции по данным возрастных исследований интеллекта · кривые условные, индивидуальные различия очень велики</div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section" id="ecology">
+  <div style="max-width:880px;">
+    <div class="section-num">12</div>
+    <div class="disc-meta">почему знание не превращается в действие</div>
+    <h2>Что всё это значит <em>для экологии</em></h2>
+    <p>Экологический кризис — это в значительной мере кризис поведения: большинство людей знает о проблемах климата, загрязнения и утраты природы, но знание редко превращается в изменение привычек и общих решений. Психолог Роберт Гиффорд назвал барьеры между знанием и действием «драконами бездействия». Почти каждая из школ, о которых шла речь, объясняет одного из них.</p>
+    <div class="ar-panel">
+      <div class="ar-sub">Инфографика 12 · Психология и экологическое поведение</div>
+      <div class="ar-grid ar-g3">
+        <div class="ar-card" style="--c:#7a4f2e"><div class="ar-card-h">Защиты психики</div><div class="ar-card-d">отрицание и рационализация («от меня ничего не зависит», «учёные преувеличивают») защищают от тревоги, но блокируют действие. О тревоге — в эссе «Климатическая тревога — болезнь или здравомыслие?»</div></div>
+        <div class="ar-card" style="--c:#6e8fa8"><div class="ar-card-h">Когнитивные искажения</div><div class="ar-card-d">далёкое и постепенное кажется менее важным, чем близкое; огромные числа пострадавших не вызывают сочувствия — «психическое онемение»; беспокойства хватает только на несколько тем сразу</div></div>
+        <div class="ar-card" style="--c:#b8924a"><div class="ar-card-h">Конформизм</div><div class="ar-card-d">люди ориентируются на то, что делают другие. В известном эксперименте с гостиничными полотенцами табличка «большинство гостей этого номера используют полотенце повторно» работала лучше, чем призыв беречь природу</div></div>
+        <div class="ar-card" style="--c:#c5364a"><div class="ar-card-h">Подкрепление</div><div class="ar-card-d">привычки держатся на немедленных удобствах и наградах; экологичное поведение выигрывает, когда становится удобным, видимым и вознаграждаемым</div></div>
+        <div class="ar-card" style="--c:#4a7c59"><div class="ar-card-h">Научение через пример</div><div class="ar-card-d">дети и взрослые учатся экологичному поведению, глядя на других; самоэффективность — вера, что действия что-то меняют, — сильнейший предиктор участия</div></div>
+        <div class="ar-card ar-dark"><div class="ar-card-h">Зона ближайшего развития</div><div class="ar-card-d">лучше всего учит не лекция, а совместное дело: школьная тропа, огород, посадка леса — с теми, кто уже умеет</div></div>
+      </div>
+      <div class="ar-cap">Gifford R. (2011); Goldstein N., Cialdini R., Griskevicius V. (2008); Slovic P. (2007); Weber E. (2006); Bandura A. (1977, 2000)</div>
+    </div>
+    <p>Из этого следуют вполне практические выводы. Пугать — плохая стратегия: страх без ощущения, что можно что-то сделать, включает защиты и отрицание, а не действие. Работают другие вещи: показать, что многие уже действуют; сделать экологичный выбор простым и удобным по умолчанию; дать людям общее дело, где виден результат; рассказывать не только о проблемах, но и о том, что получается. Об этом — эссе <a href="essay-community-power.html">«Никто не спасает планету в одиночку»</a>, <a href="essay-kids-eco-anxiety.html">«Экологическая тревога у детей»</a> и <a href="essay-consciousness-evolution.html">«Эволюция сознания — недостающее звено устойчивости»</a>.</p>
+  </div>
+</section>
+
+<section class="content-section alt" id="honest">
+  <div style="max-width:820px;">
+    <div class="section-num">13</div>
+    <div class="disc-meta">критика темы</div>
+    <h2>Честный <em>взгляд</em></h2>
+    <p><strong>Психоанализ трудно проверить.</strong> Сам Карл Поппер приводил теорию Фрейда как пример учения, которое объясняет любой исход и потому не может быть опровергнуто: если человек любит отца — это Эдипов комплекс, если ненавидит — тоже. Многие идеи Фрейда и Юнга — важная часть культуры и языка, они вдохновляют терапевтов и художников, но научными теориями в строгом смысле их считать трудно. А вот отдельные идеи — о влиянии бессознательных процессов и раннего опыта — в изменённом виде подтверждаются современными исследованиями.</p>
+    <p><strong>Кризис воспроизводимости.</strong> В 2015 году большой международный проект попытался повторить сто опубликованных психологических экспериментов, и лишь около 36% повторов дали тот же статистически значимый результат. Это касается и некоторых популярных эффектов, которые охотно пересказывают книги о саморазвитии. Классические опыты Аша и Милгрэма в целом подтверждались, но и их сегодня читают с поправками: часть участников Милгрэма сомневалась в реальности происходящего, а детали «Маленького Альберта» и «Третьей волны» известны в основном со слов авторов.</p>
+    <p><strong>Этика.</strong> Эксперименты вроде «Маленького Альберта» и опытов Милгрэма сегодня не одобрил бы ни один этический комитет. Именно после них в психологии появились строгие правила: информированное согласие, право прекратить участие, защита детей.</p>
+    <p><strong>Популярная психология упрощает.</strong> «Закрыть гештальт», «пик Даннинга — Крюгера», «у тебя проекция» — удобные бытовые ярлыки, но реальные теории сложнее и осторожнее. Самостоятельные выводы о себе и близких по популярной статье — плохая замена разговору со специалистом, если проблема серьёзна.</p>
+  </div>
+</section>
+
+<section class="content-section" id="outro">
+  <div style="max-width:820px;">
+    <div class="section-num">—</div>
+    <h2>Итог: <em>много карт одной местности</em></h2>
+    <p>Психология не даёт одной картины человека — она даёт много карт одной сложной местности. Психоанализ и аналитическая психология показали, что поведением движут силы, которых мы не осознаём. Бихевиоризм — как привычки складываются из подкреплений. Гештальт — что мы видим целое, а не детали. Когнитивная психология — где систематически ошибается наше мышление, а КПТ — как с этим работать. Пиаже, Выготский и Бандура — как мы растём и учимся, а Аш и Милгрэм — насколько сильно нас меняет группа. Научность этих карт различна, и пользоваться ими стоит, понимая, какая из них проверена, а какая — скорее метафора. Но вместе они помогают лучше понимать себя и других — и объясняют, почему изменить мир так трудно и что всё-таки помогает.</p>
+    <p style="margin-top:2rem;">Читайте также: <a href="essay-psychology-history.html">История психологии: двенадцать вех</a> · <a href="essay-climate-anxiety-symptom.html">Климатическая тревога — болезнь или здравомыслие?</a> · <a href="essay-eco-anxiety.html">Что происходит с нами, когда исчезает мир</a> · <a href="essay-solastalgia.html">Соластальгия через одно место</a> · <a href="essay-consciousness-evolution.html">Эволюция сознания — недостающее звено устойчивости</a> · <a href="lab-bateson-gpt.html">Бейтсон против ChatGPT — Лаборатория №05</a> · <a href="essay-kids-eco-anxiety.html">Экологическая тревога у детей: как с ней говорить</a></p>
+    <div class="sources">
+      <div class="src-title"><small>Источники</small>На чём основан текст</div>
+      <ol class="src-list">
+        <li>Поппер К. Логика научного исследования (1934); Предположения и опровержения (1963).</li>
+        <li>Фрейд З. Толкование сновидений (1900); Я и Оно (1923). Фрейд А. Я и механизмы защиты (1936).</li>
+        <li>Юнг К. Г. Психологические типы (1921); Архетипы и коллективное бессознательное (собр. соч., т. 9).</li>
+        <li>Watson J. B. (1913). Psychology as the behaviorist views it. Psychological Review 20, 158–177; Watson J. B., Rayner R. (1920). Conditioned emotional reactions. Journal of Experimental Psychology 3, 1–14.</li>
+        <li>Skinner B. F. The Behavior of Organisms (1938).</li>
+        <li>Wertheimer M. (1912). Experimentelle Studien über das Sehen von Bewegung; Perls F., Hefferline R., Goodman P. Gestalt Therapy (1951).</li>
+        <li>Tversky A., Kahneman D. (1974). Judgment under uncertainty: heuristics and biases. Science 185, 1124–1131; Kruger J., Dunning D. (1999). Unskilled and unaware of it. Journal of Personality and Social Psychology 77, 1121–1134.</li>
+        <li>Beck A. T. Cognitive Therapy and the Emotional Disorders (1976); Ellis A. Reason and Emotion in Psychotherapy (1962).</li>
+        <li>Пиаже Ж. Психология интеллекта (1947); Выготский Л. С. Мышление и речь (1934).</li>
+        <li>Bandura A., Ross D., Ross S. A. (1961). Transmission of aggression through imitation of aggressive models. Journal of Abnormal and Social Psychology 63, 575–582; Bandura A. (1977). Self-efficacy. Psychological Review 84, 191–215.</li>
+        <li>Asch S. E. (1956). Studies of independence and conformity. Psychological Monographs 70; Milgram S. (1963). Behavioral study of obedience. Journal of Abnormal and Social Psychology 67, 371–378; Burger J. M. (2009). Replicating Milgram. American Psychologist 64, 1–11.</li>
+        <li>Мухина В. С. Возрастная психология: феноменология развития.</li>
+        <li>Carroll J. B. Human Cognitive Abilities: A Survey of Factor-Analytic Studies (1993); McGrew K. S. (2009). CHC theory and the human cognitive abilities project. Intelligence 37, 1–10.</li>
+        <li>Open Science Collaboration (2015). Estimating the reproducibility of psychological science. Science 349, aac4716.</li>
+        <li>Gifford R. (2011). The dragons of inaction. American Psychologist 66, 290–302; Goldstein N. J., Cialdini R. B., Griskevicius V. (2008). A room with a viewpoint. Journal of Consumer Research 35, 472–482.</li>
+      </ol>
+    </div>
+    <div style="margin-top:2.5rem;padding-top:2rem;border-top:1px solid rgba(74,124,89,0.15);font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--ink-light);text-align:center;font-size:1rem;">
+      — редакция «ЭкоСознания», раздел «Психология»
+    </div>
+  </div>
+</section>
+
+<style>
+.ar-panel{background:var(--warm);border:1px solid rgba(74,124,89,.18);padding:1.6rem 1.4rem 1.1rem;margin:1.8rem 0;}
+.ar-sub{font-family:'Jost',sans-serif;font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);margin-bottom:1rem;text-align:center;}
+.ar-cap{font-family:'Jost',sans-serif;font-size:.62rem;letter-spacing:.08em;color:var(--sage-text,#6b8a70);text-align:center;margin-top:.9rem;line-height:1.6;}
+.ar-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.ar-list{list-style:none;padding:0;margin:1.2rem 0;}
+.ar-list li{padding:.7rem 0 .7rem 1.1rem;border-left:2px solid var(--fern);margin-bottom:.6rem;line-height:1.75;}
+.ar-rows{display:flex;flex-direction:column;gap:.65rem;}
+.ar-row{display:grid;grid-template-columns:200px 1fr 84px;align-items:center;gap:.9rem;}
+.ar-row-l{font-size:.85rem;color:var(--ink);line-height:1.35;}
+.ar-row-l small{display:block;color:var(--ink-light);font-size:.72rem;}
+.ar-row-b{background:rgba(74,124,89,.08);height:24px;border-radius:2px;overflow:hidden;}
+.ar-fill{height:100%;}
+.ar-row-v{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--ink);text-align:right;}
+.ar-grid{display:grid;gap:.6rem;}
+.ar-g2{grid-template-columns:repeat(2,1fr);}.ar-g3{grid-template-columns:repeat(3,1fr);}.ar-g4{grid-template-columns:repeat(4,1fr);}
+.ar-card{background:var(--paper);border:1px solid rgba(74,124,89,.22);border-top:4px solid var(--c,#6ea87e);padding:.85rem .95rem;}
+.ar-card-n{font-family:'Cormorant Garamond',serif;font-size:1.7rem;line-height:1;color:var(--c,#4a7c59);}
+.ar-card-h{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--ink);margin:.25rem 0 .3rem;line-height:1.25;}
+.ar-card-d{font-size:.78rem;line-height:1.5;color:var(--ink-light);}
+.ar-card ul{margin:.2rem 0 0;padding-left:1.05rem;font-size:.78rem;line-height:1.5;color:var(--ink-light);}
+.ar-card li{margin-bottom:.25rem;}
+.ar-dark{background:#4a7c59;border-color:#4a7c59;}
+.ar-dark .ar-card-n{color:#d3e6d0;}.ar-dark .ar-card-h{color:#faf6ef;}.ar-dark .ar-card-d,.ar-dark ul{color:rgba(250,246,239,.85);}
+.ar-warn{background:#f3e5dc;border-color:rgba(122,79,46,.3);--c:#7a4f2e;}
+.ar-table{width:100%;border-collapse:collapse;font-size:.8rem;line-height:1.45;min-width:620px;}
+.ar-table th{font-family:'Jost',sans-serif;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--moss);text-align:left;padding:.5rem .6rem;border-bottom:1px solid rgba(74,124,89,.3);font-weight:500;}
+.ar-table td{padding:.55rem .6rem;border-bottom:1px solid rgba(74,124,89,.12);color:var(--ink-light);vertical-align:top;}
+.ar-table td:first-child{color:var(--ink);font-weight:500;}
+.ar-table th,.ar-table td{overflow-wrap:normal;word-break:normal;}
+.ar-stack{display:flex;height:46px;border-radius:3px;overflow:hidden;font-family:'Jost',sans-serif;font-size:.74rem;color:#faf6ef;}
+.ar-stack>div{display:flex;align-items:center;justify-content:center;white-space:nowrap;overflow:hidden;padding:0 .25rem;}
+.ar-legend{display:flex;flex-wrap:wrap;gap:.5rem 1.2rem;justify-content:center;margin-top:.7rem;font-size:.74rem;color:var(--ink-light);}
+.ar-legend span{display:inline-flex;align-items:center;gap:.4rem;}
+.ar-legend i{display:inline-block;width:12px;height:12px;}
+.ar-check{margin:0;padding-left:1.4rem;}
+.ar-check li{margin-bottom:.6rem;line-height:1.6;font-size:.9rem;color:var(--ink-light);}
+.ar-check b{color:var(--ink);font-weight:500;}
+.ar-months{display:grid;grid-template-columns:repeat(6,1fr);gap:.4rem;}
+.ar-m{background:var(--paper);border:1px solid rgba(74,124,89,.2);border-top:4px solid var(--c,#6ea87e);padding:.6rem .65rem;font-size:.72rem;line-height:1.45;color:var(--ink-light);}
+.ar-m b{display:block;font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:500;color:var(--ink);margin-bottom:.15rem;}
+.ar-h3{font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:400;margin:2.2rem 0 .8rem;color:var(--ink);}
+@media(max-width:860px){ .ar-g4{grid-template-columns:repeat(2,1fr);} .ar-g3{grid-template-columns:repeat(2,1fr);} .ar-months{grid-template-columns:repeat(3,1fr);} }
+@media(max-width:700px){
+  .ar-scroll svg{min-width:620px;}
+  .ar-row{grid-template-columns:1fr 76px;}
+  .ar-row-l{grid-column:1 / -1;}
+  .ar-g2,.ar-g3,.ar-g4{grid-template-columns:1fr;}
+  .ar-months{grid-template-columns:repeat(2,1fr);}
+  .ar-stack{font-size:.62rem;}
+}
+</style>
+</main>
+
+<!-- ECO:MANAGED:footer -->
+<footer class="gf">
+  <div class="gf-top">
+    <div class="gf-brand">
+      <a href="index.html" class="gf-logo">
+        <svg viewBox="0 0 100 100" fill="none" class="logo-svg" style="width:24px;height:24px;flex-shrink:0;"><circle cx="50" cy="50" r="40" stroke="#f3ede3" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#6ea87e"/></svg>
+        <span class="gf-logo-text">Эко<em>Сознание</em></span>
+      </a>
+      <p class="gf-tagline">Экологический взгляд как линза для любой сферы жизни</p>
+    </div>
+    <div class="gf-cols">
+      <div>
+        <div class="gf-col-title">Разделы</div>
+        <div class="gf-sections">
+          <a href="section-philosophy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Философия</span></a>
+          <a href="section-psychology.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Психология</span></a>
+          <a href="section-lifestyle.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Стиль жизни</span></a>
+          <a href="section-technologies.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="gf-sec-name">Технологии</span></a>
+          <a href="section-food.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Питание</span></a>
+          <a href="section-architecture.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Архитектура</span></a>
+          <a href="section-economy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Экономика</span></a>
+          <a href="section-education.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="gf-sec-name">Образование</span></a>
+          <a href="section-community.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Сообщество</span></a>
+          <a href="section-travel.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="gf-sec-name">Путешествия</span></a>
+          <a href="section-health.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Здоровье</span></a>
+          <a href="section-science.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Наука</span></a>
+        </div>
+      </div>
+      <div>
+        <div class="gf-col-title">Навигация</div>
+        <nav class="gf-nav-links">
+          <a href="index.html" class="gf-nav-link">Главная</a>
+          <a href="map.html" class="gf-nav-link">Карта связей</a>
+          <a href="paths.html" class="gf-nav-link">Тропы чтения</a>
+          <a href="tree.html" class="gf-nav-link">Дерево материалов</a>
+          <a href="revisions.html" class="gf-nav-link">Что не подтвердилось</a>
+          <a href="thinkers.html" class="gf-nav-link">Указатель имён</a>
+          <a href="search.html" class="gf-nav-link">Поиск</a>
+          <a href="method.html" class="gf-nav-link">Как устроены материалы</a>
+            <a href="about.html" class="gf-nav-link">О проекте</a>
+          <a href="glossary.html" class="gf-nav-link">Глоссарий</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="gf-bottom">
+    <span class="gf-copy">© 2026 ЭкоСознание</span>
+    <div class="gf-bottom-links">
+      <a href="about.html">О проекте</a>
+      <a href="glossary.html">Глоссарий</a>
+    </div>
+  </div>
+</footer>
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+
+
+<!-- ECO:MANAGED:js -->
+<script src="assets/global.js" defer></script>
+<!-- /ECO:MANAGED:js -->
+</body>
+</html>
