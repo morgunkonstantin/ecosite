@@ -61,9 +61,8 @@ build/patch_pages.py      приводит все страницы к едино
 build/make_feeds.py       генерирует feed.xml, sitemap.xml, robots.txt
 build/make_contents.py    пересобирает contents.html
 build/make_section_lists.py блоки «Материалы раздела» на страницах разделов
-build/make_secnav.py      внутренние меню разделов: блок «Раздел» в конце каждой статьи
-                          и «Материалы раздела по темам» на страницах разделов
-build/sections.json       темы внутри разделов и сквозные циклы статей для make_secnav.py
+build/make_secnav.py      меню циклов статей: «предыдущая / следующая» и оглавление цикла
+build/sections.json       состав и порядок циклов статей для make_secnav.py
 build/make_termlinks.py   автолинковка понятий глоссария в текстах
 ```
 
