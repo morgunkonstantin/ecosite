@@ -6,12 +6,20 @@
   <atom:link href="https://morgunkonstantin.github.io/ecosite/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Экология как способ смотреть на реальность</description>
   <language>ru</language>
-  <lastBuildDate>Tue, 10 Nov 2026 14:08:47 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 10 Nov 2026 14:24:13 +0000</lastBuildDate>
   <image>
     <url>https://morgunkonstantin.github.io/ecosite/assets/og-image.png</url>
     <title>ЭкоСознание</title>
     <link>https://morgunkonstantin.github.io/ecosite/</link>
   </image>
+  <item>
+    <title>Основы социологии</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-sociology-basics.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-sociology-basics.html</guid>
+    <description>Большой обзор социологии в хронологическом порядке: Конт, Спенсер, Маркс, Дюркгейм, Вебер, три парадигмы, Парсонс и Мертон, теория конфликта, символический интеракционизм, конструктивизм, теория элит, общественное мнение, Франкфуртская школа, Бурдьё и Гидденс — и что всё это значит для экологии.</description>
+    <category>Эссе</category>
+    <pubDate>Tue, 10 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
   <item>
     <title>Основы психологии</title>
     <link>https://morgunkonstantin.github.io/ecosite/essay-psychology-basics.html</link>
@@ -913,14 +921,6 @@
     <description>Маленький дом — самый сильный экологический рычаг в строительстве: площадь бьёт по воплощённой и эксплуатационной энергии сразу. Почему непостроенный метр экологичнее любого материала, как проектирование делает маленькое просторным (принцип «не такого большого дома» Сары Сузанки), достаточность вместо гонки за метрами, и честные ограничения.</description>
     <category>Эссе</category>
     <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>Основы социологии</title>
-    <link>https://morgunkonstantin.github.io/ecosite/essay-sociology-basics.html</link>
-    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-sociology-basics.html</guid>
-    <description>Большой обзор социологии в хронологическом порядке: Конт, Спенсер, Маркс, Дюркгейм, Вебер, три парадигмы, Парсонс и Мертон, теория конфликта, символический интеракционизм, конструктивизм, теория элит, общественное мнение, Франкфуртская школа, Бурдьё и Гидденс — и что всё это значит для экологии.</description>
-    <category>Эссе</category>
-    <pubDate>Tue, 10 Nov 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
     <title>Природный камень: стена, которая переживёт строителей</title>
