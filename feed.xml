@@ -6,7 +6,7 @@
   <atom:link href="https://morgunkonstantin.github.io/ecosite/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Экология как способ смотреть на реальность</description>
   <language>ru</language>
-  <lastBuildDate>Tue, 10 Nov 2026 14:24:13 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 10 Nov 2026 14:46:25 +0000</lastBuildDate>
   <image>
     <url>https://morgunkonstantin.github.io/ecosite/assets/og-image.png</url>
     <title>ЭкоСознание</title>
@@ -849,6 +849,14 @@
     <description>Кривая Килинга — главный портрет климатической науки: рост CO₂ в атмосфере с ~315 (1958) до ~420+ млн⁻¹ сегодня, измеренный Чарльзом Килингом на Мауна-Лоа. Почему у кривой ежегодное «дыхание» биосферы, что значат миллионные доли, как изотопы выдают ископаемый углерод, и почему одна честная линия стала важнейшим доказательством.</description>
     <category>Эссе</category>
     <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Сеть знаний</title>
+    <link>https://morgunkonstantin.github.io/ecosite/essay-knowledge-web.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecosite/essay-knowledge-web.html</guid>
+    <description>Идеи историка науки Джеймса Бёрка: нелинейность изобретений, редукционизм и экологический кризис, институты против нового, мозг и школа, культура изобилия, проект «Сеть знаний» — и сверка его прогнозов 2001 года с реальностью 2026-го.</description>
+    <category>Эссе</category>
+    <pubDate>Tue, 10 Nov 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
     <title>Как менялась космологическая картина мира</title>
