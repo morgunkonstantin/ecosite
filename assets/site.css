@@ -229,3 +229,16 @@ html body .featured-strip p { color: rgba(211,230,208,.75); }
 /* Блок «Читайте также» в конце эссе */
 html body .see-also a { color: var(--moss); text-decoration: none; border-bottom: 1px solid rgba(74,124,89,.4); }
 html body .see-also a:hover { border-bottom-color: var(--moss); }
+
+/* ─── Обложка статьи (hero-cover) ─────────────────────────────────────
+   <figure class="hero-cover"> ставится сразу перед <section class="hero">.
+   Картинка 3:1 на десктопе, 16:9 на телефоне. Точку кадрирования по
+   горизонтали задают переменные --cover-x и --cover-x-mobile. */
+.hero-cover{margin:0;padding:1.5rem 4rem 0;}
+.hero-cover img{display:block;width:100%;height:auto;aspect-ratio:3/1;object-fit:cover;object-position:var(--cover-x,50%) 50%;background:var(--warm);}
+html body .hero-cover + .hero{padding-top:4rem;}
+@media (max-width: 860px){
+  .hero-cover{padding:1rem 1.5rem 0;}
+  .hero-cover img{aspect-ratio:16/9;object-position:var(--cover-x-mobile,50%) 50%;}
+  html body .hero-cover + .hero{padding-top:2.5rem;}
+}
