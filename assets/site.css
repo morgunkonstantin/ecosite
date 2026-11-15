@@ -231,14 +231,19 @@ html body .see-also a { color: var(--moss); text-decoration: none; border-bottom
 html body .see-also a:hover { border-bottom-color: var(--moss); }
 
 /* ─── Обложка статьи (hero-cover) ─────────────────────────────────────
-   <figure class="hero-cover"> ставится сразу перед <section class="hero">.
+   <figure class="hero-cover"> ставится сразу перед <section class="hero">
+   или <section class="essay-hero">. Вставляет build/make_cover.py.
    Картинка 3:1 на десктопе, 16:9 на телефоне. Точку кадрирования по
    горизонтали задают переменные --cover-x и --cover-x-mobile. */
 .hero-cover{margin:0;padding:1.5rem 4rem 0;}
 .hero-cover img{display:block;width:100%;height:auto;aspect-ratio:3/1;object-fit:cover;object-position:var(--cover-x,50%) 50%;background:var(--warm);}
 html body .hero-cover + .hero{padding-top:4rem;}
+/* эссе с узкой колонкой: обложка по ширине текста */
+.hero-cover--essay{max-width:1100px;margin:0 auto;}
+html body .hero-cover + .essay-hero{padding-top:4rem;}
 @media (max-width: 860px){
   .hero-cover{padding:1rem 1.5rem 0;}
   .hero-cover img{aspect-ratio:16/9;object-position:var(--cover-x-mobile,50%) 50%;}
-  html body .hero-cover + .hero{padding-top:2.5rem;}
+  html body .hero-cover + .hero,
+  html body .hero-cover + .essay-hero{padding-top:2.5rem;}
 }
