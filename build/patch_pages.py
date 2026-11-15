@@ -108,11 +108,21 @@ def esc(text):
 
 # ── блоки, которые вставляем в <head> ────────────────────────────────
 
-def build_head(fname, info):
+DEFAULT_OG_IMAGE = "assets/og-image.png"
+DEFAULT_OG_ALT = "ЭкоСознание — экология как способ смотреть на реальность"
+
+
+def build_head(fname, info, has_twitter_card=False):
     url = "%s/%s" % (SITE, "" if fname == "index.html" else fname)
     title = info["title"]
     desc = info["description"]
     kind = info["kind"]
+    # Своя картинка превью для соцсетей: "og_image" в pages.json (путь от
+    # корня сайта, строго 1200×630) и "og_image_alt". Иначе — общая заставка.
+    og_image = "%s/%s" % (SITE, info.get("og_image", DEFAULT_OG_IMAGE))
+    og_alt = info.get("og_image_alt", DEFAULT_OG_ALT)
+    twitter_card = ('  <meta name="twitter:card" content="summary_large_image">\n'
+                    if info.get("og_image") and not has_twitter_card else "")
 
     ld = {
         "@context": "https://schema.org",
@@ -131,6 +141,8 @@ def build_head(fname, info):
         ld["name"] = "ЭкоСознание"
     if info.get("date"):
         ld["datePublished"] = info["date"]
+    if info.get("og_image"):
+        ld["image"] = og_image
     if kind == "article":
         ld["author"] = {"@type": "Organization", "name": "ЭкоСознание"}
         ld["articleSection"] = info.get("section_title", "")
@@ -149,11 +161,11 @@ def build_head(fname, info):
 {noindex}  <link rel="canonical" href="{url}">
   <meta property="og:url" content="{url}">
   <meta property="og:site_name" content="ЭкоСознание">
-  <meta property="og:image" content="{site}/assets/og-image.png">
+  <meta property="og:image" content="{og_image}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="ЭкоСознание — экология как способ смотреть на реальность">
-  <meta name="twitter:image" content="{site}/assets/og-image.png">
+  <meta property="og:image:alt" content="{og_alt}">
+{twitter_card}  <meta name="twitter:image" content="{og_image}">
   <meta name="theme-color" content="#faf6ef">
   <meta name="color-scheme" content="light">
   <link rel="icon" href="favicon.ico" sizes="any">
@@ -165,6 +177,7 @@ def build_head(fname, info):
   <script type="application/ld+json">{bc}</script>
 <!-- /{mark}:head -->
 """.format(mark=MARK, url=url, site=SITE, noindex=noindex,
+           og_image=og_image, og_alt=esc(og_alt), twitter_card=twitter_card,
            ld=json.dumps(ld, ensure_ascii=False, separators=(",", ":")),
            bc=json.dumps(breadcrumb, ensure_ascii=False, separators=(",", ":")))
 
@@ -209,7 +222,7 @@ def patch(fname):
                       "replace('no-js','js');</script>", 1)
 
     # 6. Управляемый блок в <head>
-    s = s.replace("</head>", build_head(fname, info) + "</head>", 1)
+    s = s.replace("</head>", build_head(fname, info, "twitter:card" in s) + "</head>", 1)
 
     # 7. skip-link сразу после <body>
     s = re.sub(r"(<body[^>]*>)",
