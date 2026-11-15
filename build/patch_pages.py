@@ -197,6 +197,13 @@ def patch(fname):
     s = re.sub(r'\s*<a class="skip-link"[^>]*>.*?</a>', "", s, flags=re.S)
     s = re.sub(r"<!-- %s:breadcrumb -->.*?<!-- /%s:breadcrumb -->\n?" % (MARK, MARK), "", s, flags=re.S)
 
+    # 1a. Старые картинки превью вне управляемого блока (например,
+    #     ecosoznanie.ru/og-image.jpg): соцсети берут первую, а правильную
+    #     ставит блок head ниже.
+    s, n = re.subn(r'[ \t]*<meta (?:property="og:image(?::[a-z]+)?"|name="twitter:image")[^>]*>\n', "", s)
+    if n:
+        log.append("old og:image")
+
     # 2. Заголовок и описание
     if info.get("title_fix"):
         s = re.sub(r"<title>.*?</title>",

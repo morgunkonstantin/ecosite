@@ -11,12 +11,10 @@
   1. assets/img/<имя>-hero-1200.webp и -hero-2000.webp — обложка;
      assets/img/<имя>-og.jpg — превью 1200×630 для соцсетей.
   2. Вставляет <figure class="hero-cover"> перед первым блоком заголовка
-     (<section class="hero"> или <section class="essay-hero">). Повторный
+     (<section class="hero">, "essay-hero" или "lab-hero"). Повторный
      запуск заменяет прежнюю обложку, а не добавляет вторую.
   3. Убирает бледный значок .hero-mark-svg в шапке: его роль берёт картинка.
-  4. В заголовке h1 убирает <br> сразу после </em>: на страницах, где
-     выделение — отдельный блок, этот перенос даёт пустую строку.
-  5. Прописывает og_image и og_image_alt в build/pages.json.
+  4. Прописывает og_image и og_image_alt в build/pages.json.
 
 После него запустить python3 build/patch_pages.py, чтобы обновились
 мета-теги превью в <head>.
@@ -69,10 +67,10 @@ def patch_page(page, name, alt, mobile_x, size2000):
     # прежняя обложка — убрать (идемпотентность)
     s = re.sub(r'<figure class="hero-cover[^"]*".*?</figure>\n\n?', "", s, flags=re.S)
 
-    m = re.search(r'<section class="(hero|essay-hero)"', s)
+    m = re.search(r'<section class="(hero|essay-hero|lab-hero)"', s)
     if not m:
-        sys.exit("В %s не найден <section class=\"hero\"> или \"essay-hero\"" % page)
-    extra = " hero-cover--essay" if m.group(1) == "essay-hero" else ""
+        sys.exit("В %s не найден <section class=\"hero\">, \"essay-hero\" или \"lab-hero\"" % page)
+    extra = "" if m.group(1) == "hero" else " hero-cover--essay"
     w, h = size2000
     figure = (
         '<figure class="hero-cover%s" style="--cover-x-mobile:%s%%;">\n'
@@ -85,7 +83,6 @@ def patch_page(page, name, alt, mobile_x, size2000):
     s = s[:m.start()] + figure + s[m.start():]
 
     s = re.sub(r'\n\s*<div class="hero-mark-svg">.*?</svg></div>', "", s, count=1, flags=re.S)
-    s = re.sub(r"(<h1>.*?)</em><br>(.*?</h1>)", r"\1</em>\2", s, count=1, flags=re.S)
     open(path, "w", encoding="utf-8").write(s)
 
 
