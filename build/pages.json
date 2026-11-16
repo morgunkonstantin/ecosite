@@ -676,7 +676,9 @@
   "date": "2026-07-30",
   "kind": "article",
   "section_title": "Сообщество",
-  "rubric": "Понятие"
+  "rubric": "Понятие",
+  "og_image": "assets/img/term-commons-og.jpg",
+  "og_image_alt": "Жители разных возрастов сидят кругом на лугу под деревьями и обсуждают общее дело; говорит женщина на пне, рядом слушает седой старик."
  },
  "term-shifting-baseline.html": {
   "title": "Сдвиг базовой линии",

@@ -110,6 +110,12 @@ def main():
     a = ap.parse_args()
     name = a.name or re.sub(r"^(essay|lab|section|place|thing|term|number|revision)-", "",
                             a.page[:-5] if a.page.endswith(".html") else a.page)
+    # имя файлов не должно совпадать с обложкой другой страницы
+    data = json.load(open(PAGES, encoding="utf-8"))
+    mine = "assets/img/%s-og.jpg" % name
+    for other, info in data.items():
+        if other != a.page and info.get("og_image") == mine:
+            sys.exit("Имя «%s» уже занято обложкой %s — задайте другое через --name" % (name, other))
     sizes = make_images(a.src, name, a.og_center)
     patch_page(a.page, name, a.alt, a.mobile_x, sizes[2000])
     update_pages(a.page, name, a.alt)
