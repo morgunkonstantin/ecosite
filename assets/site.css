@@ -238,6 +238,9 @@ html body .see-also a:hover { border-bottom-color: var(--moss); }
 .hero-cover{margin:0;padding:1.5rem 4rem 0;}
 .hero-cover img{display:block;width:100%;height:auto;aspect-ratio:3/1;object-fit:cover;object-position:var(--cover-x,50%) 50%;background:var(--warm);}
 html body .hero-cover + .hero{padding-top:4rem;}
+/* крупный номер раздела на фоне шапки (.hero::before с content:'04')
+   рассчитан на большой верхний отступ; под обложкой он наезжает на заголовок */
+.hero-cover + .hero::before{content:none!important;}
 /* эссе и лаборатории с узкой колонкой: обложка по ширине текста */
 .hero-cover--essay{max-width:1100px;margin:0 auto;}
 html body .hero-cover + .essay-hero,
